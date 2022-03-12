@@ -492,7 +492,7 @@ investigators or participants for enrolment.
 ### Sequence generation
 We used simple randomisation to allocate sites to trial arms. We
 prepared seven sealed envelopes from which one representative from
-each pilot site selected one in a common meeting on March 8, 2022
+each pilot site selected one in a common meeting on March 7, 2022
 [^dev1]. The content of the envelopes dictated what trial arm (ATLS,
 PTC, or standard care) each hospital was allocated to. There were two
 hospitals in each of the intervention arms and three hospitals in the
