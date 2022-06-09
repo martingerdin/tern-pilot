@@ -698,13 +698,13 @@ collecting data from hospital records in the full-scale trial.
 We were granted research ethics approval from each participating
 hospital. The approval numbers were IEC(II)/OUT/134/2022 for King
 Edward Memorial Seth G. S. Medical College and K.E.M. Hospital,
-Mumbai; XXX for Lokmanya Tilak Municipal Medical College and General
-Hospital, Mumbai; HBTMC/266/SURGERY for HBT Medical College And Dr. R
-N Cooper Municipal General Hospital, Mumbai; CREC/2022/FEB/1(ii) for
-Medica Superspecialty Hospital, Kolkata; Medical College Kolkata,
-Kolkata; NRSmC/IEC/93/2021 for Sir Nil Ratan Sircar Medical College &
-Hospital, Kolkata; XXX for Postgraduate Institute of Medical Education
-& Research, Chandigarh.
+Mumbai; IEC/214/22 for Lokmanya Tilak Municipal Medical College and
+General Hospital, Mumbai; HBTMC/266/SURGERY for HBT Medical College
+And Dr. R N Cooper Municipal General Hospital, Mumbai;
+CREC/2022/FEB/1(ii) for Medica Superspecialty Hospital, Kolkata;
+Medical College Kolkata, Kolkata; NRSmC/IEC/93/2021 for Sir Nil Ratan
+Sircar Medical College & Hospital, Kolkata; XXX for Postgraduate
+Institute of Medical Education & Research, Chandigarh.
 
 The protocol was published in BMJ Open [ADD CITATION] and was
 registered with Clinical Trials Registry - India (reg. no XXX) and
