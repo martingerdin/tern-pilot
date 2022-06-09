@@ -706,7 +706,7 @@ Medical College Kolkata, Kolkata; NRSmC/IEC/93/2021 for Sir Nil Ratan
 Sircar Medical College & Hospital, Kolkata; XXX for Postgraduate
 Institute of Medical Education & Research, Chandigarh.
 
-The protocol was published in BMJ Open [ADD CITATION] and was
+The protocol was published in BMJ Open [@GerdinWärnberg2022] and was
 registered with Clinical Trials Registry - India (reg. no XXX) and
 ClinicalTrials.gov (reg. no XXX). Amendments to the protocol after
 publication were determined by the core research group and updated on
@@ -714,7 +714,7 @@ Clinical Trials Registry - India and ClinicalTrials.gov. Substantial
 amendments, such as modifications to the eligibility criteria or
 outcomes will also be resubmitted to the journal. Declaration of
 interest will be submitted from all participating researchers both in
-the core team and at each site. 
+the core team and at each site.
 
 The final anonymized dataset and code for analysis are released
 publicly. Authorship follows the International Committee of
