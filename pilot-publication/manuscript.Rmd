@@ -703,8 +703,9 @@ General Hospital, Mumbai; HBTMC/266/SURGERY for HBT Medical College
 And Dr. R N Cooper Municipal General Hospital, Mumbai;
 CREC/2022/FEB/1(ii) for Medica Superspecialty Hospital, Kolkata;
 Medical College Kolkata, Kolkata; NRSmC/IEC/93/2021 for Sir Nil Ratan
-Sircar Medical College & Hospital, Kolkata; XXX for Postgraduate
-Institute of Medical Education & Research, Chandigarh.
+Sircar Medical College & Hospital, Kolkata; and PGI/IEC/2022/000/003
+for Postgraduate Institute of Medical Education & Research,
+Chandigarh.
 
 The protocol was published in BMJ Open [@GerdinWärnberg2022] and was
 registered with Clinical Trials Registry - India (reg. no XXX) and
