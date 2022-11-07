@@ -665,11 +665,11 @@ versus PTC, we will compare both the difference in mortality between
 the ATLS and PTC arms as well as the difference in the change from
 baseline in mortality between the ATLS and PTC arms.
 
-For the intervention arms the change from baseline will be calculated as
-the difference between the one month period of data collection before
-the training was undertaken and the three month period after the
-training. For the control arm the data collection period will be four
-months and the difference from baseline will be calculated as the
+For the intervention arms the change from baseline will be calculated
+as the difference between the one month period of data collection
+before the training was undertaken and the three month period after
+the training. For the control arm the data collection period will be
+four months and the difference from baseline will be calculated as the
 difference between the first one month and the following three months.
 
 Within each combination of trial arms we will conduct subgroup
@@ -686,13 +686,13 @@ include them to help guide the formulation of the statistical analysis
 plan for the full-scale trial.
 
 We will calculate both absolute and relative differences for each
-comparison, along with 75, 85, and 95% confidence intervals. We will use
-an empirical bootstrap procedure with 1000 draws to estimate these
+comparison, along with 75, 85, and 95% confidence intervals. We will
+use an empirical bootstrap procedure with 1000 draws to estimate these
 confidence intervals. We will not perform any formal hypothesis tests
 during the analysis of this pilot's data [@Lee2014]. We will also
-compare the data collected through observations and interviews with the
-data collected from hospital records, to assess the feasibility of
-collecting data from hospital records in the full-scale trial. 
+compare the data collected through observations and interviews with
+the data collected from hospital records, to assess the feasibility of
+collecting data from hospital records in the full-scale trial.
 
 ## Ethics and Dissemination
 We were granted research ethics approval from each participating
@@ -708,25 +708,63 @@ for Postgraduate Institute of Medical Education & Research,
 Chandigarh.
 
 The protocol was published in BMJ Open [@GerdinWärnberg2022] and was
-registered with Clinical Trials Registry - India (reg. no XXX) and
-ClinicalTrials.gov (reg. no XXX). Amendments to the protocol after
-publication were determined by the core research group and updated on
-Clinical Trials Registry - India and ClinicalTrials.gov. Substantial
-amendments, such as modifications to the eligibility criteria or
-outcomes will also be resubmitted to the journal. Declaration of
-interest will be submitted from all participating researchers both in
-the core team and at each site.
+registered with ClinicalTrials.gov (reg. no NCT05417243). Amendments
+to the protocol after publication were determined by the core research
+group and updated on ClinicalTrials.gov.
 
 The final anonymized dataset and code for analysis are released
 publicly. Authorship follows the International Committee of
 Medical Journal Editors (ICMJE) guidelines.
 
 # Results
+Between X and X, we enrolled X trauma patients from X participating
+centres. The ATLS arm enrolled X patients, the PTC arm X patients, and
+the standard care arm X patients. The study flowchart is shown in
+Figure X and sample characteristics across trial arms are shown in
+Table X. Overall, the number of females were X (X%), the median age
+was X (IQR X), and the median ISS was X (IQR X). A total of X (X%)
+patients had the primary outcome of mortality at 30 days after arrival
+to the emergency department.
+
+## Patient Participant Outcomes
+In the post training period, a total of X (X%) patients in the ATLS
+arm had the primary outcome, compared to X (X%) patients in the PTC
+arm, and X (X%) patients in the standard care arm. The differences
+between the arms were X (95% CI X - X) between the ATLS and PTC arms,
+X (95% CI X - X) between the ATLS and standard care arms, and X (95%
+CI X - X) between the PTC and standard care arms. The change from
+baseline for the primary outcome was X in the ATLS arm, X in the PTC
+arm, and X in the standard care arm. The differences between changes
+from baseline were X (95% CI X - X) between the ATLS and PTC arms, X
+(95% CI X - X) between the ATLS and standard care arms, and X (95% CI
+X - X) between the PTC and standard care arms. Table X shows
+differences in the primary outcome between trial arms with 75, 85, and
+95% CIs. Differences in secondary outcomes between trial arms and
+subgroups are available as Supplementary material X.
+
+## Resident Participant Outcomes
+A total of X residents were trained during this pilot. Overall their
+confidence in managing trauma patients was X (IQR X - X) on 
+
+## Feasibility Outcomes
+
+
+
 
 # Discussion
 
 # Contributorship statement
-MGW conceived of the study. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MGW, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the study. DKV, KDS, MK, and MGW drafted the first version of the protocol. AG, HS, and SD drafted the first version of the patient and public involvement activities. JB and PP drafted the first versions of the data management sections and wrote the data management plan. PB and PP drafted the first versions of the statistical analysis section. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MGW, MK, NR, PB, PP, RS, SC, SD, and VK contributed to the refinement of the protocol. AR, AC, C, DK, GG, MK, MT, and VK are representatives of prospective participating hospitals.
+MGW conceived of the study. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH,
+MGW, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the
+study. DKV, KDS, MK, and MGW drafted the first version of the
+protocol. AG, HS, and SD drafted the first version of the patient and
+public involvement activities. JB and PP drafted the first versions of
+the data management sections and wrote the data management plan. PB
+and PP drafted the first versions of the statistical analysis
+section. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MGW, MK, NR, PB,
+PP, RS, SC, SD, and VK contributed to the refinement of the
+protocol. AR, AC, C, DK, GG, MK, MT, and VK are representatives of
+prospective participating hospitals.
 
 # Competing Interests
 Several authors are Advanced Trauma Life Support or Primary Trauma Care instructors
