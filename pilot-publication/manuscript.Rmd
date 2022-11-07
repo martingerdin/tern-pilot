@@ -744,14 +744,29 @@ subgroups are available as Supplementary material X.
 
 ## Resident Participant Outcomes
 A total of X residents were trained during this pilot. Overall their
-confidence in managing trauma patients was X (IQR X - X) on 
+confidence in managing trauma patients was X (IQR X - X) on a 10 point
+Likert scale with 10 being most confident. In the post training
+period, the confidence in the ATLS arm was X (IQR X - X), compared to
+X (IQR X - X) in the PTC arm, and X (IQR X - X) in the standard care
+arm. 
 
 ## Feasibility Outcomes
+Out of X potentially eligible patients, X (X%) patients were enrolled
+in the study. Out of X potentially eligible residents, X (X%) were
+enrolled in the study. The loss to follow up rate was X, with X out of
+X patients not completing 30 day follow up. Among residents the pass
+rate, after two attempts, was X (X%). The missing data rate ranged
+from X to X, with details per variable and outcome in Table X. The
+differences in distributions between observed and extracted data, for
+variables that were collected through observation or interview, are
+shown in Table X.
 
-
-
+## Community Consultations
+The results of interviews with patients, caregivers and social workers
+will be published separately. Residents felt that...
 
 # Discussion
+
 
 # Contributorship statement
 MGW conceived of the study. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH,
@@ -767,10 +782,13 @@ protocol. AR, AC, C, DK, GG, MK, MT, and VK are representatives of
 prospective participating hospitals.
 
 # Competing Interests
-Several authors are Advanced Trauma Life Support or Primary Trauma Care instructors
+Several authors are Advanced Trauma Life Support or Primary Trauma
+Care instructors.
 
 # Funding
-Doctors for You through grants awarded to Karolinska Institutet by the Swedish Research Council (grant number 2020-03779) and the Laerdal Foundation (grant number 2021-0048).
+Doctors for You through grants awarded to Karolinska Institutet by the
+Swedish Research Council (grant number 2020-03779) and the Laerdal
+Foundation (grant number 2021-0048).
 
 # Data Sharing Statement
 The final anonymized dataset and code for analysis will be released publicly.
@@ -778,10 +796,15 @@ The final anonymized dataset and code for analysis will be released publicly.
 # Protocol Deviations
 
 ## Trial Registration
-We intended to also register our trial with Clinical Trials Registry - India but because of time constrains we had to initiate the study before registration was finalised, and Clinical Trials Registry - India only allow prospective registration.
+We intended to also register our trial with Clinical Trials Registry -
+India but because of time constrains we had to initiate the study
+before registration was finalised, and Clinical Trials Registry -
+India only allow prospective registration.
 
 ## Number of Participating Centres
-We ended up recruiting seven centres instead of six and therefore assigned two centres each to the intervention arms and three centres to the control arm.
+We ended up recruiting seven centres instead of six and therefore
+assigned two centres each to the intervention arms and three centres
+to the control arm.
 
 ## Resident Participants
 Emergency medicine in addition to surgery.
