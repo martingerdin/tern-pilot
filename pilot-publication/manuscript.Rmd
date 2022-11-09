@@ -717,10 +717,15 @@ publicly. Authorship follows the International Committee of
 Medical Journal Editors (ICMJE) guidelines.
 
 # Results
-Between X and X, we enrolled X trauma patients from X participating
-centres. The ATLS arm enrolled X patients, the PTC arm X patients, and
-the standard care arm X patients. The study flowchart is shown in
-Figure X and sample characteristics across trial arms are shown in
+
+**Note that participating centres are randomly assigned to the
+different arms every time this manuscript is compiled**
+
+Between `r start.date` and `r end.date`, we enrolled `r n.patients`
+trauma patients from `r n.centres` participating centres. The ATLS arm
+enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the
+standard care arm `r n.control` patients. The study flowchart is shown
+in Figure X and sample characteristics across trial arms are shown in
 Table X. Overall, the number of females were X (X%), the median age
 was X (IQR X), and the median ISS was X (IQR X). A total of X (X%)
 patients had the primary outcome of mortality at 30 days after arrival
