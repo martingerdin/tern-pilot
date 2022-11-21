@@ -182,10 +182,10 @@ including several professional societies [@ptcfPtc2018].
 
 Despite the widespread use of these training programs there are no
 controlled trials showing that they impact patient outcomes
-[@Mohammad2013; @Jayaraman2014; @Kadhum2020]. But there is level 1
-evidence that these programs improve provider skills and practices
-[@Ali1995; @Ali1996], and observational data suggesting that
-they also improve patient outcomes [@Qin2019].
+[@Mohammad2013; @Jayaraman2014; @Kadhum2020]. A systematic review
+report that hospital trauma training is associated with a reduction of
+patient mortality with 29% (95% CI 4-47%) based on seven studies that
+were either observational or uncontrolled trials [@Jin2021].
 
 We will perform a pilot study that aims to assess the feasibility of
 conducting a cluster randomised controlled trial comparing ATLS and
