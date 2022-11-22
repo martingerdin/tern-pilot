@@ -183,9 +183,11 @@ including several professional societies [@ptcfPtc2018].
 Despite the widespread use of these training programs there are no
 controlled trials showing that they impact patient outcomes
 [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. A systematic review
-report that hospital trauma training is associated with a reduction of
-patient mortality with 29% (95% CI 4-47%) based on seven studies that
-were either observational or uncontrolled trials [@Jin2021].
+report that hospital trauma life support training is associated with a
+reduction in patient mortality, based on studies that were either
+observational or quasi-experimental without a control group
+[@Jin2021].<!-- Note that some of the studies that Jin include state
+that there was no effect of ATLS -->
 
 We will perform a pilot study that aims to assess the feasibility of
 conducting a cluster randomised controlled trial comparing ATLS and
@@ -771,6 +773,63 @@ The results of interviews with patients, caregivers and social workers
 will be published separately. Residents felt that...
 
 # Discussion
+We show that conducting a cluster randomized controlled trial
+comparing ATLS with PTC and standard care is feasible in this setting
+provided that there are dedicated project officers to enrol
+participants, collect data, and follow up participants. Missing data
+rates were low for the primary outcome and many secondary outcomes, as
+well as for key variables. Some variables had very high missing data
+rates and may not be feasible to include in a full-scale trial.
+
+<!-- Should we include dependency at discharge, for example using the
+Modified Oxford Handicap Scale used in @Roberts2013?-->
+
+We found that the ATLS arm had lower 30-day mortality compared to the
+PTC and standard care arms.
+
+We found that the PTC arm had lower 30-day mortality compared to the
+ATLS and standard care arms.
+
+We found that the standard care arm had lower 30-day mortality
+compared to the ATLS and PTC arms.
+
+We found that 30-day mortality was similar in the ATLS and PTC arms
+but lower than the standard care arm.
+
+We found that 30-day mortality was similar in the ATLS and standard
+care arms but lower than the PTC arm.
+
+We found that 30-day mortality was similar in the PTC and standard
+care arms but lower than the ATLS arm.
+
+Previous studies on the effect of in-hospital trauma life support
+training on patient outcomes are observational or quasi-experimental
+without a control group, with heterogeneous results
+[@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; VanHeng2008;
+@Wang2010]. Studies from Trinidad and Tobago and, El Salvador, Rwanda,
+and Cambodia found no significant effect on patient mortality after
+implementing in-hospital trauma life support training
+[@Ariyanayagam1992; @Cioèpeña2016; @Petroze2014; @Vanheng2008],
+whereas one study from China on 820 patients found a significant
+reduction in mortality, from 20 to 15%, after implementing ATLS
+[@Wang2010].
+
+Several randomised controlled trials show that ATLS is associated with
+improved provider skills. 
+
+The primary patient participant outcome, all-cause 30-day mortality,
+was missing in X% of patients. This may appear high, especially
+compared to for example the CRASH-2 and REACT-2 trials, which report
+missing primary outcome in less than 0.01% of patients [@Roberts2013;
+@Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2
+used in-hospital mortality as their primary outcome measure, whereas
+we attempted to follow up patients after discharge. The missing data
+rate for in-hospital mortality was only X%, comparable to previous
+trials.
+
+Compare missing data rates.
+
+Non-inferiority vs superiority.
 
 
 # Contributorship statement
@@ -813,5 +872,10 @@ to the control arm.
 
 ## Resident Participants
 Emergency medicine in addition to surgery.
+
+## Periodic suverys to residents
+We did not distribute periodic surveys to the participating residents
+but discussed challenges and suggestions that they had regarding the
+scheduling or implementation of the training programs.
 
 # References
