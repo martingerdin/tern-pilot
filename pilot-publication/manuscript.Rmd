@@ -127,7 +127,7 @@ Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital,
 Trauma management, Accident and emergency medicine, Education and training.
 
 ## Word Count
-4494
+<!-- 4494 -->
 
 ## Role of study sponsor and funders
 The funding sources had no role in the design of this study and will not
@@ -136,9 +136,14 @@ data, or decision to submit results.
 
 \newpage
 
+<!-- Source main code to make global objects available in the text -->
+```{r source, echo = FALSE, include = FALSE}
+source("main.R")
+```
+
 # Abstract
 
-**Introduction** Several trauma life support programs aim to improve trauma outcomes but there is no evidence from controlled trials to show the effect of these programs on patient outcomes. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support (ATLS) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programs are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** We included X patients and X residents. The patient recruitment rate was X and the resident recruitment rate was X. The loss to follow up rate was X. The all-cause 30 day mortality was X in the ATLS arm, X in the PTC arm, and X in the standard care arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
+**Introduction** Several trauma life support programs aim to improve trauma outcomes but there is no evidence from controlled trials to show the effect of these programs on patient outcomes. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support (ATLS) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programs are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The patient recruitment rate was X and the resident recruitment rate was X. The loss to follow up rate was X. The all-cause 30 day mortality was X in the ATLS arm, X in the PTC arm, and X in the standard care arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
 
 \newpage
 
