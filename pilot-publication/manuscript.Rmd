@@ -637,15 +637,11 @@ only.
 Weekly meetings with the core team and project officers will take
 place and for this meeting a data status report will be automatically
 generated highlighting missing data and number of patients awaiting
-followup. Cluster specific interim analysis will take place after two
-months. The results of this will be presented to the core team, this
-team will decide if the pilot should be terminated. Although we will
-not have formal termination criteria because of the short duration of
-the study, reasons not to continue could include that the collection
-of key variables, such as mortality outcomes, is unfeasible or that
-patients are not consenting to be included in the data
-collection. A data monitoring committee
-will not be used in the pilot study due to its limited scope.
+followup. We conducted an interim analysis on October 12, 2022, and
+decided to complete the study as participants were consenting to be
+included in the study and key variables including mortality outcomes
+could be collected. No outcomes were dropped. We did not use a data
+monitoring committee in the pilot study due to its limited scope.
 
 ## Statistical Methods
 We will analyse all pilot data using descriptive
@@ -802,21 +798,6 @@ care arms but lower than the PTC arm.
 We found that 30-day mortality was similar in the PTC and standard
 care arms but lower than the ATLS arm.
 
-Previous studies on the effect of in-hospital trauma life support
-training on patient outcomes are observational or quasi-experimental
-without a control group, with heterogeneous results
-[@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; VanHeng2008;
-@Wang2010]. Studies from Trinidad and Tobago and, El Salvador, Rwanda,
-and Cambodia found no significant effect on patient mortality after
-implementing in-hospital trauma life support training
-[@Ariyanayagam1992; @Cioèpeña2016; @Petroze2014; @Vanheng2008],
-whereas one study from China on 820 patients found a significant
-reduction in mortality, from 20 to 15%, after implementing ATLS
-[@Wang2010].
-
-Several randomised controlled trials show that ATLS is associated with
-improved provider skills. 
-
 The primary patient participant outcome, all-cause 30-day mortality,
 was missing in X% of patients. This may appear high, especially
 compared to for example the CRASH-2 and REACT-2 trials, which report
@@ -827,11 +808,53 @@ we attempted to follow up patients after discharge. The missing data
 rate for in-hospital mortality was only X%, comparable to previous
 trials.
 
-Compare missing data rates.
+<!-- Consider discussing non-inferiority vs superiority. -->
 
-Non-inferiority vs superiority.
+During the course of this pilot we deviated from the protocol in
+multiple ways, and provide a detailed list as Supplementary
+material. Some key limitations of this pilot and therefore lessons to
+be learned and factored into the design of the full-scale trial
+include the lower than expected enrolment rates of some centres,
+centre specific management routines, and difficulties in collecting
+data on complications and cause of death. We minimised the impact of
+the lower than expected enrolment rates by including a seventh centre,
+but on-site observations of patient volumes are likely to be needed
+for the full-scale trial. We decided to be pragmatic in selecting
+which residents to train and how to structure the data collection
+depending on how and by whom patients were initially managed, but this
+flexibility will need to be built into the full-scale trial
+protocol. Finally, we found that data on complications and cause of
+death were hard to identify and therefore the full-scale trial will
+need to include longer training of project officers.
 
+Previous studies on the effect of in-hospital trauma life support
+training on patient outcomes are observational or quasi-experimental
+without a control group, with heterogeneous results
+[@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; VanHeng2008;
+@Wang2010]. Studies from Trinidad and Tobago, El Salvador, Rwanda, and
+Cambodia found no significant effect on patient mortality after
+implementing in-hospital trauma life support training
+[@Ariyanayagam1992; @Cioèpeña2016; @Petroze2014; @Vanheng2008],
+whereas one study from China that included 820 patients found a
+significant reduction in mortality, from 20 to 15%, after implementing
+ATLS [@Wang2010].
 
+Several controlled trials, including at least two randomized
+controlled trials [@Ali1996; @Ali1999], show that ATLS is associated
+with improved provider skills [@Mohammad2013]. Observational evidence
+indicates that PTC also leads to improved provider skills
+[@Kadhum2020]. The missing link is then how, and if, these improved
+skills translate into improved patient outcomes. As trauma care
+providers we assume, and probably rightly so, that we deliver better
+care if we train. The question is then how we should train, especially
+considering the costs associated with some of the programs
+offered. 
+
+We conclude that a full-scale cluster randomised trial should be
+feasible after incorporating the lessons of this pilot, and that this
+full-scale trial should, regardless of its outcome, influence how we
+train trauma care providers in the future.
+ 
 # Contributorship statement
 MGW conceived of the study. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH,
 MGW, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the
@@ -877,5 +900,9 @@ Emergency medicine in addition to surgery.
 We did not distribute periodic surveys to the participating residents
 but discussed challenges and suggestions that they had regarding the
 scheduling or implementation of the training programs.
+
+## Data collection from records
+We decided to record data from records only for a subset of patients
+to reduce the project officers' workload.
 
 # References
