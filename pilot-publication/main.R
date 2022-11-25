@@ -45,8 +45,10 @@ n.potentially.eligible = list(n.potentially.eligible.centre.1 = 999,
                               n.potentially.eligible.centre.5 = 999,
                               n.potentially.eligible.centre.6 = 999,
                               n.potentially.eligible.centre.7 = 999)
-recruitment.rate.patients <- 
+recruitment.rate.patients <- round(n.patients/do.call(sum, n.potentially.eligible) * 100)
+
+## Create table of sample characteristics
+table.data <- data
+table.sample.characteristics <- create_descriptive_table(data = table.data)
 
 ## Label variables
-
-

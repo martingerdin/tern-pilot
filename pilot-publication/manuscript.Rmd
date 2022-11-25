@@ -1,6 +1,6 @@
 ---
 ## compile with:
-## Rscript -e "rmarkdown::render('manuscript-clean.Rmd', output_format = 'all')"
+## Rscript -e "rmarkdown::render('manuscript.Rmd', output_format = 'all')"
 title: A Pilot Multicenter Cluster Randomized Trial to Compare The Effect of Trauma Life Support Training Programs on Patient and Provider Outcomes  
 author: Trauma life support training Effectiveness Research Network (TERN) collaborators
 bibliography: bibliography.bib
@@ -727,12 +727,16 @@ different arms every time this manuscript is compiled**
 Between `r start.date` and `r end.date`, we enrolled `r n.patients`
 trauma patients from `r n.centres` participating centres. The ATLS arm
 enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the
-standard care arm `r n.control` patients. The study flowchart is shown
-in Figure X and sample characteristics across trial arms are shown in
-Table X. Overall, the number of females were X (X%), the median age
-was X (IQR X), and the median ISS was X (IQR X). A total of X (X%)
-patients had the primary outcome of mortality at 30 days after arrival
-to the emergency department.
+standard care arm `r n.control` patients. We trained a total of 
+`r n.residents` residents, `r n.atls.residents` in ATLS, and 
+`r n.ptc.residents` in PTC. 
+
+The study flowchart is shown in Figure X and patient sample
+characteristics across trial arms are shown in Table X. Overall, the
+number of females were X (X%), the median age was X (IQR X), and the
+median ISS was X (IQR X). A total of X (X%) patients had the primary
+outcome of mortality at 30 days after arrival to the emergency
+department.
 
 ## Patient Participant Outcomes
 In the post training period, a total of X (X%) patients in the ATLS
