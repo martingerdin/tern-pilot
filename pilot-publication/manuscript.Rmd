@@ -846,6 +846,9 @@ protocol. Finally, we found that data on complications and cause of
 death were hard to identify and therefore the full-scale trial will
 need to include longer training of project officers.
 
+<!-- Consider discussing waiver of informed consent for initial 
+data collection -->
+
 Previous studies on the effect of in-hospital trauma life support
 training on patient outcomes are observational or quasi-experimental
 without a control group, with heterogeneous results
