@@ -6,11 +6,14 @@ author: Trauma life support training Effectiveness Research Network (TERN) colla
 bibliography: bibliography.bib
 csl: nature.csl
 output:
-    bookdown::word_document2:
+    bookdown::pdf_document2:
       toc: false
       number_sections: false
-      reference_docx: "reference.docx"
-    md_document: default
+##    md_document: default
+##    bookdown::word_document2:
+##      toc: false
+##      number_sections: false
+##      reference_docx: "reference.docx"
 ---
 
 ## Trial registration
@@ -732,11 +735,18 @@ standard care arm `r n.control` patients. We trained a total of
 `r n.ptc.residents` in PTC. 
 
 The study flowchart is shown in Figure X and patient sample
-characteristics across trial arms are shown in Table X. Overall, the
+characteristics across trial arms are shown in Table 
+\@ref(tab:sample-characteristics). Overall, the
 number of females were X (X%), the median age was X (IQR X), and the
 median ISS was X (IQR X). A total of X (X%) patients had the primary
 outcome of mortality at 30 days after arrival to the emergency
 department.
+
+```{r sample-characteristics, echo = FALSE, results = "asis"}
+create_descriptive_table(table.data,
+                         strata = "patinfo/pt_gender",
+                         caption = "Patient sample characteristics")
+```
 
 ## Patient Participant Outcomes
 In the post training period, a total of X (X%) patients in the ATLS
@@ -839,11 +849,11 @@ need to include longer training of project officers.
 Previous studies on the effect of in-hospital trauma life support
 training on patient outcomes are observational or quasi-experimental
 without a control group, with heterogeneous results
-[@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; VanHeng2008;
+[@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008;
 @Wang2010]. Studies from Trinidad and Tobago, El Salvador, Rwanda, and
 Cambodia found no significant effect on patient mortality after
 implementing in-hospital trauma life support training
-[@Ariyanayagam1992; @Cioèpeña2016; @Petroze2014; @Vanheng2008],
+[@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008],
 whereas one study from China that included 820 patients found a
 significant reduction in mortality, from 20 to 15%, after implementing
 ATLS [@Wang2010].

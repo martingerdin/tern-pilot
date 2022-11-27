@@ -3,6 +3,9 @@ library(dotenv)
 library(dplyr)
 library(lubridate)
 
+## Source functions
+noacsr::source_all_functions()
+
 ## Import data
 data <- readr::read_csv(Sys.getenv("DATA_DIR"))
 
@@ -10,6 +13,9 @@ data <- readr::read_csv(Sys.getenv("DATA_DIR"))
 codebook.arguments <- lapply(c("URL", "UID", "USERNAME", "PASSWORD"),
                              function(x) Sys.getenv(paste0("KOBO_", x)))
 codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
+
+## Prepare data
+data <- prepare_data(data)
 
 ## Define basic results
 arrival.dates <- data %>% pull("incident/date_of_arrival") %>% sort()
@@ -48,7 +54,10 @@ n.potentially.eligible = list(n.potentially.eligible.centre.1 = 999,
 recruitment.rate.patients <- round(n.patients/do.call(sum, n.potentially.eligible) * 100)
 
 ## Create table of sample characteristics
-table.data <- data
-table.sample.characteristics <- create_descriptive_table(data = table.data)
+table.variables <- c("patinfo/pt_age", "patinfo/pt_gender",
+                     "incident/dominating_injury_type",
+                     "patvitals/ed_rr", "patvitals/ed_sat",
+                     "patvitals/ed_hr", "patvitals/ed_sbp")
+table.data <- data[, table.variables]
 
 ## Label variables

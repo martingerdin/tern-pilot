@@ -6,21 +6,28 @@
 #'     table. No default.
 #' @param strata Character or NULL. The variable to use as the stratifying variable. If NULL the table is not stratified. Defaults to NULL.
 #' @param include.overall Logical. If TRUE a column called "Overall" is included in the table, which includes descriptive statistics for the whole sample. Defaults to TRUE.
-create_descriptive_table <- function(table.data, strata = NULL, include.overall = TRUE) {
+#' @param caption Character or NULL. The table caption. Defaults to NULL, as in no caption.
+create_descriptive_table <- function(table.data, strata = NULL, include.overall = TRUE, caption = NULL) {
     ## Check arguments
     assertthat::assert_that(is.data.frame(table.data))
     assertthat::assert_that(is.character(strata) | is.null(strata))
     assertthat::assert_that(is.logical(include.overall))
+    assertthat::assert_that(is.character(caption) | is.null(caption))
 
     ## Create table
+    table.data <- as.data.frame(table.data)
+    strata.data <- rep("Overall", nrow(table.data))
     if (!is.null(strata)) {
-        table.data$strata <- table.data[, strata]
+        strata.data <- table.data[, strata]
         table.data[, strata] <- NULL
     }
-    if (include.overall) {
-        overall.data <- table.data
-        overall.data$strata <- "Overall"
-        table.data <- cbind(overall.data, table.data)
-    }
-        
+    strata.list <- base::split(table.data, as.factor(strata.data))
+    if (!is.null(strata) & include.overall)
+        strata.list <- c(strata.list, list("Overall" = table.data))
+    labels <- list(variables = setNames(nm = names(table.data)))
+    descriptive.table <- table1::t1kable((table1::table1(strata.list,
+                                                         labels = labels,
+                                                         caption = caption,
+                                                         render.missing=table1::render.missing.default)))
+    return(descriptive.table)
 }
