@@ -15,7 +15,7 @@ codebook.arguments <- lapply(c("URL", "UID", "USERNAME", "PASSWORD"),
 codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 
 ## Prepare data
-data <- prepare_data(data)
+data <- prepare_data(data, codebook)
 
 ## Define basic results
 arrival.dates <- data %>% pull("incident/date_of_arrival") %>% sort()
