@@ -13,9 +13,11 @@ prepare_data <- function(data, codebook = NULL) {
     variable.names <- codebook$survey$name
     codebook$survey$type <- setNames(codebook$survey$type, nm = variable.names)
     codebook$survey$label <- setNames(codebook$survey$label, nm = variable.names)
+    ## Rename variables
+    names(data) <- gsub("/", "__", names(data), fixed = TRUE)
     ## Prepare data
     prepared.data <- data
-    prepared.data$`patinfo/pt_age` <- as.numeric(prepared.data$`patinfo/pt_age`)
+    prepared.data$`patinfo/pt_age` <- as.numeric(prepared.data$patinfo__pt_age)
     ## Replace with missing
     prepared.data <- prepared.data %>%
         naniar::replace_with_na_if(.predicate = is.character,
@@ -34,7 +36,7 @@ prepare_data <- function(data, codebook = NULL) {
 
 label_variable <- function(variable.data, name, codebook) {
     relabelled.data <- variable.data
-    name.components <- strsplit(name, "/", fixed = TRUE)
+    name.components <- strsplit(name, "__", fixed = TRUE)
     variable.name <- name.components[[1]][2]
     variable.label <- codebook$survey$label[variable.name]
     type <- codebook$survey$type[variable.name]

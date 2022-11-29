@@ -735,12 +735,12 @@ standard care arm `r n.control` patients. We trained a total of
 `r n.ptc.residents` in PTC. 
 
 The study flowchart is shown in Figure X and patient sample
-characteristics across trial arms are shown in Table 
-\@ref(tab:sample-characteristics). Overall, the
-number of females were X (X%), the median age was X (IQR X), and the
-median ISS was X (IQR X). A total of X (X%) patients had the primary
-outcome of mortality at 30 days after arrival to the emergency
-department.
+characteristics across trial arms are shown in Table
+\@ref(tab:sample-characteristics). Overall, the number of females were
+`r n.females` (`r p.females`%), the median age was `r median.age`
+years (IQR `r iqr.age`), and the median ISS was X (IQR X). A total of
+`r n.m30d` (`r p.m30d`%) patients had the primary outcome of mortality
+at 30 days after arrival to the emergency department.
 
 ```{r sample-characteristics, echo = FALSE, results = "asis"}
 create_descriptive_table(table.data,
@@ -749,20 +749,25 @@ create_descriptive_table(table.data,
 ```
 
 ## Patient Participant Outcomes
-In the post training period, a total of X (X%) patients in the ATLS
-arm had the primary outcome, compared to X (X%) patients in the PTC
-arm, and X (X%) patients in the standard care arm. The differences
-between the arms were X (95% CI X - X) between the ATLS and PTC arms,
-X (95% CI X - X) between the ATLS and standard care arms, and X (95%
-CI X - X) between the PTC and standard care arms. The change from
-baseline for the primary outcome was X in the ATLS arm, X in the PTC
-arm, and X in the standard care arm. The differences between changes
-from baseline were X (95% CI X - X) between the ATLS and PTC arms, X
-(95% CI X - X) between the ATLS and standard care arms, and X (95% CI
-X - X) between the PTC and standard care arms. Table X shows
-differences in the primary outcome between trial arms with 75, 85, and
-95% CIs. Differences in secondary outcomes between trial arms and
-subgroups are available as Supplementary material X.
+In the post training period, a total of `r n.m30d.atls` 
+(`r p.m30d.atls`%) patients in the ATLS arm had the primary outcome,
+compared to `r n.m30d.ptc` (`r p.m30d.ptc`%) patients in the PTC arm, 
+and `r n.m30d.control` (`r p.m30d.control`%) patients in the standard
+care arm. The absolute risk difference between the ATLS and PTC arm 
+was X (95% CI X - X), between the ATLS and standard care arms X 
+(95% CI X - X), and between the PTC and standard care arms X 
+(95% CI X - X). 
+
+The change from baseline for the primary outcome was X in the ATLS
+arm, X in the PTC arm, and X in the standard care arm. The differences
+between changes from baseline were X (95% CI X - X) between the ATLS
+and PTC arms, X (95% CI X - X) between the ATLS and standard care
+arms, and X (95% CI X - X) between the PTC and standard care
+arms. Table X shows differences in the primary outcome between trial
+arms with 75, 85, and 95% CIs. 
+
+Differences in secondary outcomes between trial arms and subgroups are
+available as Supplementary material X.
 
 ## Resident Participant Outcomes
 A total of X residents were trained during this pilot. Overall their

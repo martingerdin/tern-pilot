@@ -18,7 +18,7 @@ codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 data <- prepare_data(data, codebook)
 
 ## Define basic results
-arrival.dates <- data %>% pull("incident/date_of_arrival") %>% sort()
+arrival.dates <- data %>% pull(incident__date_of_arrival) %>% sort()
 format_date <- function(date) paste0(month(date[1], label = TRUE, abbr = FALSE), " ", year(date[1]))
 start.date <- format_date(arrival.dates[1])
 end.date <- format_date(rev(arrival.dates)[1])
@@ -28,19 +28,41 @@ n.atls.residents.passed.first.attempt <- 3 + 2 # The number of residents who had
 n.atls.residents.passed.first.attempt <- 4 + 2 # The number of residents who had passed ATLS after the second attempt, per centre
 n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
 n.residents <- n.atls.residents + n.ptc.residents
-centre.ids <- data %>% pull("id/reg_hospital_id") %>% unique() 
+centre.ids <- data %>% pull(id__reg_hospital_id) %>% unique() 
 n.centres <-  centre.ids %>% length()
 shuffled.centres <- centre.ids %>% sample(n.centres)
 atls.centres <- shuffled.centres[1:2]
 ptc.centres <- shuffled.centres[3:4]
 control.centres <- shuffled.centres[5:n.centres]
-centre.data <- data %>% split(data$`id/reg_hospital_id`)
+centre.data <- data %>% split(data$id__reg_hospital_id)
 atls.data <- do.call(rbind, centre.data[as.character(atls.centres)])
 ptc.data <- do.call(rbind, centre.data[as.character(ptc.centres)])
 control.data <- do.call(rbind, centre.data[as.character(control.centres)])
+tlsp.data.list <- list(atls = atls.data, ptc = ptc.data, control = control.data)
 n.atls <- nrow(atls.data)
 n.ptc <- nrow(ptc.data)
 n.control <- nrow(control.data)
+n.females <- with(data, sum(patinfo__pt_gender == "Female"))
+p.females <- round(n.females/nrow(data) * 100)
+median.age <- median(data$patinfo__pt_age, na.rm = TRUE)
+iqr.age <- quantile(data$patinfo__pt_age, probs = c(0.25, 0.75), na.rm = TRUE) %>% paste0(collapse = "-")
+
+## Patient participant outcomes
+n.m30d <- with(data, sum(outcomes__alive_after_30_days == "No", na.rm = TRUE))
+p.m30d <- round(n.m30d/nrow(data) * 100)
+tlsp.n.m30d.list <- lapply(setNames(tlsp.data.list, nm = paste0("m30d.", names(tlsp.data.list))),
+                           function(tlsp.data)
+                               with(tlsp.data,
+                                    sum(outcomes__alive_after_30_days == "No", na.rm = TRUE)))
+tlsp.p.m30d.list <- mapply(tlsp.n.m30d.list, tlsp.data.list,
+                           FUN = function(count, tlsp.data) round(count/nrow(tlsp.data) * 100))
+names(tlsp.n.m30d.list) <- paste0("n.", names(tlsp.n.m30d.list))
+names(tlsp.p.m30d.list) <- paste0("p.", names(tlsp.p.m30d.list))
+attach(tlsp.n.m30d.list)
+attach(tlsp.p.m30d.list)
+
+
+
 ## List of potentially eligible patient participants per site, replace
 ## IDs with actual IDs once known and replace figures with actual
 ## figures once known
