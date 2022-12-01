@@ -13,6 +13,9 @@ prepare_data <- function(data, codebook = NULL) {
     variable.names <- codebook$survey$name
     codebook$survey$type <- setNames(codebook$survey$type, nm = variable.names)
     codebook$survey$label <- setNames(codebook$survey$label, nm = variable.names)
+    for (binary.outcome in binary_outcomes()) {
+        codebook$survey$label[unlist(strsplit(binary.outcome$name, "__"))[2]] <- binary.outcome$label
+    }
     ## Rename variables
     names(data) <- gsub("/", "__", names(data), fixed = TRUE)
     ## Prepare data
@@ -44,6 +47,7 @@ label_variable <- function(variable.data, name, codebook) {
         type.index <- grep(gsub("select_one ", "", type), codebook$choices$list_name)
         levels <- codebook$choices$name[type.index]
         labels <- codebook$choices$label[type.index]
+        if ()
         relabelled.data <- factor(variable.data, levels, labels)
     }
     if (!is.null(type))

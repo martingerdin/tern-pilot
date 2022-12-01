@@ -23,35 +23,38 @@ format_date <- function(date) paste0(month(date[1], label = TRUE, abbr = FALSE),
 start.date <- format_date(arrival.dates[1])
 end.date <- format_date(rev(arrival.dates)[1])
 n.no.consent <-  list("11542" = 40,
-                      "44805" = 0, # To be updated
+                      "44805" = 10,
                       "55356" = 43,
                       "78344" = 3,
-                      "95846" = 0, # To be updated
+                      "95846" = 9, 
                       "88456" = 0, # To be updated
-                      "10263" = 0) # To be updated
-pre.post.break.points <- list("11542" = "2022-10-01", # To be updated
-                              "44805" = "2022-10-01", # To be updated
-                              "55356" = "2022-10-01", # To be updated
-                              "78344" = "2022-10-01", # To be updated
-                              "95846" = "2022-10-01", # To be updated
-                              "88456" = "2022-10-01", # To be updated
-                              "10263" = "2022-10-01") # To be updated
+                      "10263" = 2) 
+pre.post.break.points <- list("11542" = "2022-04-24", 
+                              "44805" = c("2022-05-30", "2022-06-20"), 
+                              "55356" = "2022-09-02", 
+                              "78344" = "2022-06-03", 
+                              "95846" = "2022-09-01", 
+                              "88456" = NA, # To be updated
+                              "10263" = NA) # To be updated
+pre.post.break.points <- lapply(pre.post.break.points, as.Date)
 n.patients <- nrow(data)
 n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
-n.atls.residents.passed.first.attempt <- 3 + 2 # The number of residents who had passed ATLS after the first attempt, per centre
-n.atls.residents.passed.first.attempt <- 4 + 2 # The number of residents who had passed ATLS after the second attempt, per centre
+n.atls.residents.passed.first.attempt <- 2 + 2 # The number of residents who had passed ATLS after the first attempt, per centre
+n.atls.residents.passed.second.attempt <- 4 + 2 # The number of residents who had passed ATLS after the second attempt, per centre
 n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
 n.residents <- n.atls.residents + n.ptc.residents
 centre.ids <- data %>% pull(id__reg_hospital_id) %>% unique() 
 n.centres <-  centre.ids %>% length()
-shuffled.centres <- centre.ids %>% sample(n.centres)
-atls.centres <- shuffled.centres[1:2]
-ptc.centres <- shuffled.centres[3:4]
-control.centres <- shuffled.centres[5:n.centres]
+atls.centres <- c("44805", "78344")
+ptc.centres <- c("55356", "95846")
+control.centres <- c("11542", "88456", "10263")
 centre.data <- data %>% split(data$id__reg_hospital_id)
 atls.data <- bind_rows(centre.data[as.character(atls.centres)]) %>% labelled::copy_labels_from(data)
+atls.data$arm <-"ATLS"
 ptc.data <- bind_rows(centre.data[as.character(ptc.centres)]) %>% labelled::copy_labels_from(data)
+ptc.data$arm <- "PTC"
 control.data <- bind_rows(centre.data[as.character(control.centres)])  %>% labelled::copy_labels_from(data)
+controldata$arm <- "Standard care"
 arms.data.list <- list(atls = atls.data, ptc = ptc.data, control = control.data)
 n.atls <- nrow(atls.data)
 n.ptc <- nrow(ptc.data)
