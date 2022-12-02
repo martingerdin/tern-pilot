@@ -25,7 +25,7 @@ create_descriptive_table <- function(table.data,
                                      caption = NULL) {
     ## Check arguments
     assertthat::assert_that(is.data.frame(table.data))
-    assertthat::assert_that(is.character(variables))
+    assertthat::assert_that(is.character(variables) | is.null(variables))
     assertthat::assert_that(is.character(strata) | is.null(strata))
     assertthat::assert_that(is.logical(include.overall))
     assertthat::assert_that(is.logical(use.labels))
@@ -53,9 +53,10 @@ create_descriptive_table <- function(table.data,
         })
         labels <- list(variables = labels)
     }
-    descriptive.table <- table1::t1kable((table1::table1(strata.list,
-                                                         labels = labels,
-                                                         caption = caption,
-                                                         render.missing=table1::render.missing.default)))
+    descriptive.table <- table1::table1(strata.list,
+                                        labels = labels,
+                                        caption = caption,
+                                        droplevels = TRUE,
+                                        render.missing = table1::render.missing.default)
     return(descriptive.table)
 }

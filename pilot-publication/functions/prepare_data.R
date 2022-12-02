@@ -24,9 +24,15 @@ prepare_data <- function(data, codebook = NULL) {
     ## Replace with missing
     prepared.data <- prepared.data %>%
         naniar::replace_with_na_if(.predicate = is.character,
-                                   condition = ~ .x == "999") %>%
+                                   condition = ~ .x %in% c("999", "unknown")) %>%
         naniar::replace_with_na_if(.predicate = is.numeric,
                                    condition = ~ .x == 999)
+    ## Deal with edge cases
+    variable <- prepared.data$complications__failure_of_conservative_management
+    variable[variable == "0" | variable == "NO" | variable == "no"] <- "No"
+    variable[variable == "Yes - Surgery on the 3rd day"] <- "Yes"
+    variable <- as.factor(variable)
+    prepared.data$complications__failure_of_conservative_management <- variable
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
         column.data <- prepared.data %>%
@@ -47,8 +53,11 @@ label_variable <- function(variable.data, name, codebook) {
         type.index <- grep(gsub("select_one ", "", type), codebook$choices$list_name)
         levels <- codebook$choices$name[type.index]
         labels <- codebook$choices$label[type.index]
-        if ()
         relabelled.data <- factor(variable.data, levels, labels)
+        if (any(name == names(binary_outcomes()))) {
+            logical.data <- relabelled.data == binary_outcomes()[[name]]$positive.class
+            relabelled.data <- factor(logical.data, levels = c(TRUE, FALSE), labels = c("Yes", "No"))
+        }
     }
     if (!is.null(type))
         labelled::var_label(relabelled.data) <- variable.label
