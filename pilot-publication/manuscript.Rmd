@@ -248,13 +248,13 @@ outcomes.
 ## Study Setting
 We conducted this pilot in seven Indian tertiary hospitals, where
 neither ATLS, PTC, nor any other trauma life support training program
-is routinely taught. The seven hospitals were King Edward Memorial
-Seth G. S. Medical College and K.E.M. Hospital, Mumbai; Lokmanya Tilak
-Municipal Medical College and General Hospital, Mumbai; HBT Medical
-College And Dr. R N Cooper Municipal General Hospital, Mumbai; Medica
-Superspecialty Hospital, Kolkata; Medical College Kolkata, Kolkata;
-Sir Nil Ratan Sircar Medical College & Hospital, Kolkata; Postgraduate
-Institute of Medical Education & Research, Chandigarh.
+is routinely taught. The seven hospitals were Seth G. S. Medical
+College and K.E.M. Hospital, Mumbai; Lokmanya Tilak Municipal Medical
+College and General Hospital, Mumbai; HBT Medical College And Dr. R N
+Cooper Municipal General Hospital, Mumbai; Medica Superspecialty
+Hospital, Kolkata; Medical College Kolkata, Kolkata; Sir Nil Ratan
+Sircar Medical College & Hospital, Kolkata; Postgraduate Institute of
+Medical Education & Research, Chandigarh.
 
 <!--
 The trauma system is still developing, with
@@ -273,7 +273,7 @@ within the hospitals.
 There were two groups of participants: patients and resident doctors.
 
 ### Patient Participants
-Adults (15 years or older) who present to the emergency department at
+Adults (15 years or older) who presented to the emergency department at
 participating hospitals with a history of trauma. History of trauma is
 here defined as having any of the external causes of morbidity and
 mortality listed in block V01-Y36, chapter XX of the International
@@ -310,9 +310,9 @@ hospitals as their practice was not affected by this pilot and we
 did not collect any personal identifiable data on them. 
 
 ### Clusters
-Indian tertiary care hospitals that admit 400-800 adult patients with
-trauma each year. We randomised on the cluster (hospital) level to
-avoid contamination between intervention and control arms. To be
+Indian tertiary care hospitals that admit more than 400 adult patients
+with trauma each year. We randomised on the cluster (hospital) level
+to avoid contamination between intervention and control arms. To be
 eligible for inclusion hospitals had to provide the following services
 round the clock: operation theatres, X-ray, CT, and ultrasound
 facilities, and blood bank. In addition the baseline admission rate
@@ -723,18 +723,18 @@ table1::t1kable(sample.characteristics.table)
 ```
 
 ## Patient Participant Outcomes
-In the post training period, a total of `r n.m30d.atls` (
-`r p.m30d.atls`%) patients in the ATLS arm had the primary outcome,
-compared to `r n.m30d.ptc` (`r p.m30d.ptc`%) patients in the PTC arm,
-and `r n.m30d.control` (`r p.m30d.control`%) patients in the standard
-care arm. The absolute risk difference between the ATLS and PTC arm
-was `r arr.atls.ptc`% units <!--(95% CI X - X)-->, between the ATLS and 
-standard care arms `r arr.atls.control`% units <!--(95% CI X - X)-->, and 
-between the PTC and standard care arms `r arr.ptc.control`% units 
-<!--(95% CI X -X)-->. The relative risk between the ATLS and 
-PTC arm was `r rr.atls.ptc` <!--(95% CI X - X)-->, between the ATLS and
-standard care arms `r rr.atls.control` <!--(95% CI X - X)-->, and 
-between the PTC and standard care arms `r rr.ptc.control` <!--(95% CI X - X)-->.
+A total of `r n.m30d.atls` ( `r p.m30d.atls`%) patients in the ATLS
+arm had the primary outcome, compared to `r n.m30d.ptc` (
+`r p.m30d.ptc`%) patients in the PTC arm, and `r n.m30d.control` (
+`r p.m30d.control`%) patients in the standard care arm. The absolute risk
+difference between the ATLS and PTC arm was `r arr.atls.ptc`% units
+<!--(95% CI X - X)-->, between the ATLS and standard care arms 
+`r arr.atls.control`% units <!--(95% CI X - X)-->, and between the PTC
+and standard care arms `r arr.ptc.control`% units <!--(95% CI X
+-X)-->. The relative risk between the ATLS and PTC arm was 
+`r rr.atls.ptc` <!--(95% CI X - X)-->, between the ATLS and standard care
+arms `r rr.atls.control` <!--(95% CI X - X)-->, and between the PTC
+and standard care arms `r rr.ptc.control` <!--(95% CI X - X)-->.
 
 <!--
 The change from baseline for the primary outcome was X in the ATLS
@@ -746,8 +746,8 @@ arms. Table X shows differences in the primary outcome between trial
 arms with 75, 85, and 95% CIs. 
 -->
 
-Differences in secondary outcomes between trial arms and subgroups are
-available as Supplementary material \@ref(tab:secondary-outcomes).
+Differences in secondary outcomes between trial arms<!-- and subgroups--> are
+available as Supplementary material table \@ref(tab:secondary-outcomes).
 
 ## Resident Participant Outcomes
 A total of `r n.residents` residents were trained during this
@@ -766,7 +766,9 @@ enrolled in the study. The lost to follow up rate was
 `r n.patients` patients not completing 30 day follow up. Among residents
 the pass rate, after two attempts, was `r rate.pass`%. The missing
 data rate ranged from `r min.missing.data` to `r max.missing.data`,
-with details per variable and outcome in Table X. <!--The differences in
+with details per variable and outcome in Table 
+\ref@(tab:sample-characteristics) and Supplementary material table
+\@ref(tab:secondary-outcomes). <!--The differences in
 distributions between observed and extracted data, for variables that
 were collected through observation or interview, are shown in Table X.-->
 
