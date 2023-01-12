@@ -33,6 +33,40 @@ prepare_data <- function(data, codebook = NULL) {
     variable[variable == "Yes - Surgery on the 3rd day"] <- "Yes"
     variable <- as.factor(variable)
     prepared.data$complications__failure_of_conservative_management <- variable
+    ## Generate AIS codes
+    icd10.data <- prepared.data[, c("interventions__injury_first_surg_icd10",
+                                    "interventions__injury_xray_icd10",
+                                    "interventions__injury_external_1_icd10",
+                                    "interventions__injury_first_ct_icd10",
+                                    "interventions__injury_second_ct_icd10")]
+    icd10.data <- icd10.data %>% naniar::replace_with_na_all(condition = ~.x %in% c("0", "NAD"))
+    split.icd10.data <- do.call(cbind, lapply(icd10.data, function(column) {
+        split.data <- strsplit(column, ",")
+        max.length <- max(lengths(split.data))
+        split.data <- as.data.frame(do.call(rbind, lapply(split.data, function(element) {
+            c(trimws(element), rep(NA, max.length - length(element)))
+        })))
+        split.data[] <- lapply(split.data, function(split.column) {
+            split.column <- gsub("(^[0-9])", "S\\1", split.column)
+            ## split.column <- gsub("(^[LETTERS])", "\\1\\.", split.column)
+            return (split.column)
+        })
+        return (split.data)
+    }))
+    colnames(split.icd10.data) <- paste0("dx", 1:ncol(split.icd10.data))
+    iss.data <- icdpicr::cat_trauma(split.icd10.data,
+                                    dx_pre = "dx",
+                                    icd10 = "base",
+                                    i10_iss_method = "roc_max_NIS")[, c("mxaisbr_General",
+                                                                        "mxaisbr_HeadNeck",
+                                                                        "mxaisbr_Face",
+                                                                        "mxaisbr_Extremities", 
+                                                                        "mxaisbr_Chest",
+                                                                        "mxaisbr_Abdomen",
+                                                                        "maxais",
+                                                                        "riss",
+                                                                        "niss")]
+    prepared.data <- cbind(prepared.data, iss.data)
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
         column.data <- prepared.data %>%
