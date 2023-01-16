@@ -36,7 +36,7 @@ pre.post.break.points <- list("11542" = "2022-04-24",
                               "95846" = "2022-09-01", 
                               "88456" = NA, # To be updated
                               "10263" = NA) # To be updated
-icc <- estimate_icc()
+icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
 pre.post.break.points <- lapply(pre.post.break.points, as.Date)
 n.patients <- nrow(data)
 n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
