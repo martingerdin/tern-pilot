@@ -74,6 +74,8 @@ prepare_data <- function(data, codebook = NULL) {
             label_variable(name = column.name, codebook = codebook)
         return (column.data)
     })
+    labelled::var_label(prepared.data$riss) <- "Injury Severity Score"
+    labelled::var_label(prepared.data$niss) <- "New Injury Severity Score"
     return (prepared.data)
 }
 

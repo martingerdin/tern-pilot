@@ -713,10 +713,10 @@ The study flowchart is shown in Figure X and patient sample
 characteristics across trial arms are shown in Table
 \@ref(tab:sample-characteristics). Overall, the number of females were
 `r n.females` (`r p.females`%), the median age was `r median.age`
-years (IQR `r iqr.age`)<!--, and the median ISS and NISS were X (IQR
-	X) and X (IQR X) respectively-->. A total of `r n.m30d` (`r p.m30d`%)
-patients had the primary outcome of mortality at 30 days after arrival
-to the emergency department.
+years (IQR `r iqr.age`), and the median ISS and NISS were `r median.iss`
+(IQR `r iqr.iss`) and `median.niss` (IQR `iqr.niss`) respectively. A 
+total of `r n.m30d` (`r p.m30d`%) patients had the primary outcome of 
+mortality at 30 days after arrival to the emergency department.
 
 ```{r sample-characteristics, echo = FALSE, results = "asis"}
 table1::t1kable(sample.characteristics.table)

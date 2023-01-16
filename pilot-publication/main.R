@@ -62,8 +62,11 @@ n.control <- nrow(control.data)
 n.females <- with(data, sum(patinfo__pt_gender == "Female"))
 p.females <- round(n.females/nrow(data) * 100)
 median.age <- median(data$patinfo__pt_age, na.rm = TRUE)
-iqr.age <- quantile(data$patinfo__pt_age, probs = c(0.25, 0.75), na.rm = TRUE) %>%
-    paste0(collapse = "-")
+iqr.age <- get_iqr(data$patinfo__pt_age)
+median.iss <- median(data$riss, na.rm = TRUE)
+iqr.iss <- get_iqr(data$riss)
+median.niss <- median(data$niss, na.rm = TRUE)
+iqr.niss <- get_iqr(data$niss)
 
 ## Patient participant outcomes
 
@@ -72,7 +75,7 @@ table.variables <- c("patinfo__pt_age", "patinfo__pt_gender",
                      "incident__dominating_injury_type",
                      "patvitals__ed_rr", "patvitals__ed_sat",
                      "patvitals__ed_hr", "patvitals__ed_sbp",
-                     "outcomes__alive_after_30_days",
+                     "riss", "niss", "outcomes__alive_after_30_days",
                      "arm")
 table.data <- data[, table.variables]
 sample.characteristics.table <- create_descriptive_table(table.data,
