@@ -70,8 +70,6 @@ iqr.niss <- get_iqr(data$niss)
 n.admitted <- with(data, sum(interventions__admitted == "Yes"))
 p.admitted <- round(n.admitted/nrow(data) * 100)
 
-## Patient participant outcomes
-
 ## Create table of sample characteristics
 table.variables <- c("patinfo__pt_age", "patinfo__pt_gender",
                      "incident__dominating_injury_type",
@@ -114,6 +112,34 @@ rr.atls.ptc <- round(p.m30d.atls/p.m30d.ptc, 2)
 rr.atls.control <- round(p.m30d.atls/p.m30d.control, 2)
 rr.ptc.control <- round(p.m30d.ptc/p.m30d.control, 2)
 p.missing.in.hospital.mortality <- round(sum(is.na(data$outcomes__discharge_alive))/n.patients * 100)
+
+## Estimate composite outcome
+in.hospital.mortality <- data$outcomes__discharge_alive == "Yes"
+data$in.hospital.mortality <- in.hospital.mortality
+icc.in.hospital.mortality <- estimate_icc("in.hospital.mortality", "id__reg_hospital_id", data)
+labelled::var_label(data$in.hospital.mortality) <- "In-hospital mortality"
+confined.to.bed <- data$outcomes__eq5dm == "I am confined to bed"
+data$confined.to.bed <- confined.to.bed
+labelled::var_label(data$confined.to.bed) <- "Confined to bed"
+extreme.pain.discomfort <- data$outcomes__eq5dpd == "I have extreme pain or discomfort"
+data$extreme.pain.discomfort <- extreme.pain.discomfort
+labelled::var_label(data$extreme.pain.discomfort) <- "Extreme pain or discomfort"
+unable.bath.dress <- data$outcomes__eq5dsc == "I am unable to bathe or dress myself"
+data$unable.bath.dress <- unable.bath.dress
+labelled::var_label(data$unable.bath.dress) <- "Unable to bathe or dress oneself"
+unable.usual.activities <- data$outcomes__eq5dua == "I am unable to perform my usual activities"
+data$unable.usual.activities <- unable.usual.activities
+labelled::var_label(data$unable.usual.activities) <- "Unable to perform usual activities"
+composite.outcome <- in.hospital.mortality |
+    confined.to.bed |
+    extreme.pain.discomfort |
+    unable.bath.dress |
+    unable.usual.activities
+data$composite.outcome <- composite.outcome
+labelled::var_label(data$composite.outcome) <- "Composite endpoint"
+n.composite.outcome <- sum(composite.outcome, na.rm = TRUE)
+p.composite.outcome <- round(n.composite.outcome/nrow(data) * 100)
+icc.composite.outcome <- estimate_icc("composite.outcome", "id__reg_hospital_id", data)
 
 ## Resident outcomes
 median.confidence <- median(as.numeric(data$resident__res_comfort), na.rm = TRUE)

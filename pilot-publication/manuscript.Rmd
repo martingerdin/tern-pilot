@@ -714,7 +714,8 @@ characteristics across trial arms are shown in Table
 \@ref(tab:sample-characteristics). Overall, the number of females were
 `r n.females` (`r p.females`%), the median age was `r median.age`
 years (IQR `r iqr.age`), and the median ISS and NISS were `r median.iss`
-(IQR `r iqr.iss`) and `median.niss` (IQR `iqr.niss`) respectively. A 
+(IQR `r iqr.iss`) and `median.niss` (IQR `iqr.niss`) respectively. The 
+number of admitted patients was `r n.admitted` (`r p.admitted`%). A 
 total of `r n.m30d` (`r p.m30d`%) patients had the primary outcome of 
 mortality at 30 days after arrival to the emergency department.
 
