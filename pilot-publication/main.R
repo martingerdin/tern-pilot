@@ -67,6 +67,8 @@ median.iss <- median(data$riss, na.rm = TRUE)
 iqr.iss <- get_iqr(data$riss)
 median.niss <- median(data$niss, na.rm = TRUE)
 iqr.niss <- get_iqr(data$niss)
+n.admitted <- with(data, sum(interventions__admitted == "Yes"))
+p.admitted <- round(n.admitted/nrow(data) * 100)
 
 ## Patient participant outcomes
 
