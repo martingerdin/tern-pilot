@@ -170,7 +170,7 @@ Strengths and limitations of this study:
 
 Trauma, defined as the clinical entity composed of physical injury and
 the body's associated response, causes 4.5 millions deaths every year
-[@Naghavi2017]. Almost 10% of the global burden of disease is due
+[@GBD2018]. Almost 10% of the global burden of disease is due
 to trauma and trauma is the top contributor to the burden of disease in
 children and adults aged 10 to 49 years [@Vos2020].
 
