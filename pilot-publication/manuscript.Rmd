@@ -437,7 +437,7 @@ level:
   the proportion of participants enrolled, out of the total number of
   eligible participants, over the course of the pilot study.
 - Lost to follow up rate. This applied only to patients and was equal
-  to the proportion of patients that do not complete 30 day follow up,
+  to the proportion of patients that did not complete 30 day follow up,
   out of all enrolled patients, over the course of the pilot study.
 - Pass rate. This applied only to residents in the intervention
   arms and equal the proportion of residents that pass the training
