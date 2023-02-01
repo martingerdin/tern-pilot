@@ -13,10 +13,10 @@ estimate_icc <- function(outcome, cluster.variable, data, digits = 3) {
     assertthat::assert_that(is.data.frame(data))
     assertthat::assert_that(is.numeric(digits))
 
-    ## Build null model
+    ## Build null model, should be a linear model, not logistic, even
+    ## if the outcome is binary.
     arguments <- list(as.formula(paste0(outcome, " ~ ", "( 1 | ", cluster.variable, ")")),
-                      data = as.name("data"),
-                      family = "binomial")
+                      data = as.name("data"))
     M0 <- do.call(lme4::glmer, arguments)
 
     ## Estimate the intraclass correlation coefficient. According to
