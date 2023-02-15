@@ -13,11 +13,17 @@ estimate_icc <- function(outcome, cluster.variable, data, digits = 3) {
     assertthat::assert_that(is.data.frame(data))
     assertthat::assert_that(is.numeric(digits))
 
+    ## Make data a data.frame instead of tibble
+    data <- as.data.frame(data)
+    
+    ## Make outcome numeric
+    data[, outcome] <- as.numeric(as.factor(data[, outcome]))
+    
     ## Build null model, should be a linear model, not logistic, even
     ## if the outcome is binary.
     arguments <- list(as.formula(paste0(outcome, " ~ ", "( 1 | ", cluster.variable, ")")),
                       data = as.name("data"))
-    M0 <- do.call(lme4::glmer, arguments)
+    M0 <- do.call(lme4::lmer, arguments)
 
     ## Estimate the intraclass correlation coefficient. According to
     ## Sommet et al. the 3.14159^2/3, or 3.29, "refers to the standard
