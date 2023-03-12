@@ -170,4 +170,8 @@ rates.missing.data <- unlist(lapply(data, function(column) round(sum(is.na(colum
 min.missing.data <- min(rates.missing.data)
 max.missing.data <- max(rates.missing.data)
 
-
+## Calculate varying cluster sizes
+cluster.sizes <- sapply(centre.ids, function(centre.id) nrow(data[data$id__reg_hospital_id == centre.id, ]))
+sd.cluster.size <- sd(cluster.sizes)
+mean.cluster.size <- mean(cluster.sizes)
+ratio.sd.mean.cluster.size <- sd.cluster.size/mean.cluster.size
