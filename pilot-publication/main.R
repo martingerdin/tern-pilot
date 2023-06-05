@@ -1,6 +1,7 @@
 ## Load packages
 library(dotenv)
 library(dplyr)
+library(tibble)
 library(lubridate)
 
 ## Source functions
@@ -18,26 +19,40 @@ codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 data <- prepare_data(data, codebook)
 
 ## Define basic results
-arrival.dates <- data %>% pull(incident__date_of_arrival) %>% sort()
+arrival.dates <- data %>% select(incident__date_of_arrival, id__reg_hospital_id) %>% arrange(incident__date_of_arrival)
 format_date <- function(date) paste0(month(date[1], label = TRUE, abbr = FALSE), " ", year(date[1]))
-start.date <- format_date(arrival.dates[1])
-end.date <- format_date(rev(arrival.dates)[1])
+centre.start.dates <- arrival.dates %>%
+    group_by(id__reg_hospital_id) %>%
+    summarise(start_date = format(min(incident__date_of_arrival), "%Y-%m-%d")) %>%
+    deframe()
+start.date <- arrival.dates %>% pull(incident__date_of_arrival) %>% min() %>% format_date()
+end.date <- arrival.dates %>% pull(incident__date_of_arrival) %>% max() %>% format_date()
 n.no.consent <-  list("11542" = 40,
                       "44805" = 10,
                       "55356" = 43,
                       "78344" = 3,
                       "95846" = 9, 
                       "88456" = 0, # To be updated
-                      "10263" = 2) 
-pre.post.break.points <- list("11542" = "2022-04-24", 
-                              "44805" = c("2022-05-30", "2022-06-20"), 
-                              "55356" = "2022-09-02", 
-                              "78344" = "2022-06-03", 
-                              "95846" = "2022-09-01", 
-                              "88456" = NA, # To be updated
-                              "10263" = NA) # To be updated
+                      "10263" = 2)
+## The pre-post breakt points are the dates to use when comparing
+## before training to after training. For intervention centres these
+## are the dates when the training happened. For standard care centres
+## these are one month after data collection started.  
+pre.post.break.points <- list("11542" = ymd(centre.start.dates["11542"]) + months(1), # standard care
+                              "44805" = c("2022-05-30", "2022-06-20"), # atls
+                              "55356" = "2022-09-02", # ptc
+                              "78344" = "2022-06-03", # atls
+                              "95846" = "2022-09-01", # ptc
+                              "88456" = ymd(centre.start.dates["88456"]) + months(1), # standard care 
+                              "10263" = ymd(centre.start.dates["10263"]) + months(1)) # standard care 
+pre.post.break.points <- lapply(pre.post.break.points, ymd)
+data.with.post.indicator <- do.call(rbind, lapply(split(data, data$id__reg_hospital_id), function(centre.data) {
+    centre.id <- as.character(unique(centre.data$id__reg_hospital_id))
+    centre.data$post.training <- centre.data$incident__date_of_arrival > pre.post.break.points[[centre.id]][1]
+    return(centre.data)
+})) %>% labelled::copy_labels_from(data)
+data <- data.with.post.indicator
 icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
-pre.post.break.points <- lapply(pre.post.break.points, as.Date)
 n.patients <- nrow(data)
 n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
 n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
@@ -87,10 +102,14 @@ sample.characteristics.data <- as.data.frame(sample.characteristics.table)
 secondary.outcomes <- c(names(binary_outcomes()),
                         categorical_outcomes(),
                         quantitative_outcomes())
-secondary.outcomes.data <- data[, c(secondary.outcomes, "arm")]
-secondary.outcomes.table <- create_descriptive_table(secondary.outcomes.data,
-                                                     strata = "arm",
-                                                     caption = "Secondary outcomes by trial arm")
+secondary.outcomes.data <- data[, c(secondary.outcomes, "arm", "post.training")]
+secondary.outcomes.table.combined <- create_descriptive_table(secondary.outcomes.data[, -3],
+                                                              strata = "arm",
+                                                              caption = "Secondary outcomes by trial arm")
+secondary.outcomes.table.post <- create_descriptive_table(secondary.outcomes.data %>% filter(post.training) %>% select(-post.training),
+                                                              strata = "arm",
+                                                              caption = "Secondary outcomes by trial arm")
+
 
 ## Calculate outcome results
 n.m30d <- with(data, sum(outcomes__alive_after_30_days == "Yes", na.rm = TRUE))
@@ -112,6 +131,10 @@ rr.atls.ptc <- round(p.m30d.atls/p.m30d.ptc, 2)
 rr.atls.control <- round(p.m30d.atls/p.m30d.control, 2)
 rr.ptc.control <- round(p.m30d.ptc/p.m30d.control, 2)
 p.missing.in.hospital.mortality <- round(sum(is.na(data$outcomes__discharge_alive))/n.patients * 100)
+
+
+
+
 
 ## Estimate composite outcome
 in.hospital.mortality <- data$outcomes__discharge_alive == "Yes"
