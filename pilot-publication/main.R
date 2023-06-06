@@ -3,6 +3,7 @@ library(dotenv)
 library(dplyr)
 library(tibble)
 library(lubridate)
+library(gtsummary)
 
 ## Source functions
 noacsr::source_all_functions()
@@ -103,8 +104,26 @@ secondary.outcomes <- c(names(binary_outcomes()),
                         categorical_outcomes(),
                         quantitative_outcomes())
 secondary.outcomes.data <- data[, c(secondary.outcomes, "arm", "post.training")]
+
+## This creates a table with summary data for all outcomes
+outcomes.data <- secondary.outcomes.data
+outcomes.table.overall <- outcomes.data %>%
+    select(-post.training) %>%
+    tbl_summary(by = "arm",
+                type = all_dichotomous() ~ "categorical",
+                statistic = list(
+                    all_continuous() ~ "{median}",
+                    all_categorical() ~ "{p}"
+                ),
+                missing_text = "Missing") %>%
+    as_tibble() 
+
+## Should be possible to create exactly the same table pre post and
+## then calculate the difference between the two. Then wrap all in a
+## bootstrap.
+
 secondary.outcomes.table.combined <- create_descriptive_table(secondary.outcomes.data[, -3],
-                                                              strata = "arm",
+                             p                                 strata = "arm",
                                                               caption = "Secondary outcomes by trial arm")
 secondary.outcomes.table.post <- create_descriptive_table(secondary.outcomes.data %>% filter(post.training) %>% select(-post.training),
                                                               strata = "arm",
