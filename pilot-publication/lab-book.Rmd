@@ -1,0 +1,13 @@
+# Lab book for the TERN pilot publication
+
+This file includes code and scripts used to experiment and explore with the TERN pilot data. 
+
+## Generate synthetic data
+
+Because developing on the server is generally slow, a first step to speed up development was to generate a synthetic dataset that could be safely used locally. 
+
+```{r, synthetic-data-generation}
+install.packages("synthpop")
+codebook.syn(data) 
+
+```

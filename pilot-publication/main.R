@@ -52,7 +52,10 @@ data.with.post.indicator <- do.call(rbind, lapply(split(data, data$id__reg_hospi
     centre.data$post.training <- centre.data$incident__date_of_arrival > pre.post.break.points[[centre.id]][1]
     return(centre.data)
 })) %>% labelled::copy_labels_from(data)
+
+## This is the data that should be used as the basis for the synthetic data
 data <- data.with.post.indicator
+
 icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
 n.patients <- nrow(data)
 n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
