@@ -5,10 +5,14 @@
 #' @param data A data.frame. The data to be prepared. No default.
 #' @param codebook A list. A list describing the columns of data or
 #'     NULL. Defaults to NULL.
-prepare_data <- function(data, codebook = NULL) {
+#' @param pre.post.break.points A list. A list of pre and post break points. Defauls
+#'    to NULL.
+prepare_data <- function(data, codebook = NULL, pre.post.break.points = NULL) {
     ## Check arguments
     assertthat::assert_that(is.data.frame(data))
     assertthat::assert_that(is.list(codebook) | is.null(codebook))
+    assertthat::assert_that(is.list(pre.post.break.points) | is.null(pre.post.break.points))
+
     ## Modify codebook
     variable.names <- codebook$survey$name
     codebook$survey$type <- setNames(codebook$survey$type, nm = variable.names)
@@ -16,11 +20,14 @@ prepare_data <- function(data, codebook = NULL) {
     for (binary.outcome in binary_outcomes()) {
         codebook$survey$label[unlist(strsplit(binary.outcome$name, "__"))[2]] <- binary.outcome$label
     }
+
     ## Rename variables
     names(data) <- gsub("/", "__", names(data), fixed = TRUE)
+
     ## Prepare data
     prepared.data <- data
     prepared.data$`patinfo/pt_age` <- as.numeric(prepared.data$patinfo__pt_age)
+
     ## Replace with missing
     prepared.data <- prepared.data %>%
         naniar::replace_with_na_if(.predicate = is.character,
@@ -33,6 +40,7 @@ prepare_data <- function(data, codebook = NULL) {
     variable[variable == "Yes - Surgery on the 3rd day"] <- "Yes"
     variable <- as.factor(variable)
     prepared.data$complications__failure_of_conservative_management <- variable
+
     ## Generate AIS codes
     icd10.data <- prepared.data[, c("interventions__injury_first_surg_icd10",
                                     "interventions__injury_xray_icd10",
@@ -67,6 +75,21 @@ prepare_data <- function(data, codebook = NULL) {
                                                                         "riss",
                                                                         "niss")]
     prepared.data <- cbind(prepared.data, iss.data)
+
+    ## Classify mechanism of injury (incident__moi and incident__moi_001) as factors
+    prepared.data$incident__moi <- as.factor(prepared.data$incident__moi)
+    prepared.data$incident__moi_001 <- as.factor(prepared.data$incident__moi_001)
+
+    ## Apply pre-post break points
+    prepared.data.with.post.indicator <- do.call(rbind, lapply(split(prepared.data, prepared.data$id__reg_hospital_id), function(centre.data) {
+        centre.id <- as.character(unique(centre.data$id__reg_hospital_id))
+        centre.data$post.training <- centre.data$incident__date_of_arrival > pre.post.break.points[[centre.id]][1]
+        return(centre.data)
+    })) %>% labelled::copy_labels_from(prepared.data)
+
+    ## This is the data that should be used as the basis for the synthetic data
+    prepared.data <- prepared.data.with.post.indicator
+        
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
         column.data <- prepared.data %>%

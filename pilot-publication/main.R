@@ -4,6 +4,8 @@ library(dplyr)
 library(tibble)
 library(lubridate)
 library(gtsummary)
+library(naniar)
+library(icdpicr)
 
 ## Source functions
 noacsr::source_all_functions()
@@ -16,8 +18,21 @@ codebook.arguments <- lapply(c("URL", "UID", "USERNAME", "PASSWORD"),
                              function(x) Sys.getenv(paste0("KOBO_", x)))
 codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 
+## The pre-post breakt points are the dates to use when comparing
+## before training to after training. For intervention centres these
+## are the dates when the training happened. For standard care centres
+## these are one month after data collection started.  
+pre.post.break.points <- list("11542" = ymd(centre.start.dates["11542"]) + months(1), # standard care
+                              "44805" = c("2022-05-30", "2022-06-20"), # atls, two dates because two students did not pass the first time
+                              "55356" = "2022-09-02", # ptc
+                              "78344" = "2022-06-03", # atls
+                              "95846" = "2022-09-01", # ptc
+                              "88456" = ymd(centre.start.dates["88456"]) + months(1), # standard care 
+                              "10263" = ymd(centre.start.dates["10263"]) + months(1)) # standard care 
+pre.post.break.points <- lapply(pre.post.break.points, ymd)
+
 ## Prepare data
-data <- prepare_data(data, codebook)
+data <- prepare_data(data, codebook, pre.post.break.points)
 
 ## Define basic results
 arrival.dates <- data %>% select(incident__date_of_arrival, id__reg_hospital_id) %>% arrange(incident__date_of_arrival)
@@ -35,27 +50,6 @@ n.no.consent <-  list("11542" = 40,
                       "95846" = 9, 
                       "88456" = 0, # To be updated
                       "10263" = 2)
-## The pre-post breakt points are the dates to use when comparing
-## before training to after training. For intervention centres these
-## are the dates when the training happened. For standard care centres
-## these are one month after data collection started.  
-pre.post.break.points <- list("11542" = ymd(centre.start.dates["11542"]) + months(1), # standard care
-                              "44805" = c("2022-05-30", "2022-06-20"), # atls
-                              "55356" = "2022-09-02", # ptc
-                              "78344" = "2022-06-03", # atls
-                              "95846" = "2022-09-01", # ptc
-                              "88456" = ymd(centre.start.dates["88456"]) + months(1), # standard care 
-                              "10263" = ymd(centre.start.dates["10263"]) + months(1)) # standard care 
-pre.post.break.points <- lapply(pre.post.break.points, ymd)
-data.with.post.indicator <- do.call(rbind, lapply(split(data, data$id__reg_hospital_id), function(centre.data) {
-    centre.id <- as.character(unique(centre.data$id__reg_hospital_id))
-    centre.data$post.training <- centre.data$incident__date_of_arrival > pre.post.break.points[[centre.id]][1]
-    return(centre.data)
-})) %>% labelled::copy_labels_from(data)
-
-## This is the data that should be used as the basis for the synthetic data
-data <- data.with.post.indicator
-
 icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
 n.patients <- nrow(data)
 n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
