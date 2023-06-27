@@ -18,29 +18,10 @@ codebook.arguments <- lapply(c("URL", "UID", "USERNAME", "PASSWORD"),
                              function(x) Sys.getenv(paste0("KOBO_", x)))
 codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 
-## The pre-post breakt points are the dates to use when comparing
-## before training to after training. For intervention centres these
-## are the dates when the training happened. For standard care centres
-## these are one month after data collection started.  
-pre.post.break.points <- list("11542" = ymd(centre.start.dates["11542"]) + months(1), # standard care
-                              "44805" = c("2022-05-30", "2022-06-20"), # atls, two dates because two students did not pass the first time
-                              "55356" = "2022-09-02", # ptc
-                              "78344" = "2022-06-03", # atls
-                              "95846" = "2022-09-01", # ptc
-                              "88456" = ymd(centre.start.dates["88456"]) + months(1), # standard care 
-                              "10263" = ymd(centre.start.dates["10263"]) + months(1)) # standard care 
-pre.post.break.points <- lapply(pre.post.break.points, ymd)
-
 ## Prepare data
-data <- prepare_data(data, codebook, pre.post.break.points)
+data <- prepare_data(data, codebook)
 
 ## Define basic results
-arrival.dates <- data %>% select(incident__date_of_arrival, id__reg_hospital_id) %>% arrange(incident__date_of_arrival)
-format_date <- function(date) paste0(month(date[1], label = TRUE, abbr = FALSE), " ", year(date[1]))
-centre.start.dates <- arrival.dates %>%
-    group_by(id__reg_hospital_id) %>%
-    summarise(start_date = format(min(incident__date_of_arrival), "%Y-%m-%d")) %>%
-    deframe()
 start.date <- arrival.dates %>% pull(incident__date_of_arrival) %>% min() %>% format_date()
 end.date <- arrival.dates %>% pull(incident__date_of_arrival) %>% max() %>% format_date()
 n.no.consent <-  list("11542" = 40,

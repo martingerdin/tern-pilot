@@ -5,13 +5,10 @@
 #' @param data A data.frame. The data to be prepared. No default.
 #' @param codebook A list. A list describing the columns of data or
 #'     NULL. Defaults to NULL.
-#' @param pre.post.break.points A list. A list of pre and post break points. Defauls
-#'    to NULL.
-prepare_data <- function(data, codebook = NULL, pre.post.break.points = NULL) {
+prepare_data <- function(data, codebook = NULL) {
     ## Check arguments
     assertthat::assert_that(is.data.frame(data))
     assertthat::assert_that(is.list(codebook) | is.null(codebook))
-    assertthat::assert_that(is.list(pre.post.break.points) | is.null(pre.post.break.points))
 
     ## Modify codebook
     variable.names <- codebook$survey$name
@@ -80,7 +77,27 @@ prepare_data <- function(data, codebook = NULL, pre.post.break.points = NULL) {
     prepared.data$incident__moi <- as.factor(prepared.data$incident__moi)
     prepared.data$incident__moi_001 <- as.factor(prepared.data$incident__moi_001)
 
-    ## Apply pre-post break points
+    ## Define the post intervention period
+
+    ## The pre-post breakt points are the dates to use when comparing
+    ## before training to after training. For intervention centres these
+    ## are the dates when the training happened. For standard care centres
+    ## these are one month after data collection started.
+    arrival.dates <- data %>% select(incident__date_of_arrival, id__reg_hospital_id) %>% arrange(incident__date_of_arrival)
+    format_date <- function(date) paste0(month(date[1], label = TRUE, abbr = FALSE), " ", year(date[1]))
+    centre.start.dates <- arrival.dates %>%
+        group_by(id__reg_hospital_id) %>%
+        summarise(start_date = format(min(incident__date_of_arrival), "%Y-%m-%d")) %>%
+        deframe()
+    pre.post.break.points <- list("11542" = ymd(centre.start.dates["11542"]) + months(1), # standard care
+                                  "44805" = c("2022-05-30", "2022-06-20"), # atls, two dates because two students did not pass the first time
+                                  "55356" = "2022-09-02", # ptc
+                                  "78344" = "2022-06-03", # atls
+                                  "95846" = "2022-09-01", # ptc
+                                  "88456" = ymd(centre.start.dates["88456"]) + months(1), # standard care 
+                                  "10263" = ymd(centre.start.dates["10263"]) + months(1)) # standard care
+    pre.post.break.points <- lapply(pre.post.break.points, ymd)
+    
     prepared.data.with.post.indicator <- do.call(rbind, lapply(split(prepared.data, prepared.data$id__reg_hospital_id), function(centre.data) {
         centre.id <- as.character(unique(centre.data$id__reg_hospital_id))
         centre.data$post.training <- centre.data$incident__date_of_arrival > pre.post.break.points[[centre.id]][1]

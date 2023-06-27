@@ -48,10 +48,21 @@ stopifnot(!any(pbapply(data, 1, function(row) {
     }))
 })))
 
+## Encrypt synthetic data before writing to file
+encrypted.synth.data <- 
+
 ## Write synthetic data to file
 saveRDS(synth.data, file = "data/synth-data.rds")
 
-## Write codebook to file
+## Write codebook to file, but first remove the settings entry
+codebook$settings <- NULL
 saveRDS(codebook, file = "data/codebook.rds")
+```
+
+To develop locally both the data and the codebook need to be loaded.
+
+```{r load-data}
+data <- readRDS("data/synth-data.rds")
+codebook <- readRDS("data/codebook.rds")
 
 ```
