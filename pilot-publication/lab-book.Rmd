@@ -2,13 +2,19 @@
 
 This file includes code and scripts used to experiment and explore with the TERN pilot data. 
 
+```{r setup}
+library(pbapply)
+library(openssl)
+library(dotenv)
+```
+
+
 ## Generate synthetic data
 
 Because developing on the server is generally slow, a first step to speed up development was to generate a synthetic dataset that could be safely used locally. Check [main.R](./main.R) to make sure that `data` is in the correct state before creating the synthetic data using the code below.
 
 ```{r, synthetic-data-generation}
 ## Generate synthetic data. For each column, sample from the same distribution as the original data, but do not keep correlations present in the orginal data.
-library(pbapply)
 synth.data <- lapply(data, function(column) {
     if (is.factor(column)) {
         return (as.factor(sample(levels(column), size = length(column), replace = TRUE)))
@@ -49,20 +55,22 @@ stopifnot(!any(pbapply(data, 1, function(row) {
 })))
 
 ## Encrypt synthetic data before writing to file
-encrypted.synth.data <- 
+key <- sha256(charToRaw(Sys.getenv("SYNTH_DATA_KEY")))
+encrypted.synth.data <- aes_cbc_encrypt(serialize(synth.data, NULL), key = key)
 
 ## Write synthetic data to file
-saveRDS(synth.data, file = "data/synth-data.rds")
+saveRDS(encrypted.synth.data, file = "data/synth-data.rds")
 
-## Write codebook to file, but first remove the settings entry
+## Encrypt and write codebook to file, but first remove the settings entry
 codebook$settings <- NULL
-saveRDS(codebook, file = "data/codebook.rds")
+encrypted.codebook <- aes_cbc_encrypt(serialize(codebook, NULL), key = key)
+saveRDS(encrypted.codebook, file = "data/codebook.rds")
 ```
 
 To develop locally both the data and the codebook need to be loaded.
 
 ```{r load-data}
-data <- readRDS("data/synth-data.rds")
-codebook <- readRDS("data/codebook.rds")
-
+key <- sha256(charToRaw(Sys.getenv("SYNTH_DATA_KEY")))
+data <- unserialize(aes_cbc_decrypt(readRDS("data/synth-data.rds"), key = key))
+codebook <- unserialize(aes_cbc_decrypt(readRDS("data/codebook.rds"), key = key))
 ```
