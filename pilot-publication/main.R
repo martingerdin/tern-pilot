@@ -37,23 +37,136 @@ sample.characteristics.table <- create_descriptive_table(table.data,
                                                          caption = "Patient sample characteristics",
                                                          include.overall = TRUE)
 
-## Create table comparing outcomes
+## Create tables comparing outcomes
 outcomes <- c(names(binary_outcomes()),
               categorical_outcomes(),
               quantitative_outcomes())
 outcomes.data <- data[, c(outcomes, "arm", "post.training")]
+outcomes.data.list <- list(
+    overall = outcomes.data %>% select(-post.training),
+    pre.training = outcomes.data %>% filter(!post.training) %>% select(-post.training),
+    post.training = outcomes.data %>% filter(post.training) %>% select(-post.training))
+outcomes.tables <- lapply(outcomes.data.list, create_outcomes_table)
+outcomes.row.names <- outcomes.tables$overall[, 1]
 
-## This creates a table with summary data for all outcomes
-outcomes.table.overall <- outcomes.data %>%
-    select(-post.training) %>%
-    tbl_summary(by = "arm",
-                type = all_dichotomous() ~ "categorical",
-                statistic = list(
-                    all_continuous() ~ "{median}",
-                    all_categorical() ~ "{p}"
-                ),
-                missing_text = "Missing") %>%
-    as_tibble() 
+create_outcomes_table <- function(data) {
+    outcomes.table <- data %>%
+        tbl_summary(by = "arm",
+                    type = all_dichotomous() ~ "categorical",
+                    statistic = list(
+                        all_continuous() ~ "{median}",
+                        all_categorical() ~ "{p}"
+                    ),
+                    missing_text = "Missing") %>%
+        as_tibble()
+    return (outcomes.table)
+}
+
+## Convert all outcome data in tables to numeric
+outcomes.tables <- lapply(outcomes.tables, convert_table_data_to_numeric)
+
+convert_table_data_to_numeric <- function(table.object) {
+    ## This function converts the three last columns of the table to numeric
+    ## and returns the table
+    table.object[, 2:4] <- lapply(table.object[, 2:4], function(column)
+        as.numeric(gsub(",", "", column)))
+    return (table.object)
+}
+
+## Calculate the absolute difference between the pre and post training outcomes in the same trial arms using only the three columns with the arms data and not the characteristics column
+outcomes.tables$absolute.difference <- outcomes.tables$post.training[2:4] - outcomes.tables$pre.training[2:4]
+outcomes.tables$absolute.difference <- outcomes.tables$absolute.difference %>%
+    add_column(outcomes.row.names, .before = 1)
+
+## And now calculate the relative difference, still in the same trial arms
+outcomes.tables$relative.difference <- outcomes.tables$post.training[2:4]/outcomes.tables$pre.training[2:4]
+outcomes.tables$relative.difference <- outcomes.tables$relative.difference %>%
+    add_column(outcomes.row.names, .before = 1)
+
+## Now compare post training outcomes between trial arms. First identify all possible combinations of arms
+arm.combinations <- combn(unique(data$arm), 2, simplify = FALSE)
+arm.combination.names <- lapply(arm.combinations, paste, collapse = " vs. ")
+
+## Now compare post training outcomes between arms
+post.outcomes.compared.between.arms <- setNames(lapply(arm.combinations, function(arm.combination) {
+    ## Create a table with the outcomes for the two arms
+    outcomes.table <- outcomes.tables$post.training %>%
+        select(contains(arm.combination[1]), contains(arm.combination[2]))
+    ## Calculate the difference between the two arms
+    outcomes.comparison <- data.frame(
+        absolute.difference = outcomes.table[, 1] - outcomes.table[, 2],
+        relative.difference = outcomes.table[, 1]/outcomes.table[, 2]
+    )
+    colnames(outcomes.comparison) <- c("Absolute difference", "Relative difference")
+    ## Convert outcoomes comparison to tibble
+    outcomes.comparison <- as_tibble(outcomes.comparison) %>%
+        add_column(outcomes.row.names, .before = 1)
+    ## Return the table
+    return (outcomes.comparison)
+}), paste0("Post training outcome ", arm.combination.names))
+
+## And finally compare change from baseline between arms
+change.from.baseline.compared.between.arms <- setNames(lapply(arm.combinations, function(arm.combination) {
+    ## Create a table with the outcomes for the two arms
+    outcomes.table <- outcomes.tables$absolute.difference %>%
+        select(contains(arm.combination[1]), contains(arm.combination[2]))
+    ## Calculate the difference between the two arms
+    outcomes.comparison <- data.frame(
+        absolute.difference = outcomes.table[, 1] - outcomes.table[, 2],
+        relative.difference = outcomes.table[, 1]/outcomes.table[, 2]
+    )
+    colnames(outcomes.comparison) <- c("Absolute difference", "Relative difference")
+    ## Convert outcomes comparison to tibble
+    outcomes.comparison <- as_tibble(outcomes.comparison) %>%
+        add_column(outcomes.row.names, .before = 1)
+    ## Return the table
+    return (outcomes.comparison)
+}), paste0("Change from baseline ", arm.combination.names))
+
+
+
+
+ 
+
+## Calculate the absolute difference between the pre and post training outcomes using only the three columns with the arms data and not the characteristics column
+outcomes.tables$absolute.difference <- outcomes.tables$post.training[2:4] - outcomes.tables$pre.training[2:4]
+
+
+outcomes.vectors <- lapply(outcomes.tables, convert_tibble_to_named_vector)
+
+## Convert vectors to numeric by first removing commas and then converting to numeric
+outcomes.vectors <- lapply(outcomes.vectors, function(x) setNames(as.numeric(gsub(",", "", x)), names(x)))
+
+## Compare pre and post training outcomes within the same trial arms
+outcomes.vectors$absolute.difference <- outcomes.vectors$post.training - outcomes.vectors$pre.training
+outcomes.vectors$relative.difference <- outcomes.vectors$post.training/outcomes.vectors$pre.training
+
+## Now compare post training outcomes between trial arms. First identify all possible combinations of arms
+arm.combinations <- combn(unique(data$arm), 2, simplify = FALSE)
+
+## Now compare outcomes between arms
+
+
+
+## Combine outcome vectors into a single vector for bootstraping.
+outcomes.results <- unlist(outcomes.vectors)
+
+
+
+## Create vector from outcome data table
+
+
+convert_tibble_to_named_vector <- function(tibble) {
+    listed.tibble <- as.list(tibble)
+    row.names <- listed.tibble[[1]]
+    tibble.data.columns <- listed.tibble[-1]
+    unlisted.tibble.data.columns <- lapply(tibble.data.columns, unlist)
+    named.tibble.data.columns <- lapply(unlisted.tibble.data.columns, setNames, nm = row.names)
+    vector <- unlist(named.tibble.data.columns)
+    return (vector)
+}
+
+
 
 ## Should be possible to create exactly the same table pre post and
 ## then calculate the difference between the two. Then wrap all in a
