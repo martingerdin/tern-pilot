@@ -22,48 +22,7 @@ codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 data <- prepare_data(data, codebook)
 
 ## Define basic results
-arrival.dates <- data %>% pull(incident__date_of_arrival) %>% as.Date()
-start.date <- arrival.dates %>% min() %>% format_date()
-end.date <- arrival.dates %>% max() %>% format_date()
-n.no.consent <-  list("11542" = 40,
-                      "44805" = 10,
-                      "55356" = 43,
-                      "78344" = 3,
-                      "95846" = 9, 
-                      "88456" = 0, # To be updated
-                      "10263" = 2)
-icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
-n.patients <- nrow(data)
-n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
-n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
-n.residents <- n.atls.residents + n.ptc.residents
-centre.ids <- data %>% pull(id__reg_hospital_id) %>% unique() 
-n.centres <-  centre.ids %>% length()
-atls.centres <- c("44805", "78344")
-ptc.centres <- c("55356", "95846")
-control.centres <- c("11542", "88456", "10263")
-centre.data <- data %>% split(data$id__reg_hospital_id)
-atls.data <- bind_rows(centre.data[as.character(atls.centres)]) %>% labelled::copy_labels_from(data)
-atls.data$arm <-"ATLS"
-ptc.data <- bind_rows(centre.data[as.character(ptc.centres)]) %>% labelled::copy_labels_from(data)
-ptc.data$arm <- "PTC"
-control.data <- bind_rows(centre.data[as.character(control.centres)]) %>% labelled::copy_labels_from(data)
-control.data$arm <- "Standard care"
-arms.data.list <- list(atls = atls.data, ptc = ptc.data, control = control.data)
-data <- bind_rows(arms.data.list) %>% labelled::copy_labels_from(data)
-n.atls <- nrow(atls.data)
-n.ptc <- nrow(ptc.data)
-n.control <- nrow(control.data)
-n.females <- with(data, sum(patinfo__pt_gender == "Female"))
-p.females <- round(n.females/nrow(data) * 100)
-median.age <- median(data$patinfo__pt_age, na.rm = TRUE)
-iqr.age <- get_iqr(data$patinfo__pt_age)
-median.iss <- median(data$riss, na.rm = TRUE)
-iqr.iss <- get_iqr(data$riss)
-median.niss <- median(data$niss, na.rm = TRUE)
-iqr.niss <- get_iqr(data$niss)
-n.admitted <- with(data, sum(interventions__admitted == "Yes"))
-p.admitted <- round(n.admitted/nrow(data) * 100)
+results <- get_basic_results(data)
 
 ## Create table of sample characteristics
 table.variables <- c("patinfo__pt_age", "patinfo__pt_gender",
