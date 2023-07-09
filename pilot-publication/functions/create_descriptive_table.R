@@ -13,15 +13,12 @@
 #' @param include.overall Logical. If TRUE a column called "Overall"
 #'     is included in the table, which includes descriptive statistics
 #'     for the whole sample. Defaults to TRUE.
-#' @param use.labels Logical. If TRUE the function checks if the data
-#'     is labelled and if so, uses those labels. Defaults to TRUE.
 #' @param caption Character or NULL. The table caption. Defaults to
 #'     NULL, as in no caption.
 create_descriptive_table <- function(table.data,
                                      variables = NULL,
                                      strata = NULL,
                                      include.overall = TRUE,
-                                     use.labels = TRUE,
                                      caption = NULL) {
     ## Check arguments
     assertthat::assert_that(is.data.frame(table.data))
@@ -31,25 +28,12 @@ create_descriptive_table <- function(table.data,
     assertthat::assert_that(is.logical(use.labels))
     assertthat::assert_that(is.character(caption) | is.null(caption))
 
-    ## Define labels
-    labels <- NULL
-    if (use.labels) {
-        labels <- list(variables = setNames(nm = names(table.data)))
-        labels <- lapply(labels$variables, function(column.name) {
-            label <- table.data %>% dplyr::pull(.data[[column.name]]) %>% attr("label")
-            if (is.null(label) || is.na(label))
-                label <- column.name
-            return (label)
-        })
-    }
-
     ## Create table
     table.data <- as.data.frame(table.data)
     if (!is.null(variables))
         table.data <- table.data[, variables]
     descriptive.table <- tbl_summary(data = table.data,
                                      by = strata,
-                                     label = labels,
                                      type = all_dichotomous() ~ "categorical",
                                      missing_text = "Missing")
 
