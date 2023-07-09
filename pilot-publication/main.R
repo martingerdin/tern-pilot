@@ -34,8 +34,8 @@ table.variables <- c("patinfo__pt_age", "patinfo__pt_gender",
 table.data <- data[, table.variables]
 sample.characteristics.table <- create_descriptive_table(table.data,
                                                          strata = "arm",
-                                                         caption = "Patient sample characteristics")
-sample.characteristics.data <- as.data.frame(sample.characteristics.table)
+                                                         caption = "Patient sample characteristics",
+                                                         include.overall = TRUE)
 
 ## Create table comparing secondary outcomes
 secondary.outcomes <- c(names(binary_outcomes()),
