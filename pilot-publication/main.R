@@ -22,8 +22,9 @@ codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 data <- prepare_data(data, codebook)
 
 ## Define basic results
-start.date <- data %>% pull(incident__date_of_arrival) %>% as.Date() %>% min() %>% format_date()
-end.date <- arrival.dates %>% pull(incident__date_of_arrival) %>% max() %>% format_date()
+arrival.dates <- data %>% pull(incident__date_of_arrival) %>% as.Date()
+start.date <- arrival.dates %>% min() %>% format_date()
+end.date <- arrival.dates %>% max() %>% format_date()
 n.no.consent <-  list("11542" = 40,
                       "44805" = 10,
                       "55356" = 43,
