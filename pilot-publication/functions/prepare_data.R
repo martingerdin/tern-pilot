@@ -23,7 +23,8 @@ prepare_data <- function(data, codebook = NULL) {
 
     ## Prepare data
     prepared.data <- data
-    prepared.data$`patinfo/pt_age` <- as.numeric(prepared.data$patinfo__pt_age)
+    prepared.data$patinfo__pt_age <- as.numeric(prepared.data$patinfo__pt_age)
+    prepared.data$id__reg_hospital_id <- as.factor(prepared.data$id__reg_hospital_id)
 
     ## Replace with missing
     prepared.data <- prepared.data %>%
