@@ -85,7 +85,6 @@ prepare_data <- function(data, codebook = NULL) {
     ## are the dates when the training happened. For standard care centres
     ## these are one month after data collection started.
     arrival.dates <- data %>% select(incident__date_of_arrival, id__reg_hospital_id) %>% arrange(incident__date_of_arrival)
-    format_date <- function(date) paste0(month(date[1], label = TRUE, abbr = FALSE), " ", year(date[1]))
     centre.start.dates <- arrival.dates %>%
         group_by(id__reg_hospital_id) %>%
         summarise(start_date = format(min(incident__date_of_arrival), "%Y-%m-%d")) %>%
