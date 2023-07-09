@@ -37,14 +37,13 @@ sample.characteristics.table <- create_descriptive_table(table.data,
                                                          caption = "Patient sample characteristics",
                                                          include.overall = TRUE)
 
-## Create table comparing secondary outcomes
-secondary.outcomes <- c(names(binary_outcomes()),
-                        categorical_outcomes(),
-                        quantitative_outcomes())
-secondary.outcomes.data <- data[, c(secondary.outcomes, "arm", "post.training")]
+## Create table comparing outcomes
+outcomes <- c(names(binary_outcomes()),
+              categorical_outcomes(),
+              quantitative_outcomes())
+outcomes.data <- data[, c(outcomes, "arm", "post.training")]
 
 ## This creates a table with summary data for all outcomes
-outcomes.data <- secondary.outcomes.data
 outcomes.table.overall <- outcomes.data %>%
     select(-post.training) %>%
     tbl_summary(by = "arm",
