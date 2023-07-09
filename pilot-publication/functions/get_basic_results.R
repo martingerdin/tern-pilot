@@ -1,8 +1,9 @@
 #' Get basic results
 #'
 #' Function to calculate basic results.
+#' @param data A data.frame with the trial data. No default.
 #' @export
-get_basic_results <- function() {
+get_basic_results <- function(data) {
     results <- list()
     arrival.dates <- data %>% pull(incident__date_of_arrival) %>% as.Date()
     results$start.date <- arrival.dates %>% min() %>% format_date()
