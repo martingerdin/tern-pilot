@@ -31,32 +31,65 @@ create_descriptive_table <- function(table.data,
     assertthat::assert_that(is.logical(use.labels))
     assertthat::assert_that(is.character(caption) | is.null(caption))
 
+    ## Define labels
+    labels <- NULL
+    if (use.labels) {
+        labels <- list(variables = setNames(nm = names(table.data)))
+        labels <- lapply(labels$variables, function(column.name) {
+            label <- table.data %>% dplyr::pull(.data[[column.name]]) %>% attr("label")
+            if (is.null(label) || is.na(label))
+                label <- column.name
+            return (label)
+        })
+    }
+
     ## Create table
     table.data <- as.data.frame(table.data)
     if (!is.null(variables))
         table.data <- table.data[, variables]
-    strata.data <- rep("Overall", nrow(table.data))
-    if (!is.null(strata)) {
-        strata.data <- table.data[, strata]
-        table.data[, strata] <- NULL
-    }
-    strata.list <- base::split(table.data, as.factor(strata.data))
-    if (!is.null(strata) & include.overall)
-        strata.list <- c(strata.list, list("Overall" = table.data))
-    labels <- list(variables = setNames(nm = names(table.data)))
-    if (use.labels) {
-        labels <- lapply(labels$variables, function(column.name) {
-            label <- table.data %>% dplyr::pull(.data[[column.name]]) %>% attr("label")
-            if (is.null(label))
-                label <- column.name
-            return (label)
-        })
-        labels <- list(variables = labels)
-    }
-    descriptive.table <- table1::table1(strata.list,
-                                        labels = labels,
-                                        caption = caption,
-                                        droplevels = TRUE,
-                                        render.missing = table1::render.missing.default)
+    descriptive.table <- tbl_summary(data = table.data,
+                                     by = strata,
+                                     label = labels,
+                                     type = all_dichotomous() ~ "categorical",
+                                     missing_text = "Missing")
+
+    ## Add overall column
+    if (include.overall)
+        descriptive.table <- descriptive.table %>%
+            add_overall(last = TRUE)
+
+    ## Convert table into a tibble
+    descriptive.table <- descriptive.table %>%
+        as_tibble() 
+
+    ## Replace NA with ""
+    descriptive.table[] <- lapply(descriptive.table, function(column) {
+        column[is.na(column)] <- ""
+        return (column)
+    })
+    
+##    strata.data <- rep("Overall", nrow(table.data))
+##    if (!is.null(strata)) {
+##        strata.data <- table.data[, strata]
+##        table.data[, strata] <- NULL
+##    }
+##    strata.list <- base::split(table.data, as.factor(strata.data))
+##    if (!is.null(strata) & include.overall)
+##        strata.list <- c(strata.list, list("Overall" = table.data))
+##    labels <- list(variables = setNames(nm = names(table.data)))
+##    if (use.labels) {
+##        labels <- lapply(labels$variables, function(column.name) {
+##            label <- table.data %>% dplyr::pull(.data[[column.name]]) %>% attr("label")
+##            if (is.null(label))
+##                label <- column.name
+##            return (label)
+##        })
+##        labels <- list(variables = labels)
+##    }
+##    descriptive.table <- table1::table1(strata.list,
+##                                        labels = labels,
+##                                        caption = caption,
+##                                        droplevels = TRUE,
+##                                        render.missing = table1::render.missing.default)
     return(descriptive.table)
 }
