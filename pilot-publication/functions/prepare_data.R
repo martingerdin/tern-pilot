@@ -103,10 +103,19 @@ prepare_data <- function(data, codebook = NULL) {
         centre.data$post.training <- centre.data$incident__date_of_arrival > pre.post.break.points[[centre.id]][1]
         return(centre.data)
     })) %>% labelled::copy_labels_from(prepared.data)
-
+     
     ## This is the data that should be used as the basis for the synthetic data
     prepared.data <- prepared.data.with.post.indicator
-        
+
+    ## Add variable indicating the trial arm patients were enrolled in
+    atls.centres <- c("44805", "78344")
+    ptc.centres <- c("55356", "95846")
+    control.centres <- c("11542", "88456", "10263")
+    prepared.data$arm <- NA
+    prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% atls.centres, ]$arm <- "ATLS"
+    prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% ptc.centres, ]$arm <- "PTC"
+    prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% control.centres, ]$arm <- "Standard care"
+    
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
         column.data <- prepared.data %>%
