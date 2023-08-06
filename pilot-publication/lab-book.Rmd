@@ -78,8 +78,6 @@ data <- unserialize(aes_cbc_decrypt(readRDS("data/synth-data.rds"), key = key))
 codebook <- unserialize(aes_cbc_decrypt(readRDS("data/codebook.rds"), key = key))
 ```
 
-
-
 Probably a good idea to wrap the generation of these results into a function, and introduce a test argument, to prevent us from introducing local results in the main manuscript.
 
 ```{r basic-results}
