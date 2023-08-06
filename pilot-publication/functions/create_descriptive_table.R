@@ -25,7 +25,6 @@ create_descriptive_table <- function(table.data,
     assertthat::assert_that(is.character(variables) | is.null(variables))
     assertthat::assert_that(is.character(strata) | is.null(strata))
     assertthat::assert_that(is.logical(include.overall))
-    assertthat::assert_that(is.logical(use.labels))
     assertthat::assert_that(is.character(caption) | is.null(caption))
 
     ## Create table

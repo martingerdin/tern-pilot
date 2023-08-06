@@ -80,7 +80,7 @@ outcomes.tables$absolute.difference <- outcomes.tables$absolute.difference %>%
     add_column(outcomes.row.names, .before = 1) 
 
 ## And now calculate the relative difference, still in the same trial arms
-outcomes.tables$relative.difference <- outcomes.tables$post.training[2:4]/outcomes.tables$pre.training[2:4
+outcomes.tables$relative.difference <- outcomes.tables$post.training[2:4]/outcomes.tables$pre.training[2:4]
 outcomes.tables$relative.difference <- outcomes.tables$relative.difference %>%
     as_tibble() %>%
     add_column(outcomes.row.names, .before = 1)
@@ -90,10 +90,10 @@ arm.combinations <- combn(unique(data$arm), 2, simplify = FALSE)
 arm.combination.names <- lapply(arm.combinations, paste, collapse = " vs. ")
 
 ## Now compare post training outcomes between arms
-post.outcomes.compared.between.arms <- setNames(lapply(arm.combinations, compare_outcomes_between_arms, table.name = "post.training", outcomes.tables = outcomes.tables), paste0("**Post training outcome ", arm.combination.names, "**"))
+post.outcomes.compared.between.arms <- setNames(lapply(arm.combinations, compare_outcomes_between_arms, table.name = "post.training", outcomes.tables = outcomes.tables), paste0("Post training outcome ", arm.combination.names))
 
 ## And finally compare change from baseline between arms
-change.from.baseline.compared.between.arms <- setNames(lapply(arm.combinations, compare_outcomes_between_arms, table.name = "absolute.difference", outcomes.tables = outcomes.tables), paste0("**Change from baseline ", arm.combination.names, "**"))
+change.from.baseline.compared.between.arms <- setNames(lapply(arm.combinations, compare_outcomes_between_arms, table.name = "absolute.difference", outcomes.tables = outcomes.tables), paste0("Change from baseline ", arm.combination.names))
 
 compare_outcomes_between_arms <- function(arm.combination, table.name, outcomes.tables) {
     assertthat::assert_that(is.list(outcomes.tables))
@@ -105,7 +105,7 @@ compare_outcomes_between_arms <- function(arm.combination, table.name, outcomes.
         absolute.difference = outcomes.table[, 1] - outcomes.table[, 2],
         relative.difference = outcomes.table[, 1]/outcomes.table[, 2]
     )
-    colnames(outcomes.comparison) <- c("**Absolute difference**", "**Relative difference**")
+    colnames(outcomes.comparison) <- c("Absolute difference", "Relative difference")
     ## Convert outcomes comparison to tibble
     outcomes.comparison <- as_tibble(outcomes.comparison) %>%
         add_column(outcomes.row.names, .before = 1)
@@ -119,6 +119,8 @@ outcome.comparisons.list <- c(
     post.outcomes.compared.between.arms,
     change.from.baseline.compared.between.arms
 )
+names(outcome.comparisons.list) <- paste0("||table::", names(outcome.comparisons.list), "||")
+
 
 ## Convert all tables to named vectors
 outcome.comparisons.vectors <- lapply(outcome.comparisons.list, convert_tibble_to_named_vector)
@@ -126,8 +128,9 @@ outcome.comparisons.vector <- unlist(outcome.comparisons.vectors)
 
 convert_tibble_to_named_vector <- function(tibble) {
     listed.tibble <- as.list(tibble)
-    row.names <- listed.tibble[[1]]
+    row.names <- paste0("||row::index:", 1:nrow(tibble), "::", listed.tibble[[1]], "||")
     tibble.data.columns <- listed.tibble[-1]
+    names(tibble.data.columns) <- paste0("||column::", names(tibble.data.columns), "||")
     unlisted.tibble.data.columns <- lapply(tibble.data.columns, unlist)
     named.tibble.data.columns <- lapply(unlisted.tibble.data.columns, setNames, nm = row.names)
     vector <- unlist(named.tibble.data.columns)
