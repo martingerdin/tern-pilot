@@ -39,6 +39,7 @@ sample.characteristics.table <- create_descriptive_table(table.data,
                                                          include.overall = TRUE)
 
 ## Bootstrap outcome results
+unlink("out", recursive = TRUE)
 dir.create("out", showWarnings = FALSE)
 n.boot.samples <- 1000
 bootstrapped.outcome.results <- boot(data, estimate_outcome_results, R = n.boot.samples)

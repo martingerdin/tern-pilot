@@ -9,6 +9,28 @@ library(dotenv)
 library(DataExplorer)
 ```
 
+## Strange error when running bootstrap on real data
+
+I get this strange error when I try to run the bootstrap on the real data:
+
+```{r}
+## Error in `add_column()`:
+## ! New columns must be compatible with `.data`.
+## ✖ New column has 112 rows.
+## ℹ `.data` has 111 rows.
+## Backtrace:
+##     ▆
+##  1. ├─boot::boot(data, estimate_outcome_results, R = n.boot.samples)
+##  2. │ └─global statistic(data, original, ...)
+##  3. │   └─outcomes.tables$absolute.difference %>% as_tibble() %>% ...
+##  4. └─tibble::add_column(., outcomes.row.names, .before = 1)
+##  5.   └─tibble:::abort_incompatible_new_cols(nrow(.data), df)
+##  6.     └─tibble:::tibble_abort(...)
+##  7.       └─rlang::abort(x, class, ..., call = call, parent = parent, use_cli_format = TRUE)
+## Execution halted
+```
+
+The cause of the error is the entry 995 in the variable `complications__number_of_hospitalizations_for_this_injury`. Not sure where that entry comes from, but most likely it should be 999 but something went wrong? A quick fix is to replace this value with 999 in the `prepare_data` function, which should work.
 
 ## Generate synthetic data
 

@@ -38,7 +38,10 @@ prepare_data <- function(data, codebook = NULL) {
     variable[variable == "Yes - Surgery on the 3rd day"] <- "Yes"
     variable <- as.factor(variable)
     prepared.data$complications__failure_of_conservative_management <- variable
-
+    variable <- prepared.data$complications__number_of_hospitalizations_for_this_injury
+    variable[variable == 995] <- NA ## Entered as 995 instead of 999 by mistake
+    prepared.data$complications__number_of_hospitalizations_for_this_injury <- variable
+    
     ## Generate AIS codes
     icd10.data <- prepared.data[, c("interventions__injury_first_surg_icd10",
                                     "interventions__injury_xray_icd10",
