@@ -9,9 +9,11 @@ library(dotenv)
 library(DataExplorer)
 ```
 
-## Strange error when running bootstrap on real data
 
-I get this strange error when I try to run the bootstrap on the real data:
+
+## Errors when running bootstrap on real data
+
+1. I first got this strange error when I try to run the bootstrap on the real data:
 
 ```{r}
 ## Error in `add_column()`:
@@ -31,6 +33,17 @@ I get this strange error when I try to run the bootstrap on the real data:
 ```
 
 The cause of the error is the entry 995 in the variable `complications__number_of_hospitalizations_for_this_injury`. Not sure where that entry comes from, but most likely it should be 999 but something went wrong? A quick fix is to replace this value with 999 in the `prepare_data` function, which should work.
+
+2. I then got this error:
+
+```{r}
+## Error in Ops.data.frame(outcomes.tables$post.training[2:4], outcomes.tables$pre.training[2:4]) : 
+##   ‘-’ only defined for equally-sized data frames
+## Calls: boot -> statistic -> Ops.data.frame
+## Execution halted
+```
+
+Will have to look into that.
 
 ## Generate synthetic data
 
