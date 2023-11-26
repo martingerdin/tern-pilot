@@ -15,7 +15,7 @@
 #'
 #' @importFrom dplyr select filter
 #' @importFrom stats combn
-#' 
+#'
 #' @export
 estimate_outcome_results <- function(data, index) {
     ## Check arguments
@@ -29,19 +29,22 @@ estimate_outcome_results <- function(data, index) {
         index.file <- index.file %>% add_column(i = index, .name_repair = "unique")
     }
     write.csv(index.file, "out/index.csv", row.names = FALSE)
-    
+
     ## Create bootstrap sample
     data <- data[index, ]
 
     ## Create outcomes tables
-    outcomes <- c(names(binary_outcomes()),
-                  categorical_outcomes(),
-                  quantitative_outcomes())
+    outcomes <- c(
+        names(binary_outcomes()),
+        categorical_outcomes(),
+        quantitative_outcomes()
+    )
     outcomes.data <- data[, c(outcomes, "arm", "post.training")]
     outcomes.data.list <- list(
         overall = outcomes.data %>% select(-post.training),
         pre.training = outcomes.data %>% filter(!post.training) %>% select(-post.training),
-        post.training = outcomes.data %>% filter(post.training) %>% select(-post.training))
+        post.training = outcomes.data %>% filter(post.training) %>% select(-post.training)
+    )
     outcomes.tables <- lapply(outcomes.data.list, create_outcomes_table)
     outcomes.row.names <- outcomes.tables$overall[, 1]
 
@@ -49,13 +52,13 @@ estimate_outcome_results <- function(data, index) {
     outcomes.tables <- lapply(outcomes.tables, convert_table_data_to_numeric)
 
     ## Calculate the absolute difference between the pre and post training outcomes in the same trial arms using only the three columns with the arms data and not the characteristics column
-    outcomes.tables$absolute.difference <- outcomes.tables$post.training[2:4] - outcomes.tables$pre.training[2:4] 
+    outcomes.tables$absolute.difference <- outcomes.tables$post.training[2:4] - outcomes.tables$pre.training[2:4]
     outcomes.tables$absolute.difference <- outcomes.tables$absolute.difference %>%
         as_tibble() %>%
-        add_column(outcomes.row.names, .before = 1) 
+        add_column(outcomes.row.names, .before = 1)
 
     ## And now calculate the relative difference, still in the same trial arms
-    outcomes.tables$relative.difference <- outcomes.tables$post.training[2:4]/outcomes.tables$pre.training[2:4]
+    outcomes.tables$relative.difference <- outcomes.tables$post.training[2:4] / outcomes.tables$pre.training[2:4]
     outcomes.tables$relative.difference <- outcomes.tables$relative.difference %>%
         as_tibble() %>%
         add_column(outcomes.row.names, .before = 1)
@@ -85,10 +88,11 @@ estimate_outcome_results <- function(data, index) {
 
     ## Save results to disk
     timestamp <- format(Sys.time(), "%Y%m%d%H%M%S")
-    if (identical(index, 1:nrow(data)))
+    if (identical(index, 1:nrow(data))) {
         timestamp <- paste0(timestamp, "-original")
+    }
     saveRDS(outcome.comparisons.vector, paste0("out/outcome-comparisons-vector-", timestamp, ".Rds"))
-    
+
     ## Return results
     results <- outcome.comparisons.vector
     return(results)

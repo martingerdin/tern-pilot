@@ -11,17 +11,20 @@
 #'
 #' @importFrom gtsummary tbl_summary all_dichotomous all_continuous all_categorical
 #' @importFrom dplyr as_tibble
-#' 
+#'
 #' @export
 create_outcomes_table <- function(data) {
     outcomes.table <- data %>%
-        tbl_summary(by = "arm",
-                    type = all_dichotomous() ~ "categorical",
-                    statistic = list(
-                        all_continuous() ~ "{median}",
-                        all_categorical() ~ "{p}"
-                    ),
-                    missing_text = "Missing") %>%
+        tbl_summary(
+            by = "arm",
+            type = all_dichotomous() ~ "categorical",
+            statistic = list(
+                all_continuous() ~ "{median}",
+                all_categorical() ~ "{p}"
+            ),
+            missing = "always",
+            missing_text = "Missing"
+        ) %>%
         as_tibble()
-    return (outcomes.table)
+    return(outcomes.table)
 }
