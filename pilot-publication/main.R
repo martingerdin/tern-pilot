@@ -15,8 +15,10 @@ noacsr::source_all_functions()
 data <- readr::read_csv(Sys.getenv("DATA_DIR"))
 
 ## Import codebook
-codebook.arguments <- lapply(c("URL", "UID", "USERNAME", "PASSWORD"),
-                             function(x) Sys.getenv(paste0("KOBO_", x)))
+codebook.arguments <- lapply(
+    c("URL", "UID", "USERNAME", "PASSWORD"),
+    function(x) Sys.getenv(paste0("KOBO_", x))
+)
 codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 
 ## Prepare data
@@ -26,22 +28,25 @@ data <- prepare_data(data, codebook)
 results <- get_basic_results(data)
 
 ## Create table of sample characteristics
-table.variables <- c("patinfo__pt_age", "patinfo__pt_gender",
-                     "incident__dominating_injury_type",
-                     "patvitals__ed_rr", "patvitals__ed_sat",
-                     "patvitals__ed_hr", "patvitals__ed_sbp",
-                     "riss", "niss", "outcomes__alive_after_30_days",
-                     "arm")
+table.variables <- c(
+    "patinfo__pt_age", "patinfo__pt_gender",
+    "incident__dominating_injury_type",
+    "patvitals__ed_rr", "patvitals__ed_sat",
+    "patvitals__ed_hr", "patvitals__ed_sbp",
+    "riss", "niss", "outcomes__alive_after_30_days",
+    "arm"
+)
 table.data <- data[, table.variables]
 sample.characteristics.table <- create_descriptive_table(table.data,
-                                                         strata = "arm",
-                                                         caption = "Patient sample characteristics",
-                                                         include.overall = TRUE)
+    strata = "arm",
+    caption = "Patient sample characteristics",
+    include.overall = TRUE
+)
 
 ## Bootstrap outcome results
 unlink("out", recursive = TRUE)
 dir.create("out", showWarnings = FALSE)
-n.boot.samples <- 1000
+n.boot.samples <- 3
 bootstrapped.outcome.results <- boot(data, estimate_outcome_results, R = n.boot.samples)
 
 ## Calculate confidence intervals
@@ -51,20 +56,17 @@ bootstrapped.outcome.results.ci <- lapply(seq_along(bootstrapped.outcome.results
     t0.value <- bootstrapped.outcome.results$t0[index]
     ci <- NA
     if (!is.na(t0.value)) {
-        boot.ci.object <- boot.ci(boot.out = bootstrapped.outcome.results, index = index, type = ci.type, conf = ci.levels)
+        boot.ci.object <- boot.ci(
+            boot.out = bootstrapped.outcome.results,
+            index = index, type = ci.type, conf = ci.levels
+        )
         ci <- boot.ci.object[[ci.type]][, c(1, 4:5)]
         colnames(ci) <- c("level", "lower", "upper")
     }
-    return (ci)
+    return(ci)
 })
 names(bootstrapped.outcome.results.ci) <- names(bootstrapped.outcome.results$t0)
 
 ## Save bootstrapped results and confidence intervals
 saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outcome-results.Rds"))
 saveRDS(bootstrapped.outcome.results.ci, file = file.path("out", "bootstrapped-outcome-results-ci.Rds"))
-
-
-
-
-
-
