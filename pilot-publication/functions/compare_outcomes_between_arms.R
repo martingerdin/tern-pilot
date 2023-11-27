@@ -12,7 +12,7 @@
 #' @importFrom dplyr select add_column as_tibble
 #' @importFrom assertthat assert_that is.list is.data.frame
 #' @export
-compare_outcomes_between_arms <- function(arm.combination, table.name, outcomes.tables) {
+compare_outcomes_between_arms <- function(arm.combination, table.name, outcomes.tables, outcomes.row.names) {
     assertthat::assert_that(is.list(outcomes.tables))
     assertthat::assert_that(is.data.frame(outcomes.tables[[table.name]]))
     outcomes.table <- outcomes.tables[[table.name]] %>%
@@ -20,12 +20,12 @@ compare_outcomes_between_arms <- function(arm.combination, table.name, outcomes.
     ## Calculate the difference between the two arms
     outcomes.comparison <- data.frame(
         absolute.difference = outcomes.table[, 1] - outcomes.table[, 2],
-        relative.difference = outcomes.table[, 1]/outcomes.table[, 2]
+        relative.difference = outcomes.table[, 1] / outcomes.table[, 2]
     )
     colnames(outcomes.comparison) <- c("Absolute difference", "Relative difference")
     ## Convert outcomes comparison to tibble
     outcomes.comparison <- as_tibble(outcomes.comparison) %>%
         add_column(outcomes.row.names, .before = 1)
     ## Return the table
-    return (outcomes.comparison)
+    return(outcomes.comparison)
 }

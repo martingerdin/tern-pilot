@@ -51,7 +51,8 @@ estimate_outcome_results <- function(data, index) {
     ## Convert all outcome data in tables to numeric
     outcomes.tables <- lapply(outcomes.tables, convert_table_data_to_numeric)
 
-    ## Calculate the absolute difference between the pre and post training outcomes in the same trial arms using only the three columns with the arms data and not the characteristics column
+    ## Calculate the absolute difference between the pre and post training outcomes
+    ## in the same trial arms using only the three columns with the arms data and not the characteristics column
     outcomes.tables$absolute.difference <- outcomes.tables$post.training[2:4] - outcomes.tables$pre.training[2:4]
     outcomes.tables$absolute.difference <- outcomes.tables$absolute.difference %>%
         as_tibble() %>%
@@ -68,10 +69,20 @@ estimate_outcome_results <- function(data, index) {
     arm.combination.names <- lapply(arm.combinations, paste, collapse = " vs. ")
 
     ## Now compare post training outcomes between arms
-    post.outcomes.compared.between.arms <- setNames(lapply(arm.combinations, compare_outcomes_between_arms, table.name = "post.training", outcomes.tables = outcomes.tables), paste0("Post training outcome ", arm.combination.names))
+    post.outcomes.compared.between.arms <- setNames(lapply(arm.combinations,
+        compare_outcomes_between_arms,
+        table.name = "post.training",
+        outcomes.tables = outcomes.tables,
+        outcomes.row.names = outcomes.row.names
+    ), paste0("Post training outcome ", arm.combination.names))
 
     ## And finally compare change from baseline between arms
-    change.from.baseline.compared.between.arms <- setNames(lapply(arm.combinations, compare_outcomes_between_arms, table.name = "absolute.difference", outcomes.tables = outcomes.tables), paste0("Change from baseline ", arm.combination.names))
+    change.from.baseline.compared.between.arms <- setNames(lapply(arm.combinations,
+        compare_outcomes_between_arms,
+        table.name = "absolute.difference",
+        outcomes.tables = outcomes.tables,
+        outcomes.row.names = outcomes.row.names
+    ), paste0("Change from baseline ", arm.combination.names))
 
     ## Compile all outcome comparisons in a single list
     outcome.comparisons.list <- c(
@@ -80,7 +91,6 @@ estimate_outcome_results <- function(data, index) {
         change.from.baseline.compared.between.arms
     )
     names(outcome.comparisons.list) <- paste0("||table::", names(outcome.comparisons.list), "||")
-
 
     ## Convert all tables to named vectors
     outcome.comparisons.vectors <- lapply(outcome.comparisons.list, convert_tibble_to_named_vector)
