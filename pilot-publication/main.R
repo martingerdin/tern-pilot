@@ -1,3 +1,5 @@
+## Run from command line with /usr/lib/R/bin/R --no-restore --file=main.r > run.log
+
 ## Load packages
 library(dotenv)
 library(dplyr)
