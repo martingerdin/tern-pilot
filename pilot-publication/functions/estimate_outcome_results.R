@@ -21,7 +21,6 @@ estimate_outcome_results <- function(data, index) {
     ## Check arguments
     assertthat::assert_that(is.data.frame(data))
     assertthat::assert_that(is.numeric(index))
-
     ## Write index to disk
     index.file <- data.frame(i = index)
     if (file.exists("out/index.csv")) {
@@ -106,4 +105,13 @@ estimate_outcome_results <- function(data, index) {
     ## Return results
     results <- outcome.comparisons.vector
     return(results)
+}
+
+try_estimate_outcome_results <- function(data, index) {
+    tryCatch(estimate_outcome_results(data, index),
+        error = function(e) {
+            write(as.character(e), "error.log", append = TRUE)
+            return(NULL)
+        }
+    )
 }

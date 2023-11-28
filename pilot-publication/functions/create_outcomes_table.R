@@ -17,7 +17,10 @@ create_outcomes_table <- function(data) {
     outcomes.table <- data %>%
         tbl_summary(
             by = "arm",
-            type = all_dichotomous() ~ "categorical",
+            type = list(
+                where(is.numeric) ~ "continuous",
+                where(is.factor) ~ "categorical"
+            ),
             statistic = list(
                 all_continuous() ~ "{median}",
                 all_categorical() ~ "{p}"
