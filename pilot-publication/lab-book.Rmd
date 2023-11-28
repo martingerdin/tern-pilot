@@ -9,8 +9,6 @@ library(dotenv)
 library(DataExplorer)
 ```
 
-
-
 ## Errors when running bootstrap on real data
 
 1. I first got this strange error when I try to run the bootstrap on the real data:
@@ -43,7 +41,7 @@ The cause of the error is the entry 995 in the variable `complications__number_o
 ## Execution halted
 ```
 
-Will have to look into that.
+This was because the three different datasets, one for overall, one for pre-training and one for post-training, were not the same size. The reason was that there were different but small numbers of unique values in some variables that should be treated as numeric but that was instead treated as categorical by tbl_summary. Ensuring that these were in fact treated as numeric solved the issue.
 
 ## Generate synthetic data
 

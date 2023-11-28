@@ -49,6 +49,7 @@ unlink("out", recursive = TRUE)
 dir.create("out", showWarnings = FALSE)
 n.boot.samples <- 10
 bootstrapped.outcome.results <- boot(data, try_estimate_outcome_results, R = n.boot.samples)
+saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outcome-results.Rds"))
 
 ## Calculate confidence intervals
 ci.levels <- c(0.75, 0.85, 0.95)
@@ -67,7 +68,4 @@ bootstrapped.outcome.results.ci <- lapply(seq_along(bootstrapped.outcome.results
     return(ci)
 })
 names(bootstrapped.outcome.results.ci) <- names(bootstrapped.outcome.results$t0)
-
-## Save bootstrapped results and confidence intervals
-saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outcome-results.Rds"))
 saveRDS(bootstrapped.outcome.results.ci, file = file.path("out", "bootstrapped-outcome-results-ci.Rds"))
