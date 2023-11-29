@@ -9,6 +9,13 @@ library(dotenv)
 library(DataExplorer)
 ```
 
+## Playground
+
+```{r}
+boot.files <- list.files("out")
+length(boot.files)
+```
+
 ## Errors when running bootstrap on real data
 
 1. I first got this strange error when I try to run the bootstrap on the real data:
@@ -35,7 +42,7 @@ The cause of the error is the entry 995 in the variable `complications__number_o
 2. I then got this error:
 
 ```{r}
-## Error in Ops.data.frame(outcomes.tables$post.training[2:4], outcomes.tables$pre.training[2:4]) : 
+## Error in Ops.data.frame(outcomes.tables$post.training[2:4], outcomes.tables$pre.training[2:4]) :
 ##   ‘-’ only defined for equally-sized data frames
 ## Calls: boot -> statistic -> Ops.data.frame
 ## Execution halted
@@ -51,17 +58,17 @@ Because developing on the server is generally slow, a first step to speed up dev
 ## Generate synthetic data. For each column, sample from the same distribution as the original data, but do not keep correlations present in the orginal data.
 synth.data <- lapply(data, function(column) {
     if (is.factor(column)) {
-        return (as.factor(sample(levels(column), size = length(column), replace = TRUE)))
+        return(as.factor(sample(levels(column), size = length(column), replace = TRUE)))
     } else if (is.character(column)) {
-        return (as.character(sample(column, size = length(column), replace = TRUE)))
+        return(as.character(sample(column, size = length(column), replace = TRUE)))
     } else if (is.numeric(column)) {
-        return (rnorm(n = length(column), mean = mean(column, na.rm = TRUE), sd = sd(column, na.rm = TRUE)))
+        return(rnorm(n = length(column), mean = mean(column, na.rm = TRUE), sd = sd(column, na.rm = TRUE)))
     } else if (is.logical(column)) {
-        return (sample(c(TRUE, FALSE), size = length(column), replace = TRUE))
+        return(sample(c(TRUE, FALSE), size = length(column), replace = TRUE))
     } else if (is.POSIXct(column) | is.POSIXt(column)) {
-        return (as.POSIXct(sample(as.numeric(column), size = length(column), replace = TRUE), origin = "1970-01-01"))
+        return(as.POSIXct(sample(as.numeric(column), size = length(column), replace = TRUE), origin = "1970-01-01"))
     } else {
-        return (rep(NA, length(column)))
+        return(rep(NA, length(column)))
     }
 }) %>% as.data.frame()
 
@@ -70,7 +77,7 @@ synth.data[, sapply(synth.data, is.character)] <- lapply(synth.data[, sapply(syn
     n.unique <- length(unique(column))
     new.values <- replicate(n.unique, paste(sample(letters, size = 10, replace = TRUE), collapse = ""))
     new.values <- rep(new.values, length.out = length(column))
-    return (new.values)
+    return(new.values)
 })
 
 ## Replace values in any variable with id in the name random numbers
@@ -78,7 +85,7 @@ id.vars <- c("X_id", "id__reg_hospital_id", "id__assigned_patient_id", "meta__in
 synth.data[, id.vars] <- lapply(synth.data[, id.vars], function(column) {
     n.unique <- length(unique(column))
     new.values <- rep(sample(1:1e6, size = n.unique, replace = FALSE), length.out = length(column))
-    return (new.values)
+    return(new.values)
 })
 
 ## Check that no rows in the original data are present in the synthetic data
@@ -121,27 +128,38 @@ Probably a good idea to wrap the generation of these results into a function, an
 get_basic_results <- function(test = FALSE) {
     results <- list()
     ## Define basic results
-    arrival.dates <- data %>% pull(incident__date_of_arrival) %>% as.Date()
-    results$start.date <- arrival.dates %>% min() %>% format_date()
-    results$end.date <- arrival.dates %>% max() %>% format_date()
-    n.no.consent <-  list("11542" = 40,
-                          "44805" = 10,
-                          "55356" = 43,
-                          "78344" = 3,
-                          "95846" = 9, 
-                          "88456" = 0, # To be updated
-                          "10263" = 2)
+    arrival.dates <- data %>%
+        pull(incident__date_of_arrival) %>%
+        as.Date()
+    results$start.date <- arrival.dates %>%
+        min() %>%
+        format_date()
+    results$end.date <- arrival.dates %>%
+        max() %>%
+        format_date()
+    n.no.consent <- list(
+        "11542" = 40,
+        "44805" = 10,
+        "55356" = 43,
+        "78344" = 3,
+        "95846" = 9,
+        "88456" = 0, # To be updated
+        "10263" = 2
+    )
     results$icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
     results$n.patients <- nrow(data)
     results$n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
     results$n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
     results$n.residents <- with(results, n.atls.residents + n.ptc.residents)
-    results$n.centres <-  data %>% pull(id__reg_hospital_id) %>% unique() %>% length()
+    results$n.centres <- data %>%
+        pull(id__reg_hospital_id) %>%
+        unique() %>%
+        length()
     results$n.atls <- sum(data$arm == "ATLS")
     results$n.ptc <- sum(data$arm == "PTC")
     results$n.control <- sum(data$arm == "Standard care")
     results$n.females <- with(data, sum(patinfo__pt_gender == "Female"))
-    results$p.females <- round(results$n.females/nrow(data) * 100)
+    results$p.females <- round(results$n.females / nrow(data) * 100)
     results$median.age <- median(data$patinfo__pt_age, na.rm = TRUE)
     results$iqr.age <- get_iqr(data$patinfo__pt_age)
     results$median.iss <- median(data$riss, na.rm = TRUE)
@@ -149,8 +167,8 @@ get_basic_results <- function(test = FALSE) {
     results$median.niss <- median(data$niss, na.rm = TRUE)
     results$iqr.niss <- get_iqr(data$niss)
     results$n.admitted <- with(data, sum(interventions__admitted == "Yes"))
-    results$p.admitted <- round(results$n.admitted/nrow(data) * 100)
-    return (results)
+    results$p.admitted <- round(results$n.admitted / nrow(data) * 100)
+    return(results)
 }
 ```
 
@@ -159,13 +177,19 @@ Cutting code from the main script and putting it here for future reference:
 ```{r}
 ## Calculate outcome results
 n.m30d <- with(data, sum(outcomes__alive_after_30_days == "Yes", na.rm = TRUE))
-p.m30d <- round(n.m30d/nrow(data) * 100)
-arms.n.m30d.list <- lapply(setNames(arms.data.list, nm = paste0("m30d.", names(arms.data.list))),
-                           function(arms.data)
-                               with(arms.data,
-                                    sum(outcomes__alive_after_30_days == "Yes", na.rm = TRUE)))
+p.m30d <- round(n.m30d / nrow(data) * 100)
+arms.n.m30d.list <- lapply(
+    setNames(arms.data.list, nm = paste0("m30d.", names(arms.data.list))),
+    function(arms.data) {
+        with(
+            arms.data,
+            sum(outcomes__alive_after_30_days == "Yes", na.rm = TRUE)
+        )
+    }
+)
 arms.p.m30d.list <- mapply(arms.n.m30d.list, arms.data.list,
-                           FUN = function(count, arms.data) list(round(count/nrow(arms.data) * 100)))
+    FUN = function(count, arms.data) list(round(count / nrow(arms.data) * 100))
+)
 names(arms.n.m30d.list) <- paste0("n.", names(arms.n.m30d.list))
 names(arms.p.m30d.list) <- paste0("p.", names(arms.p.m30d.list))
 attach(arms.n.m30d.list)
@@ -173,10 +197,10 @@ attach(arms.p.m30d.list)
 arr.atls.ptc <- p.m30d.atls - p.m30d.ptc
 arr.atls.control <- p.m30d.atls - p.m30d.control
 arr.ptc.control <- p.m30d.ptc - p.m30d.control
-rr.atls.ptc <- round(p.m30d.atls/p.m30d.ptc, 2)
-rr.atls.control <- round(p.m30d.atls/p.m30d.control, 2)
-rr.ptc.control <- round(p.m30d.ptc/p.m30d.control, 2)
-p.missing.in.hospital.mortality <- round(sum(is.na(data$outcomes__discharge_alive))/n.patients * 100)
+rr.atls.ptc <- round(p.m30d.atls / p.m30d.ptc, 2)
+rr.atls.control <- round(p.m30d.atls / p.m30d.control, 2)
+rr.ptc.control <- round(p.m30d.ptc / p.m30d.control, 2)
+p.missing.in.hospital.mortality <- round(sum(is.na(data$outcomes__discharge_alive)) / n.patients * 100)
 
 ## Estimate composite outcome
 in.hospital.mortality <- data$outcomes__discharge_alive == "Yes"
@@ -203,7 +227,7 @@ composite.outcome <- in.hospital.mortality |
 data$composite.outcome <- composite.outcome
 labelled::var_label(data$composite.outcome) <- "Composite endpoint"
 n.composite.outcome <- sum(composite.outcome, na.rm = TRUE)
-p.composite.outcome <- round(n.composite.outcome/nrow(data) * 100)
+p.composite.outcome <- round(n.composite.outcome / nrow(data) * 100)
 icc.composite.outcome <- estimate_icc("composite.outcome", "id__reg_hospital_id", data)
 
 ## Resident outcomes
@@ -216,22 +240,24 @@ iqr.confidence <- quantile(as.numeric(data$resident__res_comfort), probs = c(0.2
 ## List of potentially eligible patient participants per site, replace
 ## IDs with actual IDs once known and replace figures with actual
 ## figures once known
-n.potentially.eligible = list(n.potentially.eligible.centre.1 = 999,
-                              n.potentially.eligible.centre.2 = 999,
-                              n.potentially.eligible.centre.3 = 999,
-                              n.potentially.eligible.centre.4 = 999,
-                              n.potentially.eligible.centre.5 = 999,
-                              n.potentially.eligible.centre.6 = 999,
-                              n.potentially.eligible.centre.7 = 999)
-recruitment.rate.patients <- round(n.patients/do.call(sum, n.potentially.eligible) * 100)
+n.potentially.eligible <- list(
+    n.potentially.eligible.centre.1 = 999,
+    n.potentially.eligible.centre.2 = 999,
+    n.potentially.eligible.centre.3 = 999,
+    n.potentially.eligible.centre.4 = 999,
+    n.potentially.eligible.centre.5 = 999,
+    n.potentially.eligible.centre.6 = 999,
+    n.potentially.eligible.centre.7 = 999
+)
+recruitment.rate.patients <- round(n.patients / do.call(sum, n.potentially.eligible) * 100)
 n.eligible.residents <- 21
-recruitment.rate.residents <- round(n.residents/n.eligible.residents * 100)
+recruitment.rate.residents <- round(n.residents / n.eligible.residents * 100)
 n.lost.to.follow.up <- sum(is.na(data$outcomes__alive_after_30_days))
-rate.lost.to.follow.up <- round(n.lost.to.follow.up/n.patients * 100)
+rate.lost.to.follow.up <- round(n.lost.to.follow.up / n.patients * 100)
 n.atls.residents.passed.first.attempt <- 2 + 2 # The number of residents who had passed ATLS after the first attempt, per centre
 n.atls.residents.passed.second.attempt <- 4 + 2 # The number of residents who had passed ATLS after the second attempt, per centre
-rate.pass <- round((n.atls.residents.passed.second.attempt + n.ptc.residents)/n.residents * 100)
-rates.missing.data <- unlist(lapply(data, function(column) round(sum(is.na(column)/length(column) * 100))))
+rate.pass <- round((n.atls.residents.passed.second.attempt + n.ptc.residents) / n.residents * 100)
+rates.missing.data <- unlist(lapply(data, function(column) round(sum(is.na(column) / length(column) * 100))))
 min.missing.data <- min(rates.missing.data)
 max.missing.data <- max(rates.missing.data)
 
@@ -239,5 +265,5 @@ max.missing.data <- max(rates.missing.data)
 cluster.sizes <- sapply(centre.ids, function(centre.id) nrow(data[data$id__reg_hospital_id == centre.id, ]))
 sd.cluster.size <- sd(cluster.sizes)
 mean.cluster.size <- mean(cluster.sizes)
-ratio.sd.mean.cluster.size <- sd.cluster.size/mean.cluster.size
+ratio.sd.mean.cluster.size <- sd.cluster.size / mean.cluster.size
 ```
