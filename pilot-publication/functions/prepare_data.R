@@ -36,6 +36,7 @@ prepare_data <- function(data, codebook = NULL) {
     variable <- prepared.data$complications__failure_of_conservative_management
     variable[variable == "0" | variable == "NO" | variable == "no"] <- "No"
     variable[variable == "Yes - Surgery on the 3rd day"] <- "Yes"
+    variable[variable == "YES"] <- "Yes"
     variable <- as.factor(variable)
     prepared.data$complications__failure_of_conservative_management <- variable
     variable <- prepared.data$complications__number_of_hospitalizations_for_this_injury

@@ -1,4 +1,4 @@
-## Run from command line with /usr/lib/R/bin/R --no-restore --file=main.R > run.log
+## Run from command line with R CMD BATCH main.R run.log &
 
 ## Load packages
 library(dotenv)
