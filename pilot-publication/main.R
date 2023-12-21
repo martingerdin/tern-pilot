@@ -53,21 +53,55 @@ n.boot.samples <- 1000
 bootstrapped.outcome.results <- boot(data, try_estimate_outcome_results, R = n.boot.samples)
 saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outcome-results.Rds"))
 
+str(bootstrapped.outcome.results)
+
 ## Calculate confidence intervals
+calculate_boot_ci <- function(
+    bootstrapped.outcome.results,
+    index,
+    ci.type,
+    ci.levels) {
+    boot.ci.object <-
+        boot.ci(
+            boot.out = bootstrapped.outcome.results,
+            index = index,
+            type = ci.type,
+            conf = ci.levels
+        )
+    ci <- boot.ci.object[[ci.type]][, c(1, 4:5)]
+    colnames(ci) <- c("level", "lower", "upper")
+    return(ci)
+}
+dummy.object <- structure(rep(NA, 9), dim = c(
+    3L,
+    3L
+), dimnames = list(NULL, c("level", "lower", "upper")))
 ci.levels <- c(0.75, 0.85, 0.95)
 ci.type <- "basic"
-bootstrapped.outcome.results.ci <- lapply(seq_along(bootstrapped.outcome.results$t0), function(index) {
-    t0.value <- bootstrapped.outcome.results$t0[index]
-    ci <- NA
-    if (!is.na(t0.value)) {
-        boot.ci.object <- boot.ci(
-            boot.out = bootstrapped.outcome.results,
-            index = index, type = ci.type, conf = ci.levels
-        )
-        ci <- boot.ci.object[[ci.type]][, c(1, 4:5)]
-        colnames(ci) <- c("level", "lower", "upper")
+bootstrapped.outcome.results.ci <- lapply(
+    seq_along(bootstrapped.outcome.results$t0),
+    function(index) {
+        t0.value <- bootstrapped.outcome.results$t0[index]
+        ci <- dummy.object
+        if (!is.na(t0.value)) {
+            ci <- tryCatch(
+                calculate_boot_ci(
+                    bootstrapped.outcome.results,
+                    index,
+                    ci.type,
+                    ci.levels
+                ),
+                error = function(e) {
+                    message(paste0("Error calculating CI for index ", index))
+                    message(e)
+                    return(dummy.object)
+                }
+            )
+        }
+        return(ci)
     }
-    return(ci)
-})
+)
 names(bootstrapped.outcome.results.ci) <- names(bootstrapped.outcome.results$t0)
 saveRDS(bootstrapped.outcome.results.ci, file = file.path("out", "bootstrapped-outcome-results-ci.Rds"))
+
+bootstrapped.outcome.results.ci[[2]]

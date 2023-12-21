@@ -20,6 +20,9 @@ create_descriptive_table <- function(table.data,
                                      strata = NULL,
                                      include.overall = TRUE,
                                      caption = NULL) {
+    ## Define pipe operator
+    `%>%` <- magrittr::`%>%`
+
     ## Check arguments
     assertthat::assert_that(is.data.frame(table.data))
     assertthat::assert_that(is.character(variables) | is.null(variables))
@@ -29,50 +32,31 @@ create_descriptive_table <- function(table.data,
 
     ## Create table
     table.data <- as.data.frame(table.data)
-    if (!is.null(variables))
+    if (!is.null(variables)) {
         table.data <- table.data[, variables]
-    descriptive.table <- tbl_summary(data = table.data,
-                                     by = strata,
-                                     type = all_dichotomous() ~ "categorical",
-                                     missing_text = "Missing")
+    }
+    descriptive.table <- gtsummary::tbl_summary(
+        data = table.data,
+        by = strata,
+        type = all_dichotomous() ~ "categorical",
+        missing_text = "Missing"
+    )
 
     ## Add overall column
-    if (include.overall)
+    if (include.overall) {
         descriptive.table <- descriptive.table %>%
-            add_overall(last = TRUE)
+            gtsummary::add_overall(last = TRUE)
+    }
 
-    ## Convert table into a tibble
-    descriptive.table <- descriptive.table %>%
-        as_tibble() 
+    ## Add caption
+    if (!is.null(caption)) {
+        descriptive.table <- descriptive.table %>%
+            gtsummary::modify_caption(caption)
+    }
 
-    ## Replace NA with ""
-    descriptive.table[] <- lapply(descriptive.table, function(column) {
-        column[is.na(column)] <- ""
-        return (column)
-    })
-    
-##    strata.data <- rep("Overall", nrow(table.data))
-##    if (!is.null(strata)) {
-##        strata.data <- table.data[, strata]
-##        table.data[, strata] <- NULL
-##    }
-##    strata.list <- base::split(table.data, as.factor(strata.data))
-##    if (!is.null(strata) & include.overall)
-##        strata.list <- c(strata.list, list("Overall" = table.data))
-##    labels <- list(variables = setNames(nm = names(table.data)))
-##    if (use.labels) {
-##        labels <- lapply(labels$variables, function(column.name) {
-##            label <- table.data %>% dplyr::pull(.data[[column.name]]) %>% attr("label")
-##            if (is.null(label))
-##                label <- column.name
-##            return (label)
-##        })
-##        labels <- list(variables = labels)
-##    }
-##    descriptive.table <- table1::table1(strata.list,
-##                                        labels = labels,
-##                                        caption = caption,
-##                                        droplevels = TRUE,
-##                                        render.missing = table1::render.missing.default)
+    ## Return table as gt object
+    descriptive.table <- gtsummary::as_gt(descriptive.table)
+
+    ## Return table
     return(descriptive.table)
 }
