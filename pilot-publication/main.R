@@ -57,4 +57,11 @@ saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outc
 bootstrapped.outcome.results.ci <- calculate_bootstrap_cis(bootstrapped.outcome.results)
 saveRDS(bootstrapped.outcome.results.ci, file = file.path("out", "bootstrapped-outcome-results-ci.Rds"))
 
+## Combine point estimates with confidence intervals
+outcome.results <- list(
+    point.estimates = bootstrapped.outcome.results$t0,
+    confidence.intervals = bootstrapped.outcome.results.ci
+)
+saveRDS(outcome.results, file = file.path("outcome-results.Rds"))
+
 ## Create tables with outcome results
