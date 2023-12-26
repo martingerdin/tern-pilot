@@ -16,6 +16,12 @@ boot.files <- list.files("out")
 length(boot.files)
 ```
 
+## Create data report
+
+```{r}
+DataExplorer::create_report(data, report_title = "Data report", output_file = "data-report.pdf")
+```
+
 ## Errors when running bootstrap on real data
 
 1. I first got this strange error when I try to run the bootstrap on the real data:
