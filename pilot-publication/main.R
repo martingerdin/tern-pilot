@@ -57,4 +57,4 @@ saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outc
 bootstrapped.outcome.results.ci <- calculate_bootstrap_cis(bootstrapped.outcome.results)
 saveRDS(bootstrapped.outcome.results.ci, file = file.path("out", "bootstrapped-outcome-results-ci.Rds"))
 
-bootstrapped.outcome.results.ci[[2]]
+## Create tables with outcome results
