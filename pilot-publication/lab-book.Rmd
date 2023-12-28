@@ -9,6 +9,69 @@ library(dotenv)
 library(DataExplorer)
 ```
 
+## Import saved outcome results and create outcome tables
+
+```{r}
+## Load outcome results
+outcome.results <- readRDS("outcome-results.rds")
+
+## Extract cell references
+cell.references <- names(outcome.results$point.estimates)
+
+table.names <- strsplit(cell.references, split = "\\|\\|\\.") %>%
+    lapply(function(table.name) table.name[1]) %>%
+    unique()
+
+ci.levels <- outcome.results$confidence.intervals[[2]][, 1]
+
+## Combine point estimates and confidence intervals into a single table
+combined.outcome.results <- lapply(ci.levels, function(ci.level) {
+    lapply(cell.references, function(cell.reference) {
+        point.estimate <- outcome.results$point.estimates[[cell.reference]]
+        ci.data <- outcome.results$confidence.intervals[[cell.reference]]
+        ci <- ci.data[ci.data[, 1] == ci.level, c("lower", "upper")]
+        combined <- NA
+        if (!all(is.na(ci))) {
+            combined <- sprintf("%0.2f", c(point.estimate, ci))
+            combined <- paste0(combined[1], " (", combined[2], ", ", combined[3], ")")
+        }
+        return(combined)
+    }) %>%
+        setNames(cell.references)
+}) %>%
+    setNames(paste0("ci.level.", ci.levels))
+
+## Create outcome tables
+create_ci_level_tables <- function(table.name, ci.data) {
+    print(table.name)
+    table.data <- ci.data[grep(table.name, names(ci.data), fixed = TRUE)]
+    column.names <- strsplit(names(table.data), split = "\\|\\|\\.") %>%
+        lapply(function(column) column[2]) %>%
+        unique() %>%
+        stringr::str_replace_all(pattern = "\\|\\|column\\:\\:", replacement = "")
+    row.names <- strsplit(names(table.data), split = "\\|\\|\\.") %>%
+        lapply(function(row) row[3]) %>%
+        unique() %>%
+        stringr::str_replace_all(pattern = "\\|\\|row\\:\\:index\\:[0-9]*\\:\\:", replacement = "") %>%
+        stringr::str_replace_all(pattern = "\\|\\|", replacement = "")
+    ci.table <- matrix(table.data, ncol = length(column.names)) %>%
+        tibble::as_tibble(.name_repair = "minimal") %>%
+        tibble::add_column(row.names, .before = 1, .name_repair = "minimal") %>%
+        setNames(c("Outcome", column.names))
+    return(ci.table)
+}
+
+tables <- lapply(
+    combined.outcome.results, function(ci.data) {
+        lapply(table.names, create_ci_level_tables, ci.data = ci.data)
+    }
+)
+
+
+outcome.results.data <- enframe(outcome.results$point.estimates)
+table.names <- strsplit(names(outcome.results$point.estimates), split = "\\|\\|\\.")
+```
+
 ## Playground
 
 ```{r}
