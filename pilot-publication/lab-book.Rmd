@@ -7,6 +7,7 @@ library(pbapply)
 library(openssl)
 library(dotenv)
 library(DataExplorer)
+noacsr::source_all_functions()
 ```
 
 ## Import saved outcome results and create outcome tables
@@ -54,22 +55,31 @@ create_ci_level_tables <- function(table.name, ci.data) {
         unique() %>%
         stringr::str_replace_all(pattern = "\\|\\|row\\:\\:index\\:[0-9]*\\:\\:", replacement = "") %>%
         stringr::str_replace_all(pattern = "\\|\\|", replacement = "")
+    ## Replace outcome names with labels
+    all.outcomes <- all_outcomes()
+    outcomes.column <- sapply(row.names, function(row.name) {
+        if (!is.null(all.outcomes[[row.name]])) {
+            return(all.outcomes[[row.name]]$label)
+        } else {
+            return(row.name)
+        }
+    })
+    ## Create table
     ci.table <- matrix(table.data, ncol = length(column.names)) %>%
         tibble::as_tibble(.name_repair = "minimal") %>%
-        tibble::add_column(row.names, .before = 1, .name_repair = "minimal") %>%
+        tibble::add_column(outcomes.column, .before = 1, .name_repair = "minimal") %>%
         setNames(c("Outcome", column.names))
     return(ci.table)
 }
 
 tables <- lapply(
     combined.outcome.results, function(ci.data) {
-        lapply(table.names, create_ci_level_tables, ci.data = ci.data)
+        {
+            lapply(table.names, create_ci_level_tables, ci.data = ci.data)
+        } %>%
+            setNames(stringr::str_replace(table.names, pattern = "\\|\\|table\\:\\:", replacement = ""))
     }
 )
-
-
-outcome.results.data <- enframe(outcome.results$point.estimates)
-table.names <- strsplit(names(outcome.results$point.estimates), split = "\\|\\|\\.")
 ```
 
 ## Playground
