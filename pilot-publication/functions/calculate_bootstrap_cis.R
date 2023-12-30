@@ -19,7 +19,7 @@
 calculate_bootstrap_cis <- function(
     bootstrapped.outcome.results,
     ci.levels = c(0.75, 0.85, 0.95),
-    ci.type = "basic") {
+    ci.type = "bca") {
     ## Check arguments
     assertthat::assert_that(
         is.list(bootstrapped.outcome.results),

@@ -10,6 +10,24 @@ library(DataExplorer)
 noacsr::source_all_functions()
 ```
 
+## Import bootstrapped outcome results and generate confidence intervals
+
+```{r}
+## Load bootstrapped outcome results
+bootstrapped.outcome.results <- readRDS(file.path("out", "bootstrapped-outcome-results.Rds"))
+str(bootstrapped.outcome.results, max.level = 1)
+
+## Calculate confidence intervals
+bootstrapped.outcome.results.ci <- calculate_bootstrap_cis(bootstrapped.outcome.results)
+
+## Combine point estimates with confidence intervals
+outcome.results <- list(
+    point.estimates = bootstrapped.outcome.results$t0,
+    confidence.intervals = bootstrapped.outcome.results.ci
+)
+saveRDS(outcome.results, file = file.path("outcome-results.Rds"))
+```
+
 ## Import saved outcome results and create outcome tables
 
 ```{r}
@@ -30,10 +48,10 @@ combined.outcome.results <- lapply(ci.levels, function(ci.level) {
     lapply(cell.references, function(cell.reference) {
         point.estimate <- outcome.results$point.estimates[[cell.reference]]
         ci.data <- outcome.results$confidence.intervals[[cell.reference]]
-        ci <- ci.data[ci.data[, 1] == ci.level, c("lower", "upper")]
+        ci <- ci.data[ci.data[, "level"] == ci.level, c("lower", "upper")]
         combined <- NA
         if (!all(is.na(ci))) {
-            ## combined <- sprintf("%0.2f", c(point.estimate, ci))
+            combined <- round(c(point.estimate, ci), 2)
             combined <- paste0(combined[1], " (", combined[2], ", ", combined[3], ")")
         }
         return(combined)
@@ -172,17 +190,17 @@ DataExplorer::create_report(data, report_title = "Data report", output_file = "d
 ```{r}
 ## Error in `add_column()`:
 ## ! New columns must be compatible with `.data`.
-## ✖ New column has 112 rows.
-## ℹ `.data` has 111 rows.
+## <U+2716> New column has 112 rows.
+## <U+2139> `.data` has 111 rows.
 ## Backtrace:
-##     ▆
-##  1. ├─boot::boot(data, estimate_outcome_results, R = n.boot.samples)
-##  2. │ └─global statistic(data, original, ...)
-##  3. │   └─outcomes.tables$absolute.difference %>% as_tibble() %>% ...
-##  4. └─tibble::add_column(., outcomes.row.names, .before = 1)
-##  5.   └─tibble:::abort_incompatible_new_cols(nrow(.data), df)
-##  6.     └─tibble:::tibble_abort(...)
-##  7.       └─rlang::abort(x, class, ..., call = call, parent = parent, use_cli_format = TRUE)
+##     <U+2586>
+##  1. <U+251C><U+2500>boot::boot(data, estimate_outcome_results, R = n.boot.samples)
+##  2. <U+2502> <U+2514><U+2500>global statistic(data, original, ...)
+##  3. <U+2502>   <U+2514><U+2500>outcomes.tables$absolute.difference %>% as_tibble() %>% ...
+##  4. <U+2514><U+2500>tibble::add_column(., outcomes.row.names, .before = 1)
+##  5.   <U+2514><U+2500>tibble:::abort_incompatible_new_cols(nrow(.data), df)
+##  6.     <U+2514><U+2500>tibble:::tibble_abort(...)
+##  7.       <U+2514><U+2500>rlang::abort(x, class, ..., call = call, parent = parent, use_cli_format = TRUE)
 ## Execution halted
 ```
 
@@ -192,7 +210,7 @@ The cause of the error is the entry 995 in the variable `complications__number_o
 
 ```{r}
 ## Error in Ops.data.frame(outcomes.tables$post.training[2:4], outcomes.tables$pre.training[2:4]) :
-##   ‘-’ only defined for equally-sized data frames
+##   <U+2018>-<U+2019> only defined for equally-sized data frames
 ## Calls: boot -> statistic -> Ops.data.frame
 ## Execution halted
 ```
