@@ -33,7 +33,7 @@ combined.outcome.results <- lapply(ci.levels, function(ci.level) {
         ci <- ci.data[ci.data[, 1] == ci.level, c("lower", "upper")]
         combined <- NA
         if (!all(is.na(ci))) {
-            combined <- sprintf("%0.2f", c(point.estimate, ci))
+            ## combined <- sprintf("%0.2f", c(point.estimate, ci))
             combined <- paste0(combined[1], " (", combined[2], ", ", combined[3], ")")
         }
         return(combined)
@@ -44,31 +44,61 @@ combined.outcome.results <- lapply(ci.levels, function(ci.level) {
 
 ## Create outcome tables
 create_ci_level_tables <- function(table.name, ci.data) {
-    print(table.name)
+    ## Extract table data
     table.data <- ci.data[grep(table.name, names(ci.data), fixed = TRUE)]
     column.names <- strsplit(names(table.data), split = "\\|\\|\\.") %>%
         lapply(function(column) column[2]) %>%
         unique() %>%
-        stringr::str_replace_all(pattern = "\\|\\|column\\:\\:", replacement = "")
+        stringr::str_replace_all(pattern = "\\|\\|column\\:\\:", replacement = "") %>%
+        stringr::str_replace_all(pattern = "\\*\\*", replacement = "")
     row.names <- strsplit(names(table.data), split = "\\|\\|\\.") %>%
         lapply(function(row) row[3]) %>%
         unique() %>%
         stringr::str_replace_all(pattern = "\\|\\|row\\:\\:index\\:[0-9]*\\:\\:", replacement = "") %>%
         stringr::str_replace_all(pattern = "\\|\\|", replacement = "")
+
     ## Replace outcome names with labels
     all.outcomes <- all_outcomes()
-    outcomes.column <- sapply(row.names, function(row.name) {
+    outcomes.column.list <- lapply(row.names, function(row.name) {
+        new.row.name <- row.name
+        index <- FALSE
         if (!is.null(all.outcomes[[row.name]])) {
-            return(all.outcomes[[row.name]]$label)
-        } else {
-            return(row.name)
+            new.row.name <- all.outcomes[[row.name]]$label
+            index <- TRUE
         }
+        return(list(row.name = new.row.name, index = index))
     })
+    outcomes.column.index <- sapply(outcomes.column.list, function(outcomes.column) outcomes.column$index)
+    outcomes.column <- sapply(outcomes.column.list, function(outcomes.column) outcomes.column$row.name)
+
     ## Create table
     ci.table <- matrix(table.data, ncol = length(column.names)) %>%
         tibble::as_tibble(.name_repair = "minimal") %>%
         tibble::add_column(outcomes.column, .before = 1, .name_repair = "minimal") %>%
         setNames(c("Outcome", column.names))
+
+    ## Replace NA with empty string
+    ci.table[] <- lapply(ci.table, function(column) {
+        column[is.na(column)] <- ""
+        return(column)
+    })
+
+    ## Convert table to gt
+    ci.table <- ci.table %>%
+        gt::gt() %>%
+        gt::tab_style(
+            style = gt::cell_text(weight = "bold"),
+            locations = gt::cells_body(
+                columns = c(Outcome),
+                rows = outcomes.column.index
+            )
+        ) %>%
+        gt::tab_style(
+            style = gt::cell_text(weight = "bold"),
+            locations = gt::cells_column_labels()
+        )
+
+    ## Return table
     return(ci.table)
 }
 
@@ -80,6 +110,46 @@ tables <- lapply(
             setNames(stringr::str_replace(table.names, pattern = "\\|\\|table\\:\\:", replacement = ""))
     }
 )
+
+## Save tables to file
+document.string <- lapply(
+    names(tables), function(ci.level.tables.name) {
+        ## Extract confidence level as percentage
+        ci.level <- stringr::str_remove(ci.level.tables.name, pattern = "ci\\.level\\.") %>%
+            as.numeric() %>%
+            scales::percent()
+        ci.level.tables <- tables[[ci.level.tables.name]]
+        paste0(
+            "# ", ci.level, " confidence level\n\n",
+            lapply(names(ci.level.tables), function(ci.level.table.name) {
+                ci.level.table <- ci.level.tables[[ci.level.table.name]]
+                paste0(
+                    "## ", ci.level.table.name, "\n\n",
+                    "\`\`\`{r, echo = FALSE} \n\n",
+                    "tables[[\"", ci.level.tables.name, "\"]][[\"", ci.level.table.name, "\"]]", "\n\n",
+                    "\`\`\`\n\n"
+                )
+            }) %>%
+                paste0(collapse = "\n\n")
+        )
+    }
+) %>%
+    unlist() %>%
+    paste0(collapse = "\n\n")
+
+## Write document string to file
+fileConn <- file("outcome-tables.Rmd")
+writeLines(document.string, fileConn)
+close(fileConn)
+
+## Create html document
+rmarkdown::render("outcome-tables.Rmd", output_format = rmarkdown::html_document(toc = TRUE))
+```
+
+The html document can then be compiled as pdf using pandoc from the command line:
+
+```{bash}  
+pandoc outcome-tables.html -o outcome-tables.pdf --pdf-engine=weasyprint
 ```
 
 ## Playground

@@ -1,0 +1,335 @@
+# 75% confidence level
+
+## overall
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["overall"]]
+
+```
+
+
+
+## pre.training
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["pre.training"]]
+
+```
+
+
+
+## post.training
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["post.training"]]
+
+```
+
+
+
+## absolute.difference
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["absolute.difference"]]
+
+```
+
+
+
+## relative.difference
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["relative.difference"]]
+
+```
+
+
+
+## Post training outcome Standard care vs. ATLS
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["Post training outcome Standard care vs. ATLS"]]
+
+```
+
+
+
+## Post training outcome Standard care vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["Post training outcome Standard care vs. PTC"]]
+
+```
+
+
+
+## Post training outcome ATLS vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["Post training outcome ATLS vs. PTC"]]
+
+```
+
+
+
+## Change from baseline Standard care vs. ATLS
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["Change from baseline Standard care vs. ATLS"]]
+
+```
+
+
+
+## Change from baseline Standard care vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["Change from baseline Standard care vs. PTC"]]
+
+```
+
+
+
+## Change from baseline ATLS vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.75"]][["Change from baseline ATLS vs. PTC"]]
+
+```
+
+
+
+# 85% confidence level
+
+## overall
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["overall"]]
+
+```
+
+
+
+## pre.training
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["pre.training"]]
+
+```
+
+
+
+## post.training
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["post.training"]]
+
+```
+
+
+
+## absolute.difference
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["absolute.difference"]]
+
+```
+
+
+
+## relative.difference
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["relative.difference"]]
+
+```
+
+
+
+## Post training outcome Standard care vs. ATLS
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["Post training outcome Standard care vs. ATLS"]]
+
+```
+
+
+
+## Post training outcome Standard care vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["Post training outcome Standard care vs. PTC"]]
+
+```
+
+
+
+## Post training outcome ATLS vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["Post training outcome ATLS vs. PTC"]]
+
+```
+
+
+
+## Change from baseline Standard care vs. ATLS
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["Change from baseline Standard care vs. ATLS"]]
+
+```
+
+
+
+## Change from baseline Standard care vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["Change from baseline Standard care vs. PTC"]]
+
+```
+
+
+
+## Change from baseline ATLS vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.85"]][["Change from baseline ATLS vs. PTC"]]
+
+```
+
+
+
+# 95% confidence level
+
+## overall
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["overall"]]
+
+```
+
+
+
+## pre.training
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["pre.training"]]
+
+```
+
+
+
+## post.training
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["post.training"]]
+
+```
+
+
+
+## absolute.difference
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["absolute.difference"]]
+
+```
+
+
+
+## relative.difference
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["relative.difference"]]
+
+```
+
+
+
+## Post training outcome Standard care vs. ATLS
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["Post training outcome Standard care vs. ATLS"]]
+
+```
+
+
+
+## Post training outcome Standard care vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["Post training outcome Standard care vs. PTC"]]
+
+```
+
+
+
+## Post training outcome ATLS vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["Post training outcome ATLS vs. PTC"]]
+
+```
+
+
+
+## Change from baseline Standard care vs. ATLS
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["Change from baseline Standard care vs. ATLS"]]
+
+```
+
+
+
+## Change from baseline Standard care vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["Change from baseline Standard care vs. PTC"]]
+
+```
+
+
+
+## Change from baseline ATLS vs. PTC
+
+```{r, echo = FALSE} 
+
+tables[["ci.level.0.95"]][["Change from baseline ATLS vs. PTC"]]
+
+```
+
+
