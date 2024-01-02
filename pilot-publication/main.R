@@ -65,3 +65,4 @@ outcome.results <- list(
 saveRDS(outcome.results, file = file.path("outcome-results.Rds"))
 
 ## Create tables with outcome results
+outcome.results.tables <- create_outcome_results_tables(outcome.results)
