@@ -66,3 +66,6 @@ saveRDS(outcome.results, file = file.path("outcome-results.Rds"))
 
 ## Create tables with outcome results
 outcome.results.tables <- create_outcome_results_tables(outcome.results)
+
+## Save outcome results tables to file
+save_tables_to_file(outcome.results.tables)

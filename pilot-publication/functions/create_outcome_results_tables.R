@@ -25,6 +25,11 @@ create_outcome_results_tables <- function(outcome.results) {
         lapply(function(table.name) table.name[1]) %>%
         unique()
 
+    ## Check table names
+    assertthat::assert_that(identical(unlist(table.names), get_table_names(return.original.names = TRUE)),
+        msg = "Invalid table names, maybe they have been changed?"
+    )
+
     ## Extract confidence interval levels
     ci.levels <- outcome.results$confidence.intervals[[2]][, 1]
 
@@ -45,13 +50,16 @@ create_outcome_results_tables <- function(outcome.results) {
     }) %>%
         setNames(paste0("ci.level.", ci.levels))
 
+    ## Change table names
+    new.table.names <- get_table_names()
+
     ## Create tables for each confidence interval level
     tables <- lapply(
         combined.outcome.results, function(ci.data) {
             {
                 lapply(table.names, create_ci_level_tables, ci.data = ci.data)
             } %>%
-                setNames(stringr::str_replace(table.names, pattern = "\\|\\|table\\:\\:", replacement = ""))
+                setNames(new.table.names)
         }
     )
 
@@ -133,4 +141,55 @@ create_ci_level_tables <- function(table.name, ci.data) {
 
     ## Return table
     return(ci.table)
+}
+
+get_table_names <- function(return.original.names = FALSE) {
+    ## Define original table names
+    table.names <- list(
+        "||table::overall" = "Outcomes in all patients during the entire study period, by treatment arm",
+        "||table::pre.training" = "Outcomes in all patients before training, by treatment arm",
+        "||table::post.training" = "Outcomes in all patients after training, by treatment arm",
+        "||table::absolute.difference" = paste0(
+            "Absolute change from baseline for all outcomes,",
+            " comparing the period after training with the period before training,",
+            " by treatment arms"
+        ),
+        "||table::relative.difference" = paste0(
+            "Relative change from baseline for all outcomes,",
+            " comparing the period after training with the period before training,",
+            " by treatment arms"
+        ),
+        "||table::Post training outcome Standard care vs. ATLS" = paste0(
+            "Absolute and relative differences in outcomes after training,",
+            " comparing standard care with ATLS"
+        ),
+        "||table::Post training outcome Standard care vs. PTC" = paste0(
+            "Absolute and relative differences in outcomes after training,",
+            " comparing standard care with PTC"
+        ),
+        "||table::Post training outcome ATLS vs. PTC" = paste0(
+            "Absolute and relative differences in outcomes after training,",
+            " comparing ATLS with PTC"
+        ),
+        "||table::Change from baseline Standard care vs. ATLS" = paste0(
+            "Absolute and relative differences in changes from baseline for all outcomes,",
+            " comparing standard care with ATLS"
+        ),
+        "||table::Change from baseline Standard care vs. PTC" = paste0(
+            "Absolute and relative differences in changes from baseline for all outcomes,",
+            " comparing standard care with PTC"
+        ),
+        "||table::Change from baseline ATLS vs. PTC" = paste0(
+            "Absolute and relative differences in changes from baseline for all outcomes,",
+            " comparing ATLS with PTC"
+        )
+    )
+
+    ## Return original table names
+    if (return.original.names) {
+        table.names <- names(table.names)
+    }
+
+    ## Return table names
+    return(table.names)
 }
