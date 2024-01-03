@@ -682,7 +682,12 @@ table1::t1kable(sample.characteristics.table)
 ```
 
 ## Patient Participant Outcomes
-A total of `r n.m30d.atls` ( `r p.m30d.atls`%) patients in the ATLS
+
+```{r, echo = FALSE}
+post.training.outcomes.table <- outcome.results.tables$ci.level.0.95[["Outcomes in all patients after training, by treatment arm"]]
+```
+
+After training, a total of `r n.m30d.atls` ( `r p.m30d.atls`%) patients in the ATLS
 arm had the primary outcome, compared to `r n.m30d.ptc` (
 `r p.m30d.ptc`%) patients in the PTC arm, and `r n.m30d.control` (
 `r p.m30d.control`%) patients in the standard care arm. The absolute risk

@@ -45,6 +45,16 @@ sample.characteristics.table <- create_descriptive_table(table.data,
     include.overall = TRUE
 )
 
+## Create table of sample characteristics post training
+post.training.table.data <- data %>%
+    filter(post.training) %>%
+    select(table.variables)
+post.training.characteristics.table <- create_descriptive_table(post.training.table.data,
+    strata = "arm",
+    caption = "Patient sample characteristics after training",
+    include.overall = TRUE
+)
+
 ## Bootstrap outcome results
 unlink("error.log")
 unlink("out", recursive = TRUE)
