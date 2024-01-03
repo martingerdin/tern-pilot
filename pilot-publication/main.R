@@ -39,21 +39,44 @@ table.variables <- c(
     "arm"
 )
 table.data <- data[, table.variables]
-sample.characteristics.table <- create_descriptive_table(table.data,
+overall.sample.characteristics.table <- create_descriptive_table(table.data)
+
+## Create table of sample characteristics before training
+pre.training.table.data <- data %>%
+    filter(!post.training) %>%
+    select(table.variables)
+pre.training.characteristics.table <- create_descriptive_table(
+    pre.training.table.data,
     strata = "arm",
-    caption = "Patient sample characteristics",
     include.overall = TRUE
 )
 
-## Create table of sample characteristics post training
+## Create table of sample characteristics after training
 post.training.table.data <- data %>%
     filter(post.training) %>%
     select(table.variables)
-post.training.characteristics.table <- create_descriptive_table(post.training.table.data,
+post.training.characteristics.table <- create_descriptive_table(
+    post.training.table.data,
     strata = "arm",
-    caption = "Patient sample characteristics after training",
     include.overall = TRUE
 )
+
+## Combine tables
+sample.characteristics.table <- gtsummary::tbl_merge(
+    tbls = list(
+        pre.training.characteristics.table,
+        post.training.characteristics.table,
+        overall.sample.characteristics.table
+    ),
+    tab_spanner = c("Before training", "After training", "Overall")
+) %>%
+    gtsummary::modify_caption("Patient sample characteristics")
+
+## Save tables to disk
+saveRDS(list(
+    sample.characteristics = sample.characteristics.table,
+    post.training.characteristics = post.training.characteristics.table
+), file = file.path("out", "sample-characteristics-tables.Rds"))
 
 ## Bootstrap outcome results
 unlink("error.log")

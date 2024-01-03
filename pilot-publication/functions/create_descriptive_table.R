@@ -12,14 +12,18 @@
 #'     stratified. Defaults to NULL.
 #' @param include.overall Logical. If TRUE a column called "Overall"
 #'     is included in the table, which includes descriptive statistics
-#'     for the whole sample. Defaults to TRUE.
+#'     for the whole sample. Defaults to TRUE, unless strata is NULL,
+#'     in which case it defaults to FALSE.
 #' @param caption Character or NULL. The table caption. Defaults to
 #'     NULL, as in no caption.
+#' @param return.as.gt Logical. If TRUE the table is returned as a gt
+#'     object. Defaults to FALSE.
 create_descriptive_table <- function(table.data,
                                      variables = NULL,
                                      strata = NULL,
                                      include.overall = TRUE,
-                                     caption = NULL) {
+                                     caption = NULL,
+                                     return.as.gt = FALSE) {
     ## Define pipe operator
     `%>%` <- magrittr::`%>%`
 
@@ -29,6 +33,11 @@ create_descriptive_table <- function(table.data,
     assertthat::assert_that(is.character(strata) | is.null(strata))
     assertthat::assert_that(is.logical(include.overall))
     assertthat::assert_that(is.character(caption) | is.null(caption))
+
+    ## Set include.overall to FALSE if strata is NULL
+    if (is.null(strata)) {
+        include.overall <- FALSE
+    }
 
     ## Create table
     table.data <- as.data.frame(table.data)
@@ -55,7 +64,9 @@ create_descriptive_table <- function(table.data,
     }
 
     ## Return table as gt object
-    descriptive.table <- gtsummary::as_gt(descriptive.table)
+    if (return.as.gt) {
+        descriptive.table <- gtsummary::as_gt(descriptive.table)
+    }
 
     ## Return table
     return(descriptive.table)
