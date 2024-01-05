@@ -72,12 +72,6 @@ sample.characteristics.table <- gtsummary::tbl_merge(
 ) %>%
     gtsummary::modify_caption("Patient sample characteristics")
 
-## Save tables to disk
-saveRDS(list(
-    sample.characteristics = sample.characteristics.table,
-    post.training.characteristics = post.training.characteristics.table
-), file = file.path("out", "sample-characteristics-tables.Rds"))
-
 ## Bootstrap outcome results
 unlink("error.log")
 unlink("out", recursive = TRUE)

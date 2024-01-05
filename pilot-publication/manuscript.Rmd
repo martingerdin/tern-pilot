@@ -706,6 +706,11 @@ m30d.atls <- inline_text(post.training.characteristics.table,
   level = "Yes",
   column = "ATLS"
 )
+m30d.ptc <- inline_text(post.training.characteristics.table,
+  variable = outcomes__alive_after_30_days,
+  level = "Yes",
+  column = "PTC"
+)
 ```
 
 After training, a total of `r m30d.atls` patients in the ATLS

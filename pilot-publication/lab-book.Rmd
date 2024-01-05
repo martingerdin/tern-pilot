@@ -32,7 +32,7 @@ saveRDS(outcome.results, file = file.path("outcome-results.Rds"))
 
 ```{r}
 ## Load outcome results
-outcome.results <- readRDS("outcome-results.rds")
+outcome.results <- readRDS("outcome-results.Rds")
 
 ## Extract cell references
 cell.references <- names(outcome.results$point.estimates)
@@ -168,6 +168,15 @@ The html document can then be compiled as pdf using pandoc from the command line
 
 ```{bash}  
 pandoc outcome-tables.html -o outcome-tables.pdf --pdf-engine=weasyprint
+```
+
+## Access data from gt table object
+
+```{r}
+gt.table <- tables[[1]][[1]]
+str(gt.table$`_data`, max.level = 1)
+gt.table$`_data`
+gt.table$`_styles`
 ```
 
 ## Playground
