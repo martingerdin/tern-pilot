@@ -1,3 +1,26 @@
+#' Return inline text for a given outcome and level from a gt table
+#'
+#' This function extracts inline text for a specified outcome and level from a GT table.
+#' It is designed to work with tables that have been created using the `gt` package.
+#' This function assumes that outcome names are styled as bold in the GT table.
+#'
+#' @param gt.table A GT table object (of class `gt_tbl`) from which to extract information.
+#' @param outcome A character string specifying the outcome of interest.
+#' @param level A character string specifying the level within the chosen outcome.
+#' @param column The column from which to extract the data. This can be a character string (column name) or a numeric value (column index).
+#'
+#' @return Returns a vector containing the inline text for the given outcome and level.
+#'
+#' @importFrom magrittr %>%
+#' @importFrom dplyr pull
+#' @importFrom assertthat assert_that
+#'
+#' @examples
+#' # Assuming `my_gt_table` is a GT table with outcomes and levels
+#' # Extract inline text for a specific outcome and level
+#' inline_text <- inline_outcome_text(my_gt_table, "Outcome1", "Level1", "Column1")
+#'
+#' @export
 inline_outcome_text <- function(gt.table, outcome, level, column) {
     ## Define borrowed functions
     `%>%` <- magrittr::`%>%`
