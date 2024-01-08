@@ -1,17 +1,10 @@
 ## Run from command line with R CMD BATCH main.R run.log &
 
-## Load packages
-library(dotenv)
-library(dplyr)
-library(tibble)
-library(lubridate)
-library(gtsummary)
-library(naniar)
-library(icdpicr)
-library(boot)
-
 ## Source functions
 noacsr::source_all_functions()
+
+## Load packages
+load_packages()
 
 ## Import data
 data <- readr::read_csv(Sys.getenv("DATA_DIR"))
