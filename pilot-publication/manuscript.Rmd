@@ -700,7 +700,6 @@ sample.characteristics.table
 ## Patient Participant Outcomes
 
 ```{r, echo = FALSE}
-post.training.outcomes.table <- outcome.results.tables$ci.level.0.95[["Outcomes in all patients after training, by treatment arm"]]
 m30d.atls <- inline_text(post.training.characteristics.table,
   variable = outcomes__alive_after_30_days,
   level = "Yes",
@@ -711,17 +710,37 @@ m30d.ptc <- inline_text(post.training.characteristics.table,
   level = "Yes",
   column = "PTC"
 )
+m30d.standard.care <- inline_text(post.training.characteristics.table,
+  variable = outcomes__alive_after_30_days,
+  level = "Yes",
+  column = "Standard care"
+)
+standard.care.vs.atls.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
+arr.standard.care.atls <- inline_outcome_text(
+  standard.care.vs.atls.table,
+  outcome = "30 day mortality",
+  column = "Absolute difference",
+  level = "Yes"
+)
+standard.care.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
+arr.standard.care.ptc <- inline_outcome_text(
+  standard.care.vs.ptc.table,
+  outcome = "30 day mortality",
+  column = "Absolute difference",
+  level = "Yes"
+)
+atls.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
+arr.atls.ptc <- inline_outcome_text(
+  atls.vs.ptc.table,
+  outcome = "30 day mortality",
+  column = "Absolute difference",
+  level = "Yes"
+)
 ```
 
-After training, a total of `r m30d.atls` patients in the ATLS
-arm had the primary outcome, compared to `r n.m30d.ptc` (
-`r p.m30d.ptc`%) patients in the PTC arm, and `r n.m30d.control` (
-`r p.m30d.control`%) patients in the standard care arm. The absolute risk
-difference between the ATLS and PTC arm was `r arr.atls.ptc`% units
-<!--(95% CI X - X)-->, between the ATLS and standard care arms 
-`r arr.atls.control`% units <!--(95% CI X - X)-->, and between the PTC
-and standard care arms `r arr.ptc.control`% units <!--(95% CI X
--X)-->. The relative risk between the ATLS and PTC arm was 
+After training, a total of `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm had the primary outcome, compared to `r m30d.atls` patients in the ATLS arm and `r m30d.ptc` patients in the PTC arm. The absolute risk difference between the standard care and ATLS arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS and PTC arms (95% CI) `r arr.atls.ptc`% units. 
+
+The relative risk between the ATLS and PTC arm was 
 `r rr.atls.ptc` <!--(95% CI X - X)-->, between the ATLS and standard care
 arms `r rr.atls.control` <!--(95% CI X - X)-->, and between the PTC
 and standard care arms `r rr.ptc.control` <!--(95% CI X - X)-->.
