@@ -700,6 +700,7 @@ sample.characteristics.table
 ## Patient Participant Outcomes
 
 ```{r, echo = FALSE}
+## Crude 30 day mortality
 m30d.atls <- inline_text(post.training.characteristics.table,
   variable = outcomes__alive_after_30_days,
   level = "Yes",
@@ -715,71 +716,119 @@ m30d.standard.care <- inline_text(post.training.characteristics.table,
   level = "Yes",
   column = "Standard care"
 )
+
+## Extract tables for absolute and relative differences
 standard.care.vs.atls.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
+
+standard.care.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
+
+atls.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
+
+## Absolute differences
 arr.standard.care.atls <- inline_outcome_text(
   standard.care.vs.atls.table,
   outcome = "30 day mortality",
   column = "Absolute difference",
   level = "Yes"
 )
-standard.care.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
+
 arr.standard.care.ptc <- inline_outcome_text(
   standard.care.vs.ptc.table,
   outcome = "30 day mortality",
   column = "Absolute difference",
   level = "Yes"
 )
-atls.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
+
 arr.atls.ptc <- inline_outcome_text(
   atls.vs.ptc.table,
   outcome = "30 day mortality",
   column = "Absolute difference",
   level = "Yes"
 )
+
+## Relative differences
+rr.standard.care.atls <- inline_outcome_text(
+  standard.care.vs.atls.table,
+  outcome = "30 day mortality",
+  column = "Relative difference",
+  level = "Yes"
+)
+
+rr.standard.care.ptc <- inline_outcome_text(
+  standard.care.vs.ptc.table,
+  outcome = "30 day mortality",
+  column = "Relative difference",
+  level = "Yes"
+)
+
+rr.atls.ptc <- inline_outcome_text(
+  atls.vs.ptc.table,
+  outcome = "30 day mortality",
+  column = "Relative difference",
+  level = "Yes"
+)
+
+## Extract tables for change from baseline in 30 day mortality
+absolute.change.from.baseline.table <- outcome.results.tables$ci.level.0.95[["Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+relative.change.from.baseline.table <- outcome.results.tables$ci.level.0.95[["Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+## Absolute change from baseline
+abs.change.standard.care <- inline_outcome_text(
+  absolute.change.from.baseline.table,
+  outcome = "30 day mortality",
+  column = "Standard care",
+  level = "Yes"
+)
+
+abs.change.atls <- inline_outcome_text(
+  absolute.change.from.baseline.table,
+  outcome = "30 day mortality",
+  column = "ATLS",
+  level = "Yes"
+)
+
+abs.change.ptc <- inline_outcome_text(
+  absolute.change.from.baseline.table,
+  outcome = "30 day mortality",
+  column = "PTC",
+  level = "Yes"
+)
+
+## Relative change from baseline
+rel.change.standard.care <- inline_outcome_text(
+  relative.change.from.baseline.table,
+  outcome = "30 day mortality",
+  column = "Standard care",
+  level = "Yes"
+)
+
+rel.change.atls <- inline_outcome_text(
+  relative.change.from.baseline.table,
+  outcome = "30 day mortality",
+  column = "ATLS",
+  level = "Yes"
+)
+
+rel.change.ptc <- inline_outcome_text(
+  relative.change.from.baseline.table,
+  outcome = "30 day mortality",
+  column = "PTC",
+  level = "Yes"
+)
 ```
 
-After training, a total of `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm had the primary outcome, compared to `r m30d.atls` patients in the ATLS arm and `r m30d.ptc` patients in the PTC arm. The absolute risk difference between the standard care and ATLS arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS and PTC arms (95% CI) `r arr.atls.ptc`% units. 
+After training, a total of `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm had the primary outcome, compared to `r m30d.atls` patients in the ATLS arm and `r m30d.ptc` patients in the PTC arm. The absolute change from baseline in the primary outcome (95% CI) in the standard care arm was `r abs.change.standard.care`% units, in the ATLS arm `r abs.change.atls`% units, and in the PTC arm `r abs.change.ptc`% units. The relative change from baseline in the primary outcome (95% CI) in the standard care arm was `r rel.change.standard.care`, in the ATLS arm `r rel.change.atls`, and in the PTC arm `r rel.change.ptc`.
 
-The relative risk between the ATLS and PTC arm was 
-`r rr.atls.ptc` <!--(95% CI X - X)-->, between the ATLS and standard care
-arms `r rr.atls.control` <!--(95% CI X - X)-->, and between the PTC
-and standard care arms `r rr.ptc.control` <!--(95% CI X - X)-->.
-
-<!--
-The change from baseline for the primary outcome was X in the ATLS
-arm, X in the PTC arm, and X in the standard care arm. The differences
-between changes from baseline were X (95% CI X - X) between the ATLS
-and PTC arms, X (95% CI X - X) between the ATLS and standard care
-arms, and X (95% CI X - X) between the PTC and standard care
-arms. Table X shows differences in the primary outcome between trial
-arms with 75, 85, and 95% CIs. 
--->
-
-Differences in secondary outcomes between trial arms<!-- and subgroups--> are
-available as Supplementary material table \@ref(tab:secondary-outcomes).
+The absolute risk difference between the standard care and ATLS arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS and PTC arms (95% CI) `r arr.atls.ptc`% units. The relative risk in the standard care arm compared with the ATLS arm (95% CI) was `r rr.standard.care.atls`, in the standard care arm compared with the PTC arm (95% CI) `r rr.standard.care.ptc`, and in the ATLS arm compared with the PTC arm (95% CI) the relative risk was `r rr.atls.ptc`. The absolute and relative differences in changes from baseline comparing the three arms are shown in Supplementary materials, along with data on all other outcomes.  
 
 ## Resident Participant Outcomes
 A total of `r n.residents` residents were trained during this
-pilot. Overall their median confidence in managing trauma patients was
-`r median.confidence` (IQR `r iqr.confidence`) on a 10 point Likert
-scale with 10 being most confident. <!--In the post training period, the
-confidence in the ATLS arm was X (IQR X - X), compared to X (IQR X -
-X) in the PTC arm, and X (IQR X - X) in the standard care arm.-->
+pilot. Overall their median confidence in managing trauma patients was `r median.confidence` (IQR `r iqr.confidence`) on a 10 point Likert scale with 10 being most confident. <!--In the post training period, the confidence in the ATLS arm was X (IQR X - X), compared to X (IQR X - X) in the PTC arm, and X (IQR X - X) in the standard care arm.-->
 
 ## Feasibility Outcomes
 <!--Out of X potentially eligible patients, X (X%) patients were enrolled
-in the study-->. Out of `r n.eligible.residents` potentially eligible
-residents, `r n.residents` (`r recruitment.rate.residents`%) were
-enrolled in the study. The lost to follow up rate was 
-`r rate.lost.to.follow.up`, with `r n.lost.to.follow.up` out of 
-`r n.patients` patients not completing 30 day follow up. Among residents
-the pass rate, after two attempts, was `r rate.pass`%. The missing
-data rate ranged from `r min.missing.data` to `r max.missing.data`,
-with details per variable and outcome in Table 
-\ref@(tab:sample-characteristics) and Supplementary material table
-\@ref(tab:secondary-outcomes). <!--The differences in
-distributions between observed and extracted data, for variables that
-were collected through observation or interview, are shown in Table X.-->
+in the study-->. Out of `r n.eligible.residents` potentially eligible residents, `r n.residents` (`r recruitment.rate.residents`%) participated in the study. The lost to follow up rate was `r rate.lost.to.follow.up`, with `r n.lost.to.follow.up` out of `r n.patients` patients not completing 30 day follow up. Among residents the pass rate, after two attempts, was `r rate.pass`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details per variable and outcome in Table  \ref@(tab:sample-characteristics) and Supplementary material table
+\@ref(tab:secondary-outcomes). <!--The differences in distributions between observed and extracted data, for variables that were collected through observation or interview, are shown in Table X.-->
 
 ## Community Consultations
 The results of interviews with patients, caregivers and social workers
