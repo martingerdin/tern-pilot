@@ -7,6 +7,60 @@ noacsr::source_all_functions()
 load_packages()
 ```
 
+## Compare directly observed with retrospective data
+
+```{r}
+## Import data
+data <- readr::read_csv(Sys.getenv("DATA_DIR"))
+
+## Import codebook
+codebook.arguments <- lapply(
+    c("URL", "UID", "USERNAME", "PASSWORD"),
+    function(x) Sys.getenv(paste0("KOBO_", x))
+)
+codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
+
+## Prepare data
+data <- prepare_data(data, codebook)
+
+## Get variables to compare
+retrospective.variables <- names(data)[grep("_r__", names(data), fixed = TRUE)]
+directly.observed.variables <- retrospective.variables %>%
+    stringr::str_replace_all(pattern = "\\_r\\_\\_", replacement = "\\_\\_") %>%
+    stringr::str_replace_all(pattern = "\\_r$", replacement = "")
+
+## Keep only observations with any retrospective data
+data <- data[apply(data[, retrospective.variables], 1, function(row) any(!is.na(row))), ] %>%
+    as_tibble()
+
+## Extract retrospective and directly observed data
+retrospective.data <- data[, retrospective.variables]
+colnames(retrospective.data) <- directly.observed.variables
+directly.observed.data <- data[, directly.observed.variables]
+retrospective.data$collection.mode <- "Retrospective"
+directly.observed.data$collection.mode <- "Directly observed"
+
+## Make sure column classes are the same in both datasets
+retrospective.data[] <- lapply(names(retrospective.data), function(column.name) {
+    retrospective.column <- retrospective.data[[column.name]]
+    directly.observed.column <- directly.observed.data[[column.name]]
+    retrospective.class <- class(retrospective.column)
+    directly.observed.class <- class(directly.observed.column)
+    class.function <- paste0("as.", directly.observed.class)
+    if ("POSIXct" %in% directly.observed.class) {
+        class.function <- "as.POSIXct"
+    }
+    if (retrospective.class != directly.observed.class) {
+        retrospective.column <- do.call(class.function, list(retrospective.column))
+    }
+    return(retrospective.column)
+})
+
+## Merge data
+merged.data <- bind_rows(retrospective.data, directly.observed.data)
+```
+
+
 ## Import bootstrapped outcome results and generate confidence intervals
 
 ```{r}
