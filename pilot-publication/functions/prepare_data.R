@@ -129,6 +129,17 @@ prepare_data <- function(data, codebook = NULL) {
     })
     labelled::var_label(prepared.data$riss) <- "Injury Severity Score"
     labelled::var_label(prepared.data$niss) <- "New Injury Severity Score"
+    labelled::var_label(prepared.data$patinfo__pt_age) <- "Age, years"
+    labelled::var_label(prepared.data$patinfo__pt_gender) <- "Sex"
+    labelled::var_label(prepared.data$incident__dominating_injury_type) <- "Dominating injury type"
+    labelled::var_label(prepared.data$patvitals__ed_rr) <- "Respiratory rate, breaths per minute"
+    labelled::var_label(prepared.data$patvitals__ed_sat) <- "Oxygen saturation, %"
+    labelled::var_label(prepared.data$patvitals__ed_hr) <- "Heart rate, beats per minute"
+    labelled::var_label(prepared.data$patvitals__ed_sbp) <- "Systolic blood pressure, mmHg"
+    labelled::var_label(prepared.data$patvitals__ed_gcs) <- "Glasgow Coma Scale"
+    labelled::var_label(prepared.data$incident__moi) <- "Mechanism of injury"
+
+    ## Return prepared data
     return (prepared.data)
 }
 

@@ -28,10 +28,14 @@ table.variables <- c(
     "incident__dominating_injury_type",
     "patvitals__ed_rr", "patvitals__ed_sat",
     "patvitals__ed_hr", "patvitals__ed_sbp",
-    "riss", "niss", "outcomes__alive_after_30_days",
+    "patvitals__ed_gcs", "riss",
+    "outcomes__discharge_alive",
+    "outcomes__alive_after_30_days",
     "arm"
 )
-table.data <- data[, table.variables]
+table.data <- data %>%
+    select(all_of(table.variables)) %>%
+    select(-arm)
 overall.sample.characteristics.table <- create_descriptive_table(table.data)
 
 ## Create table of sample characteristics before training
@@ -64,6 +68,9 @@ sample.characteristics.table <- gtsummary::tbl_merge(
     tab_spanner = c("Before training", "After training", "Overall")
 ) %>%
     gtsummary::modify_caption("Patient sample characteristics")
+
+## Create table comparing directly observed with retrospective data
+retrospective.comparison.table <- create_retrospective_comparison_table(data)
 
 ## Bootstrap outcome results
 unlink("error.log")
