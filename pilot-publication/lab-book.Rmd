@@ -29,9 +29,8 @@ directly.observed.variables <- retrospective.variables %>%
     stringr::str_replace_all(pattern = "\\_r\\_\\_", replacement = "\\_\\_") %>%
     stringr::str_replace_all(pattern = "\\_r$", replacement = "")
 
-## Keep only observations with any retrospective data
-data <- data[apply(data[, retrospective.variables], 1, function(row) any(!is.na(row))), ] %>%
-    as_tibble()
+## Keep only observations with completed retrospective data collection
+data <- data %>% filter(data_status_r__collection_completed_r == "Yes")
 
 ## Extract retrospective and directly observed data
 retrospective.data <- data[, retrospective.variables]
@@ -52,19 +51,23 @@ merged.data[] <- mapply(function(column, class.name) {
     new.column <- match.fun(class.function)(column)
     return(new.column)
 }, merged.data, original.classes, SIMPLIFY = FALSE)
-})
+merged.data <- merged.data %>%
+    labelled::copy_labels_from(data)
 
-## Create table 
+## Create table
 table.variables <- c(
     "patinfo__pt_age", "patinfo__pt_gender",
     "incident__dominating_injury_type",
     "patvitals__ed_rr", "patvitals__ed_sat",
-    "patvitals__ed_hr", "patvitals__ed_sbp","outcomes__alive_after_30_days", 
+    "patvitals__ed_hr", "patvitals__ed_sbp",
     "collection.mode"
 )
 table.data <- merged.data[, table.variables]
 comparison.table <- create_descriptive_table(table.data,
-    strata = "collection.mode")
+    strata = "collection.mode",
+    include.overall = FALSE
+)
+comparison.table
 ```
 
 
