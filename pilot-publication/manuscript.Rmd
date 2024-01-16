@@ -138,9 +138,7 @@ Trauma management, Accident and emergency medicine, Education and training.
  -->
 
 ## Role of study sponsor and funders
-The funding sources had no role in the design of this study nor during
-its execution, analyses, interpretation of the data, or decision to
-submit the results.
+The funding sources had no role in the design of this study nor during its execution, analyses, interpretation of the data, or decision to submit the results.
 
 <!-- \newpage -->
 
@@ -168,83 +166,31 @@ Strengths and limitations of this study:
 
 # Introduction
 
-Trauma, defined as the clinical entity composed of physical injury and
-the body's associated response, causes 4.3 millions deaths every year
-[@injuries2020]. Almost 10% of the global burden of disease is due
-to trauma and trauma is the top contributor to the burden of disease in
-children and adults aged 10 to 49 years [@Vos2020].
+Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year [@injuries2020]. Almost 10% of the global burden of disease is due to trauma and trauma is the top contributor to the burden of disease in children and adults aged 10 to 49 years [@Vos2020].
 
-Trauma care is time sensitive and early management of life or limb
-threatening conditions is crucial. Several trauma life support training
-programs have been developed to improve the early management of patients
-as they arrive at hospital by providing a structured framework to
-assessment and treatment [@Mohammad2013; @Jayaraman2014;
-@Kadhum2020].
+Trauma care is time sensitive and early management of life or limb threatening conditions is crucial. Several trauma life support training programs have been developed to improve the early management of patients as they arrive at hospital by providing a structured framework to assessment and treatment [@Mohammad2013; @Jayaraman2014; @Kadhum2020].
 
-The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) is the most
-established trauma life support training program and more than one
-million doctors in over 80 countries have been trained in the programme
-[@acsAtls2018]. Uptake in low- and middle income countries (LMIC)
-has been slow, potentially due to high costs [@Kadhum2020].
+The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) is the most established trauma life support training program and more than one million doctors in over 80 countries have been trained in the programme [@acsAtls2018]. Uptake in low- and middle income countries (LMIC) has been slow, potentially due to high costs [@Kadhum2020].
 
-The free Primary Trauma Care (PTC) program is the most widely spread
-alternative programme. The goal of PTC is to improve trauma care in LMIC
-[@ptcfPtc2018]. Like ATLS^®^, doctors in over 80 countries have been
-trained in PTC, and the programme has been endorsed by the World Health
-Organization (WHO), among other international organizations
-including several professional societies [@ptcfPtc2018].
+The free Primary Trauma Care (PTC) program is the most widely spread alternative programme. The goal of PTC is to improve trauma care in LMIC [@ptcfPtc2018]. Like ATLS^®^, doctors in over 80 countries have been trained in PTC, and the programme has been endorsed by the World Health Organization (WHO), among other international organizations including several professional societies [@ptcfPtc2018].
 
-There are observational studies indicating that trauma life support
-training programmes may improve patient outcomes [@Jin2021], but there
-are no randomised trials  [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. 
-We performed a pilot study aiming to assess the feasibility of
-conducting a cluster randomised controlled trial comparing ATLS and
-PTC with standard care.  The objectives of this pilot study were
-to:
+There are observational studies indicating that trauma life support training programmes may improve patient outcomes [@Jin2021], but there are no randomised trials  [@Mohammad2013; @Jayaraman2014; @Kadhum2020].  We performed a pilot study aiming to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS and PTC with standard care.  The objectives of this pilot study were to:
 
-- Estimate probable effect sizes on patient outcomes associated with
-  ATLS^®^ and PTC compared with standard care, estimate the proportion of
-  participants with the outcome (if binary), and estimate the
-  intracluster correlation coefficient, as a basis for future sample
-  size calculations.
+- Estimate probable effect sizes on patient outcomes associated with ATLS^®^ and PTC compared with standard care, estimate the proportion of participants with the outcome (if binary), and estimate the intracluster correlation coefficient, as a basis for future sample size calculations.
   
-- Assess the feasibility of recruiting participants and collecting
-  data on primary and secondary outcomes, such as mortality,
-  in-hospital complications, length of stay, and quality of life.
+- Assess the feasibility of recruiting participants and collecting data on primary and secondary outcomes, such as mortality, in-hospital complications, length of stay, and quality of life.
 
-- Assess how the effect sizes and directions of these effects of ATLS
-  and PTC may differ across clinically important subgroups.
+- Assess how the effect sizes and directions of these effects of ATLS and PTC may differ across clinically important subgroups.
 
 # Methods
 
 ## Trial Design
-We piloted a three-armed cluster randomised controlled trial. There
-were two intervention arms, ATLS^®^ and PTC training, and one control
-arm, standard care. We collected data for four months in all three
-arms, first during a one month observation phase and then during a
-three month intervention phase (or continued observation in the
-control arm). This design allowed us to assess outcomes both as
-final values and as change from baseline. 
+We piloted a three-armed cluster randomised controlled trial. There were two intervention arms, ATLS^®^ and PTC training, and one control arm, standard care. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the control arm). This design allowed us to assess outcomes both as final values and as change from baseline. 
 
-Our study is a pilot study because its objectives involves estimating
-quantities, such as the probable effect sizes, proportion of
-participants with the outcome (if binary), and the intracluster
-correlation coefficient, needed for the sample size calculations of a
-full-scale trial [@Hemming2017]. This pilot study also establish how
-many participants that can be enrolled, as well as likely drop out
-rates, and the feasibility of collecting primary and secondary
-outcomes.
+Our study is a pilot study because its objectives involves estimating quantities, such as the probable effect sizes, proportion of participants with the outcome (if binary), and the intracluster correlation coefficient, needed for the sample size calculations of a full-scale trial [@Hemming2017]. This pilot study also establish how many participants that can be enrolled, as well as likely drop out rates, and the feasibility of collecting primary and secondary outcomes.
 
 ## Study Setting
-We conducted this pilot in seven Indian tertiary hospitals, where
-neither ATLS^®^, PTC, nor any other trauma life support training program
-is routinely taught. The seven hospitals were Seth G. S. Medical
-College and K.E.M. Hospital, Mumbai; Lokmanya Tilak Municipal Medical
-College and General Hospital, Mumbai; HBT Medical College And Dr. R N
-Cooper Municipal General Hospital, Mumbai; Medica Superspecialty
-Hospital, Kolkata; Medical College Kolkata, Kolkata; Sir Nil Ratan
-Sircar Medical College & Hospital, Kolkata; Postgraduate Institute of
-Medical Education & Research, Chandigarh.
+We conducted this pilot in seven Indian tertiary hospitals, where neither ATLS^®^, PTC, nor any other trauma life support training program is routinely taught. The seven hospitals were Seth G. S. Medical College and K.E.M. Hospital, Mumbai; Lokmanya Tilak Municipal Medical College and General Hospital, Mumbai; HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai; Medica Superspecialty Hospital, Kolkata; Medical College Kolkata, Kolkata; Sir Nil Ratan Sircar Medical College & Hospital, Kolkata; Postgraduate Institute of Medical Education & Research, Chandigarh.
 
 <!--
 The trauma system is still developing, with
@@ -263,82 +209,32 @@ within the hospitals.
 There were two groups of participants: patients and resident doctors.
 
 ### Patient Participants
-Adults (15 years or older) who presented to the emergency department at
-participating hospitals with a history of trauma. History of trauma is
-here defined as having any of the external causes of morbidity and
-mortality listed in block V01-Y36, chapter XX of the International
-Classification of Disease version 10 (ICD-10) codebook as reason for
-presenting. We explored intervention effects across the following
-clinical subgroups: men, women, blunt multisystem trauma, penetrating
-trauma, shock, severe traumatic brain injury, and elderly, as defined
-by Hornor et al [@Hornor2018]. The consent form for patients are
-available as Supplemental Material 1.
+Adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma. History of trauma is here defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting. We explored intervention effects across the following clinical subgroups: men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly, as defined by Hornor et al [@Hornor2018]. The consent form for patients are available as Supplemental Material 1.
 
 ### Resident Doctor Participants
 Resident doctors doing their speciality training in surgery or
 emergency medicine managing trauma patients in the emergency
-department and who were expected to remain in the participating
-hospitals for at least one year. To facilitate administration each
-surgical department is divided into units, which manage the out-patient 
-and emergency departments, operating rooms etc on
-different days each week. One or two, out of typically six, units'
-residents were selected from each hospital. One unit consists of at
-least three faculty and three to twelve residents.
+department and who were expected to remain in the participating hospitals for at least one year. To facilitate administration each surgical department is divided into units, which manage the out-patient and emergency departments, operating rooms etc on different days each week. One or two, out of typically six, units' residents were selected from each hospital. One unit consists of at least three faculty and three to twelve residents.
 
-To be eligible, units had to have a maximum of 25% of the doctors
-trained in either ATLS^®^, PTC, or similar training programs before the
-start of the pilot. Those residents who had received training in the
-last five years were considered as trained. The figure of 25% was
-decided through consensus in the research team, to balance feasibility
-and contamination of results.
+To be eligible, units had to have a maximum of 25% of the doctors trained in either ATLS^®^, PTC, or similar training programs before the start of the pilot. Those residents who had received training in the last five years were considered as trained. The figure of 25% was decided through consensus in the research team, to balance feasibility and contamination of results.
 
-Consent was sought from the residents in each of the intervention
-groups before they underwent the ATLS^®^ or PTC training. The consent
-form for residents is available as Supplemental Material 2. We did
-not ask for consent from residents at the units in the control
-hospitals as their practice was not affected by this pilot and we
-did not collect any personal identifiable data on them. 
+Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. The consent form for residents is available as Supplemental Material 2. We did not ask for consent from residents at the units in the control hospitals as their practice was not affected by this pilot and we did not collect any personal identifiable data on them. 
 
 ### Clusters
-Indian tertiary care hospitals that admit more than 400 adult patients
-with trauma each year. We randomised on the cluster (hospital) level
-to avoid contamination between intervention and control arms. To be
-eligible for inclusion hospitals had to provide the following services
-round the clock: operation theatres, X-ray, CT, and ultrasound
-facilities, and blood bank. In addition the baseline admission rate
-had to be more than 35 adult patients with major trauma per month.
+Indian tertiary care hospitals that admit more than 400 adult patients with trauma each year. We randomised on the cluster (hospital) level to avoid contamination between intervention and control arms. To be eligible for inclusion hospitals had to provide the following services round the clock: operation theatres, X-ray, CT, and ultrasound facilities, and blood bank. In addition the baseline admission rate had to be more than 35 adult patients with major trauma per month.
 
 ## Interventions
-In each intervention arm one or two units', out of typically six,
-residents per hospital providing emergency care to trauma patients
-were trained in either ATLS^®^ or PTC. For the purpose of this pilot
-study, our target was to train a minimum of 75% of residents in each
-unit. If residents dropped out or changed units after training but
-before data collection was completed we planned to conduct additional
-training if needed to meet the 75% criterion, but this was not
-required. We did not train the units' faculty, as they are typically
-not directly involved in the initial management of trauma patients.
+In each intervention arm one or two units', out of typically six, residents per hospital providing emergency care to trauma patients were trained in either ATLS^®^ or PTC. For the purpose of this pilot study, our target was to train a minimum of 75% of residents in each unit. If residents dropped out or changed units after training but before data collection was completed we planned to conduct additional training if needed to meet the 75% criterion, but this was not required. We did not train the units' faculty, as they are typically not directly involved in the initial management of trauma patients.
 
-The ATLS^®^ training was conducted in an ATLS certified training centre
-in Mumbai, according to the standard ATLS^®^ curriculum
-[@acsAtls2018]. The PTC training was conducted in New Delhi, according
-to the standard PTC curriculum [@ptcfPtc2018]. These courses were
-conducted over a period of 2.5 to 3 days. The residents certified
-"pass" were considered as trained in respective courses.
+The ATLS^®^ training was conducted in an ATLS certified training centre in Mumbai, according to the standard ATLS^®^ curriculum [@acsAtls2018]. The PTC training was conducted in New Delhi, according to the standard PTC curriculum [@ptcfPtc2018]. These courses were conducted over a period of 2.5 to 3 days. The residents certified "pass" were considered as trained in respective courses.
 
 The control group provided standard care with no intervention.
 
 ### Modifications
-Both ATLS^®^ and PTC are standard training programs with fixed curricula
-[@acsAtls2018; @ptcfPtc2018]. We did not modify the delivery or
-content of these programs during this pilot.
+Both ATLS^®^ and PTC are standard training programs with fixed curricula [@acsAtls2018; @ptcfPtc2018]. We did not modify the delivery or content of these programs during this pilot.
 
 ### Adherence
-The intervention was the training in either ATLS^®^ or PTC and resident
-participants were required to adhere to, i.e. participate in, the
-training, to be eligible for passing. We did not consider adherence to
-training contents during care delivery as adherence to the trial
-intervention.
+The intervention was the training in either ATLS^®^ or PTC and resident participants were required to adhere to, i.e. participate in, the training, to be eligible for passing. We did not consider adherence to training contents during care delivery as adherence to the trial intervention.
 
 ### Concomitant Care
 
@@ -346,318 +242,116 @@ intervention.
 
 **This section needs to be updated with the emergency medicine curriculum**
 
-The care provided by all participating hospitals at baseline was based on
-the training curriculum formulated by The National Medical Council of
-India for post graduation in General Surgery
-[@mciMsSurgery2019]. Regarding trauma, these guidelines state
-that the student should:
+The care provided by all participating hospitals at baseline was based on the training curriculum formulated by The National Medical Council of India for post graduation in General Surgery [@mciMsSurgery2019]. Regarding trauma, these guidelines state that the student should:
 
-a.  Have knowledge about response to trauma; burns: causes, prevention
-    and management; wounds of scalp and its management; recognition,
-    diagnosis and monitoring of patients with head injury, Glasgow coma
-    scale.
-b.  Be able to provide and coordinate emergency resuscitative measures
-    in acute surgical situations including trauma.
-c.  Choose, perform and interpret appropriate imaging in trauma -
-    ultrasound Focused Abdominal Sonography in Trauma (FAST).
-d.  Undergo advanced trauma and cardiac life support course (certified)
-    before appearing in final examination.
+a.  Have knowledge about response to trauma; burns: causes, prevention and management; wounds of scalp and its management; recognition, diagnosis and monitoring of patients with head injury, Glasgow coma scale.
+b.  Be able to provide and coordinate emergency resuscitative measures in acute surgical situations including trauma.
+c.  Choose, perform and interpret appropriate imaging in trauma - ultrasound Focused Abdominal Sonography in Trauma (FAST).
+d.  Undergo advanced trauma and cardiac life support course (certified) before appearing in final examination.
 e.  Undergo clinical posting in emergency and trauma.
 f.  Present or discuss cases of blunt abdominal trauma.
 
-Although training in an ATLS^®^ is part of the curriculum it is 
-optional and not doing this training does not
+Although training in an ATLS^®^ is part of the curriculum it is  optional and not doing this training does not
 result in failure to obtain post graduation completion.
 
 #### Standard of Care
 
-**This section needs to be revised to include information from sites
-where patients were not managed by surgical residents**
+**This section needs to be revised to include information from sites where patients were not managed by surgical residents**
 
-At most tertiary hospitals in India trauma patients present to the
-emergency department where they are assessed by a doctor and referred
-to the surgical bay for further management. In the surgical bay a
-second or third year general surgery resident sees all the major
-trauma and provide the initial care, including initiating treatment
-and investigations.  This resident informs the consultant on call who
-is generally an Assistant Professor. Most procedures like intercostal
-drainage, open wound suturing, intubation etc. would be done in the
-surgical resuscitation area, by the surgical resident.
+At most tertiary hospitals in India trauma patients present to the emergency department where they are assessed by a doctor and referred to the surgical bay for further management. In the surgical bay a second or third year general surgery resident sees all the major trauma and provide the initial care, including initiating treatment and investigations.  This resident informs the consultant on call who is generally an Assistant Professor. Most procedures like intercostal drainage, open wound suturing, intubation etc. would be done in the surgical resuscitation area, by the surgical resident.
 
-Compared to other settings where a trauma team approach is adopted,
-nurses and other healthcare professionals are involved to a limited
-extent during the initial management. Their roles include assisting
-during intubation and other bedside procedures, charting the vitals
-(not recording) and giving injections. They also accompany the
-resident during transfers of serious patients.
+Compared to other settings where a trauma team approach is adopted, nurses and other healthcare professionals are involved to a limited extent during the initial management. Their roles include assisting during intubation and other bedside procedures, charting the vitals (not recording) and giving injections. They also accompany the resident during transfers of serious patients.
 
-After completing the assessment and starting initial resuscitation, the
-resident decides to send the patient for imaging (X-rays/FAST/CT-scan)
-or to the operation room in consultation with or after assessment by the
-on-call consultant. A portable X-ray and an ultrasonography machine to
-conduct FAST may or may not be available in the surgical bay. The
-patients who are operated, managed conservatively, not intubated, or
-with minor trauma will be sent to the surgical ward. Those who need
-increased monitoring or mechanical ventilation remain in the surgical
-bay or in the intensive care unit (ICU) depending on the availability of
-ICU beds. The further treatment continues in the respective ward or ICU
-and patients are finally discharged from the ward.
+After completing the assessment and starting initial resuscitation, the resident decides to send the patient for imaging (X-rays/FAST/CT-scan) or to the operation room in consultation with or after assessment by the on-call consultant. A portable X-ray and an ultrasonography machine to conduct FAST may or may not be available in the surgical bay. The patients who are operated, managed conservatively, not intubated, or with minor trauma will be sent to the surgical ward. Those who need increased monitoring or mechanical ventilation remain in the surgical bay or in the intensive care unit (ICU) depending on the availability of ICU beds. The further treatment continues in the respective ward or ICU and patients are finally discharged from the ward.
 
 ## Outcomes
 Our pilot study included both participant and feasibility
-outcomes. Prior to deciding on these participant outcomes we searched
-the Core Outcome Measures in Effectiveness Trials (COMET) Initiative's
-database but were unable to identify appropriate core outcome sets for
-our populations of participants.
+outcomes. Prior to deciding on these participant outcomes we searched the Core Outcome Measures in Effectiveness Trials (COMET) Initiative's database but were unable to identify appropriate core outcome sets for our populations of participants.
 
-The primary participant outcome was all cause mortality within 30 days
-from the time of arrival to the emergency department. The primary
-outcome and most secondary outcome were assessed and compared both as
-final values and as change from baseline. All outcomes that pertain to
-the individual participant level are detailed in Supplemental Material
-3. We decided to include a large number of outcomes,
-including some more exploratory, so that we could test their feasibility
-and relevance. 
+The primary participant outcome was all cause mortality within 30 days from the time of arrival to the emergency department. The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 3. We decided to include a large number of outcomes,
+including some more exploratory, so that we could test their feasibility and relevance. 
 
-We also assessed the following feasibility outcomes, which pertain
-both to overall study population as well as to the individual cluster
-level:
+We also assessed the following feasibility outcomes, which pertained both to overall study population as well as to the individual cluster level:
 
-- Recruitment rate. For both patients and residents this was equal to
-  the proportion of participants enrolled, out of the total number of
-  eligible participants, over the course of the pilot study.
-- Lost to follow up rate. This applied only to patients and was equal
-  to the proportion of patients that did not complete 30 day follow up,
-  out of all enrolled patients, over the course of the pilot study.
-- Pass rate. This applied only to residents in the intervention
-  arms and equal the proportion of residents that pass the training
-  programme, out of the total number of trained residents, over the
-  course of the pilot study.
-- Missing data rate. This applied to each outcome and variable and was
-  equal to the proportion of missing data, over the course of the
-  pilot study.
-- Differences in distributions of observed and extracted data. This
-  applied to each outcome and variable and compared the distributions
-  of data collected by observations versus extracted from hospital
-  records. For quantitative variables this was be the difference in
-  means, standard deviations, medians, interquartile ranges, and
-  ranges. For qualitative variables this was the differences in
-  absolute counts and percentages, across categories.
+- Recruitment rate. For both patients and residents this was equal to the proportion of participants enrolled, out of the total number of eligible participants, over the course of the pilot study.
+- Lost to follow up rate. This applied only to patients and was equal to the proportion of patients that did not complete 30 day follow up, out of all enrolled patients, over the course of the pilot study.
+- Pass rate. This applied only to residents in the intervention arms and equal the proportion of residents that pass the training programme, out of the total number of trained residents, over the course of the pilot study.
+- Missing data rate. This applied to each outcome and variable and was equal to the proportion of missing data, over the course of the pilot study.
+- Differences in distributions of observed and extracted data. This applied to each outcome and variable and compared the distributions of data collected by observations versus extracted from hospital records. For quantitative variables this was be the difference in means, standard deviations, medians, interquartile ranges, and ranges. For qualitative variables this was the differences in absolute counts and percentages, across categories.
 
 ## Participant Timeline
 
 ### Patients
-Patients were screened for eligibility as they arrived at the emergency
-department. Eligible patients were approached in the emergency
-department to consent to follow up, if they were conscious. If they
-were unconscious a patient representative was approached to consent to
-follow up. Once the patient was conscious we approached the patient to
-affirm the patient representative's consent. We followed up patients
-at discharge, at 24 hours after arrival at the emergency department,
-and at 30 days after arrival at the emergency department.
+Patients were screened for eligibility as they arrived at the emergency department. Eligible patients were approached in the emergency department to consent to follow up, if they were conscious. If they were unconscious a patient representative was approached to consent to follow up. Once the patient was conscious we approached the patient to affirm the patient representative's consent. We followed up patients at discharge, at 24 hours after arrival at the emergency department, and at 30 days after arrival at the emergency department.
 
 ### Residents
-Participating units were screened for eligibility once hospitals
-confirmed their participation. All residents in eligible units were
-approached to consent to training if their hospital was randomised to
-either of the intervention arms. Training was conducted approximately
-one month after the study started.
+Participating units were screened for eligibility once hospitals confirmed their participation. All residents in eligible units were approached to consent to training if their hospital was randomised to either of the intervention arms. Training was conducted approximately one month after the study started.
 
 ## Sample size
-Given budget and time constraints, including the rotation of units in
-the emergency departments in Indian hospitals (which often happen on a
-six months basis) the feasible data collection period was four
-months. We assumed that each of the units saw 2-4 trauma patients per
-week and based on that estimated that if we selected a minimum of one
-unit per hospital then each hospital would enrol 8-16 patients per
-month and 32-64 patients during the four months of this pilot. With a
-20% attrition rate we expected each hospital to enrol 26-51 patients,
-coming to a total sample size of between 156 and 306 patients for this
-pilot study.
+Given budget and time constraints, including the rotation of units in the emergency departments in Indian hospitals (which often happen on a six months basis) the feasible data collection period was four months. We assumed that each of the units saw 2-4 trauma patients per week and based on that estimated that if we selected a minimum of one unit per hospital then each hospital would enrol 8-16 patients per month and 32-64 patients during the four months of this pilot. With a 20% attrition rate we expected each hospital to enrol 26-51 patients, coming to a total sample size of between 156 and 306 patients for this pilot study.
 
 ## Recruitment
-To ensure adequate recruitment we only approached hospitals that
-stated that the their volumes were high enough to allow us to reach
-the sample size goals detailed above. Patients were enrolled by a
-dedicated project officer as they arrived at the emergency
-department. The recruitment period was four months. Recruitment was
-monitored weekly through online conferences. No financial or
-non-financial incentives were provided to trial investigators or
-participants for enrolment.
+To ensure adequate recruitment we only approached hospitals that stated that the their volumes were high enough to allow us to reach the sample size goals detailed above. Patients were enrolled by a dedicated project officer as they arrived at the emergency department. The recruitment period was four months. Recruitment was monitored weekly through online conferences. No financial or non-financial incentives were provided to trial investigators or participants for enrolment.
 
 ## Allocation
 
 ### Sequence generation
-We used simple randomisation to allocate sites to trial arms. We
-prepared seven sealed envelopes from which one representative from
-each pilot site selected one in a common meeting on March 7, 2022
-[^dev1]<!-- Meeting notes ../meetings/20220307/ -->. The content of
-the envelopes dictated what trial arm (ATLS, PTC, or standard care)
-each hospital was allocated to. There were two hospitals in each of
-the intervention arms and three hospitals in the control arm.
+We used simple randomisation to allocate sites to trial arms. We prepared seven sealed envelopes from which one representative from each pilot site selected one in a common meeting on March 7, 2022 [^dev1]<!-- Meeting notes ../meetings/20220307/ -->. The content of the envelopes dictated what trial arm (ATLS, PTC, or standard care) each hospital was allocated to. There were two hospitals in each of the intervention arms and three hospitals in the control arm.
 
-[^dev1]: Initially the plan was to enroll six hospitals (clusters) but
-    we ended up enrolling seven.
+[^dev1]: Initially the plan was to enroll six hospitals (clusters) but we ended up enrolling seven.
 
 ### Concealment Mechanism
 We did not conceal the sequence.
 
 ### Implementation
-The random allocation sequence was generated by MGW. Clusters were
-enrolled by the project's core team. Patient participants were
-enrolled if they presented during the project officers shift. Resident
-participants were enrolled if they were in the units selected for
-training. The principal investigator at each hospital selected the
-units for training. For patient participants consent for follow up was
-sought after randomisation from patients or patient relatives as
-appropriate. For resident participants consent was also sought after
-randomisation. 
+The random allocation sequence was generated by MGW. Clusters were enrolled by the project's core team. Patient participants were enrolled if they presented during the project officers shift. Resident participants were enrolled if they were in the units selected for training. The principal investigator at each hospital selected the units for training. For patient participants consent for follow up was sought after randomisation from patients or patient relatives as appropriate. For resident participants consent was also sought after randomisation. 
 
 ## Blinding
 It was not possible to blind investigators or participants to
-interventions. We did not blind the data analysts during this pilot,
-but we plan to blind the data analysts during the full-scale trial.
+interventions. We did not blind the data analysts during this pilot, but we plan to blind the data analysts during the full-scale trial.
 
 ## Data Collection
-Data collection started one month before the training was delivered,
-to establish a baseline. Each participating hospital had a dedicated
-project officer who collected the data. 
+Data collection started one month before the training was delivered, to establish a baseline. Each participating hospital had a dedicated project officer who collected the data. 
 
-Because participating residents were assigned designated days for
-trauma care for a period of 6 months, data were collected during those
-particular days and shifts when these trained doctors were in the
-emergency department. The project officers collected data both by
-observing the care delivered and by interviewing the participants, and
-by extracting data from hospital records.
+Because participating residents were assigned designated days for trauma care for a period of 6 months, data were collected during those particular days and shifts when these trained doctors were in the emergency department. The project officers collected data both by observing the care delivered and by interviewing the participants, and by extracting data from hospital records.
 
 Data collection continued for three months after training. The
-research officers collected data of all trauma patients who presented
-to the participating units during their duty hours. Those patients who
-were admitted were followed up for complications and other in-hospital
-outcome measures, for example length of stay. Patients who were not
-admitted were followed up telephonically for mortality outcomes and
-quality of life outcomes. The follow up period was be 30 days. The
-project officers made at most three attempts to reach a participant or
-participant representative telephonically, after which the data were
-recorded as missing.
+research officers collected data of all trauma patients who presented to the participating units during their duty hours. Those patients who were admitted were followed up for complications and other in-hospital outcome measures, for example length of stay. Patients who were not admitted were followed up telephonically for mortality outcomes and quality of life outcomes. The follow up period was be 30 days. The project officers made at most three attempts to reach a participant or participant representative telephonically, after which the data were recorded as missing.
 
-The project officer administered the study information and informed
-consent (consent was sought only for data collection including follow
-up) to the patient, or the patient's representative as appropriate,
-once the patient was stabilised. They will continue to collect data
-once they have received the consent.
+The project officer administered the study information and informed consent (consent was sought only for data collection including follow up) to the patient, or the patient's representative as appropriate, once the patient was stabilised. They will continue to collect data once they have received the consent.
 
-Details of data of those patients/relatives not willing to give
-consent were not included in the analysis. The number of patients who
-opt out from data collection was collected. 
+Details of data of those patients/relatives not willing to give consent were not included in the analysis. The number of patients who opt out from data collection was collected. 
 
 ## Variables
-The project officers collected data on demographics, time of injury to
-arrival at the participating hospital, time to recording vital signs,
-vital signs, and times to and management details including imaging and
-surgery. Details of any injury sustained were collected and coded
-using ICD 10 and the Abbreviated Injury Scale (AIS). For ICD 10 coders
-underwent the WHO online ICD 10 training module and for AIS they were
-accredited. Based on AIS we calculated the Injury Severity Score
-(ISS) and the New ISS (NISS). Supplemental Material 4 contains a full
-variable list, with definitions.
+The project officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, and times to and management details including imaging and surgery. Details of any injury sustained were collected and coded using ICD 10 and the Abbreviated Injury Scale (AIS). For ICD 10 coders underwent the WHO online ICD 10 training module and for AIS they were accredited. Based on AIS we calculated the Injury Severity Score (ISS) and the New ISS (NISS). Supplemental Material 4 contains a full variable list, with definitions.
 
 ## Patient and public involvement
 In this study, we conducted community consultations to collect
-inputs from patients, their caregivers, patient groups, and resident
-doctors to be used in the selection of outcome measures and
-implementation of the full-scale trial; following the Guidance for
-Reporting Involvement of Patients and the Public (GRIIPS 2)
-[@Staniszewska2017]. The results of these consultations will be reported 
-separately.
+inputs from patients, their caregivers, patient groups, and resident doctors to be used in the selection of outcome measures and implementation of the full-scale trial; following the Guidance for Reporting Involvement of Patients and the Public (GRIIPS 2) [@Staniszewska2017]. The results of these consultations will be reported in a separate publication.
 
 ## Data management
-We used the online data collection tool KoboToolbox [@KoboToolbox],
-accessible only over a virtual private network (VPN), for each
-participating hospital to upload pseudonymised data to secure
-servers. Data validation techniques such as restricted values or
-values within a specific range were used to avoid ambiguous data
-entries and ensure the validity of the data. Ambiguous responses and
-errors were resolved after discussion with the core team during weekly
-meetings. An instruction manual or codebook for data variables was
-prepared to ensure consistency in data entry. This manual was referred
-to during the project data collection and variable descriptions were
-visible for each variable in the online data collection
-tool. Pseudonymised data were stored at the centralised server. The
-data were only accessible by the project's principal investigator or
-by delegation by the project principal investigator.
+We used the online data collection tool KoboToolbox [@KoboToolbox], accessible only over a virtual private network (VPN), for each participating hospital to upload pseudonymised data to secure servers. Data validation techniques such as restricted values or values within a specific range were used to avoid ambiguous data entries and ensure the validity of the data. Ambiguous responses and errors were resolved after discussion with the core team during weekly meetings. An instruction manual or codebook for data variables was prepared to ensure consistency in data entry. This manual was referred to during the project data collection and variable descriptions were visible for each variable in the online data collection tool. Pseudonymised data were stored at the centralised server. The data were only accessible by the project's principal investigator or by delegation by the project principal investigator.
 
 ## Data monitoring
-Weekly meetings with the core team and project officers took place. We
-conducted an interim analysis on October 12, 2022, and decided to
-complete the study as participants were consenting to be included in
-the study and key variables including mortality outcomes could be
-collected. No outcomes were dropped. We did not use a data monitoring
-committee in the pilot study due to its limited scope.
+Weekly meetings with the core team and project officers took place. We conducted an interim analysis on October 12, 2022, and decided to complete the study as participants were consenting to be included in the study and key variables including mortality outcomes could be collected. No outcomes were dropped. We did not use a data monitoring committee in the pilot study due to its limited scope.
 
 ## Statistical Methods
-We analysed all pilot data using descriptive statistics. Quantitative
-variables are summarised as mean +/- standard deviation, median,
-interquartile range and range. Qualitative variables are presented as
-absolute numbers and percentages. Feasibility outcomes are summarised
-both on the overall sample level as well as on the individual cluster
-level. We used an empty generalised linear mixed model<!-- see
-[@Sommet2017] --> to estimate the intracluster correlation
-coefficient.
+We analysed all pilot data using descriptive statistics. Quantitative variables are summarised as mean +/- standard deviation, median, interquartile range and range. Qualitative variables are presented as absolute numbers and percentages. Feasibility outcomes are summarised both on the overall sample level as well as on the individual cluster level. We used an empty generalised linear mixed model <!-- see [@Sommet2017] --> to estimate the intracluster correlation coefficient.
 
-We compared participant outcomes in three combinations of trial arms:
-ATLS versus PTC, ATLS versus standard care, and PTC versus standard
-care. In each combination we compared both differences in final values
-and differences in change from baseline. For the intervention arms the
-change from baseline was calculated as the difference between the one
-month period of data collection before the training was undertaken and
-the three month period after the training. For the control arm the
-data collection period was four months and the difference from
-baseline was calculated as the difference between the first one
-month and the following three months.
+We compared participant outcomes in three combinations of trial arms: ATLS versus PTC, ATLS versus standard care, and PTC versus standard care. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
 
-Within each combination of trial arms we conducted subgroup analyses
-of men, women, blunt multisystem trauma, penetrating trauma, shock,
-severe traumatic brain injury, and elderly. Table S7.1 in Supplemental
-Material 7 shows which outcomes that were assessed in what subgroups,
-decided through consensus in the research team. We further compared
-the results of all subgroups with the results in the whole cohort, and
-compared the results in the female subgroup with the male subgroup,
-and the results in the blunt multisystem trauma subgroup with the
-penetrating trauma subgroup. We are aware that the numbers in some of
-these subgroups are small, but we included them to help guide the
-formulation of the statistical analysis plan for the full-scale trial.
+Within each combination of trial arms we conducted subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly. Table S7.1 in Supplemental Material 7 shows which outcomes that were assessed in what subgroups, decided through consensus in the research team. We further compared the results of all subgroups with the results in the whole cohort, and compared the results in the female subgroup with the male subgroup, and the results in the blunt multisystem trauma subgroup with the penetrating trauma subgroup. We are aware that the numbers in some of these subgroups are small, but we included them to help guide the formulation of the statistical analysis plan for the full-scale trial.
 
 We calculated both absolute and relative differences for each
-comparison, along with 75, 85, and 95% confidence intervals. We used
-an empirical bootstrap procedure with 1000 draws to estimate these
-confidence intervals. We did not perform any formal hypothesis tests
-during the analysis of this pilot's data [@Lee2014]. We also compared
-the data collected through observations and interviews with the data
-collected from hospital records, to assess the feasibility of
-collecting data from hospital records in the full-scale trial.
+comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals. We did not perform any formal hypothesis tests during the analysis of this pilot's data [@Lee2014]. We also compared the data collected through observations and interviews with the data collected from hospital records, to assess the feasibility of collecting data from hospital records in the full-scale trial.
 
 ## Ethics and Dissemination
-We were granted research ethics approval from each participating
-hospital. The approval numbers were IEC(II)/OUT/134/2022 for King
-Edward Memorial Seth G. S. Medical College and K.E.M. Hospital,
-Mumbai; IEC/214/22 for Lokmanya Tilak Municipal Medical College and
-General Hospital, Mumbai; HBTMC/266/SURGERY for HBT Medical College
-And Dr. R N Cooper Municipal General Hospital, Mumbai;
-CREC/2022/FEB/1(ii) for Medica Superspecialty Hospital, Kolkata;
-Medical College Kolkata, Kolkata; NRSmC/IEC/93/2021 for Sir Nil Ratan
-Sircar Medical College & Hospital, Kolkata; and PGI/IEC/2022/000/003
-for Postgraduate Institute of Medical Education & Research,
-Chandigarh.
+We were granted research ethics approval from each participating hospital. The approval numbers were IEC(II)/OUT/134/2022 for King Edward Memorial Seth G. S. Medical College and K.E.M. Hospital, Mumbai; IEC/214/22 for Lokmanya Tilak Municipal Medical College and General Hospital, Mumbai; HBTMC/266/SURGERY for HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai; CREC/2022/FEB/1(ii) for Medica Superspecialty Hospital, Kolkata; Medical College Kolkata, Kolkata; NRSmC/IEC/93/2021 for Sir Nil Ratan
+Sircar Medical College & Hospital, Kolkata; and PGI/IEC/2022/000/003 for Postgraduate Institute of Medical Education & Research, Chandigarh.
 
-The protocol was published in BMJ Open [@GerdinWärnberg2022] and was
-registered with ClinicalTrials.gov (reg. no NCT05417243). Amendments
-to the protocol after publication were determined by the core research
-group and updated on ClinicalTrials.gov.
+The protocol was published in BMJ Open [@GerdinWärnberg2022] and was registered with ClinicalTrials.gov (reg. no NCT05417243). Amendments to the protocol after publication were determined by the core research group and updated on ClinicalTrials.gov.
 
-The final anonymized dataset and code for analysis are released
-publicly. Authorship follows the International Committee of
-Medical Journal Editors (ICMJE) guidelines.
+The final anonymized dataset and code for analysis are released publicly. Authorship follows the International Committee of Medical Journal Editors (ICMJE) guidelines.
 
 # Results
 ```{r}
@@ -823,16 +517,17 @@ The absolute risk difference between the standard care and ATLS arms (95% CI) wa
 
 ## Resident Participant Outcomes
 A total of `r n.residents` residents were trained during this
-pilot. Overall their median confidence in managing trauma patients was `r median.confidence` (IQR `r iqr.confidence`) on a 10 point Likert scale with 10 being most confident. <!--In the post training period, the confidence in the ATLS arm was X (IQR X - X), compared to X (IQR X - X) in the PTC arm, and X (IQR X - X) in the standard care arm.-->
+pilot study. Overall their median confidence in managing trauma patients was `r median.confidence` (IQR `r iqr.confidence`) on a 10 point Likert scale with 10 being most confident. <!--In the post training period, the confidence in the ATLS arm was X (IQR X - X), compared to X (IQR X - X) in the PTC arm, and X (IQR X - X) in the standard care arm.-->
 
 ## Feasibility Outcomes
 <!--Out of X potentially eligible patients, X (X%) patients were enrolled
 in the study-->. Out of `r n.eligible.residents` potentially eligible residents, `r n.residents` (`r recruitment.rate.residents`%) participated in the study. The lost to follow up rate was `r rate.lost.to.follow.up`, with `r n.lost.to.follow.up` out of `r n.patients` patients not completing 30 day follow up. Among residents the pass rate, after two attempts, was `r rate.pass`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details per variable and outcome in Table  \ref@(tab:sample-characteristics) and Supplementary material table
-\@ref(tab:secondary-outcomes). <!--The differences in distributions between observed and extracted data, for variables that were collected through observation or interview, are shown in Table X.-->
+\@ref(tab:secondary-outcomes). The differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, there were considerably more missing values in extracted data compared to observed data.
 
-## Community Consultations
-The results of interviews with patients, caregivers and social workers
-will be published separately. Residents felt that...
+```{r observed-vs-retrospective, echo = FALSE}
+retrospective.comparison.table %>%
+  modify_caption("Differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview.")
+```
 
 # Discussion
 We show that conducting a cluster randomized controlled trial
