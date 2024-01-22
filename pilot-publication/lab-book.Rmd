@@ -20,6 +20,12 @@ codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 data <- prepare_data(data, codebook)
 ```
 
+## Create table with the primary outcome across arms and cohorts
+
+```{r}
+
+```
+
 ## Create trauma cohorts 
 
 Subgroups of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly.
@@ -83,7 +89,6 @@ cohort.data <- data.frame(
 )
 
 create_descriptive_table(cohort.data, strata = "arm", include.overall = TRUE)
-```
 ```
 
 ## Compare directly observed with retrospective data

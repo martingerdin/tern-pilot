@@ -28,10 +28,14 @@ prepare_data <- function(data, codebook = NULL) {
 
     ## Replace with missing
     prepared.data <- prepared.data %>%
-        naniar::replace_with_na_if(.predicate = is.character,
-                                   condition = ~ .x %in% c("999", "unknown")) %>%
-        naniar::replace_with_na_if(.predicate = is.numeric,
-                                   condition = ~ .x == 999)
+        naniar::replace_with_na_if(
+            .predicate = is.character,
+            condition = ~ .x %in% c("999", "unknown")
+        ) %>%
+        naniar::replace_with_na_if(
+            .predicate = is.numeric,
+            condition = ~ .x == 999
+        )
     ## Deal with edge cases
     variable <- prepared.data$complications__failure_of_conservative_management
     variable[variable == "0" | variable == "NO" | variable == "no"] <- "No"
@@ -42,14 +46,16 @@ prepare_data <- function(data, codebook = NULL) {
     variable <- prepared.data$complications__number_of_hospitalizations_for_this_injury
     variable[variable == 995] <- NA ## Entered as 995 instead of 999 by mistake
     prepared.data$complications__number_of_hospitalizations_for_this_injury <- variable
-    
+
     ## Generate AIS codes
-    icd10.data <- prepared.data[, c("interventions__injury_first_surg_icd10",
-                                    "interventions__injury_xray_icd10",
-                                    "interventions__injury_external_1_icd10",
-                                    "interventions__injury_first_ct_icd10",
-                                    "interventions__injury_second_ct_icd10")]
-    icd10.data <- icd10.data %>% naniar::replace_with_na_all(condition = ~.x %in% c("0", "NAD"))
+    icd10.data <- prepared.data[, c(
+        "interventions__injury_first_surg_icd10",
+        "interventions__injury_xray_icd10",
+        "interventions__injury_external_1_icd10",
+        "interventions__injury_first_ct_icd10",
+        "interventions__injury_second_ct_icd10"
+    )]
+    icd10.data <- icd10.data %>% naniar::replace_with_na_all(condition = ~ .x %in% c("0", "NAD"))
     split.icd10.data <- do.call(cbind, lapply(icd10.data, function(column) {
         split.data <- strsplit(column, ",")
         max.length <- max(lengths(split.data))
@@ -59,23 +65,26 @@ prepare_data <- function(data, codebook = NULL) {
         split.data[] <- lapply(split.data, function(split.column) {
             split.column <- gsub("(^[0-9])", "S\\1", split.column)
             ## split.column <- gsub("(^[LETTERS])", "\\1\\.", split.column)
-            return (split.column)
+            return(split.column)
         })
-        return (split.data)
+        return(split.data)
     }))
     colnames(split.icd10.data) <- paste0("dx", 1:ncol(split.icd10.data))
     iss.data <- icdpicr::cat_trauma(split.icd10.data,
-                                    dx_pre = "dx",
-                                    icd10 = "base",
-                                    i10_iss_method = "roc_max_NIS")[, c("mxaisbr_General",
-                                                                        "mxaisbr_HeadNeck",
-                                                                        "mxaisbr_Face",
-                                                                        "mxaisbr_Extremities", 
-                                                                        "mxaisbr_Chest",
-                                                                        "mxaisbr_Abdomen",
-                                                                        "maxais",
-                                                                        "riss",
-                                                                        "niss")]
+        dx_pre = "dx",
+        icd10 = "base",
+        i10_iss_method = "roc_max_NIS"
+    )[, c(
+        "mxaisbr_General",
+        "mxaisbr_HeadNeck",
+        "mxaisbr_Face",
+        "mxaisbr_Extremities",
+        "mxaisbr_Chest",
+        "mxaisbr_Abdomen",
+        "maxais",
+        "riss",
+        "niss"
+    )]
     prepared.data <- cbind(prepared.data, iss.data)
 
     ## Classify mechanism of injury (incident__moi and incident__moi_001) as factors
@@ -88,26 +97,30 @@ prepare_data <- function(data, codebook = NULL) {
     ## before training to after training. For intervention centres these
     ## are the dates when the training happened. For standard care centres
     ## these are one month after data collection started.
-    arrival.dates <- data %>% select(incident__date_of_arrival, id__reg_hospital_id) %>% arrange(incident__date_of_arrival)
+    arrival.dates <- data %>%
+        select(incident__date_of_arrival, id__reg_hospital_id) %>%
+        arrange(incident__date_of_arrival)
     centre.start.dates <- arrival.dates %>%
         group_by(id__reg_hospital_id) %>%
         summarise(start_date = format(min(incident__date_of_arrival), "%Y-%m-%d")) %>%
         deframe()
-    pre.post.break.points <- list("11542" = ymd(centre.start.dates["11542"]) + months(1), # standard care
-                                  "44805" = c("2022-05-30", "2022-06-20"), # atls, two dates because two students did not pass the first time
-                                  "55356" = "2022-09-02", # ptc
-                                  "78344" = "2022-06-03", # atls
-                                  "95846" = "2022-09-01", # ptc
-                                  "88456" = ymd(centre.start.dates["88456"]) + months(1), # standard care 
-                                  "10263" = ymd(centre.start.dates["10263"]) + months(1)) # standard care
+    pre.post.break.points <- list(
+        "11542" = ymd(centre.start.dates["11542"]) + months(1), # standard care
+        "44805" = c("2022-05-30", "2022-06-20"), # atls, two dates because two students did not pass the first time
+        "55356" = "2022-09-02", # ptc
+        "78344" = "2022-06-03", # atls
+        "95846" = "2022-09-01", # ptc
+        "88456" = ymd(centre.start.dates["88456"]) + months(1), # standard care
+        "10263" = ymd(centre.start.dates["10263"]) + months(1)
+    ) # standard care
     pre.post.break.points <- lapply(pre.post.break.points, ymd)
-    
+
     prepared.data.with.post.indicator <- do.call(rbind, lapply(split(prepared.data, prepared.data$id__reg_hospital_id), function(centre.data) {
         centre.id <- as.character(unique(centre.data$id__reg_hospital_id))
         centre.data$post.training <- centre.data$incident__date_of_arrival > pre.post.break.points[[centre.id]][1]
         return(centre.data)
     })) %>% labelled::copy_labels_from(prepared.data)
-     
+
     ## This is the data that should be used as the basis for the synthetic data
     prepared.data <- prepared.data.with.post.indicator
 
@@ -119,13 +132,16 @@ prepare_data <- function(data, codebook = NULL) {
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% atls.centres, ]$arm <- "ATLS"
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% ptc.centres, ]$arm <- "PTC"
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% control.centres, ]$arm <- "Standard care"
-    
+
+    ## Add variables indicating the different TQIP cohorts
+    prepared.data <- add_tqip_cohorts(prepared.data)
+
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
         column.data <- prepared.data %>%
             pull(.data[[column.name]]) %>%
             label_variable(name = column.name, codebook = codebook)
-        return (column.data)
+        return(column.data)
     })
     labelled::var_label(prepared.data$riss) <- "Injury Severity Score"
     labelled::var_label(prepared.data$niss) <- "New Injury Severity Score"
@@ -140,7 +156,7 @@ prepare_data <- function(data, codebook = NULL) {
     labelled::var_label(prepared.data$incident__moi) <- "Mechanism of injury"
 
     ## Return prepared data
-    return (prepared.data)
+    return(prepared.data)
 }
 
 label_variable <- function(variable.data, name, codebook) {
@@ -159,12 +175,8 @@ label_variable <- function(variable.data, name, codebook) {
             relabelled.data <- factor(logical.data, levels = c(TRUE, FALSE), labels = c("Yes", "No"))
         }
     }
-    if (!is.null(type))
+    if (!is.null(type)) {
         labelled::var_label(relabelled.data) <- variable.label
-    return (relabelled.data)
+    }
+    return(relabelled.data)
 }
-
-
-
-
-
