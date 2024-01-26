@@ -112,11 +112,6 @@ add_tqip_cohorts <- function(data,
     # Add tqip cohorts to data
     new.data <- cbind(data, tqip.cohorts)
 
-    # Label cohorts
-    for (cohort.name in names(tqip.cohorts)) {
-        labelled::var_label(new.data[[cohort.name]]) <- cohorts[[cohort.name]]
-    }
-
     # Return data with tqip cohorts
     return(new.data)
 }
