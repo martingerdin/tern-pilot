@@ -340,7 +340,7 @@ We analysed all pilot data using descriptive statistics. Quantitative variables 
 
 We compared participant outcomes in three combinations of trial arms: ATLS versus PTC, ATLS versus standard care, and PTC versus standard care. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
 
-Within each combination of trial arms we conducted subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly. Table S7.1 in Supplemental Material 7 shows which outcomes that were assessed in what subgroups, decided through consensus in the research team. We further compared the results of all subgroups with the results in the whole cohort, and compared the results in the female subgroup with the male subgroup, and the results in the blunt multisystem trauma subgroup with the penetrating trauma subgroup. We are aware that the numbers in some of these subgroups are small, but we included them to help guide the formulation of the statistical analysis plan for the full-scale trial.
+Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively only. 
 
 We calculated both absolute and relative differences for each
 comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals. We did not perform any formal hypothesis tests during the analysis of this pilot's data [@Lee2014]. We also compared the data collected through observations and interviews with the data collected from hospital records, to assess the feasibility of collecting data from hospital records in the full-scale trial.
@@ -374,18 +374,11 @@ m30d <- inline_text(overall.sample.characteristics.table,
 )
 ```
 
-Between `r start.date` and `r end.date`, we enrolled `r n.patients`
-trauma patients from `r n.centres` participating centres. The ATLS arm
-enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the
-standard care arm `r n.control` patients. We trained a total of 
-`r n.residents` residents, `r n.atls.residents` in ATLS, and 
-`r n.ptc.residents` in PTC. 
+Between `r start.date` and `r end.date`, we enrolled `r n.patients` trauma patients from `r n.centres` participating centres. The ATLS arm enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the standard care arm `r n.control` patients. We trained a total of  `r n.residents` residents, `r n.atls.residents` in ATLS, and  `r n.ptc.residents` in PTC. 
 
 The study flowchart is shown in Figure X and patient sample
 characteristics across trial arms are shown in Table
-\@ref(tab:sample-characteristics). Overall, the number of females were
-`r females`, the median (IQR) age was `r median.age`
-years, and the median ISS (IQR) and NISS (IQR) were `r median.iss` and `r median.niss` respectively. A total of `r m30d` patients had the primary outcome of mortality at 30 days after arrival to the emergency department.
+\@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) and NISS (IQR) were `r median.iss` and `r median.niss` respectively. A total of `r m30d` patients had the primary outcome of mortality at 30 days after arrival to the emergency department.
 
 ```{r sample-characteristics, echo = FALSE, results = "asis"}
 sample.characteristics.table
@@ -513,7 +506,7 @@ rel.change.ptc <- inline_outcome_text(
 
 After training, a total of `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm had the primary outcome, compared to `r m30d.atls` patients in the ATLS arm and `r m30d.ptc` patients in the PTC arm. The absolute change from baseline in the primary outcome (95% CI) in the standard care arm was `r abs.change.standard.care`% units, in the ATLS arm `r abs.change.atls`% units, and in the PTC arm `r abs.change.ptc`% units. The relative change from baseline in the primary outcome (95% CI) in the standard care arm was `r rel.change.standard.care`, in the ATLS arm `r rel.change.atls`, and in the PTC arm `r rel.change.ptc`.
 
-The absolute risk difference between the standard care and ATLS arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS and PTC arms (95% CI) `r arr.atls.ptc`% units. The relative risk in the standard care arm compared with the ATLS arm (95% CI) was `r rr.standard.care.atls`, in the standard care arm compared with the PTC arm (95% CI) `r rr.standard.care.ptc`, and in the ATLS arm compared with the PTC arm (95% CI) the relative risk was `r rr.atls.ptc`. The absolute and relative differences in changes from baseline comparing the three arms are shown in Supplementary materials, along with data on all other outcomes.  
+The absolute risk difference between the standard care and ATLS arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS and PTC arms (95% CI) `r arr.atls.ptc`% units. The relative risk in the standard care arm compared with the ATLS arm (95% CI) was `r rr.standard.care.atls`, in the standard care arm compared with the PTC arm (95% CI) `r rr.standard.care.ptc`, and in the ATLS arm compared with the PTC arm (95% CI) the relative risk was `r rr.atls.ptc`. The absolute and relative differences in changes from baseline comparing the three arms are shown in Supplementary materials, along with data on all secondary outcomes.  
 
 ## Resident Participant Outcomes
 A total of `r n.residents` residents were trained during this
@@ -531,12 +524,7 @@ retrospective.comparison.table %>%
 
 # Discussion
 We show that conducting a cluster randomized controlled trial
-comparing ATLS with PTC and standard care is feasible in this setting
-provided that there are dedicated project officers to enrol
-participants, collect data, and follow up participants. Missing data
-rates were low for the primary outcome and many secondary outcomes, as
-well as for key variables. Some variables had very high missing data
-rates and may not be feasible to include in a full-scale trial.
+comparing ATLS with PTC and standard care is feasible in this setting provided that there are dedicated project officers to enrol participants, collect data, and follow up participants. Missing data rates were low for the primary outcome and many secondary outcomes, as well as for key variables. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial.
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->

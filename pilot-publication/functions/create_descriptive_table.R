@@ -10,6 +10,7 @@
 #' @param strata Character or NULL. The variable to use as the
 #'     stratifying variable. If NULL the table is not
 #'     stratified. Defaults to NULL.
+#' @param show.all.levels Logical. If TRUE all levels of a factor are shown, even for binary variables. Defaults to TRUE.
 #' @param include.overall Logical. If TRUE a column called "Overall"
 #'     is included in the table, which includes descriptive statistics
 #'     for the whole sample. Defaults to TRUE, unless strata is NULL,
@@ -21,6 +22,7 @@
 create_descriptive_table <- function(table.data,
                                      variables = NULL,
                                      strata = NULL,
+                                     show.all.levels = TRUE,
                                      include.overall = TRUE,
                                      caption = NULL,
                                      return.as.gt = FALSE) {
@@ -44,10 +46,16 @@ create_descriptive_table <- function(table.data,
     if (!is.null(variables)) {
         table.data <- table.data[, variables]
     }
+
+    type <- list()
+    if (show.all.levels) {
+        type <- list(all_dichotomous() ~ "categorical")
+    }
+
     descriptive.table <- gtsummary::tbl_summary(
         data = table.data,
         by = strata,
-        type = all_dichotomous() ~ "categorical",
+        type = type,
         missing_text = "Missing"
     )
 

@@ -24,9 +24,12 @@ results <- get_basic_results(data)
 
 ## Create table of sample characteristics
 table.variables <- c(
-    "patinfo__pt_age", "patinfo__pt_gender",
+    "patinfo__pt_age", "elderly",
+    "patinfo__pt_gender",
     "incident__dominating_injury_type",
-    "patvitals__ed_rr", "patvitals__ed_sat",
+    "blunt.multisystem.trauma", "severe.tbi",
+    "shock", "patvitals__ed_rr",
+    "patvitals__ed_sat",
     "patvitals__ed_hr", "patvitals__ed_sbp",
     "patvitals__ed_gcs", "riss",
     "outcomes__discharge_alive",
@@ -36,7 +39,7 @@ table.variables <- c(
 table.data <- data %>%
     select(all_of(table.variables)) %>%
     select(-arm)
-overall.sample.characteristics.table <- create_descriptive_table(table.data)
+overall.sample.characteristics.table <- create_descriptive_table(table.data, show.all.levels = FALSE)
 
 ## Create table of sample characteristics before training
 pre.training.table.data <- data %>%
@@ -45,6 +48,7 @@ pre.training.table.data <- data %>%
 pre.training.characteristics.table <- create_descriptive_table(
     pre.training.table.data,
     strata = "arm",
+    show.all.levels = FALSE,
     include.overall = TRUE
 )
 
@@ -55,6 +59,7 @@ post.training.table.data <- data %>%
 post.training.characteristics.table <- create_descriptive_table(
     post.training.table.data,
     strata = "arm",
+    show.all.levels = FALSE,
     include.overall = TRUE
 )
 

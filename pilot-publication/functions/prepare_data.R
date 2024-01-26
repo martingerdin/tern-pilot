@@ -133,9 +133,6 @@ prepare_data <- function(data, codebook = NULL) {
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% ptc.centres, ]$arm <- "PTC"
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% control.centres, ]$arm <- "Standard care"
 
-    ## Add variables indicating the different TQIP cohorts
-    prepared.data <- add_tqip_cohorts(prepared.data)
-
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
         column.data <- prepared.data %>%
@@ -143,6 +140,11 @@ prepare_data <- function(data, codebook = NULL) {
             label_variable(name = column.name, codebook = codebook)
         return(column.data)
     })
+
+    ## Add variables indicating the different TQIP cohorts
+    prepared.data <- add_tqip_cohorts(prepared.data)
+
+    ## Add additional labels
     labelled::var_label(prepared.data$riss) <- "Injury Severity Score"
     labelled::var_label(prepared.data$niss) <- "New Injury Severity Score"
     labelled::var_label(prepared.data$patinfo__pt_age) <- "Age, years"
@@ -154,6 +156,13 @@ prepare_data <- function(data, codebook = NULL) {
     labelled::var_label(prepared.data$patvitals__ed_sbp) <- "Systolic blood pressure, mmHg"
     labelled::var_label(prepared.data$patvitals__ed_gcs) <- "Glasgow Coma Scale"
     labelled::var_label(prepared.data$incident__moi) <- "Mechanism of injury"
+    labelled::var_label(prepared.data$blunt.multisystem.trauma) <- "Blunt multisystem trauma"
+    labelled::var_label(prepared.data$penetrating.trauma) <- "Penetrating trauma"
+    labelled::var_label(prepared.data$shock) <- "Shock"
+    labelled::var_label(prepared.data$severe.tbi) <- "Severe traumatic brain injury"
+    labelled::var_label(prepared.data$elderly) <- "Elderly"
+    labelled::var_label(prepared.data$male) <- "Male"
+    labelled::var_label(prepared.data$female) <- "Female"
 
     ## Return prepared data
     return(prepared.data)
