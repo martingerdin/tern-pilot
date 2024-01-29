@@ -78,26 +78,144 @@ sample.characteristics.table <- gtsummary::tbl_merge(
 retrospective.comparison.table <- create_retrospective_comparison_table(data)
 
 ## Bootstrap outcome results
-unlink("error.log")
-unlink("out", recursive = TRUE)
-dir.create("out", showWarnings = FALSE)
-n.boot.samples <- 1000
-bootstrapped.outcome.results <- boot(data, try_estimate_outcome_results, R = n.boot.samples)
-saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outcome-results.Rds"))
+use.saved <- TRUE
+if (use.saved) {
+    outcome.results <- readRDS("outcome-results.Rds")
+} else {
+    unlink("error.log")
+    unlink("out", recursive = TRUE)
+    dir.create("out", showWarnings = FALSE)
+    n.boot.samples <- 1000
+    bootstrapped.outcome.results <- boot(data, try_estimate_outcome_results, R = n.boot.samples)
+    saveRDS(bootstrapped.outcome.results, file = file.path("out", "bootstrapped-outcome-results.Rds"))
 
-## Calculate confidence intervals
-bootstrapped.outcome.results.ci <- calculate_bootstrap_cis(bootstrapped.outcome.results)
-saveRDS(bootstrapped.outcome.results.ci, file = file.path("out", "bootstrapped-outcome-results-ci.Rds"))
+    ## Calculate confidence intervals
+    bootstrapped.outcome.results.ci <- calculate_bootstrap_cis(bootstrapped.outcome.results)
+    saveRDS(bootstrapped.outcome.results.ci, file = file.path("out", "bootstrapped-outcome-results-ci.Rds"))
 
-## Combine point estimates with confidence intervals
-outcome.results <- list(
-    point.estimates = bootstrapped.outcome.results$t0,
-    confidence.intervals = bootstrapped.outcome.results.ci
-)
-saveRDS(outcome.results, file = file.path("outcome-results.Rds"))
+    ## Combine point estimates with confidence intervals
+    outcome.results <- list(
+        point.estimates = bootstrapped.outcome.results$t0,
+        confidence.intervals = bootstrapped.outcome.results.ci
+    )
+    saveRDS(outcome.results, file = file.path("outcome-results.Rds"))
+}
 
 ## Create tables with outcome results
 outcome.results.tables <- create_outcome_results_tables(outcome.results)
 
+## Crude 30 day mortality
+m30d.atls <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "ATLS"
+)
+m30d.ptc <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "PTC"
+)
+m30d.standard.care <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "Standard care"
+)
+
+## Extract tables for absolute and relative differences
+standard.care.vs.atls.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
+
+standard.care.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
+
+atls.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
+
+## Absolute differences
+arr.standard.care.atls <- inline_outcome_text(
+    standard.care.vs.atls.table,
+    outcome = "30 day mortality",
+    column = "Absolute difference",
+    level = "Yes"
+)
+
+arr.standard.care.ptc <- inline_outcome_text(
+    standard.care.vs.ptc.table,
+    outcome = "30 day mortality",
+    column = "Absolute difference",
+    level = "Yes"
+)
+
+arr.atls.ptc <- inline_outcome_text(
+    atls.vs.ptc.table,
+    outcome = "30 day mortality",
+    column = "Absolute difference",
+    level = "Yes"
+)
+
+## Relative differences
+rr.standard.care.atls <- inline_outcome_text(
+    standard.care.vs.atls.table,
+    outcome = "30 day mortality",
+    column = "Relative difference",
+    level = "Yes"
+)
+
+rr.standard.care.ptc <- inline_outcome_text(
+    standard.care.vs.ptc.table,
+    outcome = "30 day mortality",
+    column = "Relative difference",
+    level = "Yes"
+)
+
+rr.atls.ptc <- inline_outcome_text(
+    atls.vs.ptc.table,
+    outcome = "30 day mortality",
+    column = "Relative difference",
+    level = "Yes"
+)
+
+## Extract tables for change from baseline in 30 day mortality
+absolute.change.from.baseline.table <- outcome.results.tables$ci.level.0.95[["Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+relative.change.from.baseline.table <- outcome.results.tables$ci.level.0.95[["Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+## Absolute change from baseline
+abs.change.standard.care <- inline_outcome_text(
+    absolute.change.from.baseline.table,
+    outcome = "30 day mortality",
+    column = "Standard care",
+    level = "Yes"
+)
+
+abs.change.atls <- inline_outcome_text(
+    absolute.change.from.baseline.table,
+    outcome = "30 day mortality",
+    column = "ATLS",
+    level = "Yes"
+)
+
+abs.change.ptc <- inline_outcome_text(
+    absolute.change.from.baseline.table,
+    outcome = "30 day mortality",
+    column = "PTC",
+    level = "Yes"
+)
+
+## Relative change from baseline
+rel.change.standard.care <- inline_outcome_text(
+    relative.change.from.baseline.table,
+    outcome = "30 day mortality",
+    column = "Standard care",
+    level = "Yes"
+)
+
+rel.change.atls <- inline_outcome_text(
+    relative.change.from.baseline.table,
+    outcome = "30 day mortality",
+    column = "ATLS",
+    level = "Yes"
+)
+
+rel.change.ptc <- inline_outcome_text(
+    relative.change.from.baseline.table,
+    outcome = "30 day mortality",
+    column = "PTC",
+    level = "Yes"
+)
+
 ## Save outcome results tables to file
-save_tables_to_file(outcome.results.tables)
+# save_tables_to_file(outcome.results.tables)

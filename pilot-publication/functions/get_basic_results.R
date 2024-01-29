@@ -31,6 +31,8 @@ get_basic_results <- function(data) {
     results$n.residents <- with(results, n.atls.residents + n.ptc.residents)
     n.passed <- 6 # 2 had to retake the exam, but all passed the second time
     results$pass.rate <- round(n.passed / results$n.atls.residents * 100)
+    n.eligible.residents <- results$n.residents # Need to update this
+    results$recruitment.rate.residents <- round(results$n.residents / n.eligible.residents * 100)
     results$n.centres <- data %>%
         pull(id__reg_hospital_id) %>%
         unique() %>%

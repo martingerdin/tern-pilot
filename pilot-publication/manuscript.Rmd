@@ -145,11 +145,12 @@ The funding sources had no role in the design of this study nor during its execu
 <!-- Source main code to make global objects available in the text -->
 ```{r source, echo = FALSE, include = FALSE}
 source("main.R")
+attach(results)
 ```
 
 # Abstract
 
-**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programmes are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The percentage of patients who consented to follow up was `r p.consent`% and the resident recruitment rate was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. `r stringr::str_to_sentence(english::english(n.m30d.atls))` (`r p.m30d.atls`%) patients died within 30 days in the ATLS arm, `r n.m30d.ptc` (`r p.m30d.ptc`%) patients in the PTC arm, and `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
+**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programmes are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The percentage of patients who consented to follow up was `r p.consent`% and the resident recruitment rate was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. `r stringr::str_to_sentence(english::english(m30d.standard.care))` patients died within 30 days in the standard care arm, `r m30d.atls` patients in the ATLS^®^ arm, and `r m30d.ptc` patients in the PTC arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
 
 \newpage
 
@@ -158,7 +159,7 @@ source("main.R")
 
 Strengths and limitations of this study:
 
-- Cluster randomized controlled trial comparing the effect of ATLS, PTC and standard care on patient and provider outcomes.
+- Cluster randomized controlled trial comparing the effect of ATLS^®^, PTC and standard care on patient and provider outcomes.
 - Prospective data collection with direct observations by dedicated project officers.
 - Participating centers' heterogeneity may affect the study estimates and bias the results.
 -->
@@ -174,7 +175,7 @@ The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) is the most establis
 
 The free Primary Trauma Care (PTC) program is the most widely spread alternative programme. The goal of PTC is to improve trauma care in LMIC [@ptcfPtc2018]. Like ATLS^®^, doctors in over 80 countries have been trained in PTC, and the programme has been endorsed by the World Health Organization (WHO), among other international organizations including several professional societies [@ptcfPtc2018].
 
-There are observational studies indicating that trauma life support training programmes may improve patient outcomes [@Jin2021], but there are no randomised trials  [@Mohammad2013; @Jayaraman2014; @Kadhum2020].  We performed a pilot study aiming to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS and PTC with standard care.
+There are observational studies indicating that trauma life support training programmes may improve patient outcomes [@Jin2021], but there are no randomised trials  [@Mohammad2013; @Jayaraman2014; @Kadhum2020].  We performed a pilot study aiming to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care.
 
 # Methods
 
@@ -218,7 +219,7 @@ Indian tertiary care hospitals that admit more than 400 adult patients with trau
 ## Interventions
 In each intervention arm one or two units', out of typically six, residents per hospital providing emergency care to trauma patients were trained in either ATLS^®^ or PTC. For the purpose of this pilot study, our target was to train a minimum of 75% of residents in each unit. If residents dropped out or changed units after training but before data collection was completed we planned to conduct additional training if needed to meet the 75% criterion, but this was not required. We did not train the units' faculty, as they are typically not directly involved in the initial management of trauma patients.
 
-The ATLS^®^ training was conducted in an ATLS certified training centre in Mumbai, according to the standard ATLS^®^ curriculum [@acsAtls2018]. The PTC training was conducted in New Delhi, according to the standard PTC curriculum [@ptcfPtc2018]. These courses were conducted over a period of 2.5 to 3 days. The residents certified "pass" were considered as trained in respective courses.
+The ATLS^®^ training was conducted in an ATLS^®^ certified training centre in Mumbai, according to the standard ATLS^®^ curriculum [@acsAtls2018]. The PTC training was conducted in New Delhi, according to the standard PTC curriculum [@ptcfPtc2018]. These courses were conducted over a period of 2.5 to 3 days. The residents certified "pass" were considered as trained in respective courses.
 
 The control group provided standard care with no intervention.
 
@@ -262,7 +263,7 @@ To ensure adequate recruitment we only approached hospitals that stated that the
 ## Allocation
 
 ### Sequence generation
-We used simple randomisation to allocate sites to trial arms. We prepared seven sealed envelopes from which one representative from each pilot site selected one in a common meeting<!-- Meeting notes ../meetings/20220307/ -->. The content of the envelopes dictated what trial arm (ATLS, PTC, or standard care) each hospital was allocated to. There were two hospitals in each of the intervention arms and three hospitals in the control arm.
+We used simple randomisation to allocate sites to trial arms. We prepared seven sealed envelopes from which one representative from each pilot site selected one in a common meeting<!-- Meeting notes ../meetings/20220307/ -->. The content of the envelopes dictated what trial arm (ATLS^®^, PTC, or standard care) each hospital was allocated to. There were two hospitals in each of the intervention arms and three hospitals in the control arm.
 
 ### Concealment Mechanism
 We did not conceal the sequence.
@@ -302,7 +303,7 @@ Weekly meetings with the core team and project officers took place. We conducted
 ## Statistical Methods
 We analysed all pilot data using descriptive statistics. Quantitative variables are summarised as mean +/- standard deviation, median, interquartile range and range. Qualitative variables are presented as absolute numbers and percentages. Feasibility outcomes are summarised both on the overall sample level as well as on the individual cluster level. We used an empty generalised linear mixed model <!-- see [@Sommet2017] --> to estimate the intracluster correlation coefficient.
 
-We compared participant outcomes in three combinations of trial arms: ATLS versus PTC, ATLS versus standard care, and PTC versus standard care. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
+We compared participant outcomes in three combinations of trial arms: ATLS^®^ versus PTC, ATLS^®^ versus standard care, and PTC versus standard care. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
 
 Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively only. 
 
@@ -338,7 +339,7 @@ m30d <- inline_text(overall.sample.characteristics.table,
 )
 ```
 
-Between `r start.date` and `r end.date`, we enrolled `r n.patients` trauma patients from `r n.centres` participating centres. The ATLS arm enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the standard care arm `r n.control` patients. We trained a total of  `r n.residents` residents, `r n.atls.residents` in ATLS, and  `r n.ptc.residents` in PTC. 
+Between `r start.date` and `r end.date`, we enrolled `r n.patients` trauma patients from `r n.centres` participating centres. The ATLS^®^ arm enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the standard care arm `r n.control` patients. We trained a total of  `r n.residents` residents, `r n.atls.residents` in ATLS^®^, and  `r n.ptc.residents` in PTC. 
 
 The study flowchart is shown in Figure X and patient sample
 characteristics across trial arms are shown in Table
@@ -350,127 +351,9 @@ sample.characteristics.table
 
 ## Patient Participant Outcomes
 
-```{r, echo = FALSE}
-## Crude 30 day mortality
-m30d.atls <- inline_text(post.training.characteristics.table,
-  variable = outcomes__alive_after_30_days,
-  level = "Yes",
-  column = "ATLS"
-)
-m30d.ptc <- inline_text(post.training.characteristics.table,
-  variable = outcomes__alive_after_30_days,
-  level = "Yes",
-  column = "PTC"
-)
-m30d.standard.care <- inline_text(post.training.characteristics.table,
-  variable = outcomes__alive_after_30_days,
-  level = "Yes",
-  column = "Standard care"
-)
+After training, a total of `r m30d.standard.care` patients in the standard care arm had the primary outcome, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The absolute change from baseline in the primary outcome (95% CI) in the standard care arm was `r abs.change.standard.care`% units, in the ATLS^®^ arm `r abs.change.atls`% units, and in the PTC arm `r abs.change.ptc`% units. The relative change from baseline in the primary outcome (95% CI) in the standard care arm was `r rel.change.standard.care`, in the ATLS^®^ arm `r rel.change.atls`, and in the PTC arm `r rel.change.ptc`.
 
-## Extract tables for absolute and relative differences
-standard.care.vs.atls.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
-
-standard.care.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
-
-atls.vs.ptc.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
-
-## Absolute differences
-arr.standard.care.atls <- inline_outcome_text(
-  standard.care.vs.atls.table,
-  outcome = "30 day mortality",
-  column = "Absolute difference",
-  level = "Yes"
-)
-
-arr.standard.care.ptc <- inline_outcome_text(
-  standard.care.vs.ptc.table,
-  outcome = "30 day mortality",
-  column = "Absolute difference",
-  level = "Yes"
-)
-
-arr.atls.ptc <- inline_outcome_text(
-  atls.vs.ptc.table,
-  outcome = "30 day mortality",
-  column = "Absolute difference",
-  level = "Yes"
-)
-
-## Relative differences
-rr.standard.care.atls <- inline_outcome_text(
-  standard.care.vs.atls.table,
-  outcome = "30 day mortality",
-  column = "Relative difference",
-  level = "Yes"
-)
-
-rr.standard.care.ptc <- inline_outcome_text(
-  standard.care.vs.ptc.table,
-  outcome = "30 day mortality",
-  column = "Relative difference",
-  level = "Yes"
-)
-
-rr.atls.ptc <- inline_outcome_text(
-  atls.vs.ptc.table,
-  outcome = "30 day mortality",
-  column = "Relative difference",
-  level = "Yes"
-)
-
-## Extract tables for change from baseline in 30 day mortality
-absolute.change.from.baseline.table <- outcome.results.tables$ci.level.0.95[["Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
-relative.change.from.baseline.table <- outcome.results.tables$ci.level.0.95[["Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
-
-## Absolute change from baseline
-abs.change.standard.care <- inline_outcome_text(
-  absolute.change.from.baseline.table,
-  outcome = "30 day mortality",
-  column = "Standard care",
-  level = "Yes"
-)
-
-abs.change.atls <- inline_outcome_text(
-  absolute.change.from.baseline.table,
-  outcome = "30 day mortality",
-  column = "ATLS",
-  level = "Yes"
-)
-
-abs.change.ptc <- inline_outcome_text(
-  absolute.change.from.baseline.table,
-  outcome = "30 day mortality",
-  column = "PTC",
-  level = "Yes"
-)
-
-## Relative change from baseline
-rel.change.standard.care <- inline_outcome_text(
-  relative.change.from.baseline.table,
-  outcome = "30 day mortality",
-  column = "Standard care",
-  level = "Yes"
-)
-
-rel.change.atls <- inline_outcome_text(
-  relative.change.from.baseline.table,
-  outcome = "30 day mortality",
-  column = "ATLS",
-  level = "Yes"
-)
-
-rel.change.ptc <- inline_outcome_text(
-  relative.change.from.baseline.table,
-  outcome = "30 day mortality",
-  column = "PTC",
-  level = "Yes"
-)
-```
-
-After training, a total of `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm had the primary outcome, compared to `r m30d.atls` patients in the ATLS arm and `r m30d.ptc` patients in the PTC arm. The absolute change from baseline in the primary outcome (95% CI) in the standard care arm was `r abs.change.standard.care`% units, in the ATLS arm `r abs.change.atls`% units, and in the PTC arm `r abs.change.ptc`% units. The relative change from baseline in the primary outcome (95% CI) in the standard care arm was `r rel.change.standard.care`, in the ATLS arm `r rel.change.atls`, and in the PTC arm `r rel.change.ptc`.
-
-The absolute risk difference between the standard care and ATLS arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS and PTC arms (95% CI) `r arr.atls.ptc`% units. The relative risk in the standard care arm compared with the ATLS arm (95% CI) was `r rr.standard.care.atls`, in the standard care arm compared with the PTC arm (95% CI) `r rr.standard.care.ptc`, and in the ATLS arm compared with the PTC arm (95% CI) the relative risk was `r rr.atls.ptc`. The absolute and relative differences in changes from baseline comparing the three arms are shown in Supplementary materials, along with data on all secondary outcomes.  
+The absolute risk difference between the standard care and ATLS^®^ arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS^®^ and PTC arms (95% CI) `r arr.atls.ptc`% units. The relative risk in the standard care arm compared with the ATLS^®^ arm (95% CI) was `r rr.standard.care.atls`, in the standard care arm compared with the PTC arm (95% CI) `r rr.standard.care.ptc`, and in the ATLS^®^ arm compared with the PTC arm (95% CI) the relative risk was `r rr.atls.ptc`. The absolute and relative differences in changes from baseline comparing the three arms are shown in Supplementary materials, along with data on all secondary outcomes.  
 
 ## Resident Participant Outcomes
 A total of `r n.residents` residents were trained during this
@@ -487,13 +370,13 @@ retrospective.comparison.table %>%
 
 # Discussion
 We show that conducting a cluster randomized controlled trial
-comparing ATLS with PTC and standard care is feasible in this setting. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial.
+comparing ATLS^®^ with PTC and standard care is feasible in this setting. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial.
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
 
-We found that the ATLS arm had lower 30-day mortality compared to the
-PTC and standard care arms. We also found that the PTC arm had lower mortality than the standard care arm. These findings indicate a large potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS arm having the smallest sample size. This difference resulted from the randomisation process with a small number of heterogeneous clusters. 
+We found that the ATLS^®^ arm had lower 30-day mortality compared to the
+PTC and standard care arms. We also found that the PTC arm had lower mortality than the standard care arm. These findings indicate a large potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS^®^ arm having the smallest sample size. This difference resulted from the randomisation process with a small number of heterogeneous clusters. 
 
 The primary patient participant outcome, all-cause 30-day mortality,
 was missing in `r rate.lost.to.follow.up`% of patients. This may
@@ -537,10 +420,10 @@ implementing in-hospital trauma life support training
 [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008],
 whereas one study from China that included 820 patients found a
 significant reduction in mortality, from 20 to 15%, after implementing
-ATLS [@Wang2010].
+ATLS^®^ [@Wang2010].
 
 Several controlled trials, including at least two randomized
-controlled trials [@Ali1996; @Ali1999], show that ATLS is associated
+controlled trials [@Ali1996; @Ali1999], show that ATLS^®^ is associated
 with improved provider skills [@Mohammad2013]. Observational evidence
 indicates that PTC also leads to improved provider skills
 [@Kadhum2020]. The missing link is then how, and if, these improved
