@@ -262,9 +262,7 @@ To ensure adequate recruitment we only approached hospitals that stated that the
 ## Allocation
 
 ### Sequence generation
-We used simple randomisation to allocate sites to trial arms. We prepared seven sealed envelopes from which one representative from each pilot site selected one in a common meeting on March 7, 2022 [^dev1]<!-- Meeting notes ../meetings/20220307/ -->. The content of the envelopes dictated what trial arm (ATLS, PTC, or standard care) each hospital was allocated to. There were two hospitals in each of the intervention arms and three hospitals in the control arm.
-
-[^dev1]: Initially the plan was to enroll six hospitals (clusters) but we ended up enrolling seven.
+We used simple randomisation to allocate sites to trial arms. We prepared seven sealed envelopes from which one representative from each pilot site selected one in a common meeting<!-- Meeting notes ../meetings/20220307/ -->. The content of the envelopes dictated what trial arm (ATLS, PTC, or standard care) each hospital was allocated to. There were two hospitals in each of the intervention arms and three hospitals in the control arm.
 
 ### Concealment Mechanism
 We did not conceal the sequence.
