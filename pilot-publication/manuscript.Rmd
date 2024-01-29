@@ -149,7 +149,7 @@ source("main.R")
 
 # Abstract
 
-**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programmes are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The patient recruitment rate was `r recruitment.rate.patients`% and the resident recruitment rate was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. `r stringr::str_to_sentence(english::english(n.m30d.atls))` (`r p.m30d.atls`%) patients died within 30 days in the ATLS arm, `r n.m30d.ptc` (`r p.m30d.ptc`%) patients in the PTC arm, and `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
+**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programmes are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The percentage of patients who consented to follow up was `r p.consent`% and the resident recruitment rate was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. `r stringr::str_to_sentence(english::english(n.m30d.atls))` (`r p.m30d.atls`%) patients died within 30 days in the ATLS arm, `r n.m30d.ptc` (`r p.m30d.ptc`%) patients in the PTC arm, and `r n.m30d.control` (`r p.m30d.control`%) patients in the standard care arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
 
 \newpage
 
@@ -174,13 +174,7 @@ The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) is the most establis
 
 The free Primary Trauma Care (PTC) program is the most widely spread alternative programme. The goal of PTC is to improve trauma care in LMIC [@ptcfPtc2018]. Like ATLS^®^, doctors in over 80 countries have been trained in PTC, and the programme has been endorsed by the World Health Organization (WHO), among other international organizations including several professional societies [@ptcfPtc2018].
 
-There are observational studies indicating that trauma life support training programmes may improve patient outcomes [@Jin2021], but there are no randomised trials  [@Mohammad2013; @Jayaraman2014; @Kadhum2020].  We performed a pilot study aiming to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS and PTC with standard care.  The objectives of this pilot study were to:
-
-- Estimate probable effect sizes on patient outcomes associated with ATLS^®^ and PTC compared with standard care, estimate the proportion of participants with the outcome (if binary), and estimate the intracluster correlation coefficient, as a basis for future sample size calculations.
-  
-- Assess the feasibility of recruiting participants and collecting data on primary and secondary outcomes, such as mortality, in-hospital complications, length of stay, and quality of life.
-
-- Assess how the effect sizes and directions of these effects of ATLS and PTC may differ across clinically important subgroups.
+There are observational studies indicating that trauma life support training programmes may improve patient outcomes [@Jin2021], but there are no randomised trials  [@Mohammad2013; @Jayaraman2014; @Kadhum2020].  We performed a pilot study aiming to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS and PTC with standard care.
 
 # Methods
 
@@ -212,9 +206,7 @@ There were two groups of participants: patients and resident doctors.
 Adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma. History of trauma is here defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting. We explored intervention effects across the following clinical subgroups: men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly, as defined by Hornor et al [@Hornor2018]. The consent form for patients are available as Supplemental Material 1.
 
 ### Resident Doctor Participants
-Resident doctors doing their speciality training in surgery or
-emergency medicine managing trauma patients in the emergency
-department and who were expected to remain in the participating hospitals for at least one year. To facilitate administration each surgical department is divided into units, which manage the out-patient and emergency departments, operating rooms etc on different days each week. One or two, out of typically six, units' residents were selected from each hospital. One unit consists of at least three faculty and three to twelve residents.
+Resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year. To facilitate administration each surgical department is divided into units, which manage the out-patient and emergency departments, operating rooms etc on different days each week. One or two, out of typically six, units' residents were selected from each hospital. One unit consists of at least three faculty and three to twelve residents.
 
 To be eligible, units had to have a maximum of 25% of the doctors trained in either ATLS^®^, PTC, or similar training programs before the start of the pilot. Those residents who had received training in the last five years were considered as trained. The figure of 25% was decided through consensus in the research team, to balance feasibility and contamination of results.
 
@@ -236,37 +228,11 @@ Both ATLS^®^ and PTC are standard training programs with fixed curricula [@acsA
 ### Adherence
 The intervention was the training in either ATLS^®^ or PTC and resident participants were required to adhere to, i.e. participate in, the training, to be eligible for passing. We did not consider adherence to training contents during care delivery as adherence to the trial intervention.
 
-### Concomitant Care
-
-#### Baseline Training
-
-**This section needs to be updated with the emergency medicine curriculum**
-
-The care provided by all participating hospitals at baseline was based on the training curriculum formulated by The National Medical Council of India for post graduation in General Surgery [@mciMsSurgery2019]. Regarding trauma, these guidelines state that the student should:
-
-a.  Have knowledge about response to trauma; burns: causes, prevention and management; wounds of scalp and its management; recognition, diagnosis and monitoring of patients with head injury, Glasgow coma scale.
-b.  Be able to provide and coordinate emergency resuscitative measures in acute surgical situations including trauma.
-c.  Choose, perform and interpret appropriate imaging in trauma - ultrasound Focused Abdominal Sonography in Trauma (FAST).
-d.  Undergo advanced trauma and cardiac life support course (certified) before appearing in final examination.
-e.  Undergo clinical posting in emergency and trauma.
-f.  Present or discuss cases of blunt abdominal trauma.
-
-Although training in an ATLS^®^ is part of the curriculum it is  optional and not doing this training does not
-result in failure to obtain post graduation completion.
-
-#### Standard of Care
-
-**This section needs to be revised to include information from sites where patients were not managed by surgical residents**
-
-At most tertiary hospitals in India trauma patients present to the emergency department where they are assessed by a doctor and referred to the surgical bay for further management. In the surgical bay a second or third year general surgery resident sees all the major trauma and provide the initial care, including initiating treatment and investigations.  This resident informs the consultant on call who is generally an Assistant Professor. Most procedures like intercostal drainage, open wound suturing, intubation etc. would be done in the surgical resuscitation area, by the surgical resident.
-
-Compared to other settings where a trauma team approach is adopted, nurses and other healthcare professionals are involved to a limited extent during the initial management. Their roles include assisting during intubation and other bedside procedures, charting the vitals (not recording) and giving injections. They also accompany the resident during transfers of serious patients.
-
-After completing the assessment and starting initial resuscitation, the resident decides to send the patient for imaging (X-rays/FAST/CT-scan) or to the operation room in consultation with or after assessment by the on-call consultant. A portable X-ray and an ultrasonography machine to conduct FAST may or may not be available in the surgical bay. The patients who are operated, managed conservatively, not intubated, or with minor trauma will be sent to the surgical ward. Those who need increased monitoring or mechanical ventilation remain in the surgical bay or in the intensive care unit (ICU) depending on the availability of ICU beds. The further treatment continues in the respective ward or ICU and patients are finally discharged from the ward.
+### Standard Care
+Standard care varies across hospitals in India, but trauma patients are initially managed by casualty medical officers, surgical residents, or emergency medicine residents. They are mainly first- or second-year residents who resuscitate patients, perform interventions and refer patients for imaging or other investigations. Compared with other settings where a trauma team approach is adopted, nurses and other healthcare professionals are only involved to a limited extent during the initial management. 
 
 ## Outcomes
-Our pilot study included both participant and feasibility
-outcomes. Prior to deciding on these participant outcomes we searched the Core Outcome Measures in Effectiveness Trials (COMET) Initiative's database but were unable to identify appropriate core outcome sets for our populations of participants.
+Our pilot study included both participant and feasibility outcomes. Prior to deciding on these participant outcomes we searched the Core Outcome Measures in Effectiveness Trials (COMET) Initiative's database but were unable to identify appropriate core outcome sets for our populations of participants.
 
 The primary participant outcome was all cause mortality within 30 days from the time of arrival to the emergency department. The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 3. We decided to include a large number of outcomes,
 including some more exploratory, so that we could test their feasibility and relevance. 
@@ -514,8 +480,7 @@ pilot study. Overall their median confidence in managing trauma patients was `r 
 
 ## Feasibility Outcomes
 <!--Out of X potentially eligible patients, X (X%) patients were enrolled
-in the study-->. Out of `r n.eligible.residents` potentially eligible residents, `r n.residents` (`r recruitment.rate.residents`%) participated in the study. The lost to follow up rate was `r rate.lost.to.follow.up`, with `r n.lost.to.follow.up` out of `r n.patients` patients not completing 30 day follow up. Among residents the pass rate, after two attempts, was `r rate.pass`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details per variable and outcome in Table  \ref@(tab:sample-characteristics) and Supplementary material table
-\@ref(tab:secondary-outcomes). The differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, there were considerably more missing values in extracted data compared to observed data.
+in the study-->. Out of `r n.eligible.residents` potentially eligible residents, `r n.residents` (`r recruitment.rate.residents`%) participated in the study. The lost to follow up rate was `r rate.lost.to.follow.up`, with `r n.lost.to.follow.up` out of `r n.patients` patients not completing 30 day follow up. Among residents the pass rate, after two attempts, was `r rate.pass`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details for selected variables shown in Table \ref@(tab:sample-characteristics). The differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, there were considerably more missing values in extracted data compared to observed data.
 
 ```{r observed-vs-retrospective, echo = FALSE}
 retrospective.comparison.table %>%
@@ -524,28 +489,13 @@ retrospective.comparison.table %>%
 
 # Discussion
 We show that conducting a cluster randomized controlled trial
-comparing ATLS with PTC and standard care is feasible in this setting provided that there are dedicated project officers to enrol participants, collect data, and follow up participants. Missing data rates were low for the primary outcome and many secondary outcomes, as well as for key variables. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial.
+comparing ATLS with PTC and standard care is feasible in this setting. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial.
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
 
 We found that the ATLS arm had lower 30-day mortality compared to the
-PTC and standard care arms.
-
-We found that the PTC arm had lower 30-day mortality compared to the
-ATLS and standard care arms.
-
-We found that the standard care arm had lower 30-day mortality
-compared to the ATLS and PTC arms.
-
-We found that 30-day mortality was similar in the ATLS and PTC arms
-but lower than the standard care arm.
-
-We found that 30-day mortality was similar in the ATLS and standard
-care arms but lower than the PTC arm.
-
-We found that 30-day mortality was similar in the PTC and standard
-care arms but lower than the ATLS arm.
+PTC and standard care arms. We also found that the PTC arm had lower mortality than the standard care arm. These findings indicate a large potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS arm having the smallest sample size. This difference resulted from the randomisation process with a small number of heterogeneous clusters. 
 
 The primary patient participant outcome, all-cause 30-day mortality,
 was missing in `r rate.lost.to.follow.up`% of patients. This may
@@ -640,6 +590,9 @@ We intended to also register our trial with Clinical Trials Registry -
 India but because of time constrains we had to initiate the study
 before registration was finalised, and Clinical Trials Registry -
 India only allow prospective registration.
+
+## Outcomes across subgroups
+Because of small numbers in the pre-specified subgroups we decided to report only descriptive data on these subgroups.
 
 ## Number of Participating Centres
 We ended up recruiting seven centres instead of six and therefore

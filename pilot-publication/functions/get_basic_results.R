@@ -29,6 +29,8 @@ get_basic_results <- function(data) {
     results$n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
     results$n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
     results$n.residents <- with(results, n.atls.residents + n.ptc.residents)
+    n.passed <- 6 # 2 had to retake the exam, but all passed the second time
+    results$pass.rate <- round(n.passed / results$n.atls.residents * 100)
     results$n.centres <- data %>%
         pull(id__reg_hospital_id) %>%
         unique() %>%
@@ -46,5 +48,11 @@ get_basic_results <- function(data) {
     results$iqr.niss <- get_iqr(data$niss)
     results$n.admitted <- with(data, sum(interventions__admitted == "Yes"))
     results$p.admitted <- round(results$n.admitted / nrow(data) * 100)
+    results$n.lost.to.follow.up <- with(data, sum(is.na(outcomes__alive_after_30_days)))
+    results$rate.lost.to.follow.up <- round(results$n.lost.to.follow.up / nrow(data) * 100)
+    results$p.missing.in.hospital.mortality <- with(data, round(sum(is.na(outcomes__discharge_alive)) / nrow(data) * 100))
+    missing.data.summary <- get_missing_data_summary(data)
+    results$min.missing.data <- min(missing.data.summary$p.missing)
+    results$max.missing.data <- max(missing.data.summary$p.missing)
     return(results)
 }
