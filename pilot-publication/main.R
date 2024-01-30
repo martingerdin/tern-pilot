@@ -104,6 +104,21 @@ if (use.saved) {
 ## Create tables with outcome results
 outcome.results.tables <- create_outcome_results_tables(outcome.results)
 
+# Extract results from tables
+females <- inline_text(overall.sample.characteristics.table,
+    variable = patinfo__pt_gender,
+    level = "Female"
+)
+median.age <- inline_text(overall.sample.characteristics.table,
+    variable = patinfo__pt_age
+)
+median.iss <- inline_text(overall.sample.characteristics.table,
+    variable = riss
+)
+m30d <- inline_text(overall.sample.characteristics.table,
+    variable = outcomes__alive_after_30_days
+)
+
 ## Crude 30 day mortality
 m30d.atls <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,

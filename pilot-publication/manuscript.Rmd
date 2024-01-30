@@ -9,11 +9,11 @@ output:
     bookdown::pdf_document2:
       toc: false
       number_sections: false
-##    md_document: default
-##    bookdown::word_document2:
-##      toc: false
-##      number_sections: false
-##      reference_docx: "reference.docx"
+    md_document: default
+    bookdown::word_document2:
+      toc: false
+      number_sections: false
+      reference_docx: "reference.docx"
 ---
 
 ## Trial registration
@@ -150,7 +150,7 @@ attach(results)
 
 # Abstract
 
-**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programmes are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The percentage of patients who consented to follow up was `r p.consent`% and the resident recruitment rate was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. `r stringr::str_to_sentence(english::english(m30d.standard.care))` patients died within 30 days in the standard care arm, `r m30d.atls` patients in the ATLS^®^ arm, and `r m30d.ptc` patients in the PTC arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
+**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programmes are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The percentage of patients who consented to follow up was `r p.consent`% and the resident recruitment rate was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. `r m30d.standard.care` patients died within 30 days in the standard care arm, `r m30d.atls` patients in the ATLS^®^ arm, and `r m30d.ptc` patients in the PTC arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
 
 \newpage
 
@@ -204,14 +204,14 @@ within the hospitals.
 There were two groups of participants: patients and resident doctors.
 
 ### Patient Participants
-Adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma. History of trauma is here defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting. We explored intervention effects across the following clinical subgroups: men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly, as defined by Hornor et al [@Hornor2018]. The consent form for patients are available as Supplemental Material 1.
+Adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma. History of trauma is here defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting. We explored intervention effects across the following clinical subgroups: men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly, as defined by Hornor et al [@Hornor2018].
 
 ### Resident Doctor Participants
 Resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year. To facilitate administration each surgical department is divided into units, which manage the out-patient and emergency departments, operating rooms etc on different days each week. One or two, out of typically six, units' residents were selected from each hospital. One unit consists of at least three faculty and three to twelve residents.
 
 To be eligible, units had to have a maximum of 25% of the doctors trained in either ATLS^®^, PTC, or similar training programs before the start of the pilot. Those residents who had received training in the last five years were considered as trained. The figure of 25% was decided through consensus in the research team, to balance feasibility and contamination of results.
 
-Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. The consent form for residents is available as Supplemental Material 2. We did not ask for consent from residents at the units in the control hospitals as their practice was not affected by this pilot and we did not collect any personal identifiable data on them. 
+Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. We did not ask for consent from residents at the units in the control hospitals as their practice was not affected by this pilot and we did not collect any personal identifiable data on them. 
 
 ### Clusters
 Indian tertiary care hospitals that admit more than 400 adult patients with trauma each year. We randomised on the cluster (hospital) level to avoid contamination between intervention and control arms. To be eligible for inclusion hospitals had to provide the following services round the clock: operation theatres, X-ray, CT, and ultrasound facilities, and blood bank. In addition the baseline admission rate had to be more than 35 adult patients with major trauma per month.
@@ -235,8 +235,7 @@ Standard care varies across hospitals in India, but trauma patients are initiall
 ## Outcomes
 Our pilot study included both participant and feasibility outcomes. Prior to deciding on these participant outcomes we searched the Core Outcome Measures in Effectiveness Trials (COMET) Initiative's database but were unable to identify appropriate core outcome sets for our populations of participants.
 
-The primary participant outcome was all cause mortality within 30 days from the time of arrival to the emergency department. The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 3. We decided to include a large number of outcomes,
-including some more exploratory, so that we could test their feasibility and relevance. 
+The primary participant outcome was all cause mortality within 30 days from the time of arrival to the emergency department. The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 1. We decided to include a large number of outcomes, including some more exploratory, so that we could test their feasibility and relevance. 
 
 We also assessed the following feasibility outcomes, which pertained both to overall study population as well as to the individual cluster level:
 
@@ -288,7 +287,7 @@ The project officer administered the study information and informed consent (con
 Details of data of those patients/relatives not willing to give consent were not included in the analysis. The number of patients who opt out from data collection was collected. 
 
 ## Variables
-The project officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, and times to and management details including imaging and surgery. Details of any injury sustained were collected and coded using ICD 10 and the Abbreviated Injury Scale (AIS). For ICD 10 coders underwent the WHO online ICD 10 training module and for AIS they were accredited. Based on AIS we calculated the Injury Severity Score (ISS) and the New ISS (NISS). Supplemental Material 4 contains a full variable list, with definitions.
+The project officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, and times to and management details including imaging and surgery. Details of any injury sustained were collected and coded using ICD 10 and the Abbreviated Injury Scale (AIS). For ICD 10 coders underwent the WHO online ICD 10 training module and for AIS they were accredited. Based on AIS we calculated the Injury Severity Score (ISS) and the New ISS (NISS). Supplemental Material 2 contains a full variable list, with definitions.
 
 ## Patient and public involvement
 In this study, we conducted community consultations to collect
@@ -319,31 +318,22 @@ The protocol was published in BMJ Open [@GerdinWärnberg2022] and was registered
 The final anonymized dataset and code for analysis are released publicly. Authorship follows the International Committee of Medical Journal Editors (ICMJE) guidelines.
 
 # Results
-```{r}
-females <- inline_text(overall.sample.characteristics.table,
-  variable = patinfo__pt_gender,
-  level = "Female"
-)
-median.age <- inline_text(overall.sample.characteristics.table,
-  variable = patinfo__pt_age
-)
-median.iss <- inline_text(overall.sample.characteristics.table,
-  variable = riss
-)
-median.niss <- inline_text(overall.sample.characteristics.table,
-  variable = niss
-)
-m30d <- inline_text(overall.sample.characteristics.table,
-  variable = outcomes__alive_after_30_days,
-  level = "Yes"
-)
-```
 
 Between `r start.date` and `r end.date`, we enrolled `r n.patients` trauma patients from `r n.centres` participating centres. The ATLS^®^ arm enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the standard care arm `r n.control` patients. We trained a total of  `r n.residents` residents, `r n.atls.residents` in ATLS^®^, and  `r n.ptc.residents` in PTC. 
 
-The study flowchart is shown in Figure X and patient sample
-characteristics across trial arms are shown in Table
-\@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) and NISS (IQR) were `r median.iss` and `r median.niss` respectively. A total of `r m30d` patients had the primary outcome of mortality at 30 days after arrival to the emergency department.
+The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample
+characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients had the primary outcome of mortality at 30 days after arrival to the emergency department.
+
+```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care."}
+create_flow_diagram()
+knitr::include_graphics("flow-diagram.png")
+```
+
+```{r sample-characteristics, echo = FALSE}
+```
+
+```{r sample-characteristics, echo = FALSE, results = "asis"}
+```
 
 ```{r sample-characteristics, echo = FALSE, results = "asis"}
 sample.characteristics.table
@@ -357,11 +347,11 @@ The absolute risk difference between the standard care and ATLS^®^ arms (95% CI
 
 ## Resident Participant Outcomes
 A total of `r n.residents` residents were trained during this
-pilot study. Overall their median confidence in managing trauma patients was `r median.confidence` (IQR `r iqr.confidence`) on a 10 point Likert scale with 10 being most confident. <!--In the post training period, the confidence in the ATLS arm was X (IQR X - X), compared to X (IQR X - X) in the PTC arm, and X (IQR X - X) in the standard care arm.-->
+pilot study. Overall their median confidence in managing trauma patients was `r median.confidence` (IQR `r iqr.confidence`) on a 10 point Likert scale with 10 being most confident. In the pre training period, the median confidence in the stadard care arm was `r median.comfort.standard.care.pre` (IQR `r iqr.comfort.standard.care.pre`), compared to `r median.comfort.atls.pre` (IQR `r iqr.comfort.atls.pre`) in the ATLS and `r median.comfort.ptc.pre` (IQR `r iqr.comfort.ptc.pre`) in the PTC arm. In the post training period, the corresponding figures were `r median.comfort.standard.care.post` (IQR `r iqr.comfort.standard.care.post`) in the standard care arm, `r median.comfort.atls.post` (IQR `r iqr.comfort.atls.post`) in the ATLS and `r median.comfort.ptc.post` (IQR `r iqr.comfort.ptc.post`) in the PTC arm. 
 
 ## Feasibility Outcomes
 <!--Out of X potentially eligible patients, X (X%) patients were enrolled
-in the study-->. Out of `r n.eligible.residents` potentially eligible residents, `r n.residents` (`r recruitment.rate.residents`%) participated in the study. The lost to follow up rate was `r rate.lost.to.follow.up`, with `r n.lost.to.follow.up` out of `r n.patients` patients not completing 30 day follow up. Among residents the pass rate, after two attempts, was `r rate.pass`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details for selected variables shown in Table \ref@(tab:sample-characteristics). The differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, there were considerably more missing values in extracted data compared to observed data.
+in the study-->. Out of `r n.eligible.residents` potentially eligible residents, `r n.residents` (`r recruitment.rate.residents`%) participated in the study. The lost to follow up rate was `r rate.lost.to.follow.up`, with `r n.lost.to.follow.up` out of `r n.patients` patients not completing 30 day follow up. Among residents the pass rate, after two attempts, was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details for selected variables shown in Table \ref@(tab:sample-characteristics). The differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, there were considerably more missing values in extracted data compared to observed data.
 
 ```{r observed-vs-retrospective, echo = FALSE}
 retrospective.comparison.table %>%
@@ -510,11 +500,6 @@ consent afterwards.
 
 \pagebreak
 # Supplementary material
-
-```{r secondary-outcomes, echo = FALSE, results = "asis"}
-table1::t1kable(secondary.outcomes.table, longtable = TRUE) %>%
-  kableExtra::kable_styling(latex_options = c("repeat_header"), font_size = 8)
-```
 
 # References
 

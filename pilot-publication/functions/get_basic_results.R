@@ -5,6 +5,8 @@
 #' @export
 get_basic_results <- function(data) {
     results <- list()
+
+    # Dates
     arrival.dates <- data %>%
         pull(incident__date_of_arrival) %>%
         as.Date()
@@ -14,6 +16,8 @@ get_basic_results <- function(data) {
     results$end.date <- arrival.dates %>%
         max() %>%
         format_date()
+
+    # Consent and ICC
     n.no.consent <- list(
         "11542" = 40,
         "44805" = 10,
@@ -26,13 +30,37 @@ get_basic_results <- function(data) {
     results$p.consent <- round(nrow(data) / (nrow(data) + sum(unlist(n.no.consent))) * 100)
     results$icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
     results$n.patients <- nrow(data)
+
+    # Resident data
     results$n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
     results$n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
     results$n.residents <- with(results, n.atls.residents + n.ptc.residents)
     n.passed <- 6 # 2 had to retake the exam, but all passed the second time
     results$pass.rate <- round(n.passed / results$n.atls.residents * 100)
-    n.eligible.residents <- results$n.residents # Need to update this
-    results$recruitment.rate.residents <- round(results$n.residents / n.eligible.residents * 100)
+    results$n.eligible.residents <- results$n.residents # Need to update this
+    results$recruitment.rate.residents <- round(results$n.residents / results$n.eligible.residents * 100)
+
+    # Resident comfort/confidence
+    resident.comfort <- data$resident__res_comfort
+    resident.comfort.numeric <- resident.comfort %>%
+        stringr::str_extract("[0-9]+") %>%
+        as.numeric()
+    results$median.confidence <- median(resident.comfort.numeric, na.rm = TRUE)
+    results$iqr.confidence <- get_iqr(resident.comfort.numeric)
+    results$median.comfort.standard.care.pre <- median(resident.comfort.numeric[data$arm == "Standard care" & !data$post.training], na.rm = TRUE)
+    results$iqr.comfort.standard.care.pre <- get_iqr(resident.comfort.numeric[data$arm == "Standard care" & !data$post.training])
+    results$median.comfort.standard.care.post <- median(resident.comfort.numeric[data$arm == "Standard care" & data$post.training], na.rm = TRUE)
+    results$iqr.comfort.standard.care.post <- get_iqr(resident.comfort.numeric[data$arm == "Standard care" & data$post.training])
+    results$median.comfort.atls.pre <- median(resident.comfort.numeric[data$arm == "ATLS" & !data$post.training], na.rm = TRUE)
+    results$iqr.comfort.atls.pre <- get_iqr(resident.comfort.numeric[data$arm == "ATLS" & !data$post.training])
+    results$median.comfort.atls.post <- median(resident.comfort.numeric[data$arm == "ATLS" & data$post.training], na.rm = TRUE)
+    results$iqr.comfort.atls.post <- get_iqr(resident.comfort.numeric[data$arm == "ATLS" & data$post.training])
+    results$median.comfort.ptc.pre <- median(resident.comfort.numeric[data$arm == "PTC" & !data$post.training], na.rm = TRUE)
+    results$iqr.comfort.ptc.pre <- get_iqr(resident.comfort.numeric[data$arm == "PTC" & !data$post.training])
+    results$median.comfort.ptc.post <- median(resident.comfort.numeric[data$arm == "PTC" & data$post.training], na.rm = TRUE)
+    results$iqr.comfort.ptc.post <- get_iqr(resident.comfort.numeric[data$arm == "PTC" & data$post.training])
+
+    # Patient outcomes
     results$n.centres <- data %>%
         pull(id__reg_hospital_id) %>%
         unique() %>%
