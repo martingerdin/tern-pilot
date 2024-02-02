@@ -5,11 +5,7 @@ This file includes code and scripts used to experiment and explore with the TERN
 ```{r setup}
 noacsr::source_all_functions()
 load_packages()
-```
 
-## Compare directly observed with retrospective data
-
-```{r}
 ## Import data
 data <- readr::read_csv(Sys.getenv("DATA_DIR"))
 
@@ -22,16 +18,90 @@ codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 
 ## Prepare data
 data <- prepare_data(data, codebook)
+```
 
+## Create table with the primary outcome across arms and cohorts
+
+```{r}
+
+```
+
+## Create trauma cohorts 
+
+Subgroups of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly.
+
+```{r}
+# Create a function that counts the number of columns that are not 0
+count_unique_regions <- function(ais.region.data) {
+    unique.regions <- apply(ais.region.data, 1, function(row) {
+        sum(row != 0, na.rm = TRUE)
+    })
+    return(unique.regions)
+}
+
+unique.regions.count <- data %>%
+    select(starts_with("mxaisbr_"), -mxaisbr_General) %>%
+    count_unique_regions()
+
+# Create a function that counts the number of columns that are 3 or more
+count_severe_regions <- function(ais.region.data) {
+    severe.regions <- apply(ais.region.data, 1, function(row) {
+        sum(row >= 3, na.rm = TRUE)
+    })
+    return(severe.regions)
+}
+
+severe.regions.count <- data %>%
+    select(starts_with("mxaisbr_"), -mxaisbr_General) %>%
+    count_severe_regions()
+
+# Define blunt multisystem trauma
+dominating.injury.type <- data$incident__dominating_injury_type
+blunt.multisystem.trauma <- dominating.injury.type == "Blunt" & severe.regions.count >= 2
+
+# Define penetrating trauma
+penetrating.trauma <- dominating.injury.type == "Penetrating"
+
+# Define shock
+shock <- data$patvitals__ed_sbp < 90
+
+# Define severe traumatic brain injury
+severe.tbi <- data$patvitals__ed_gcs < 9 & data$mxaisbr_Head >= 3
+
+# Define elderly
+elderly <- data$patinfo__pt_age >= 65
+
+# Define male
+male <- data$patinfo__pt_gender == "Male"
+
+# Define female
+female <- data$patinfo__pt_gender == "Female"
+
+cohort.data <- data.frame(
+    "Blunt multisystem trauma" = blunt.multisystem.trauma,
+    "Penetrating trauma" = penetrating.trauma,
+    "Shock" = shock,
+    "Severe TBI" = severe.tbi,
+    "Elderly" = elderly,
+    "Male" = male,
+    "Female" = female,
+    arm = data$arm
+)
+
+create_descriptive_table(cohort.data, strata = "arm", include.overall = TRUE)
+```
+
+## Compare directly observed with retrospective data
+
+```{r}
 ## Get variables to compare
 retrospective.variables <- names(data)[grep("_r__", names(data), fixed = TRUE)]
 directly.observed.variables <- retrospective.variables %>%
     stringr::str_replace_all(pattern = "\\_r\\_\\_", replacement = "\\_\\_") %>%
     stringr::str_replace_all(pattern = "\\_r$", replacement = "")
 
-## Keep only observations with any retrospective data
-data <- data[apply(data[, retrospective.variables], 1, function(row) any(!is.na(row))), ] %>%
-    as_tibble()
+## Keep only observations with completed retrospective data collection
+data <- data %>% filter(data_status_r__collection_completed_r == "Yes")
 
 ## Extract retrospective and directly observed data
 retrospective.data <- data[, retrospective.variables]
@@ -52,19 +122,23 @@ merged.data[] <- mapply(function(column, class.name) {
     new.column <- match.fun(class.function)(column)
     return(new.column)
 }, merged.data, original.classes, SIMPLIFY = FALSE)
-})
+merged.data <- merged.data %>%
+    labelled::copy_labels_from(data)
 
-## Create table 
+## Create table
 table.variables <- c(
     "patinfo__pt_age", "patinfo__pt_gender",
     "incident__dominating_injury_type",
     "patvitals__ed_rr", "patvitals__ed_sat",
-    "patvitals__ed_hr", "patvitals__ed_sbp","outcomes__alive_after_30_days", 
+    "patvitals__ed_hr", "patvitals__ed_sbp",
     "collection.mode"
 )
 table.data <- merged.data[, table.variables]
 comparison.table <- create_descriptive_table(table.data,
-    strata = "collection.mode")
+    strata = "collection.mode",
+    include.overall = FALSE
+)
+comparison.table
 ```
 
 

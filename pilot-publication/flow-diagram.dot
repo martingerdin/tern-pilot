@@ -1,0 +1,17 @@
+digraph flow_diagram {
+node [shape=rect]
+edge [splines=ortho]
+A[label="Clusters assessed for eligibility and randomised (n = 7)"]
+B[label="Clusters randomised to standard care (n = 3)"]
+C[label="Clusters randomised to ATLS (n = 2)"]
+D[label="Clusters randomised to PTC (n = 2)"]
+E[label="Patients included (n = 202)"]
+F[label="Patients included (n = 44)\nResidents included (n = 6)"]
+G[label="Patients included (n = 130)\nResidents included (n = 15)"]
+A -> B
+A -> C
+A -> D
+B -> E
+C -> F
+D -> G
+}

@@ -5,31 +5,71 @@
 #' @export
 get_basic_results <- function(data) {
     results <- list()
-    arrival.dates <- data %>% pull(incident__date_of_arrival) %>% as.Date()
-    results$start.date <- arrival.dates %>% min() %>% format_date()
-    results$end.date <- arrival.dates %>% max() %>% format_date()
 
-    ## This vector of n.no.consent is not used here yet, but is
-    ## probably used somewhere else. Keeping it for now.
-    n.no.consent <-  list("11542" = 40,
-                          "44805" = 10,
-                          "55356" = 43,
-                          "78344" = 3,
-                          "95846" = 9, 
-                          "88456" = 0, # To be updated
-                          "10263" = 2)
-    
+    # Dates
+    arrival.dates <- data %>%
+        pull(incident__date_of_arrival) %>%
+        as.Date()
+    results$start.date <- arrival.dates %>%
+        min() %>%
+        format_date()
+    results$end.date <- arrival.dates %>%
+        max() %>%
+        format_date()
+
+    # Consent and ICC
+    n.no.consent <- list(
+        "11542" = 40,
+        "44805" = 10,
+        "55356" = 43,
+        "78344" = 3,
+        "95846" = 9,
+        "88456" = 0, # To be updated
+        "10263" = 2
+    )
+    results$p.consent <- round(nrow(data) / (nrow(data) + sum(unlist(n.no.consent))) * 100)
     results$icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
     results$n.patients <- nrow(data)
+
+    # Resident data
     results$n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
     results$n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
     results$n.residents <- with(results, n.atls.residents + n.ptc.residents)
-    results$n.centres <-  data %>% pull(id__reg_hospital_id) %>% unique() %>% length()
+    n.passed <- 6 # 2 had to retake the exam, but all passed the second time
+    results$pass.rate <- round(n.passed / results$n.atls.residents * 100)
+    results$n.eligible.residents <- results$n.residents # Need to update this
+    results$recruitment.rate.residents <- round(results$n.residents / results$n.eligible.residents * 100)
+
+    # Resident comfort/confidence
+    resident.comfort <- data$resident__res_comfort
+    resident.comfort.numeric <- resident.comfort %>%
+        stringr::str_extract("[0-9]+") %>%
+        as.numeric()
+    results$median.confidence <- median(resident.comfort.numeric, na.rm = TRUE)
+    results$iqr.confidence <- get_iqr(resident.comfort.numeric)
+    results$median.comfort.standard.care.pre <- median(resident.comfort.numeric[data$arm == "Standard care" & !data$post.training], na.rm = TRUE)
+    results$iqr.comfort.standard.care.pre <- get_iqr(resident.comfort.numeric[data$arm == "Standard care" & !data$post.training])
+    results$median.comfort.standard.care.post <- median(resident.comfort.numeric[data$arm == "Standard care" & data$post.training], na.rm = TRUE)
+    results$iqr.comfort.standard.care.post <- get_iqr(resident.comfort.numeric[data$arm == "Standard care" & data$post.training])
+    results$median.comfort.atls.pre <- median(resident.comfort.numeric[data$arm == "ATLS" & !data$post.training], na.rm = TRUE)
+    results$iqr.comfort.atls.pre <- get_iqr(resident.comfort.numeric[data$arm == "ATLS" & !data$post.training])
+    results$median.comfort.atls.post <- median(resident.comfort.numeric[data$arm == "ATLS" & data$post.training], na.rm = TRUE)
+    results$iqr.comfort.atls.post <- get_iqr(resident.comfort.numeric[data$arm == "ATLS" & data$post.training])
+    results$median.comfort.ptc.pre <- median(resident.comfort.numeric[data$arm == "PTC" & !data$post.training], na.rm = TRUE)
+    results$iqr.comfort.ptc.pre <- get_iqr(resident.comfort.numeric[data$arm == "PTC" & !data$post.training])
+    results$median.comfort.ptc.post <- median(resident.comfort.numeric[data$arm == "PTC" & data$post.training], na.rm = TRUE)
+    results$iqr.comfort.ptc.post <- get_iqr(resident.comfort.numeric[data$arm == "PTC" & data$post.training])
+
+    # Patient outcomes
+    results$n.centres <- data %>%
+        pull(id__reg_hospital_id) %>%
+        unique() %>%
+        length()
     results$n.atls <- sum(data$arm == "ATLS")
     results$n.ptc <- sum(data$arm == "PTC")
     results$n.control <- sum(data$arm == "Standard care")
     results$n.females <- with(data, sum(patinfo__pt_gender == "Female"))
-    results$p.females <- round(results$n.females/nrow(data) * 100)
+    results$p.females <- round(results$n.females / nrow(data) * 100)
     results$median.age <- median(data$patinfo__pt_age, na.rm = TRUE)
     results$iqr.age <- get_iqr(data$patinfo__pt_age)
     results$median.iss <- median(data$riss, na.rm = TRUE)
@@ -37,6 +77,12 @@ get_basic_results <- function(data) {
     results$median.niss <- median(data$niss, na.rm = TRUE)
     results$iqr.niss <- get_iqr(data$niss)
     results$n.admitted <- with(data, sum(interventions__admitted == "Yes"))
-    results$p.admitted <- round(results$n.admitted/nrow(data) * 100)
-    return (results)
+    results$p.admitted <- round(results$n.admitted / nrow(data) * 100)
+    results$n.lost.to.follow.up <- with(data, sum(is.na(outcomes__alive_after_30_days)))
+    results$rate.lost.to.follow.up <- round(results$n.lost.to.follow.up / nrow(data) * 100)
+    results$p.missing.in.hospital.mortality <- with(data, round(sum(is.na(outcomes__discharge_alive)) / nrow(data) * 100))
+    missing.data.summary <- get_missing_data_summary(data)
+    results$min.missing.data <- min(missing.data.summary$p.missing)
+    results$max.missing.data <- max(missing.data.summary$p.missing)
+    return(results)
 }
