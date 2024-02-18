@@ -19,7 +19,6 @@ output:
 ## Trial registration
 This pilot study was registered with ClinicalTrials.gov (reg. no NCT05417243). 
 
-<!--
 ## Corresponding author
 Martin Gerdin Wärnberg (MGW)  
 
@@ -33,20 +32,56 @@ martin.gerdin@ki.se
 
 ## Authors
 
-
-## Contributors
-
-Trauma life support Effectiveness Research Network (TERN) collaborators: 
-
-##### Martin Gerdin Wärnberg (MGW)
-Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.  
-
-Function Perioperative Medicine and Intensive Care, Karolinska University Hospital, Solna, Sweden.
-
 ##### Johanna Berg (JB)
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.  
 
 Emergency Medicine, Department of Internal and Emergency Medicine, Skåne University Hospital, Malmö, Sweden.
+
+##### Shamita Chatterjee (SC)
+Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
+
+##### Li Felländer-Tsai (LFT)
+Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
+
+Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
+
+##### Geeta Ghag (GG)
+Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
+
+##### Monty Khajanchi (MK)
+WHO Collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.  
+
+Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
+
+##### Catherine Juillard (CJ)
+Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
+
+##### Nobhojit Roy (NR)
+WHO Collaborating Center for Research on Surgical Care Delivery in LMICs, BARC Hospital, HBNI University, Mumbai, India.  
+
+Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
+
+##### Arun Prasad (AP)
+
+Department of Surgery, Indraprastha Apollo Hospitals, New Delhi
+
+##### Rajdeep Singh (RS)
+Department of Surgery, Maulana Azad Medical College, New Delhi, India.
+
+##### Kapil Dev Soni (KDS)
+Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medical Sciences, New Delhi, India.
+
+##### Lovisa Strömmer (LS)
+Division of Surgery, Department of Clinical Science, Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
+
+Department of Surgery, Capio St Göran Hospital, Stockholm, Sweden.
+
+##### Vipul Nandu
+
+
+## Non-author contributors
+
+Trauma life support Effectiveness Research Network (TERN) collaborators: 
 
 ##### Prashant Bhandarkar (PB)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
@@ -54,33 +89,14 @@ WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai,
 ##### Anirban Chatterjee (AC)
 Department of Orthopaedic Sciences, Medica Superspecialty Hospital, Kolkata, India.
 
-##### Shamita Chatterjee (SC)
-Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
-
 ##### Chintamani (C)
 Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
-
-##### Li Felländer-Tsai (LFT)
-Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
-
-Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
 
 ##### Anita Gadgil (AG)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
 
-##### Geeta Ghag (GG)
-Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
-
 ##### Marie Hasselberg (MH)
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
-
-##### Catherine Juillard (CJ)
-Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
-
-##### Monty Khajanchi (MK)
-WHO Collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.  
-
-Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
 
 ##### Deepa Kizhakke Veetil (DKV)
 Department of Surgery, Manipal Hospital, Dwarka, New Delhi.
@@ -97,11 +113,6 @@ Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 ##### Priti Patil (PP)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
 
-##### Nobhojit Roy (NR)
-WHO Collaborating Center for Research on Surgical Care Delivery in LMICs, BARC Hospital, HBNI University, Mumbai, India.  
-
-Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
-
 ##### Amit Roy (AR)
 Department of Surgery, Sir Nil Ratan Sircar Medical College & Hospital, Kolkata, India.
 
@@ -110,24 +121,11 @@ Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
 Doctors For You, Mumbai, India.
 
-##### Rajdeep Singh (RS)
-Department of Surgery, Maulana Azad Medical College, New Delhi, India.
-
 ##### Harris Solomon (HS)
 Department of Cultural Anthropology and the Duke Global Health Institute, Duke University, Durham, USA.
 
-##### Kapil Dev Soni (KDS)
-Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medical Sciences, New Delhi, India.
-
-##### Lovisa Strömmer (LS)
-Division of Surgery, Department of Clinical Science, Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
-
-Department of Surgery, Capio St Göran Hospital, Stockholm, Sweden.
-
 ##### Megha Tandon (MT)
 Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
-
--->
 
 ## Keywords
 Trauma management, Accident and emergency medicine, Education and training.
