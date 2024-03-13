@@ -1,7 +1,7 @@
 ---
 ## compile with:
 ## Rscript -e "rmarkdown::render('manuscript.Rmd', output_format = 'all')"
-title: A Pilot Multicenter Cluster Randomized Trial to Compare The Effect of Trauma Life Support Training Programs on Patient and Provider Outcomes  
+title: "Effects of Trauma Life Support Training Programs on Patient Outcomes: A Pilot Cluster Randomised Trial"
 author: Trauma life support training Effectiveness Research Network (TERN) collaborators
 bibliography: bibliography.bib
 csl: nature.csl
@@ -154,7 +154,7 @@ attach(results)
 
 # Abstract
 
-**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in India, where neither of these programmes are routinely taught. We recruited tertiary hospitals and included trauma patients and residents managing these patients. Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. The primary outcome was all cause mortality at 30 days from the time of arrival to the emergency department. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating centres. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents from `r n.centres` centres. The percentage of patients who consented to follow up was `r p.consent`% and the resident recruitment rate was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. `r m30d.standard.care` patients died within 30 days in the standard care arm, `r m30d.atls` patients in the ATLS^®^ arm, and `r m30d.ptc` patients in the PTC arm. **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
+**Introduction** Trauma life support training programmes aim to improve trauma outcomes but there is no evidence from controlled trials to show that they work. We conducted a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes. **Methods and analysis** We piloted a pragmatic three-armed parallel, cluster randomised, controlled trial in tertiary care hospitals across metropolitan areas in India. We included adult trauma patients and residents managing these patients. Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. The feasibility outcomes were consent rate, lost to follow up rate, pass rate, missing data rates, and differences in distribution between observed and data extracted from medical records. We conducted community consultations in parallel with the pilot trial. **Ethics and dissemination** We obtained ethical approval from all participating hospitals. **Results** Between `r start.date` and `r end.date` we included `r n.patients` patients and `r n.residents` residents. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`. Data collected through observations were similar to data extracted from medical records, but there was more missing data in the extracted data. <!--`r m30d.standard.care` patients died within 30 days in the standard care arm, `r m30d.atls` patients in the ATLS^®^ arm, and `r m30d.ptc` patients in the PTC arm.--> **Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot. 
 
 \newpage
 
@@ -171,25 +171,19 @@ Strengths and limitations of this study:
 
 # Introduction
 
-Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year [@injuries2020]. Almost 10% of the global burden of disease is due to trauma and trauma is the top contributor to the burden of disease in children and adults aged 10 to 49 years [@Vos2020].
+Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year [@injuries2020]. Several trauma life support training programs have been developed to improve the early management of patients as they arrive at hospital by providing a structured framework to assessment and treatment [@Mohammad2013; @Jayaraman2014; @Kadhum2020].
 
-Trauma care is time sensitive and early management of life or limb threatening conditions is crucial. Several trauma life support training programs have been developed to improve the early management of patients as they arrive at hospital by providing a structured framework to assessment and treatment [@Mohammad2013; @Jayaraman2014; @Kadhum2020].
+The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alternative Primary Trauma Care (PTC) are the most established trauma life support training programmes with physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. There are observational studies indicating that trauma life support training programmes may improve patient outcomes [@Jin2021].
 
-The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) is the most established trauma life support training program and more than one million doctors in over 80 countries have been trained in the programme [@acsAtls2018]. Uptake in low- and middle income countries (LMIC) has been slow, potentially due to high costs [@Kadhum2020].
-
-The free Primary Trauma Care (PTC) program is the most widely spread alternative programme. The goal of PTC is to improve trauma care in LMIC [@ptcfPtc2018]. Like ATLS^®^, doctors in over 80 countries have been trained in PTC, and the programme has been endorsed by the World Health Organization (WHO), among other international organizations including several professional societies [@ptcfPtc2018].
-
-There are observational studies indicating that trauma life support training programmes may improve patient outcomes [@Jin2021], but there are no randomised trials  [@Mohammad2013; @Jayaraman2014; @Kadhum2020].  We performed a pilot study aiming to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care.
+There is no high quality evidence showing that ATLS^®^ or PTC impact patient outcomes [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. Several systematic reviews call for trials in settings where these programmes are not routinely taught, but doing is likely logistically challenging. We performed a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care.
 
 # Methods
 
 ## Trial Design
-We piloted a three-armed cluster randomised controlled trial. There were two intervention arms, ATLS^®^ and PTC training, and one control arm, standard care. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the control arm). This design allowed us to assess outcomes both as final values and as change from baseline. 
-
-Our study is a pilot study because its objectives involves estimating quantities, such as the probable effect sizes, proportion of participants with the outcome (if binary), and the intracluster correlation coefficient, needed for the sample size calculations of a full-scale trial [@Hemming2017]. This pilot study also establish how many participants that can be enrolled, as well as likely drop out rates, and the feasibility of collecting primary and secondary outcomes.
+We piloted a three-armed cluster randomised controlled trial. The protocol was published [@GerdinWärnberg2022]. There were two intervention arms, ATLS^®^ and PTC training, and one control arm, standard care. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the control arm). This design allowed us to assess outcomes both as final values and as change from baseline. 
 
 ## Study Setting
-We conducted this pilot in seven Indian tertiary hospitals, where neither ATLS^®^, PTC, nor any other trauma life support training program is routinely taught. The seven hospitals were Seth G. S. Medical College and K.E.M. Hospital, Mumbai; Lokmanya Tilak Municipal Medical College and General Hospital, Mumbai; HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai; Medica Superspecialty Hospital, Kolkata; Medical College Kolkata, Kolkata; Sir Nil Ratan Sircar Medical College & Hospital, Kolkata; Postgraduate Institute of Medical Education & Research, Chandigarh.
+We conducted this pilot in seven Indian tertiary hospitals, where neither ATLS^®^, PTC, nor any other trauma life support training program is routinely taught. 
 
 <!--
 The trauma system is still developing, with
