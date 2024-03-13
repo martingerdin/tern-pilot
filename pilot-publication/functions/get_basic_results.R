@@ -24,7 +24,7 @@ get_basic_results <- function(data) {
         "55356" = 43,
         "78344" = 3,
         "95846" = 9,
-        "88456" = 0, # To be updated
+        "88456" = 3,
         "10263" = 2
     )
     results$p.consent <- round(nrow(data) / (nrow(data) + sum(unlist(n.no.consent))) * 100)
