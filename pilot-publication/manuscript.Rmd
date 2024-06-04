@@ -177,6 +177,8 @@ The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alt
 
 Several systematic reviews call for trials in settings where these programmes are not routinely taught. We performed a pilot study to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care, and to estimate probable effect sizes and the intracluster correlation coefficient needed for the sample size calculations of a full-scale trial.
 
+<!-- add citation to scoping review of TQIP [@mciver_effect_2024]-->
+
 # Methods
 
 ## Trial Design
