@@ -120,17 +120,35 @@ m30d <- inline_text(overall.sample.characteristics.table,
 )
 
 ## Crude 30 day mortality
-m30d.atls <- inline_text(post.training.characteristics.table,
+m30d.standard.care.n <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
-    column = "ATLS"
+    column = "Standard care",
+    pattern = "{n}"
 )
-m30d.ptc <- inline_text(post.training.characteristics.table,
+m30d.standard.care.p <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
-    column = "PTC"
+    column = "Standard care",
+    pattern = "({p})%"
 )
-m30d.standard.care <- inline_text(post.training.characteristics.table,
+m30d.atls.n <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
-    column = "Standard care"
+    column = "ATLS",
+    pattern = "{n}"
+)
+m30d.atls.p <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "ATLS",
+    pattern = "({p})%"
+)
+m30d.ptc.n <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "PTC",
+    pattern = "{n}"
+)
+m30d.ptc.p <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "PTC",
+    pattern = "({p})%"
 )
 
 ## Extract tables for absolute and relative differences
