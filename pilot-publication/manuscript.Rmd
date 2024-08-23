@@ -218,42 +218,49 @@ care providers, augmenting facilities, and developing care protocols
 within the hospitals. 
 -->
 
-## Eligibility Criteria for Cluster and Participants
-
-### Clusters
-We included Indian tertiary care hospitals that admitted more than 400 adult patients with trauma each year, with operation theatres, X-ray, CT, and ultrasound facilities, and blood bank available around the clock. Most surgical and emergency medicine departments in India organise their physicians in units. Each unit typically consists of at least three faculty members and three to twelve residents, and is assigned a specific day of the week when they manage the emergency department. We defined a cluster as one or more units of physicians providing trauma care in the emergency department of Indian tertiary care hospitals.
-
-To be eligible, units had to have a maximum of 25% of the doctors trained in either ATLS^®^, PTC, or similar training programs before the start of the pilot study. Those residents who had received training in the last five years were considered as trained. The figure of 25% was decided through consensus in the research team, to balance feasibility and contamination of results. The principal investigator at each eligible hospital selected the units for training. We randomised on the hospital level to avoid contamination between intervention arms and the standard care arms. 
-
-### Patient Participants
-All adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
-
-### Resident Doctor Participants
-Resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year from the time of the training. Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. 
+## Standard Care
+Standard care varies across hospitals in India, but most surgical and emergency medicine departments in India organise their physicians in units. These units typically include three faculty members and three to twelve residents, who are assigned a specific day of the week when they manage the emergency department. In the emergency department, trauma patients are initially assessed by first- or second-year residents who also resuscitate patients, perform interventions and refer patients for imaging or other investigations. Compared with other settings where a trauma team approach is adopted, nurses and other healthcare professionals are only involved to a limited extent during the initial management. 
 
 ## Intervention
 In each intervention arm the residents in one or two units were trained in either ATLS^®^ or PTC. For the purpose of this pilot study, our target was to train a minimum of 75% of residents in each unit. We did not train the units' faculty, because they are typically not directly involved in the initial management of trauma patients. The ATLS^®^ training was conducted in an ATLS^®^ certified training centre in Mumbai, according to the standard ATLS^®^ curriculum [@acsAtls2018]. The PTC training was conducted in New Delhi, according to the standard PTC curriculum [@ptcfPtc2018]. We did not modify or adapt the delivery or content of these programs during this pilot study.
 
-### Standard Care
-Standard care varies across hospitals in India, but trauma patients are initially managed by casualty medical officers, surgical residents, or emergency medicine residents. They are mainly first- or second-year residents who resuscitate patients, perform interventions and refer patients for imaging or other investigations. Compared with other settings where a trauma team approach is adopted, nurses and other healthcare professionals are only involved to a limited extent during the initial management. 
+## Eligibility Criteria for Cluster and Participants
+
+### Hospitals
+
+We included tertiary care hospitals in metropolitan areas in India that admitted more than 400 adult patients with trauma each year, and that had operation theatres, X-ray, CT, and ultrasound facilities, and blood bank available around the clock.
+
+### Clusters
+
+We defined a cluster as one or more units of physicians providing trauma care in the emergency department of Indian tertiary care hospitals. To be eligible, units could have no more than 25% of their physicians trained in either ATLS^®^, PTC, or similar training programs before the start of the pilot study. Those residents who had received training in the last five years were considered as trained. The figure of 25% was decided through consensus in the research team, to balance feasibility and contamination of results. The principal investigator at each hospital selected the units for training. We randomised on the hospital level to avoid contamination between intervention arms and the standard care arms. 
+
+### Residents
+
+Resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year from the time of the training. Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. 
+
+### Patients
+
+All adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
 
 ## Outcomes
-Our pilot study included feasibility as well as participant outcomes. The feasibility outcomes were:
-- Consent rate. For both patients and residents this was equal to the percentage of participants who consented to be included, out of the total number of eligible participants, over the course of the pilot study.
-- Lost to follow up rate. This applied only to patients and was equal to the percentage of patients that did not complete 30 day follow up, out of all enrolled patients, over the course of the pilot study.
-- Pass rate. This applied only to residents in the intervention arms and equal the percentage of residents that passed the training programme, out of the total number of trained residents, over the course of the pilot study.
-- Missing data rate. This applied to each outcome and variable and was equal to the proportion of missing data, over the course of the pilot study.
-- Differences in distributions of observed and extracted data. This applied to each outcome and variable and compared the distributions of data collected by observations versus extracted from hospital records.
+We measured a large number of outcomes to help plan and assess the feasibility of a full scale trial. A complete list of outcomes is available as Supplementary Materials. Our main outcomes were: 
 
-The primary patient participant outcome was all cause mortality within 30 days from the time of arrival to the emergency department, measured and compared across trial arms as both final values and as change from baseline. <!--The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 1. We decided to include a large number of outcomes, including some more exploratory, so that we could test their feasibility and relevance. -->
+- Consent rate of patients and residents. This was equal to the percentage of patients or residents who consented to be included, out of the total number of eligible patients or residents. 
+- Lost to follow up rate. This applied only to patients and was equal to the percentage of patients whom did not complete 30 day follow up, out of all enrolled patients.
+- Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents that passed the training programme, out of the total number of trained residents.
+- Missing data rate. This applied to each outcome and variable and was equal to the percentage of missing values.
+- Differences in distributions of observed and extracted data. This applied to each outcome and variable and compared the distributions of data collected by observations versus extracted from hospital records.
+- All cause and in-hospital mortality within 30 days from the time of arrival to the emergency department among patients, measured and compared across trial arms as both final values and as change from baseline.
+
+<!--The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 1. We decided to include a large number of outcomes, including some more exploratory, so that we could test their feasibility and relevance. -->
 
 ## Participant Timeline and Inclusion
 
 ### Patients
-Arriving patients were screened for eligibility and consented, if conscious. Unconscious patients were consented by the patient’s representative. This proxy consent was reaffirmed by the patient, on regaining consciousness. We followed up patients at discharge, at 24 hours after arrival at the emergency department, and at 30 days after arrival at the emergency department.
+Arriving patients were screened for eligibility and consented, if conscious. Unconscious patients were consented by the patient’s representative. This proxy consent was reaffirmed by the patient, on regaining consciousness. We followed up patients at 24 hours after arrival at the emergency department, and up to 30 days after arrival at the emergency department.
 
 ### Residents
-Participating units were screened for eligibility once hospitals confirmed their participation. All residents in these units were approached to consent to training if their hospital was randomised to either of the intervention arms. The training was conducted approximately one month after the study started.
+Participating units were screened for eligibility once hospitals confirmed their participation. All residents in these units were approached to consent to training if their hospital was randomised to either of the intervention arms. The training was conducted approximately one month after the study started in that hospital.
 
 ## Sample size
 We did not conduct a formal power calculation for this pilot study, as the primary aim was to assess feasibility. The time period was dictated by budget and time constraints.
