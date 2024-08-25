@@ -265,16 +265,11 @@ Participating units were screened for eligibility once hospitals confirmed their
 ## Sample size
 We did not conduct a formal power calculation for this pilot study, as the primary aim was to assess feasibility. The time period was dictated by budget and time constraints.
 
-## Allocation
-We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. 
-
-## Blinding
-It was not possible to blind investigators or participants to
-interventions. 
+## Allocation and blincing
+We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. We did not blind investigators, residents or patients to the interventions. 
 
 ## Data Collection
-Each participating hospital had a dedicated research officer who collected the data for a total duration of four months. The research officers collected data by observing the care delivered, interviewing the participants, and by extracting data from hospital records. The
-research officers collected data of all trauma patients who presented to the participating units during their duty hours. Admitted patient participants were followed up for complications and other in-hospital outcome measures, for example length of stay. Patients who were not admitted were followed up telephonically for mortality outcomes and quality of life outcomes. The follow up period was 30 days.
+Data was collected over a four-month period. A research officer collected data on all patients who presented on the days and shifts when participating residents were assigned to trauma care. The research officers observed care and interviewed residents and patients, and also extracted data from the hospital records. We followed up admitted patients for their complications and other in-hospital outcome measures. Patients who were not admitted were followed up telephonically for mortality outcomes and quality of life outcomes. 
 
 ## Variables
 The research officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, times to and management details including imaging and surgery, and details of any injury sustained. <!--Supplemental Material 2 contains a full variable list, with definitions.-->
@@ -288,24 +283,24 @@ We used the online data collection tool KoboToolbox [@KoboToolbox], accessible o
 -->
 
 ## Data monitoring
-Weekly meetings with the core team and research officers took place. We conducted one interim analysis, and decided to complete the study as participants were consenting to be included in the study and key variables including mortality outcomes could be collected. We did not use a data monitoring committee.
+We conducted weekly online meetings to monitor the study and data collection. We conducted one interim analysis approximately halfway through the study, and decided to complete the study as residents and patients were consenting to be included in the study and key variables including mortality outcomes could be collected. We did not use a data monitoring committee.
 
 ## Statistical Methods
-We analysed all pilot data, including both feasibility and participant outcomes, using descriptive statistics. We did not perform any formal hypothesis tests during the analysis of this pilot's data [@Lee2014]. Quantitative variables are summarised as mean +/- standard deviation, median, interquartile range and range. Qualitative variables are presented as absolute numbers and percentages. We used an empty generalised linear mixed model <!-- see [@Sommet2017] --> to estimate the intracluster correlation coefficient.
+We analysed all data using descriptive statistics and did not perform any formal hypothesis [@Lee2014]. Quantitative variables are summarised as mean +/- standard deviation, median, interquartile range and range. Qualitative variables are presented as absolute numbers and percentages. We used an empty generalised linear mixed model <!-- see [@Sommet2017] --> to estimate the intracluster correlation coefficient.
 
-We compared patient participant outcomes in all possible combinations of trial arms. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
+We compared patients outcomes in all possible combinations of trial arms. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
 
-Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively only. 
+Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively. 
 
 <!--We calculated both absolute and relative differences for each
 comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals.-->
 
 ## Ethics and Dissemination
-We were granted research ethics approval from each participating hospital. 
+We were granted research ethics approval from the institutional ethics committees at each participating hospital. 
 
 # Results
 
-Between the study period of `r start.date` to `r end.date`, we enrolled `r n.patients` trauma patients from `r n.centres` participating centres. The ATLS^®^ arm enrolled `r n.atls` patients, the PTC arm `r n.ptc` patients, and the standard care arm `r n.control` patients. We trained a total of  `r n.residents` residents, `r n.atls.residents` in ATLS^®^, and  `r n.ptc.residents` in PTC. 
+We enrolled `r n.patients` trauma patients from `r n.centres` participating centres between `r start.date` and `r end.date`. The standard care arm `r n.control` patients, the ATLS^®^ arm enrolled `r n.atls` patients, and the PTC arm `r n.ptc` patients. We trained a total of  `r n.residents` residents, `r n.atls.residents` in ATLS^®^, and  `r n.ptc.residents` in PTC. 
 
 The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients had the primary outcome of mortality at 30 days after arrival to the emergency department.
 
