@@ -144,6 +144,9 @@ prepare_data <- function(data, codebook = NULL) {
     ## Add variables indicating the different TQIP cohorts
     prepared.data <- add_tqip_cohorts(prepared.data)
 
+    # Drop unused levels
+    prepared.data <- droplevels(prepared.data)
+
     ## Add additional labels
     labelled::var_label(prepared.data$riss) <- "Injury Severity Score"
     labelled::var_label(prepared.data$niss) <- "New Injury Severity Score"
@@ -187,5 +190,6 @@ label_variable <- function(variable.data, name, codebook) {
     if (!is.null(type)) {
         labelled::var_label(relabelled.data) <- variable.label
     }
+
     return(relabelled.data)
 }

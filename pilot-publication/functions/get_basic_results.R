@@ -32,10 +32,10 @@ get_basic_results <- function(data) {
     results$n.patients <- nrow(data)
 
     # Resident data
-    results$n.atls.residents <- 4 + 2 # The total number of residents trained in ATLS, per ATLS centre
+    results$n.atls.residents <- 4 + 3 # The total number of residents trained in ATLS, per ATLS centre
     results$n.ptc.residents <- 9 + 6 # The total number of residents trained in PTC, per centre
     results$n.residents <- with(results, n.atls.residents + n.ptc.residents)
-    n.passed <- 6 # 2 had to retake the exam, but all passed the second time
+    n.passed <- 7 # 2 had to retake the exam, but all passed the second time
     results$pass.rate <- round(n.passed / results$n.atls.residents * 100)
     results$n.eligible.residents <- results$n.residents # Need to update this
     results$recruitment.rate.residents <- round(results$n.residents / results$n.eligible.residents * 100)

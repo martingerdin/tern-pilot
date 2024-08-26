@@ -41,6 +41,25 @@ table.data <- data %>%
     select(-arm)
 overall.sample.characteristics.table <- create_descriptive_table(table.data, show.all.levels = FALSE)
 
+## Create table of sample characteristics stratified by arm
+stratified.table.data <- data %>%
+    select(all_of(table.variables)) %>%
+    select(-outcomes__discharge_alive, -outcomes__alive_after_30_days)
+sample.characteristics.table <- create_descriptive_table(stratified.table.data,
+    strata = "arm", show.all.levels = FALSE, include.overall = TRUE
+) %>%
+    gtsummary::modify_caption("Patient sample characteristics") %>%
+    gtsummary::modify_table_styling(
+        column = label,
+        footnote_abbrev = "ATLS = Advanced Trauma Life Support; PTC = Prehospital Trauma Care"
+    ) %>%
+    add_stat_label(
+        label = list(
+            all_continuous() ~ "median (IQR)",
+            all_categorical() ~ "n (%)"
+        )
+    )
+
 ## Create table of sample characteristics before training
 pre.training.table.data <- data %>%
     filter(!post.training) %>%
@@ -64,7 +83,7 @@ post.training.characteristics.table <- create_descriptive_table(
 )
 
 ## Combine tables
-sample.characteristics.table <- gtsummary::tbl_merge(
+combined.sample.characteristics.table <- gtsummary::tbl_merge(
     tbls = list(
         pre.training.characteristics.table,
         post.training.characteristics.table,
