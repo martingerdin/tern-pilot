@@ -139,6 +139,10 @@ m30d <- inline_text(overall.sample.characteristics.table,
 )
 
 ## Crude 30 day mortality
+m30d.standard.care <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "Standard care"
+)
 m30d.standard.care.n <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
     column = "Standard care",
@@ -148,6 +152,10 @@ m30d.standard.care.p <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
     column = "Standard care",
     pattern = "({p})%"
+)
+m30d.atls <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "ATLS"
 )
 m30d.atls.n <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
@@ -159,6 +167,10 @@ m30d.atls.p <- inline_text(post.training.characteristics.table,
     column = "ATLS",
     pattern = "({p})%"
 )
+m30d.ptc <- inline_text(post.training.characteristics.table,
+    variable = outcomes__alive_after_30_days,
+    column = "PTC"
+)
 m30d.ptc.n <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
     column = "PTC",
@@ -169,6 +181,57 @@ m30d.ptc.p <- inline_text(post.training.characteristics.table,
     column = "PTC",
     pattern = "({p})%"
 )
+
+# Crude in-hospital mortality
+inhosp.standard.care <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "Standard care"
+)
+inhosp.standard.care.n <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "Standard care",
+    pattern = "{n}"
+)
+inhosp.standard.care.p <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "Standard care",
+    pattern = "({p})%"
+)
+inhosp.atls <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "ATLS"
+)
+inhosp.atls.n <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "ATLS",
+    pattern = "{n}"
+)
+inhosp.atls.p <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "ATLS",
+    pattern = "({p})%"
+)
+inhosp.ptc <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "PTC"
+)
+inhosp.ptc.n <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "PTC",
+    pattern = "{n}"
+)
+inhosp.ptc.p <- inline_text(post.training.characteristics.table,
+    variable = outcomes__discharge_alive,
+    column = "PTC",
+    pattern = "({p})%"
+)
+
+# Create tables comparing outcomes
+data |>
+    select(outcomes__alive_after_30_days, outcomes__discharge_alive, arm) |>
+    filter(arm %in% c("Standard care", "ATLS")) |>
+    gtsummary::tbl_summary(by = arm) |>
+    add_difference()
 
 ## Extract tables for absolute and relative differences
 standard.care.vs.atls.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]

@@ -302,7 +302,7 @@ We were granted research ethics approval from the institutional ethics committee
 
 We enrolled `r n.patients` trauma patients from `r n.centres` participating centres between `r start.date` and `r end.date`. The standard care arm `r n.control` patients, the ATLS^®^ arm enrolled `r n.atls` patients, and the PTC arm `r n.ptc` patients. We trained a total of  `r n.residents` residents, `r n.atls.residents` in ATLS^®^, and  `r n.ptc.residents` in PTC. 
 
-The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients had the primary outcome of mortality at 30 days after arrival to the emergency department.
+The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department.  
 
 ```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care."}
 create_flow_diagram()
@@ -313,7 +313,8 @@ knitr::include_graphics("flow-diagram.png")
 sample.characteristics.table
 ```
 
-## Feasibility Outcomes
+## Outcomes
+
 <!--Out of X potentially eligible patients, X (X%) patients were enrolled
 in the study-->. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details for selected variables shown in Table \ref@(tab:sample-characteristics). The differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
 
@@ -322,16 +323,11 @@ retrospective.comparison.table %>%
   modify_caption("Differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview.")
 ```
 
-## Patient Participant Outcomes
+After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`%. Absolute and relative changes from baseline, as well as absolute and relative risk differences, are shown in Table \@ref(tab:outcomes). Overall, mortality was lower in the ATLS^®^ and PTC arms compared to the standard care arm. The results for all other outcomes are shown in Supplementary Materials.
 
-After training, a total of `r m30d.standard.care` patients in the standard care arm had the primary outcome, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The absolute change from baseline in the primary outcome (95% CI) in the standard care arm was `r abs.change.standard.care`% units, in the ATLS^®^ arm `r abs.change.atls`% units, and in the PTC arm `r abs.change.ptc`% units. The relative change from baseline in the primary outcome (95% CI) in the standard care arm was `r rel.change.standard.care`, in the ATLS^®^ arm `r rel.change.atls`, and in the PTC arm `r rel.change.ptc`.
-
-The absolute risk difference between the standard care and ATLS^®^ arms (95% CI) was `r arr.standard.care.atls`% units, between the standard care and PTC arms (95% CI) `r arr.standard.care.ptc`% units, and between the ATLS^®^ and PTC arms (95% CI) `r arr.atls.ptc`% units. The relative risk in the standard care arm compared with the ATLS^®^ arm (95% CI) was `r rr.standard.care.atls`, in the standard care arm compared with the PTC arm (95% CI) `r rr.standard.care.ptc`, and in the ATLS^®^ arm compared with the PTC arm (95% CI) the relative risk was `r rr.atls.ptc`. <!--The absolute and relative differences in changes from baseline comparing the three arms are shown in Supplementary materials, along with data on all secondary outcomes.-->
-
-## Resident Participant Outcomes
-
-A total of `r n.residents` residents were trained during this
-pilot study. Overall their median confidence in managing trauma patients was `r median.confidence` (IQR `r iqr.confidence`) on a 10 point Likert scale with 10 being most confident, across trial arms and both before and after training.
+```{r outcomes, echo = FALSE}
+outcomes.table
+```
 
 # Discussion
 We show that conducting a cluster randomized controlled trial
