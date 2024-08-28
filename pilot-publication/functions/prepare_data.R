@@ -132,6 +132,7 @@ prepare_data <- function(data, codebook = NULL) {
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% atls.centres, ]$arm <- "ATLS"
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% ptc.centres, ]$arm <- "PTC"
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% control.centres, ]$arm <- "Standard care"
+    prepared.data$arm <- factor(prepared.data$arm, levels = c("Standard care", "ATLS", "PTC"))
 
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {

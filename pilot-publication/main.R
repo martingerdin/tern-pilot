@@ -227,11 +227,23 @@ inhosp.ptc.p <- inline_text(post.training.characteristics.table,
 )
 
 # Create tables comparing outcomes
-data |>
+table.data <- data |>
+    filter(post.training) |>
+    select(outcomes__alive_after_30_days, outcomes__discharge_alive, arm)
+table.data$outcomes__alive_after_30_days <- table.data$outcomes__alive_after_30_days == "Yes"
+table.data$outcomes__discharge_alive <- table.data$outcomes__discharge_alive == "Yes"
+labelled::var_label(table.data$outcomes__alive_after_30_days) <- binary_outcomes()$outcomes__alive_after_30_days$label
+labelled::var_label(table.data$outcomes__discharge_alive) <- binary_outcomes()$outcomes__discharge_alive$label
+table.data |>
     select(outcomes__alive_after_30_days, outcomes__discharge_alive, arm) |>
     filter(arm %in% c("Standard care", "ATLS")) |>
+    droplevels() |>
     gtsummary::tbl_summary(by = arm) |>
-    add_difference()
+    add_difference() |>
+    modify_column_hide(c(conf.low, p.value)) |>
+    modify_footnote(estimate ~ NA) |>
+    add_stat()
+
 
 ## Extract tables for absolute and relative differences
 standard.care.vs.atls.table <- outcome.results.tables$ci.level.0.95[["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
