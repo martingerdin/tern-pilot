@@ -56,7 +56,11 @@ create_descriptive_table <- function(table.data,
         data = table.data,
         by = strata,
         type = type,
-        missing_text = "Missing"
+        missing_text = "Missing",
+        digits = list(
+            all_categorical() ~ c(0, 0),
+            all_continuous() ~ c(0, 0)
+        )
     )
 
     ## Add overall column
