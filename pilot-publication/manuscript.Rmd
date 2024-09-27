@@ -316,11 +316,11 @@ sample.characteristics.table
 ## Outcomes
 
 <!--Out of X potentially eligible patients, X (X%) patients were enrolled
-in the study-->. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details for selected variables shown in Table \ref@(tab:sample-characteristics). The differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
+in the study-->. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`, with details for selected variables shown in Table \ref@(tab:sample-characteristics). The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-retrospective). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
 
 ```{r observed-vs-retrospective, echo = FALSE}
-retrospective.comparison.table %>%
-  modify_caption("Differences in distributions between observed and extracted data, for selected variables that were collected through observation or interview.")
+observed.vs.extracted.comparison.table %>%
+  modify_caption("Differences in distributions between directly observed data and data extracted from medical records, for selected variables that were collected through observation or interview.")
 ```
 
 After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`%. Absolute and relative changes from baseline, as well as absolute and relative risk differences, are shown in Table \@ref(tab:outcomes). Overall, both in-hospital and 30-day mortality were substantially lower in the ATLS^®^ and PTC arms compared to the standard care arm, but the absolute numbers of deaths in the ATLS and PTC arms were very small. The results for all other outcomes are shown in Supplementary Materials.
@@ -330,8 +330,7 @@ outcomes.table.with.differences
 ```
 
 # Discussion
-We show that conducting a cluster randomized controlled trial
-comparing ATLS^®^ with PTC and standard care is feasible in this setting. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial.
+We show that it is feasible to conduct and collect data for  a cluster randomized controlled trial comparing ATLS^®^ with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables, especially cause of death and complications (reported in Supplementary materials) had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. Similarly, the missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data 
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->

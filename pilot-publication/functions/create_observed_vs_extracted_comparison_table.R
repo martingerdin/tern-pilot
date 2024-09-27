@@ -1,11 +1,11 @@
-#' Create a retrospective comparison table
+#' Create a extracted comparison table
 #'
 #' This function takes in a data frame and creates a comparison table
-#' between retrospective and directly observed data.
+#' between directly observed data and data extracted from medical records.
 #' @param data A data frame containing the data for comparison.
 #' @return A comparison table with descriptive statistics.
 #' @export
-create_retrospective_comparison_table <- function(data) {
+create_observed_vs_extracted_comparison_table <- function(data) {
     ## Define borrowed functions
     `%>%` <- magrittr::`%>%`
 
@@ -13,26 +13,26 @@ create_retrospective_comparison_table <- function(data) {
     assertthat::assert_that(is.data.frame(data))
 
     ## Get variables to compare
-    retrospective.variables <- names(data)[grep("_r__", names(data), fixed = TRUE)]
-    directly.observed.variables <- retrospective.variables %>%
+    extracted.variables <- names(data)[grep("_r__", names(data), fixed = TRUE)]
+    directly.observed.variables <- extracted.variables %>%
         stringr::str_replace_all(pattern = "\\_r\\_\\_", replacement = "\\_\\_") %>%
         stringr::str_replace_all(pattern = "\\_r$", replacement = "")
 
-    ## Keep only observations with completed retrospective data collection
+    ## Keep only observations with completed extracted data collection
     data <- data %>% dplyr::filter(data_status_r__collection_completed_r == "Yes")
 
-    ## Extract retrospective and directly observed data
-    retrospective.data <- data[, retrospective.variables]
-    colnames(retrospective.data) <- directly.observed.variables
+    ## Extract extracted and directly observed data
+    extracted.data <- data[, extracted.variables]
+    colnames(extracted.data) <- directly.observed.variables
     directly.observed.data <- data[, directly.observed.variables]
-    retrospective.data$collection.mode <- "Retrospective"
+    extracted.data$collection.mode <- "Medical records"
     directly.observed.data$collection.mode <- "Directly observed"
     original.classes <- sapply(directly.observed.data, class)
 
     ## Merge datasets
     directly.observed.data[] <- lapply(directly.observed.data, as.character)
-    retrospective.data[] <- lapply(retrospective.data, as.character)
-    merged.data <- dplyr::bind_rows(directly.observed.data, retrospective.data)
+    extracted.data[] <- lapply(extracted.data, as.character)
+    merged.data <- dplyr::bind_rows(directly.observed.data, extracted.data)
 
     ## Change column classes to match original classes
     merged.data[] <- mapply(function(column, class.name) {

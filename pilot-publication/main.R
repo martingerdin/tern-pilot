@@ -94,7 +94,7 @@ combined.sample.characteristics.table <- gtsummary::tbl_merge(
     gtsummary::modify_caption("Patient sample characteristics")
 
 ## Create table comparing directly observed with retrospective data
-retrospective.comparison.table <- create_retrospective_comparison_table(data)
+observed.vs.extracted.comparison.table <- create_observed_vs_extracted_comparison_table(data)
 
 ## Bootstrap outcome results
 use.saved <- TRUE

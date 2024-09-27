@@ -35,7 +35,12 @@ prepare_data <- function(data, codebook = NULL) {
         naniar::replace_with_na_if(
             .predicate = is.numeric,
             condition = ~ .x == 999
+        ) %>%
+        naniar::replace_with_na_if(
+            .predicate = is.numeric,
+            condition = ~ .x < 0
         )
+
     ## Deal with edge cases
     variable <- prepared.data$complications__failure_of_conservative_management
     variable[variable == "0" | variable == "NO" | variable == "no"] <- "No"
