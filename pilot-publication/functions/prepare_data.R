@@ -139,6 +139,9 @@ prepare_data <- function(data, codebook = NULL) {
     prepared.data[as.character(prepared.data$id__reg_hospital_id) %in% control.centres, ]$arm <- "Standard care"
     prepared.data$arm <- factor(prepared.data$arm, levels = c("Standard care", "ATLS", "PTC"))
 
+    ## Add variable indicating if the patient was considered lost to follow up
+    prepared.data$lost.to.follow.up <- is.na(prepared.data$outcomes__alive_after_30_days)
+
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
         column.data <- prepared.data %>%

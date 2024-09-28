@@ -1,0 +1,20 @@
+digraph consort {
+  
+  # Node attributes
+  node [shape=square, fontname=Helvetica, fontsize=10]
+  
+  # Define nodes
+  A [label='Total: Clusters: 30 | Residents: 90 | Patients: 270']
+  B [label='Standard Care\nClusters: 10\nResidents: 30\nPatients: 90']
+  C [label='ATLS\nClusters: 10\nResidents: 30\nPatients: 90']
+  D [label='PTC\nClusters: 10\nResidents: 30\nPatients: 90']
+  
+  # Define mid-point node to facilitate splitting
+  mid [shape=point, width=0, label='']
+
+  # Edges
+  A -> mid [arrowhead=none]  # Line from A to mid-point without arrowhead
+  mid -> B [tailport=s, headport=n]  # Line from mid to Standard Care
+  mid -> C [tailport=s, headport=n]  # Line from mid to ATLS
+  mid -> D [tailport=s, headport=n]  # Line from mid to PTC
+}
