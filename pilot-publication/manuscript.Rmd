@@ -16,29 +16,6 @@ output:
       reference_docx: "reference.docx"
 ---
 
-```{dot}
-digraph consort {
-  
-  # Node attributes
-  node [shape=square, fontname=Helvetica, fontsize=10]
-  
-  # Define nodes
-  A [label='Total: Clusters: 30 | Residents: 90 | Patients: 270']
-  B [label='Standard Care\nClusters: 10\nResidents: 30\nPatients: 90']
-  C [label='ATLS\nClusters: 10\nResidents: 30\nPatients: 90']
-  D [label='PTC\nClusters: 10\nResidents: 30\nPatients: 90']
-  
-  # Define mid-point node to facilitate splitting
-  mid [shape=point, width=0, label='']
-
-  # Edges
-  A -> mid [arrowhead=none]  # Line from A to mid-point without arrowhead
-  mid -> B [tailport=s, headport=n]  # Line from mid to Standard Care
-  mid -> C [tailport=s, headport=n]  # Line from mid to ATLS
-  mid -> D [tailport=s, headport=n]  # Line from mid to PTC
-}
-```
-
 ## Trial registration
 This pilot study was registered with ClinicalTrials.gov (reg. no NCT05417243). 
 
@@ -330,8 +307,7 @@ We enrolled `r n.patients` trauma patients from `r n.centres` participating cent
 The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department.  
 
 ```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care."}
-create_flow_diagram()
-knitr::include_graphics("flow-diagram.png")
+knitr::include_graphics("consort-flow-diagram.png")
 ```
 
 ```{r sample-characteristics, echo = FALSE, results = "asis"}
