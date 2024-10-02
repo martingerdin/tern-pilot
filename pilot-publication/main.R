@@ -22,6 +22,9 @@ data <- prepare_data(data, codebook)
 ## Define basic results
 results <- get_basic_results(data)
 
+## Create CONSORT diagram
+create_consort_diagram(results)
+
 ## Create table of sample characteristics
 table.variables <- c(
     "patinfo__pt_age", "elderly",
