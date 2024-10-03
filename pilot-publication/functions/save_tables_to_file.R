@@ -21,7 +21,8 @@ save_tables_to_file <- function(outcome.results.tables) {
                 scales::percent()
             ci.level.tables <- outcome.results.tables[[ci.level.tables.name]]
             paste0(
-                "# ", ci.level, " confidence level\n\n",
+                "\\pagebreak\n\n",
+                "# Results with ", ci.level, " confidence level\n\n",
                 lapply(names(ci.level.tables), function(ci.level.table.name) {
                     ci.level.table <- ci.level.tables[[ci.level.table.name]]
                     paste0(
@@ -29,7 +30,8 @@ save_tables_to_file <- function(outcome.results.tables) {
                         "\`\`\`{r, echo = FALSE} \n\n",
                         "outcome.results.tables[[\"", ci.level.tables.name, "\"]]",
                         "[[\"", ci.level.table.name, "\"]]", "\n\n",
-                        "\`\`\`\n\n"
+                        "\`\`\`\n\n",
+                        "\\pagebreak\n\n",
                     )
                 }) %>%
                     paste0(collapse = "\n\n")
@@ -45,5 +47,5 @@ save_tables_to_file <- function(outcome.results.tables) {
     close(fileConn)
 
     ## Create html document
-    rmarkdown::render("outcome-tables.Rmd", output_format = rmarkdown::html_document(toc = TRUE))
+    rmarkdown::render("outcome-tables.Rmd", output_format = rmarkdown::pdf_document(toc = TRUE))
 }

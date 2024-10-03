@@ -1,4 +1,6 @@
-# 75% confidence level
+\pagebreak
+
+# Results with 75% confidence level
 
 ## Outcomes in all patients during the entire study period, by treatment arm
 
@@ -110,7 +112,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in
 
 
 
-# 85% confidence level
+\pagebreak
+
+# Results with 85% confidence level
 
 ## Outcomes in all patients during the entire study period, by treatment arm
 
@@ -222,7 +226,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in
 
 
 
-# 95% confidence level
+\pagebreak
+
+# Results with 95% confidence level
 
 ## Outcomes in all patients during the entire study period, by treatment arm
 

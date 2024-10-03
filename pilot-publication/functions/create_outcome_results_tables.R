@@ -137,6 +137,9 @@ create_ci_level_tables <- function(table.name, ci.data) {
         gt::tab_style(
             style = gt::cell_text(weight = "bold"),
             locations = gt::cells_column_labels()
+        ) %>%
+        gt::tab_options(
+            table.font.size = 10
         )
 
     ## Return table
