@@ -31,7 +31,7 @@ save_tables_to_file <- function(outcome.results.tables) {
                         "outcome.results.tables[[\"", ci.level.tables.name, "\"]]",
                         "[[\"", ci.level.table.name, "\"]]", "\n\n",
                         "\`\`\`\n\n",
-                        "\\pagebreak\n\n",
+                        "\\pagebreak\n\n"
                     )
                 }) %>%
                     paste0(collapse = "\n\n")

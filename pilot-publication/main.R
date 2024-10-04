@@ -126,6 +126,9 @@ if (use.saved) {
 ## Create tables with outcome results
 outcome.results.tables <- create_outcome_results_tables(outcome.results)
 
+## Save outcome results tables to file
+save_tables_to_file(outcome.results.tables)
+
 # Extract results from tables
 females <- inline_text(overall.sample.characteristics.table,
     variable = patinfo__pt_gender,
@@ -330,6 +333,3 @@ rel.change.ptc <- inline_outcome_text(
     column = "PTC",
     level = "Yes"
 )
-
-## Save outcome results tables to file
-# save_tables_to_file(outcome.results.tables)

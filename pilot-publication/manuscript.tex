@@ -1,0 +1,745 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Effects of Trauma Life Support Training Programs on Patient Outcomes: A Pilot Cluster Randomised Trial},
+  pdfauthor={Trauma life support training Effectiveness Research Network (TERN) collaborators},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{anyfontsize}
+\usepackage{multirow}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Effects of Trauma Life Support Training Programs on Patient Outcomes: A Pilot Cluster Randomised Trial}
+\author{Trauma life support training Effectiveness Research Network (TERN) collaborators}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{trial-registration}{%
+\subsection{Trial registration}\label{trial-registration}}
+
+This pilot study was registered with ClinicalTrials.gov (reg. no NCT05417243).
+
+\hypertarget{corresponding-author}{%
+\subsection{Corresponding author}\label{corresponding-author}}
+
+Martin Gerdin Wärnberg (MGW)
+
+Department of Global Public Health\\
+Karolinska Institutet\\
+171 77 Stockholm\\
+Sweden
+
+\href{mailto:martin.gerdin@ki.se}{\nolinkurl{martin.gerdin@ki.se}}\\
++46 708 53 95 98 (mobile)
+
+\hypertarget{authors}{%
+\subsection{Authors}\label{authors}}
+
+\hypertarget{johanna-berg-jb}{%
+\subparagraph{Johanna Berg (JB)}\label{johanna-berg-jb}}
+
+Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
+
+Emergency Medicine, Department of Internal and Emergency Medicine, Skåne University Hospital, Malmö, Sweden.
+
+\hypertarget{shamita-chatterjee-sc}{%
+\subparagraph{Shamita Chatterjee (SC)}\label{shamita-chatterjee-sc}}
+
+Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
+
+\hypertarget{li-felluxe4nder-tsai-lft}{%
+\subparagraph{Li Felländer-Tsai (LFT)}\label{li-felluxe4nder-tsai-lft}}
+
+Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.
+
+Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
+
+\hypertarget{geeta-ghag-gg}{%
+\subparagraph{Geeta Ghag (GG)}\label{geeta-ghag-gg}}
+
+Department of Surgery, HBT Medical College And Dr.~R N Cooper Municipal General Hospital, Mumbai, India.
+
+\hypertarget{monty-khajanchi-mk}{%
+\subparagraph{Monty Khajanchi (MK)}\label{monty-khajanchi-mk}}
+
+WHO Collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
+
+Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
+
+\hypertarget{catherine-juillard-cj}{%
+\subparagraph{Catherine Juillard (CJ)}\label{catherine-juillard-cj}}
+
+Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
+
+\hypertarget{nobhojit-roy-nr}{%
+\subparagraph{Nobhojit Roy (NR)}\label{nobhojit-roy-nr}}
+
+WHO Collaborating Center for Research on Surgical Care Delivery in LMICs, BARC Hospital, HBNI University, Mumbai, India.
+
+Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
+
+\hypertarget{rajdeep-singh-rs}{%
+\subparagraph{Rajdeep Singh (RS)}\label{rajdeep-singh-rs}}
+
+Department of Surgery, Maulana Azad Medical College, New Delhi, India.
+
+\hypertarget{kapil-dev-soni-kds}{%
+\subparagraph{Kapil Dev Soni (KDS)}\label{kapil-dev-soni-kds}}
+
+Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medical Sciences, New Delhi, India.
+
+\hypertarget{lovisa-struxf6mmer-ls}{%
+\subparagraph{Lovisa Strömmer (LS)}\label{lovisa-struxf6mmer-ls}}
+
+Division of Surgery, Department of Clinical Science, Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.
+
+Department of Surgery, Capio St Göran Hospital, Stockholm, Sweden.
+
+\hypertarget{vipul-nandu}{%
+\subparagraph{Vipul Nandu}\label{vipul-nandu}}
+
+Department of Surgery, HBT Medical College And Dr.~R N Cooper Municipal General Hospital, Mumbai, India.
+
+\hypertarget{debojit-basak}{%
+\subparagraph{Debojit Basak}\label{debojit-basak}}
+
+Project Research Scientist, Institute of Post Graduate Medical Education and Research, Kolkata, India.
+
+\hypertarget{tamal-khan}{%
+\subparagraph{Tamal Khan}\label{tamal-khan}}
+
+\hypertarget{non-author-contributors}{%
+\subsection{Non-author contributors}\label{non-author-contributors}}
+
+Trauma life support Effectiveness Research Network (TERN) collaborators:
+
+\hypertarget{prashant-bhandarkar-pb}{%
+\subparagraph{Prashant Bhandarkar (PB)}\label{prashant-bhandarkar-pb}}
+
+WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
+
+\hypertarget{anirban-chatterjee-ac}{%
+\subparagraph{Anirban Chatterjee (AC)}\label{anirban-chatterjee-ac}}
+
+Department of Orthopaedic Sciences, Medica Superspecialty Hospital, Kolkata, India.
+
+\hypertarget{chintamani-c}{%
+\subparagraph{Chintamani (C)}\label{chintamani-c}}
+
+Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
+
+\hypertarget{anita-gadgil-ag}{%
+\subparagraph{Anita Gadgil (AG)}\label{anita-gadgil-ag}}
+
+WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
+
+\hypertarget{marie-hasselberg-mh}{%
+\subparagraph{Marie Hasselberg (MH)}\label{marie-hasselberg-mh}}
+
+Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
+
+\hypertarget{deepa-kizhakke-veetil-dkv}{%
+\subparagraph{Deepa Kizhakke Veetil (DKV)}\label{deepa-kizhakke-veetil-dkv}}
+
+Department of Surgery, Manipal Hospital, Dwarka, New Delhi.
+
+\hypertarget{vineet-kumar-vk}{%
+\subparagraph{Vineet Kumar (VK)}\label{vineet-kumar-vk}}
+
+Department of Surgery, Lokmanya Tilak Municipal Medical College and General Hospital, Mumbai, India.
+
+\hypertarget{debabrata-kundu-dk}{%
+\subparagraph{Debabrata Kundu (DK)}\label{debabrata-kundu-dk}}
+
+Department of Surgery, Medical College Kolkata, Kolkata, India.
+
+\hypertarget{anurag-mishra-am}{%
+\subparagraph{Anurag Mishra (AM)}\label{anurag-mishra-am}}
+
+Department of Surgery, Maulana Azad Medical College, New Delhi, India.
+
+\hypertarget{priti-patil-pp}{%
+\subparagraph{Priti Patil (PP)}\label{priti-patil-pp}}
+
+WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
+
+\hypertarget{arun-prasad-ap}{%
+\subparagraph{Arun Prasad (AP)}\label{arun-prasad-ap}}
+
+Department of Surgery, Indraprastha Apollo Hospitals, New Delhi
+
+\hypertarget{amit-roy-ar}{%
+\subparagraph{Amit Roy (AR)}\label{amit-roy-ar}}
+
+Department of Surgery, Sir Nil Ratan Sircar Medical College \& Hospital, Kolkata, India.
+
+\hypertarget{siddarth-david-sd}{%
+\subparagraph{Siddarth David (SD)}\label{siddarth-david-sd}}
+
+Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
+
+Doctors For You, Mumbai, India.
+
+\hypertarget{harris-solomon-hs}{%
+\subparagraph{Harris Solomon (HS)}\label{harris-solomon-hs}}
+
+Department of Cultural Anthropology and the Duke Global Health Institute, Duke University, Durham, USA.
+
+\hypertarget{megha-tandon-mt}{%
+\subparagraph{Megha Tandon (MT)}\label{megha-tandon-mt}}
+
+Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
+
+\hypertarget{keywords}{%
+\subsection{Keywords}\label{keywords}}
+
+Trauma management, Accident and emergency medicine, Education and training.
+
+\hypertarget{role-of-study-sponsor-and-funders}{%
+\subsection{Role of study sponsor and funders}\label{role-of-study-sponsor-and-funders}}
+
+The funding sources had no role in the design of this study nor during its execution, analyses, interpretation of the data, or decision to submit the results.
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+\textbf{Importance} Trauma life support training programmes aim to improve early trauma care but there is high-quality evidence to show that they improve patient outcomes.
+
+\textbf{Objective} To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support\textsuperscript{®} (ATLS\textsuperscript{®}) and Primary Trauma Care (PTC) with standard care on patient outcomes.
+
+\textbf{Design} A pilot pragmatic three-armed parallel, cluster randomised, controlled trial between April 2022 and February 2023. Patient follow up was 30 days.
+
+\textbf{Setting} Tertiary care hospitals across metropolitan areas in India.
+
+\textbf{Participants} Adult trauma patients and residents managing these patients.
+
+\textbf{Interventions} ATLS\textsuperscript{®} or PTC training for residents in the intervention arms.
+
+\textbf{Main Outcomes and Measures} The feasibility outcomes were consent rate, lost to follow up rate, pass rate, missing data rates, and differences in distribution between observed and data extracted from medical records. The primary patient outcome was all cause mortality at 30 days from the time of arrival to the emergency department.
+
+\textbf{Results} Two hospitals were randomised to ATLS\textsuperscript{®}, two to PTC, and three to standard care. We included 376 patients and 22 residents. The percentage of patients who consented to follow up was 77\% and the percentage of residents who consented to training was 100\%. The lost to follow up rate was 14\%. The pass rate was 100\%. The missing data was overall low for key variables. Data collected through observations were similar to data extracted from medical records, but there was more missing data in the extracted data. Twenty-two (16)\% patients died within 30 days in the standard care arm, one (4)\% patients in the ATLS\textsuperscript{®} arm, and three (5)\% patients in the PTC arm.
+
+\textbf{Conclusions and Relevance} Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS\textsuperscript{®}, PTC, and standard care on patient outcomes should be feasible after incorporating key lessons from this pilot.
+
+\textbf{Trial Registration} ClinicalTrials.gov (reg. no NCT05417243)
+
+\newpage
+
+\newpage
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year\textsuperscript{1}. Several trauma life support training programs have been developed to improve the early management of patients as they arrive at hospital by providing a structured framework to assessment and treatment\textsuperscript{2--4}.
+
+The proprietary Advanced Trauma Life Support\textsuperscript{®} (ATLS\textsuperscript{®}) and the low-cost alternative Primary Trauma Care (PTC) are the most established trauma life support training programmes with physicians trained in over 80 countries\textsuperscript{5,6}. Observational studies indicate that these programmes may improve patient outcomes\textsuperscript{7}, but there is no high quality evidence from controlled trials to support this\textsuperscript{2--4}.
+
+Several studies, including at least two randomised controlled trials\textsuperscript{8,9}, show that ATLS\textsuperscript{®} is associated with improved provider skills\textsuperscript{2}. Observational evidence indicates that PTC also leads to improved provider skills\textsuperscript{4}. The missing link is then how, and if, these improved skills translate into improved patient outcomes.
+
+Systematic reviews call for trials in settings where these programmes are not routinely implemented, but data needed to inform the planning of such a trial is missing. We aimed to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS\textsuperscript{®} and PTC with standard care, and to estimate probable effect sizes and the intracluster correlation coefficient needed for the sample size calculations of a full-scale trial.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\hypertarget{trial-design}{%
+\subsection{Trial Design}\label{trial-design}}
+
+We piloted a three-armed cluster randomised controlled trial\textsuperscript{10}. There were a standard care arm and two intervention arms, ATLS\textsuperscript{®} and PTC training. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). This design allowed us to assess outcomes both as final values and as change from baseline.
+
+\hypertarget{study-setting}{%
+\subsection{Study Setting}\label{study-setting}}
+
+We conducted this pilot study in seven Indian tertiary hospitals across metropolitan areas in India, where neither ATLS\textsuperscript{®}, PTC, nor any other trauma life support training program is routinely taught.
+
+\hypertarget{standard-care}{%
+\subsection{Standard Care}\label{standard-care}}
+
+Standard care varies across hospitals in India, but most surgical and emergency medicine departments in India organise their physicians in units. These units typically include three faculty members and three to twelve residents, who are assigned a specific day of the week when they manage the emergency department. In the emergency department, trauma patients are initially assessed by first- or second-year residents who also resuscitate patients, perform interventions and refer patients for imaging or other investigations. Compared with other settings where a trauma team approach is adopted, nurses and other healthcare professionals are only involved to a limited extent during the initial management.
+
+\hypertarget{intervention}{%
+\subsection{Intervention}\label{intervention}}
+
+In each intervention arm the residents in one or two units were trained in either ATLS\textsuperscript{®} or PTC. For the purpose of this pilot study, our target was to train a minimum of 75\% of residents in each unit. We did not train the units' faculty, because they are typically not directly involved in the initial management of trauma patients. The ATLS\textsuperscript{®} training was conducted in an ATLS\textsuperscript{®} certified training centre in Mumbai, according to the standard ATLS\textsuperscript{®} curriculum\textsuperscript{5}. The PTC training was conducted in New Delhi, according to the standard PTC curriculum\textsuperscript{6}. We did not modify or adapt the delivery or content of these programs during this pilot study.
+
+\hypertarget{eligibility-criteria-for-cluster-and-participants}{%
+\subsection{Eligibility Criteria for Cluster and Participants}\label{eligibility-criteria-for-cluster-and-participants}}
+
+\hypertarget{hospitals}{%
+\subsubsection{Hospitals}\label{hospitals}}
+
+We included tertiary care hospitals in metropolitan areas in India that admitted more than 400 adult patients with trauma each year, and that had operation theatres, X-ray, CT, and ultrasound facilities, and blood bank available around the clock.
+
+\hypertarget{clusters}{%
+\subsubsection{Clusters}\label{clusters}}
+
+We defined a cluster as one or more units of physicians providing trauma care in the emergency department of Indian tertiary care hospitals. To be eligible, units could have no more than 25\% of their physicians trained in either ATLS\textsuperscript{®}, PTC, or similar training programs before the start of the pilot study. Those residents who had received training in the last five years were considered as trained. The figure of 25\% was decided through consensus in the research team, to balance feasibility and contamination of results. The principal investigator at each hospital selected the units for training. We randomised on the hospital level to avoid contamination between intervention arms and the standard care arms.
+
+\hypertarget{residents}{%
+\subsubsection{Residents}\label{residents}}
+
+Resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year from the time of the training. Consent was sought from the residents in each of the intervention groups before they underwent the ATLS\textsuperscript{®} or PTC training.
+
+\hypertarget{patients}{%
+\subsubsection{Patients}\label{patients}}
+
+All adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
+
+\hypertarget{outcomes}{%
+\subsection{Outcomes}\label{outcomes}}
+
+We measured a large number of outcomes to help plan and assess the feasibility of a full scale trial. A complete list of outcomes is available as Supplementary Materials. Our main outcomes were:
+
+\begin{itemize}
+\tightlist
+\item
+  Consent rate of patients and residents. This was equal to the percentage of patients or residents who consented to be included, out of the total number of eligible patients or residents.
+\item
+  Lost to follow up rate. This applied only to patients and was equal to the percentage of patients whom did not complete 30 day follow up, out of all enrolled patients.
+\item
+  Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents that passed the training programme, out of the total number of trained residents.
+\item
+  Missing data rate. This applied to each outcome and variable and was equal to the percentage of missing values.
+\item
+  Differences in distributions of observed and extracted data. This applied to each outcome and variable and compared the distributions of data collected by observations versus extracted from hospital records.
+\item
+  All cause and in-hospital mortality within 30 days from the time of arrival to the emergency department among patients, measured and compared across trial arms as both final values and as change from baseline.
+\end{itemize}
+
+\hypertarget{participant-timeline-and-inclusion}{%
+\subsection{Participant Timeline and Inclusion}\label{participant-timeline-and-inclusion}}
+
+\hypertarget{patients-1}{%
+\subsubsection{Patients}\label{patients-1}}
+
+Arriving patients were screened for eligibility and consented, if conscious. Unconscious patients were consented by the patient's representative. This proxy consent was reaffirmed by the patient, on regaining consciousness. We followed up patients at 24 hours after arrival at the emergency department, and up to 30 days after arrival at the emergency department.
+
+\hypertarget{residents-1}{%
+\subsubsection{Residents}\label{residents-1}}
+
+Participating units were screened for eligibility once hospitals confirmed their participation. All residents in these units were approached to consent to training if their hospital was randomised to either of the intervention arms. The training was conducted approximately one month after the study started in that hospital.
+
+\hypertarget{sample-size}{%
+\subsection{Sample size}\label{sample-size}}
+
+We did not conduct a formal power calculation for this pilot study, as the primary aim was to assess feasibility. The time period was dictated by budget and time constraints.
+
+\hypertarget{allocation-and-blincing}{%
+\subsection{Allocation and blincing}\label{allocation-and-blincing}}
+
+We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. We did not blind investigators, residents or patients to the interventions.
+
+\hypertarget{data-collection}{%
+\subsection{Data Collection}\label{data-collection}}
+
+Data was collected over a four-month period. A research officer collected data on all patients who presented on the days and shifts when participating residents were assigned to trauma care. The research officers observed care and interviewed residents and patients, and also extracted data from the hospital records. We followed up admitted patients for their complications and other in-hospital outcome measures. Patients who were not admitted were followed up telephonically for mortality outcomes and quality of life outcomes.
+
+\hypertarget{variables}{%
+\subsection{Variables}\label{variables}}
+
+The research officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, times to and management details including imaging and surgery, and details of any injury sustained. For a subset of patients we also extracted data from medical records, to be able to compare their distributions with directly observed data.
+
+\hypertarget{patient-and-public-involvement}{%
+\subsection{Patient and public involvement}\label{patient-and-public-involvement}}
+
+We conducted community consultations to collect inputs from patients, their caregivers, patient groups, and resident doctors to be used in the selection of outcome measures and implementation of the full-scale trial. The results of these consultations will be published separately.
+
+\hypertarget{data-monitoring}{%
+\subsection{Data monitoring}\label{data-monitoring}}
+
+We conducted weekly online meetings to monitor the study and data collection. We conducted one interim analysis approximately halfway through the study, and decided to complete the study as residents and patients were consenting to be included in the study and key variables including mortality outcomes could be collected. We did not use a data monitoring committee.
+
+\hypertarget{statistical-methods}{%
+\subsection{Statistical Methods}\label{statistical-methods}}
+
+We analysed all data using descriptive statistics and did not perform any formal hypothesis\textsuperscript{11}. Quantitative variables are summarised as mean +/- standard deviation, median, interquartile range and range. Qualitative variables are presented as absolute numbers and percentages. We used an empty generalised linear mixed model to estimate the intracluster correlation coefficient.
+
+We compared patients outcomes in all possible combinations of trial arms. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
+
+Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively.
+
+\hypertarget{ethics-and-dissemination}{%
+\subsection{Ethics and Dissemination}\label{ethics-and-dissemination}}
+
+We were granted research ethics approval from the institutional ethics committees at each participating hospital.
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+We enrolled 376 trauma patients from 7 participating centres between April 2022 and February 2023. The standard care arm 202 patients, the ATLS\textsuperscript{®} arm enrolled 44 patients, and the PTC arm 130 patients. We trained a total of 22 residents, 7 in ATLS\textsuperscript{®}, and 15 in PTC.
+
+The study flow diagram is shown in Figure \ref{fig:flow-diagram} and patient sample characteristics across trial arms are shown in Table \ref{tab:sample-characteristics}. Overall, the number of females were 86 (23\%), the median (IQR) age was 33 (24, 46) years, and the median ISS (IQR) was 1 (0, 5). A total of 32 (10\%) patients died within 30 days after arrival to the emergency department.
+
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{consort-flow-diagram} \caption{Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care.}\label{fig:flow-diagram}
+\end{figure}
+
+\begingroup
+\fontsize{12.0pt}{14.4pt}\selectfont
+\setlength{\LTpost}{0mm}
+\begin{longtable}{lcccc}
+\toprule
+\textbf{Characteristic}\textsuperscript{\textit{1}} & \textbf{Standard care}  N = 202 & \textbf{ATLS}  N = 44 & \textbf{PTC}  N = 130 & \textbf{Overall}  N = 376 \\ 
+\midrule\addlinespace[2.5pt]
+Age, years, median (IQR) & 35 (25, 47) & 40 (30, 57) & 30 (22, 38) & 33 (24, 46) \\ 
+Elderly, n (\%) & 15 (7\%) & 6 (14\%) & 5 (4\%) & 26 (7\%) \\ 
+Sex, n (\%) &  &  &  &  \\ 
+    Male & 160 (79\%) & 33 (75\%) & 97 (75\%) & 290 (77\%) \\ 
+    Female & 42 (21\%) & 11 (25\%) & 33 (25\%) & 86 (23\%) \\ 
+Dominating injury type, n (\%) &  &  &  &  \\ 
+    Penetrating & 13 (6\%) & 3 (7\%) & 1 (1\%) & 17 (5\%) \\ 
+    Blunt & 189 (94\%) & 41 (93\%) & 129 (99\%) & 359 (95\%) \\ 
+Blunt multisystem trauma, n (\%) & 2 (1\%) & 2 (5\%) & 6 (5\%) & 10 (3\%) \\ 
+Severe traumatic brain injury, n (\%) & 10 (5\%) & 1 (2\%) & 5 (4\%) & 16 (4\%) \\ 
+    Missing & 1 & 0 & 0 & 1 \\ 
+Shock, n (\%) & 4 (2\%) & 2 (5\%) & 4 (3\%) & 10 (3\%) \\ 
+    Missing & 7 & 3 & 4 & 14 \\ 
+Respiratory rate, breaths per minute, median (IQR) & 20 (18, 22) & 21 (20, 24) & 21 (20, 24) & 20 (19, 23) \\ 
+    Missing & 7 & 0 & 5 & 12 \\ 
+Oxygen saturation, \%, median (IQR) & 98 (97, 99) & 98 (97, 99) & 98 (98, 99) & 98 (97, 99) \\ 
+    Missing & 1 & 1 & 0 & 2 \\ 
+Heart rate, beats per minute, median (IQR) & 86 (80, 96) & 87 (73, 100) & 90 (76, 104) & 86 (78, 100) \\ 
+    Missing & 1 & 1 & 1 & 3 \\ 
+Systolic blood pressure, mmHg, median (IQR) & 123 (112, 135) & 124 (113, 131) & 122 (111, 136) & 123 (112, 135) \\ 
+    Missing & 7 & 3 & 4 & 14 \\ 
+Glasgow Coma Scale, median (IQR) & 15 (15, 15) & 15 (15, 15) & 15 (15, 15) & 15 (15, 15) \\ 
+    Missing & 2 & 1 & 0 & 3 \\ 
+Injury Severity Score, median (IQR) & 1 (0, 4) & 3 (1, 4) & 2 (0, 5) & 1 (0, 5) \\ 
+\bottomrule
+\end{longtable}
+\begin{minipage}{\linewidth}
+\textsuperscript{\textit{1}}ATLS = Advanced Trauma Life Support; PTC = Prehospital Trauma Care\\
+\end{minipage}
+\endgroup
+
+\hypertarget{outcomes-1}{%
+\subsection{Outcomes}\label{outcomes-1}}
+
+The percentage of patients who consented to follow up was 77\% and the percentage of residents who consented to training was 100\%. The lost to follow up rate was 14\%. The pass rate was 100\%. The missing data rate ranged from 0 to 98, with details for selected variables shown in Table \ref@(tab:sample-characteristics). The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \ref@(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
+
+\begingroup
+\fontsize{12.0pt}{14.4pt}\selectfont
+\setlength{\LTpost}{0mm}
+\begin{longtable}{lcc}
+\toprule
+\textbf{Characteristic} & \textbf{Directly observed}  N = 55\textsuperscript{\textit{1}} & \textbf{Medical records}  N = 55\textsuperscript{\textit{1}} \\ 
+\midrule\addlinespace[2.5pt]
+Age, years & 34 (27, 48) & 34 (25, 50) \\ 
+    Missing & 0 & 22 \\ 
+Sex &  &  \\ 
+    Female & 10 (18\%) & 6 (18\%) \\ 
+    Male & 45 (82\%) & 27 (82\%) \\ 
+    Missing & 0 & 22 \\ 
+Dominating injury type &  &  \\ 
+    Blunt & 52 (95\%) & 29 (91\%) \\ 
+    Penetrating & 3 (5\%) & 3 (9\%) \\ 
+    Missing & 0 & 23 \\ 
+Respiratory rate, breaths per minute & 21 (18, 24) & 18 (16, 20) \\ 
+    Missing & 0 & 37 \\ 
+Oxygen saturation, \% & 98 (98, 99) & 98 (97, 100) \\ 
+    Missing & 0 & 29 \\ 
+Heart rate, beats per minute & 85 (80, 98) & 87 (84, 93) \\ 
+    Missing & 0 & 19 \\ 
+Systolic blood pressure, mmHg & 123 (112, 136) & 118 (110, 128) \\ 
+    Missing & 1 & 18 \\ 
+\bottomrule
+\end{longtable}
+\begin{minipage}{\linewidth}
+\textsuperscript{\textit{1}}Median (Q1, Q3); n (\%)\\
+\end{minipage}
+\endgroup
+
+After training, a total of 22 (16\%) patients in the standard care arm died within 30 days, compared to 1 (4\%) patients in the ATLS\textsuperscript{®} arm and 3 (5\%) patients in the PTC arm. The corresponding figures for in-hospital mortality were 19 (12\%)\%, 1 (4\%)\%, and 3 (4\%)\%, as shown in Table \ref{tab:outcomes}. Overall, both in-hospital and 30-day mortality were substantially lower in the ATLS\textsuperscript{®} and PTC arms compared to the standard care arm, but the absolute numbers of deaths in the ATLS and PTC arms were very small. The results for all other outcomes are shown in Supplementary Materials.
+
+\begingroup
+\fontsize{12.0pt}{14.4pt}\selectfont
+\setlength{\LTpost}{0mm}
+\begin{longtable}{lcccccc}
+\toprule
+ &  &  &  & \multicolumn{3}{c}{\textbf{Differences}} \\ 
+\cmidrule(lr){5-7}
+\textbf{Outcome} & \textbf{Standard care}  N = 161\textsuperscript{\textit{1}} & \textbf{ATLS}  N = 28\textsuperscript{\textit{1}} & \textbf{PTC}  N = 73\textsuperscript{\textit{1}} & \textbf{Standard care vs. ATLS} & \textbf{Standard care vs. PTC} & \textbf{ATLS vs. PTC} \\ 
+\midrule\addlinespace[2.5pt]
+30 day mortality & 22 (16\%) & 1 (3.8\%) & 3 (4.9\%) & 12% & 11% & -1.1% \\ 
+    Unknown & 26 & 2 & 12 &  &  &  \\ 
+In-hospital mortality & 19 (12\%) & 1 (3.7\%) & 3 (4.1\%) & 8.2% & 7.8% & -0.41% \\ 
+    Unknown & 2 & 1 & 0 &  &  &  \\ 
+\bottomrule
+\end{longtable}
+\begin{minipage}{\linewidth}
+\textsuperscript{\textit{1}}n (\%)\\
+\end{minipage}
+\endgroup
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+We show that it is feasible to conduct and collect data for a cluster randomized controlled trial comparing ATLS\textsuperscript{®} with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables, especially cause of death and complications (reported in Supplementary materials) had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. Similarly, the missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data
+
+We found that the ATLS\textsuperscript{®} and PTC arms had lower 30-day mortality compared to the PTC and standard care arms. These findings hints towards a potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS\textsuperscript{®} arm having the smallest sample size. This difference most likely resulted from the randomisation process with a small number of heterogeneous clusters. This heterogeneity highlights the importance of taken different cluster sizes into account in the design of the full scale trial.
+
+All-cause 30-day mortality was missing in 14\% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01\% of patients\textsuperscript{12,13}. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only 1\%, comparable to previous trials.
+
+During the course of this pilot we deviated from the protocol in several ways, and provide a detailed list as Supplementary
+material. Some key limitations of this pilot and therefore lessons to be learned and factored into the design of the full-scale trial include the lower than expected enrolment rates of some centres, centre specific management routines, and difficulties in collecting data on complications and cause of death.
+
+We minimised the impact of the lower than expected enrolment rates by including a seventh centre, but on-site observations of patient volumes are likely to be needed for the full-scale trial. We decided to be pragmatic in selecting which residents to train and how to structure the data collection depending on how and by whom patients were initially managed, but this flexibility will need to be built into the full-scale trial protocol. Finally, we found that data on complications and cause of death were hard to identify and therefore the full-scale trial will need to include longer training of research officers.
+
+Previous studies on the effect of in-hospital trauma life support training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results\textsuperscript{14--18}. Studies from Trinidad and Tobago, El Salvador, Rwanda, and Cambodia found no significant effect on patient mortality after implementing in-hospital trauma life support training\textsuperscript{14--17}, whereas one study from China that included 820 patients found a significant reduction in mortality, from 20 to 15\%, after implementing
+ATLS\textsuperscript{®}\textsuperscript{18}.
+
+We conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
+
+\hypertarget{contributorship-statement}{%
+\section{Contributorship statement}\label{contributorship-statement}}
+
+\hypertarget{competing-interests}{%
+\section{Competing Interests}\label{competing-interests}}
+
+Several authors are ATLS\textsuperscript{®} and/or PTC instructors.
+
+\hypertarget{funding}{%
+\section{Funding}\label{funding}}
+
+Doctors for You through grants awarded to Karolinska Institutet by the Swedish Research Council (grant number 2020-03779) and the Laerdal Foundation (grant number 2021-0048).
+
+\hypertarget{data-sharing-statement}{%
+\section{Data Sharing Statement}\label{data-sharing-statement}}
+
+The final anonymized dataset and code for analysis are released publicly.
+
+\hypertarget{protocol-deviations}{%
+\section{Protocol Deviations}\label{protocol-deviations}}
+
+\hypertarget{trial-registration-1}{%
+\subsection{Trial Registration}\label{trial-registration-1}}
+
+We intended to also register our trial with Clinical Trials Registry - India and will do so with the full-scale trial.
+
+\hypertarget{outcomes-across-subgroups}{%
+\subsection{Outcomes across subgroups}\label{outcomes-across-subgroups}}
+
+Because of small numbers in the pre-specified subgroups we decided to report only descriptive data on these subgroups.
+
+\hypertarget{number-of-participating-centres}{%
+\subsection{Number of Participating Centres}\label{number-of-participating-centres}}
+
+We ended up recruiting seven centres instead of six and therefore assigned two centres each to the intervention arms and three centres to the control arm.
+
+\hypertarget{resident-participants}{%
+\subsection{Resident Participants}\label{resident-participants}}
+
+Emergency medicine in addition to surgery.
+
+\hypertarget{periodic-suverys-to-residents}{%
+\subsection{Periodic suverys to residents}\label{periodic-suverys-to-residents}}
+
+We did not distribute periodic surveys to the participating residents but discussed challenges and suggestions that they had regarding the scheduling or implementation of the training programs.
+
+\hypertarget{follow-up-of-residents}{%
+\subsection{Follow up of residents}\label{follow-up-of-residents}}
+
+We stated that resident participants would be followed up 30 days after training, but revised this to follow them up after the end of the study period.
+
+\hypertarget{data-collection-from-records}{%
+\subsection{Data collection from records}\label{data-collection-from-records}}
+
+We decided to extract data from medical records only for a subset of patients to reduce the research officers' workload.
+
+\hypertarget{selection-of-units-for-training}{%
+\subsection{Selection of units for training}\label{selection-of-units-for-training}}
+
+We planned to use simple random sampling to select units if there were more than two eligible units in a hospital but instead the hospital principal investigator decided which units to train.
+
+\hypertarget{timing-of-resident-consent}{%
+\subsection{Timing of resident consent}\label{timing-of-resident-consent}}
+
+We had initially planned to ask residents for consent before
+randomisation, but this was not possible because of logistical issues the units were only finalised after the hospitals had been randomised. Residents were therefore approached for consent after randomisation but before training.
+
+\hypertarget{analysis-level-of-feasibility-outcomes}{%
+\subsection{Analysis level of feasibility outcomes}\label{analysis-level-of-feasibility-outcomes}}
+
+We had planned to analyse feasibility outcomes on both an overall and individual cluster level, but we only analysed them on an overall level.
+
+\pagebreak
+
+\hypertarget{supplementary-material}{%
+\section{Supplementary material}\label{supplementary-material}}
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-injuries2020}{}}%
+\CSLLeftMargin{1. }
+\CSLRightInline{GBD 2019 Diseases and Injuries Collaborators. \href{}{Injuries---level 1 cause}. \emph{The Lancet} \textbf{396}, (2020).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Mohammad2013}{}}%
+\CSLLeftMargin{2. }
+\CSLRightInline{Mohammad, A. \emph{et al.} \href{https://doi.org/10.1007/s00268-013-2294-0}{Educational and clinical impact of advanced trauma life support (ATLS) courses: A systematic review}. \emph{World Journal of Surgery} \textbf{38}, 322--329 (2013).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jayaraman2014}{}}%
+\CSLLeftMargin{3. }
+\CSLRightInline{Jayaraman, S. \emph{et al.} \href{https://doi.org/10.1002/14651858.cd004173.pub4}{Advanced trauma life support training for hospital staff}. \emph{Cochrane Database of Systematic Reviews} (2014).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Kadhum2020}{}}%
+\CSLLeftMargin{4. }
+\CSLRightInline{Kadhum, M. \emph{et al.} \href{https://doi.org/10.1016/j.injury.2019.10.084}{Are primary trauma care (PTC) courses beneficial in low- and middle-income countries - a systematic review}. \emph{Injury} \textbf{51}, 136--141 (2020).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-acsAtls2018}{}}%
+\CSLLeftMargin{5. }
+\CSLRightInline{American College of Surgeons, C. on T. \emph{Advanced trauma life support® student course manual}. (American College of Surgeons, 2018).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ptcfPtc2018}{}}%
+\CSLLeftMargin{6. }
+\CSLRightInline{Foundation, P. T. C. \emph{Primary trauma care course manual for trauma management in locations wih limited resources}. (Primary Trauma Care Foundation, 2018).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jin2021}{}}%
+\CSLLeftMargin{7. }
+\CSLRightInline{Jin, J. \emph{et al.} \href{https://doi.org/10.1007/s00268-021-06065-9}{Effectiveness of quality improvement processes, interventions, and structure in trauma systems in low- and middle-income countries: A systematic review and meta-analysis}. \emph{World Journal of Surgery} \textbf{45}, 1982--1998 (2021).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Ali1996}{}}%
+\CSLLeftMargin{8. }
+\CSLRightInline{Ali, J. \emph{et al.} \href{https://doi.org/10.1007/s002689900171}{Teaching effectiveness of the advanced trauma life support program as demonstrated by an objective structured clinical examination for practicing physicians}. \emph{World Journal of Surgery} \textbf{20}, 1121--1126 (1996).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Ali1999}{}}%
+\CSLLeftMargin{9. }
+\CSLRightInline{Ali, J. \emph{et al.} \href{https://doi.org/10.1097/00005373-199901000-00013}{Comparison of performance of interns completing the old (1993) and new interactive (1997) advanced trauma life support courses}. \emph{The Journal of Trauma: Injury, Infection, and Critical Care} \textbf{46}, 80--86 (1999).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-GerdinWuxe4rnberg2022}{}}%
+\CSLLeftMargin{10. }
+\CSLRightInline{Gerdin Wärnberg, M. \emph{et al.} \href{https://doi.org/10.1136/bmjopen-2021-057504}{A pilot multicentre cluster randomised trial to compare the effect of trauma life support training programmes on patient and provider outcomes}. \emph{BMJ Open} \textbf{12}, e057504 (2022).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lee2014}{}}%
+\CSLLeftMargin{11. }
+\CSLRightInline{Lee, E. C. \emph{et al.} \href{https://doi.org/10.1186/1471-2288-14-41}{The statistical interpretation of pilot trials: Should significance thresholds be reconsidered?} \emph{BMC Medical Research Methodology} \textbf{14}, (2014).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Roberts2013}{}}%
+\CSLLeftMargin{12. }
+\CSLRightInline{Roberts, I. \emph{et al.} \href{https://doi.org/10.3310/hta17100}{The CRASH-2 trial: A randomised controlled trial and economic evaluation of the effects of tranexamic acid on death, vascular occlusive events and transfusion requirement in bleeding trauma patients}. \emph{Health Technol Assess} \textbf{17}, (2013).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Sierink2016}{}}%
+\CSLLeftMargin{13. }
+\CSLRightInline{Sierink, J. C. \emph{et al.} \href{https://doi.org/10.1016/s0140-6736(16)30932-1}{Immediate total-body CT scanning versus conventional imaging and selective CT scanning in patients with severe trauma (REACT-2): A randomised controlled trial}. \emph{The Lancet} \textbf{388}, 673--683 (2016).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Ariyanayagam1992}{}}%
+\CSLLeftMargin{14. }
+\CSLRightInline{Ariyanayagam, D. \emph{et al.} The impact of the ATLS course on traffic accident mortality in trinidad and tobago. \emph{West Indian Medical Journal} \textbf{41}, 72--74 (1992).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Ciouxe8Peuxf1a2016}{}}%
+\CSLLeftMargin{15. }
+\CSLRightInline{Cioè-Peña, E. \emph{et al.} \href{https://doi.org/10.1177/1460408616672491}{Development and implementation of a hospital-based trauma response system in an urban hospital in san salvador, el salvador}. \emph{Trauma} \textbf{19}, 118--126 (2016).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Petroze2014}{}}%
+\CSLLeftMargin{16. }
+\CSLRightInline{Petroze, R. T. \emph{et al.} \href{https://doi.org/10.1007/s00268-014-2899-y}{Can focused trauma education initiatives reduce mortality or improve resource utilization in a low-resource setting?} \emph{World Journal of Surgery} \textbf{39}, 926--933 (2014).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-VanHeng2008}{}}%
+\CSLLeftMargin{17. }
+\CSLRightInline{Van Heng, Y. \emph{et al.} \href{https://doi.org/10.1017/s1049023x00006282}{Non-doctors as trauma surgeons? A controlled study of trauma training for non-graduate surgeons in rural cambodia}. \emph{Prehospital and Disaster Medicine} \textbf{23}, 483--489 (2008).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wang2010}{}}%
+\CSLLeftMargin{18. }
+\CSLRightInline{Wang, P. \emph{et al.} Comparison of severe trauma care effect before and after advanced trauma life support training. \emph{Chinese Journal of Traumatology (English Edition)} \textbf{13}, 341--344 (2010).}
+
+\end{CSLReferences}
+
+\end{document}
