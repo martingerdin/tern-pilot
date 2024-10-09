@@ -6,14 +6,14 @@ author: Trauma life support training Effectiveness Research Network (TERN) colla
 bibliography: bibliography.bib
 csl: nature.csl
 output:
-    bookdown::pdf_document2:
-      toc: false
-      number_sections: false
     md_document: default
     bookdown::word_document2:
       toc: false
       number_sections: false
       reference_docx: "reference.docx"
+#    bookdown::pdf_document2:
+#      toc:false
+#      number_sections:false
 ---
 
 ## Trial registration
