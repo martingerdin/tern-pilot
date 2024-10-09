@@ -34,7 +34,6 @@ create_outcome_table_with_differences <- function(data) {
     )) |>
         modify_spanning_header(c(stat_1_1, stat_2_1, stat_3_1) ~ "**Arms**") |>
         modify_spanning_header(c(estimate_2, estimate_3, estimate_4) ~ "**Differences**") |>
-        modify_caption("Mortality after training by the trial arms standard care, Advanced Trauma Life Support (ATLS) and Primary Trauma Care (PTC)") |>
         modify_table_styling(columns = everything(), missing = "")
 
     # Return outcome table

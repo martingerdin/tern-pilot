@@ -172,7 +172,7 @@ prepare_data <- function(data, codebook = NULL) {
     labelled::var_label(prepared.data$penetrating.trauma) <- "Penetrating trauma"
     labelled::var_label(prepared.data$shock) <- "Shock"
     labelled::var_label(prepared.data$severe.tbi) <- "Severe traumatic brain injury"
-    labelled::var_label(prepared.data$elderly) <- "Elderly"
+    labelled::var_label(prepared.data$elderly) <- "Elderly (Age ≥ 65 years)"
     labelled::var_label(prepared.data$male) <- "Male"
     labelled::var_label(prepared.data$female) <- "Female"
 

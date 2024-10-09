@@ -51,7 +51,6 @@ stratified.table.data <- data %>%
 sample.characteristics.table <- create_descriptive_table(stratified.table.data,
     strata = "arm", show.all.levels = FALSE, include.overall = TRUE
 ) %>%
-    gtsummary::modify_caption("Patient sample characteristics") %>%
     gtsummary::modify_table_styling(
         column = label,
         footnote_abbrev = "ATLS = Advanced Trauma Life Support; PTC = Prehospital Trauma Care"
