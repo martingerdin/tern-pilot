@@ -142,6 +142,9 @@ median.iss <- inline_text(overall.sample.characteristics.table,
 m30d <- inline_text(overall.sample.characteristics.table,
     variable = outcomes__alive_after_30_days
 )
+inhosp <- inline_text(overall.sample.characteristics.table,
+    variable = outcomes__discharge_alive
+)
 
 ## Crude 30 day mortality
 m30d.standard.care <- inline_text(post.training.characteristics.table,

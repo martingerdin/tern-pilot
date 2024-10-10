@@ -55,7 +55,13 @@ create_observed_vs_extracted_comparison_table <- function(data) {
     comparison.table <- create_descriptive_table(table.data,
         strata = "collection.mode",
         include.overall = FALSE
-    )
+    ) %>%
+        add_stat_label(
+            label = list(
+                all_continuous() ~ "median (IQR)",
+                all_categorical() ~ "n (%)"
+            )
+        )
 
     ## Return result
     return(comparison.table)

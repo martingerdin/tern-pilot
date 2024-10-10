@@ -6,11 +6,11 @@ author: Trauma life support training Effectiveness Research Network (TERN) colla
 bibliography: bibliography.bib
 csl: nature.csl
 output:
-    md_document: default
-    bookdown::word_document2:
+    officedown::rdocx_document:
       toc: false
       number_sections: false
       reference_docx: "reference.docx"
+#    md_document: default
 #    bookdown::pdf_document2:
 #      toc:false
 #      number_sections:false
@@ -266,7 +266,7 @@ Participating units were screened for eligibility once hospitals confirmed their
 ## Sample size
 We did not conduct a formal power calculation for this pilot study, as the primary aim was to assess the feasibility of the trial logistics and research methods. <!--The time period was dictated by budget and time constraints.-->
 
-## Allocation and blincing
+## Allocation and blinding
 We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. We did not blind investigators, residents or patients to the interventions. 
 
 ## Data Collection
@@ -301,17 +301,17 @@ We were granted research ethics approval from the institutional ethics committee
 
 # Results
 
-We enrolled `r n.patients` trauma patients from `r n.centres` participating centres between `r start.date` and `r end.date`. The standard care arm enrolled `r n.control` patients, the ATLS^®^ arm enrolled `r n.atls` patients, and the PTC arm enrolled `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_test(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
+We enrolled `r n.patients` trauma patients from `r number_to_text(n.centres)` participating centres between `r start.date` and `r end.date`. The standard care arm enrolled `r n.control` patients, the ATLS^®^ arm enrolled `r n.atls` patients, and the PTC arm enrolled `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
 
-The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department.  
+The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital. The intracluster correlation coefficients was `r icc.m30d` for 30-day mortality and `r icc.inhosp` for in-hospital mortality.  
 
-```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care.", out.width="50%"}
+```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care.", out.width="30%", out.height="30%"}
 knitr::include_graphics("consort-flow-diagram.png")
 ```
 
-```{r sample-characteristics, echo = FALSE, results = "asis"}
+```{r sample-characteristics, echo = FALSE, results = "asis", tab.cap = "Patient sample characteristics"}
 sample.characteristics.table |>
-  gtsummary::modify_caption("Patient sample characteristics")
+  gtsummary::as_flex_table()
 ```
 
 ## Outcomes
@@ -336,24 +336,23 @@ We show that it is feasible to conduct and collect data for a cluster randomized
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
 
-We found that the ATLS^®^ and PTC arms had lower 30-day mortality compared to the PTC and standard care arms. These findings could hint towards a potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS^®^ arm having the smallest sample size. This difference most likely resulted from the randomisation process with a small number of heterogeneous clusters. This heterogeneity highlights the importance of taken different cluster sizes into account in the design of the full scale trial.
+We found that the ATLS^®^ and PTC arms had lower 30-day mortality compared to the PTC and standard care arms. This finding could hint towards a potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS^®^ arm having the smallest sample size. This difference most likely resulted from the randomisation process with a small number of heterogeneous clusters. This heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.
 
-All-cause 30-day mortality was missing in `r rate.lost.to.follow.up`% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01% of patients [@Roberts2013; @Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only `r p.missing.in.hospital.mortality`%, comparable to previous trials.
+All-cause 30-day mortality was missing in `r rate.lost.to.follow.up`% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01% of patients [@Roberts2013; @Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only `r p.missing.in.hospital.mortality`%, which is comparable to previous trials.
 
 <!-- Consider discussing non-inferiority vs superiority. -->
 
 During the course of this pilot we deviated from the protocol in several ways, and provide a detailed list as Supplementary
 material. Some key limitations of this pilot and therefore lessons to be learned and factored into the design of the full-scale trial include the lower than expected enrolment rates of some centres, centre specific management routines, and difficulties in collecting data on complications and cause of death. 
 
-We minimised the impact of the lower than expected enrolment rates by including a seventh centre, but on-site observations of patient volumes are likely to be needed for the full-scale trial. We decided to be pragmatic in selecting which residents to train and how to structure the data collection depending on how and by whom patients were initially managed, but this flexibility will need to be built into the full-scale trial protocol. Finally, we found that data on complications and cause of death were hard to identify and therefore the full-scale trial will need to include longer training of research officers.
+We attempted to minimse the impact of the lower than expected enrolment rates by including a seventh centre, but careful assessments of patient volumes as part of the screening process will be needed for the full-scale trial. We decided to be pragmatic in selecting which residents to train and how to structure the data collection depending on how and by whom patients were initially managed, but this flexibility will need to be built into the full-scale trial protocol. Finally, we found that data on complications and cause of death were hard to identify and therefore the full-scale trial will need to include longer training of research officers if this data is to be collected.
 
 <!-- Consider discussing waiver of informed consent for initial 
 data collection -->
 
-Previous studies on the effect of in-hospital trauma life support training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008; @Wang2010]. Studies from Trinidad and Tobago, El Salvador, Rwanda, and Cambodia found no significant effect on patient mortality after implementing in-hospital trauma life support training [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008], whereas one study from China that included 820 patients found a significant reduction in mortality, from 20 to 15%, after implementing
-ATLS^®^ [@Wang2010].
+Previous studies on the effect of in-hospital trauma life support training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008; @Wang2010]. Studies from Trinidad and Tobago, El Salvador, Rwanda, and Cambodia found no significant effect on patient mortality after implementing in-hospital trauma life support training [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008], whereas one study from China that included 820 patients found a significant reduction in mortality, from 20 to 15%, after implementing ATLS^®^ [@Wang2010]. 
 
-We conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
+Considering the widespread use of trauma life support traning, several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. Our study represent the first published attempt at a controlled trial of the effect of trauma life support traning och patient outcomes, and we conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
  
 # Contributorship statement
 <!--

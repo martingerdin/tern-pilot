@@ -28,7 +28,8 @@ get_basic_results <- function(data) {
         "10263" = 2
     )
     results$p.consent <- round(nrow(data) / (nrow(data) + sum(unlist(n.no.consent))) * 100)
-    results$icc <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
+    results$icc.m30d <- estimate_icc("outcomes__alive_after_30_days", "id__reg_hospital_id", data)
+    results$icc.inhosp <- estimate_icc("outcomes__discharge_alive", "id__reg_hospital_id", data)
     results$n.patients <- nrow(data)
 
     # Resident data

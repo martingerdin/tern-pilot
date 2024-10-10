@@ -92,6 +92,9 @@ and Research, Kolkata, India.
 
 ##### Tamal Khan
 
+Senior Research fellow, All India Institute of Medical Sciences, New
+Delhi, India.
+
 ## Non-author contributors
 
 Trauma life support Effectiveness Research Network (TERN) collaborators:
@@ -190,9 +193,8 @@ submit the results.
 
 # Abstract
 
-**Importance** Trauma life support training programmes aim to improve
-early trauma care but there is high-quality evidence to show that they
-improve patient outcomes.
+**Importance** There is no high-quality evidence to show that trauma
+life support training programmes improve patient outcomes.
 
 **Objective** To assess the feasibility of conducting a cluster
 randomised controlled trial comparing the effect of Advanced Trauma Life
@@ -225,12 +227,12 @@ lost to follow up rate was 14%. The pass rate was 100%. The missing data
 was overall low for key variables. Data collected through observations
 were similar to data extracted from medical records, but there was more
 missing data in the extracted data. Twenty-two (16)% patients died
-within 30 days in the standard care arm, one (4)% patients in the
+within 30 days in the standard care arm, one (4)% patient in the
 ATLS<sup>®</sup> arm, and three (5)% patients in the PTC arm.
 
 **Conclusions and Relevance** Conducting a full-scale cluster randomised
 controlled trial comparing the effects of ATLS<sup>®</sup>, PTC, and
-standard care on patient outcomes should be feasible after incorporating
+standard care on patient outcomes will be feasible after incorporating
 key lessons from this pilot.
 
 **Trial Registration** ClinicalTrials.gov (reg. no NCT05417243)
@@ -244,6 +246,7 @@ Strengths and limitations of this study:
 - Prospective data collection with direct observations by dedicated research officers.
 - Participating centers' heterogeneity may affect the study estimates and bias the results.
 -->
+
 # Introduction
 
 Trauma, defined as the clinical entity composed of physical injury and
@@ -256,10 +259,11 @@ treatment<sup>2–4</sup>.
 The proprietary Advanced Trauma Life Support<sup>®</sup>
 (ATLS<sup>®</sup>) and the low-cost alternative Primary Trauma Care
 (PTC) are the most established trauma life support training programmes
-with physicians trained in over 80 countries<sup>5,6</sup>.
-Observational studies indicate that these programmes may improve patient
-outcomes<sup>7</sup>, but there is no high quality evidence from
-controlled trials to support this<sup>2–4</sup>.
+with over a million physicians trained in over 80
+countries<sup>5,6</sup>. Observational studies indicate that these
+programmes may improve patient outcomes<sup>7</sup>, but there is no
+high quality evidence from controlled trials to support
+this<sup>2–4</sup>.
 
 Several studies, including at least two randomised controlled
 trials<sup>8,9</sup>, show that ATLS<sup>®</sup> is associated with
@@ -428,8 +432,9 @@ approximately one month after the study started in that hospital.
 ## Sample size
 
 We did not conduct a formal power calculation for this pilot study, as
-the primary aim was to assess feasibility. The time period was dictated
-by budget and time constraints.
+the primary aim was to assess the feasibility of the trial logistics and
+research methods.
+<!--The time period was dictated by budget and time constraints.-->
 
 ## Allocation and blincing
 
@@ -454,9 +459,10 @@ The research officers collected data on demographics, time of injury to
 arrival at the participating hospital, time to recording vital signs,
 vital signs, times to and management details including imaging and
 surgery, and details of any injury sustained. For a subset of patients
-we also extracted data from medical records, to be able to compare their
-distributions with directly observed
-data.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
+we also extracted data from medical records, to be able to compare the
+distribution of this data with the distribution of data collected
+through direct
+observations.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
 
 ## Patient and public involvement
 
@@ -482,12 +488,11 @@ monitoring committee.
 ## Statistical Methods
 
 We analysed all data using descriptive statistics and did not perform
-any formal hypothesis<sup>11</sup>. Quantitative variables are
-summarised as mean +/- standard deviation, median, interquartile range
-and range. Qualitative variables are presented as absolute numbers and
-percentages. We used an empty generalised linear mixed model
-<!-- see [@Sommet2017] --> to estimate the intracluster correlation
-coefficient.
+any formal hypothesis tests<sup>11</sup>. Quantitative variables are
+summarised as median and interquartile range. Qualitative variables are
+presented as absolute numbers and percentages. We used an empty
+generalised linear mixed model <!-- see [@Sommet2017] --> to estimate
+the intracluster correlation coefficient.
 
 We compared patients outcomes in all possible combinations of trial
 arms. In each combination we compared both differences in final values
@@ -516,41 +521,43 @@ committees at each participating hospital.
 # Results
 
 We enrolled 376 trauma patients from 7 participating centres between
-April 2022 and February 2023. The standard care arm 202 patients, the
-ATLS<sup>®</sup> arm enrolled 44 patients, and the PTC arm 130 patients.
-We trained a total of 22 residents, 7 in ATLS<sup>®</sup>, and 15 in
-PTC.
+April 2022 and February 2023. The standard care arm enrolled 202
+patients, the ATLS<sup>®</sup> arm enrolled 44 patients, and the PTC arm
+enrolled 130 patients. We trained a total of 22 residents, seven in
+ATLS<sup>®</sup>, and 15 in PTC.
 
 The study flow diagram is shown in Figure @ref(fig:flow-diagram) and
 patient sample characteristics across trial arms are shown in Table
 @ref(tab:sample-characteristics). Overall, the number of females were 86
 (23%), the median (IQR) age was 33 (24, 46) years, and the median ISS
 (IQR) was 1 (0, 5). A total of 32 (10%) patients died within 30 days
-after arrival to the emergency department.
+after arrival to the emergency department, and 29 (8%) patients died in
+hospital. The intracluster correlation coefficients was 0.022 for 30-day
+mortality and 0.017 for in-hospital mortality.
 
-<img src="consort-flow-diagram.png" alt="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care." width="50%" />
+<img src="consort-flow-diagram.png" alt="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care." width="30%" />
 <p class="caption">
 Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support;
 PTC, Primary Trauma Care.
 </p>
 
-<div id="qmfjdkgyvs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qmfjdkgyvs table {
+<div id="vicpmkojtm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vicpmkojtm table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qmfjdkgyvs thead, #qmfjdkgyvs tbody, #qmfjdkgyvs tfoot, #qmfjdkgyvs tr, #qmfjdkgyvs td, #qmfjdkgyvs th {
+#vicpmkojtm thead, #vicpmkojtm tbody, #vicpmkojtm tfoot, #vicpmkojtm tr, #vicpmkojtm td, #vicpmkojtm th {
   border-style: none;
 }
 
-#qmfjdkgyvs p {
+#vicpmkojtm p {
   margin: 0;
   padding: 0;
 }
 
-#qmfjdkgyvs .gt_table {
+#vicpmkojtm .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -576,12 +583,12 @@ PTC, Primary Trauma Care.
   border-left-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_caption {
+#vicpmkojtm .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qmfjdkgyvs .gt_title {
+#vicpmkojtm .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -593,7 +600,7 @@ PTC, Primary Trauma Care.
   border-bottom-width: 0;
 }
 
-#qmfjdkgyvs .gt_subtitle {
+#vicpmkojtm .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -605,7 +612,7 @@ PTC, Primary Trauma Care.
   border-top-width: 0;
 }
 
-#qmfjdkgyvs .gt_heading {
+#vicpmkojtm .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -617,13 +624,13 @@ PTC, Primary Trauma Care.
   border-right-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_bottom_border {
+#vicpmkojtm .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_col_headings {
+#vicpmkojtm .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -638,7 +645,7 @@ PTC, Primary Trauma Care.
   border-right-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_col_heading {
+#vicpmkojtm .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -658,7 +665,7 @@ PTC, Primary Trauma Care.
   overflow-x: hidden;
 }
 
-#qmfjdkgyvs .gt_column_spanner_outer {
+#vicpmkojtm .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -670,15 +677,15 @@ PTC, Primary Trauma Care.
   padding-right: 4px;
 }
 
-#qmfjdkgyvs .gt_column_spanner_outer:first-child {
+#vicpmkojtm .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qmfjdkgyvs .gt_column_spanner_outer:last-child {
+#vicpmkojtm .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qmfjdkgyvs .gt_column_spanner {
+#vicpmkojtm .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -690,11 +697,11 @@ PTC, Primary Trauma Care.
   width: 100%;
 }
 
-#qmfjdkgyvs .gt_spanner_row {
+#vicpmkojtm .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qmfjdkgyvs .gt_group_heading {
+#vicpmkojtm .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -720,7 +727,7 @@ PTC, Primary Trauma Care.
   text-align: left;
 }
 
-#qmfjdkgyvs .gt_empty_group_heading {
+#vicpmkojtm .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -735,15 +742,15 @@ PTC, Primary Trauma Care.
   vertical-align: middle;
 }
 
-#qmfjdkgyvs .gt_from_md > :first-child {
+#vicpmkojtm .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qmfjdkgyvs .gt_from_md > :last-child {
+#vicpmkojtm .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qmfjdkgyvs .gt_row {
+#vicpmkojtm .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -762,7 +769,7 @@ PTC, Primary Trauma Care.
   overflow-x: hidden;
 }
 
-#qmfjdkgyvs .gt_stub {
+#vicpmkojtm .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -775,7 +782,7 @@ PTC, Primary Trauma Care.
   padding-right: 5px;
 }
 
-#qmfjdkgyvs .gt_stub_row_group {
+#vicpmkojtm .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -789,15 +796,15 @@ PTC, Primary Trauma Care.
   vertical-align: top;
 }
 
-#qmfjdkgyvs .gt_row_group_first td {
+#vicpmkojtm .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qmfjdkgyvs .gt_row_group_first th {
+#vicpmkojtm .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qmfjdkgyvs .gt_summary_row {
+#vicpmkojtm .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -807,16 +814,16 @@ PTC, Primary Trauma Care.
   padding-right: 5px;
 }
 
-#qmfjdkgyvs .gt_first_summary_row {
+#vicpmkojtm .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_first_summary_row.thick {
+#vicpmkojtm .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qmfjdkgyvs .gt_last_summary_row {
+#vicpmkojtm .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -826,7 +833,7 @@ PTC, Primary Trauma Care.
   border-bottom-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_grand_summary_row {
+#vicpmkojtm .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -836,7 +843,7 @@ PTC, Primary Trauma Care.
   padding-right: 5px;
 }
 
-#qmfjdkgyvs .gt_first_grand_summary_row {
+#vicpmkojtm .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -846,7 +853,7 @@ PTC, Primary Trauma Care.
   border-top-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_last_grand_summary_row_top {
+#vicpmkojtm .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -856,11 +863,11 @@ PTC, Primary Trauma Care.
   border-bottom-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_striped {
+#vicpmkojtm .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qmfjdkgyvs .gt_table_body {
+#vicpmkojtm .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -869,7 +876,7 @@ PTC, Primary Trauma Care.
   border-bottom-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_footnotes {
+#vicpmkojtm .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -883,7 +890,7 @@ PTC, Primary Trauma Care.
   border-right-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_footnote {
+#vicpmkojtm .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -892,7 +899,7 @@ PTC, Primary Trauma Care.
   padding-right: 5px;
 }
 
-#qmfjdkgyvs .gt_sourcenotes {
+#vicpmkojtm .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -906,7 +913,7 @@ PTC, Primary Trauma Care.
   border-right-color: #D3D3D3;
 }
 
-#qmfjdkgyvs .gt_sourcenote {
+#vicpmkojtm .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -914,72 +921,72 @@ PTC, Primary Trauma Care.
   padding-right: 5px;
 }
 
-#qmfjdkgyvs .gt_left {
+#vicpmkojtm .gt_left {
   text-align: left;
 }
 
-#qmfjdkgyvs .gt_center {
+#vicpmkojtm .gt_center {
   text-align: center;
 }
 
-#qmfjdkgyvs .gt_right {
+#vicpmkojtm .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qmfjdkgyvs .gt_font_normal {
+#vicpmkojtm .gt_font_normal {
   font-weight: normal;
 }
 
-#qmfjdkgyvs .gt_font_bold {
+#vicpmkojtm .gt_font_bold {
   font-weight: bold;
 }
 
-#qmfjdkgyvs .gt_font_italic {
+#vicpmkojtm .gt_font_italic {
   font-style: italic;
 }
 
-#qmfjdkgyvs .gt_super {
+#vicpmkojtm .gt_super {
   font-size: 65%;
 }
 
-#qmfjdkgyvs .gt_footnote_marks {
+#vicpmkojtm .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qmfjdkgyvs .gt_asterisk {
+#vicpmkojtm .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qmfjdkgyvs .gt_indent_1 {
+#vicpmkojtm .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qmfjdkgyvs .gt_indent_2 {
+#vicpmkojtm .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qmfjdkgyvs .gt_indent_3 {
+#vicpmkojtm .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qmfjdkgyvs .gt_indent_4 {
+#vicpmkojtm .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qmfjdkgyvs .gt_indent_5 {
+#vicpmkojtm .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qmfjdkgyvs .katex-display {
+#vicpmkojtm .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qmfjdkgyvs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vicpmkojtm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1004,7 +1011,7 @@ N = 376</span></th>
 <td headers="stat_2" class="gt_row gt_center">40 (30, 57)</td>
 <td headers="stat_3" class="gt_row gt_center">30 (22, 38)</td>
 <td headers="stat_0" class="gt_row gt_center">33 (24, 46)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">Elderly, n (%)</td>
+    <tr><td headers="label" class="gt_row gt_left">Elderly (Age ≥ 65 years), n (%)</td>
 <td headers="stat_1" class="gt_row gt_center">15 (7%)</td>
 <td headers="stat_2" class="gt_row gt_center">6 (14%)</td>
 <td headers="stat_3" class="gt_row gt_center">5 (4%)</td>
@@ -1134,31 +1141,34 @@ N = 376</span></th>
 The percentage of patients who consented to follow up was 77% and the
 percentage of residents who consented to training was 100%. The lost to
 follow up rate was 14%. The pass rate was 100%. The missing data rate
-ranged from 0 to 98, with details for selected variables shown in Table
-(tab:sample-characteristics). The differences in distributions between
-observed data and data extracted from medical records, for selected
-variables that were collected through observation or interview, are
-shown in Table (tab:observed-vs-extracted). Overall, the data were
-similarly distributed, but there were considerably more missing values
-in extracted data compared to observed data.
+ranged from 0 to 98%, with details for selected variables shown in Table
+@ref(tab:sample-characteristics) and in Supplementary Materials. The
+variables with the maximum amount of missing data were cause of death
+and some complications, reported in Supplementary Materials. The
+differences in distributions between observed data and data extracted
+from medical records, for selected variables that were collected through
+observation or interview, are shown in Table
+@ref(tab:observed-vs-extracted). Overall, the data were similarly
+distributed, but there were considerably more missing values in
+extracted data compared to observed data.
 
-<div id="kprthglwsy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kprthglwsy table {
+<div id="rjyotjnult" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rjyotjnult table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kprthglwsy thead, #kprthglwsy tbody, #kprthglwsy tfoot, #kprthglwsy tr, #kprthglwsy td, #kprthglwsy th {
+#rjyotjnult thead, #rjyotjnult tbody, #rjyotjnult tfoot, #rjyotjnult tr, #rjyotjnult td, #rjyotjnult th {
   border-style: none;
 }
 
-#kprthglwsy p {
+#rjyotjnult p {
   margin: 0;
   padding: 0;
 }
 
-#kprthglwsy .gt_table {
+#rjyotjnult .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1184,12 +1194,12 @@ in extracted data compared to observed data.
   border-left-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_caption {
+#rjyotjnult .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kprthglwsy .gt_title {
+#rjyotjnult .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1201,7 +1211,7 @@ in extracted data compared to observed data.
   border-bottom-width: 0;
 }
 
-#kprthglwsy .gt_subtitle {
+#rjyotjnult .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1213,7 +1223,7 @@ in extracted data compared to observed data.
   border-top-width: 0;
 }
 
-#kprthglwsy .gt_heading {
+#rjyotjnult .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1225,13 +1235,13 @@ in extracted data compared to observed data.
   border-right-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_bottom_border {
+#rjyotjnult .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_col_headings {
+#rjyotjnult .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1246,7 +1256,7 @@ in extracted data compared to observed data.
   border-right-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_col_heading {
+#rjyotjnult .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1266,7 +1276,7 @@ in extracted data compared to observed data.
   overflow-x: hidden;
 }
 
-#kprthglwsy .gt_column_spanner_outer {
+#rjyotjnult .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1278,15 +1288,15 @@ in extracted data compared to observed data.
   padding-right: 4px;
 }
 
-#kprthglwsy .gt_column_spanner_outer:first-child {
+#rjyotjnult .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kprthglwsy .gt_column_spanner_outer:last-child {
+#rjyotjnult .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kprthglwsy .gt_column_spanner {
+#rjyotjnult .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1298,11 +1308,11 @@ in extracted data compared to observed data.
   width: 100%;
 }
 
-#kprthglwsy .gt_spanner_row {
+#rjyotjnult .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kprthglwsy .gt_group_heading {
+#rjyotjnult .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1328,7 +1338,7 @@ in extracted data compared to observed data.
   text-align: left;
 }
 
-#kprthglwsy .gt_empty_group_heading {
+#rjyotjnult .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1343,15 +1353,15 @@ in extracted data compared to observed data.
   vertical-align: middle;
 }
 
-#kprthglwsy .gt_from_md > :first-child {
+#rjyotjnult .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kprthglwsy .gt_from_md > :last-child {
+#rjyotjnult .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kprthglwsy .gt_row {
+#rjyotjnult .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1370,7 +1380,7 @@ in extracted data compared to observed data.
   overflow-x: hidden;
 }
 
-#kprthglwsy .gt_stub {
+#rjyotjnult .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1383,7 +1393,7 @@ in extracted data compared to observed data.
   padding-right: 5px;
 }
 
-#kprthglwsy .gt_stub_row_group {
+#rjyotjnult .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1397,15 +1407,15 @@ in extracted data compared to observed data.
   vertical-align: top;
 }
 
-#kprthglwsy .gt_row_group_first td {
+#rjyotjnult .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kprthglwsy .gt_row_group_first th {
+#rjyotjnult .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kprthglwsy .gt_summary_row {
+#rjyotjnult .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1415,16 +1425,16 @@ in extracted data compared to observed data.
   padding-right: 5px;
 }
 
-#kprthglwsy .gt_first_summary_row {
+#rjyotjnult .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_first_summary_row.thick {
+#rjyotjnult .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kprthglwsy .gt_last_summary_row {
+#rjyotjnult .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1434,7 +1444,7 @@ in extracted data compared to observed data.
   border-bottom-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_grand_summary_row {
+#rjyotjnult .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1444,7 +1454,7 @@ in extracted data compared to observed data.
   padding-right: 5px;
 }
 
-#kprthglwsy .gt_first_grand_summary_row {
+#rjyotjnult .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1454,7 +1464,7 @@ in extracted data compared to observed data.
   border-top-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_last_grand_summary_row_top {
+#rjyotjnult .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1464,11 +1474,11 @@ in extracted data compared to observed data.
   border-bottom-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_striped {
+#rjyotjnult .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kprthglwsy .gt_table_body {
+#rjyotjnult .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1477,7 +1487,7 @@ in extracted data compared to observed data.
   border-bottom-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_footnotes {
+#rjyotjnult .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1491,7 +1501,7 @@ in extracted data compared to observed data.
   border-right-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_footnote {
+#rjyotjnult .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1500,7 +1510,7 @@ in extracted data compared to observed data.
   padding-right: 5px;
 }
 
-#kprthglwsy .gt_sourcenotes {
+#rjyotjnult .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1514,7 +1524,7 @@ in extracted data compared to observed data.
   border-right-color: #D3D3D3;
 }
 
-#kprthglwsy .gt_sourcenote {
+#rjyotjnult .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1522,72 +1532,72 @@ in extracted data compared to observed data.
   padding-right: 5px;
 }
 
-#kprthglwsy .gt_left {
+#rjyotjnult .gt_left {
   text-align: left;
 }
 
-#kprthglwsy .gt_center {
+#rjyotjnult .gt_center {
   text-align: center;
 }
 
-#kprthglwsy .gt_right {
+#rjyotjnult .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kprthglwsy .gt_font_normal {
+#rjyotjnult .gt_font_normal {
   font-weight: normal;
 }
 
-#kprthglwsy .gt_font_bold {
+#rjyotjnult .gt_font_bold {
   font-weight: bold;
 }
 
-#kprthglwsy .gt_font_italic {
+#rjyotjnult .gt_font_italic {
   font-style: italic;
 }
 
-#kprthglwsy .gt_super {
+#rjyotjnult .gt_super {
   font-size: 65%;
 }
 
-#kprthglwsy .gt_footnote_marks {
+#rjyotjnult .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kprthglwsy .gt_asterisk {
+#rjyotjnult .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kprthglwsy .gt_indent_1 {
+#rjyotjnult .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kprthglwsy .gt_indent_2 {
+#rjyotjnult .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kprthglwsy .gt_indent_3 {
+#rjyotjnult .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kprthglwsy .gt_indent_4 {
+#rjyotjnult .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kprthglwsy .gt_indent_5 {
+#rjyotjnult .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kprthglwsy .katex-display {
+#rjyotjnult .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kprthglwsy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rjyotjnult div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1596,20 +1606,20 @@ in extracted data compared to observed data.
   <thead>
     <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="&lt;span class='gt_from_md'&gt;&lt;strong&gt;Characteristic&lt;/strong&gt;&lt;/span&gt;"><span class='gt_from_md'><strong>Characteristic</strong></span></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&lt;span class='gt_from_md'&gt;&lt;strong&gt;Directly observed&lt;/strong&gt;&lt;br /&gt;&#10;N = 55&lt;/span&gt;&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><span class='gt_from_md'><strong>Directly observed</strong><br />
-N = 55</span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&lt;span class='gt_from_md'&gt;&lt;strong&gt;Medical records&lt;/strong&gt;&lt;br /&gt;&#10;N = 55&lt;/span&gt;&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><span class='gt_from_md'><strong>Medical records</strong><br />
-N = 55</span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&lt;span class='gt_from_md'&gt;&lt;strong&gt;Directly observed&lt;/strong&gt;&lt;br /&gt;&#10;N = 55&lt;/span&gt;"><span class='gt_from_md'><strong>Directly observed</strong><br />
+N = 55</span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&lt;span class='gt_from_md'&gt;&lt;strong&gt;Medical records&lt;/strong&gt;&lt;br /&gt;&#10;N = 55&lt;/span&gt;"><span class='gt_from_md'><strong>Medical records</strong><br />
+N = 55</span></th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td headers="label" class="gt_row gt_left">Age, years</td>
+    <tr><td headers="label" class="gt_row gt_left">Age, years, median (IQR)</td>
 <td headers="stat_1" class="gt_row gt_center">34 (27, 48)</td>
 <td headers="stat_2" class="gt_row gt_center">34 (25, 50)</td></tr>
     <tr><td headers="label" class="gt_row gt_left">    Missing</td>
 <td headers="stat_1" class="gt_row gt_center">0</td>
 <td headers="stat_2" class="gt_row gt_center">22</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">Sex</td>
+    <tr><td headers="label" class="gt_row gt_left">Sex, n (%)</td>
 <td headers="stat_1" class="gt_row gt_center"><br /></td>
 <td headers="stat_2" class="gt_row gt_center"><br /></td></tr>
     <tr><td headers="label" class="gt_row gt_left">    Female</td>
@@ -1621,7 +1631,7 @@ N = 55</span><span class="gt_footnote_marks" style="white-space:nowrap;font-styl
     <tr><td headers="label" class="gt_row gt_left">    Missing</td>
 <td headers="stat_1" class="gt_row gt_center">0</td>
 <td headers="stat_2" class="gt_row gt_center">22</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">Dominating injury type</td>
+    <tr><td headers="label" class="gt_row gt_left">Dominating injury type, n (%)</td>
 <td headers="stat_1" class="gt_row gt_center"><br /></td>
 <td headers="stat_2" class="gt_row gt_center"><br /></td></tr>
     <tr><td headers="label" class="gt_row gt_left">    Blunt</td>
@@ -1633,25 +1643,25 @@ N = 55</span><span class="gt_footnote_marks" style="white-space:nowrap;font-styl
     <tr><td headers="label" class="gt_row gt_left">    Missing</td>
 <td headers="stat_1" class="gt_row gt_center">0</td>
 <td headers="stat_2" class="gt_row gt_center">23</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">Respiratory rate, breaths per minute</td>
+    <tr><td headers="label" class="gt_row gt_left">Respiratory rate, breaths per minute, median (IQR)</td>
 <td headers="stat_1" class="gt_row gt_center">21 (18, 24)</td>
 <td headers="stat_2" class="gt_row gt_center">18 (16, 20)</td></tr>
     <tr><td headers="label" class="gt_row gt_left">    Missing</td>
 <td headers="stat_1" class="gt_row gt_center">0</td>
 <td headers="stat_2" class="gt_row gt_center">37</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">Oxygen saturation, %</td>
+    <tr><td headers="label" class="gt_row gt_left">Oxygen saturation, %, median (IQR)</td>
 <td headers="stat_1" class="gt_row gt_center">98 (98, 99)</td>
 <td headers="stat_2" class="gt_row gt_center">98 (97, 100)</td></tr>
     <tr><td headers="label" class="gt_row gt_left">    Missing</td>
 <td headers="stat_1" class="gt_row gt_center">0</td>
 <td headers="stat_2" class="gt_row gt_center">29</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">Heart rate, beats per minute</td>
+    <tr><td headers="label" class="gt_row gt_left">Heart rate, beats per minute, median (IQR)</td>
 <td headers="stat_1" class="gt_row gt_center">85 (80, 98)</td>
 <td headers="stat_2" class="gt_row gt_center">87 (84, 93)</td></tr>
     <tr><td headers="label" class="gt_row gt_left">    Missing</td>
 <td headers="stat_1" class="gt_row gt_center">0</td>
 <td headers="stat_2" class="gt_row gt_center">19</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">Systolic blood pressure, mmHg</td>
+    <tr><td headers="label" class="gt_row gt_left">Systolic blood pressure, mmHg, median (IQR)</td>
 <td headers="stat_1" class="gt_row gt_center">123 (112, 136)</td>
 <td headers="stat_2" class="gt_row gt_center">118 (110, 128)</td></tr>
     <tr><td headers="label" class="gt_row gt_left">    Missing</td>
@@ -1659,41 +1669,38 @@ N = 55</span><span class="gt_footnote_marks" style="white-space:nowrap;font-styl
 <td headers="stat_2" class="gt_row gt_center">18</td></tr>
   </tbody>
   
-  <tfoot class="gt_footnotes">
-    <tr>
-      <td class="gt_footnote" colspan="3"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> <span class='gt_from_md'>Median (Q1, Q3); n (%)</span></td>
-    </tr>
-  </tfoot>
+  
 </table>
 </div>
 
 After training, a total of 22 (16%) patients in the standard care arm
 died within 30 days, compared to 1 (4%) patients in the ATLS<sup>®</sup>
 arm and 3 (5%) patients in the PTC arm. The corresponding figures for
-in-hospital mortality were 19 (12%)%, 1 (4%)%, and 3 (4%)%, as shown in
-Table @ref(tab:outcomes). Overall, both in-hospital and 30-day mortality
-were substantially lower in the ATLS<sup>®</sup> and PTC arms compared
-to the standard care arm, but the absolute numbers of deaths in the ATLS
-and PTC arms were very small. The results for all other outcomes are
-shown in Supplementary Materials.
+in-hospital mortality were 19 (12%)%, 1 (4%)%, and 3 (4%)% for the
+standard care, ATLS and PTC arms respectively, as shown in Table
+@ref(tab:outcomes). Overall, both in-hospital and 30-day mortality were
+substantially lower in the ATLS<sup>®</sup> and PTC arms compared to the
+standard care arm, but the absolute numbers of deaths in the ATLS and
+PTC arms were very small. The results for all other outcomes are shown
+in Supplementary Materials.
 
-<div id="jgtflanxsx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jgtflanxsx table {
+<div id="mpheqsyxhs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mpheqsyxhs table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jgtflanxsx thead, #jgtflanxsx tbody, #jgtflanxsx tfoot, #jgtflanxsx tr, #jgtflanxsx td, #jgtflanxsx th {
+#mpheqsyxhs thead, #mpheqsyxhs tbody, #mpheqsyxhs tfoot, #mpheqsyxhs tr, #mpheqsyxhs td, #mpheqsyxhs th {
   border-style: none;
 }
 
-#jgtflanxsx p {
+#mpheqsyxhs p {
   margin: 0;
   padding: 0;
 }
 
-#jgtflanxsx .gt_table {
+#mpheqsyxhs .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1719,12 +1726,12 @@ shown in Supplementary Materials.
   border-left-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_caption {
+#mpheqsyxhs .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jgtflanxsx .gt_title {
+#mpheqsyxhs .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1736,7 +1743,7 @@ shown in Supplementary Materials.
   border-bottom-width: 0;
 }
 
-#jgtflanxsx .gt_subtitle {
+#mpheqsyxhs .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1748,7 +1755,7 @@ shown in Supplementary Materials.
   border-top-width: 0;
 }
 
-#jgtflanxsx .gt_heading {
+#mpheqsyxhs .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1760,13 +1767,13 @@ shown in Supplementary Materials.
   border-right-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_bottom_border {
+#mpheqsyxhs .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_col_headings {
+#mpheqsyxhs .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1781,7 +1788,7 @@ shown in Supplementary Materials.
   border-right-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_col_heading {
+#mpheqsyxhs .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1801,7 +1808,7 @@ shown in Supplementary Materials.
   overflow-x: hidden;
 }
 
-#jgtflanxsx .gt_column_spanner_outer {
+#mpheqsyxhs .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1813,15 +1820,15 @@ shown in Supplementary Materials.
   padding-right: 4px;
 }
 
-#jgtflanxsx .gt_column_spanner_outer:first-child {
+#mpheqsyxhs .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jgtflanxsx .gt_column_spanner_outer:last-child {
+#mpheqsyxhs .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jgtflanxsx .gt_column_spanner {
+#mpheqsyxhs .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1833,11 +1840,11 @@ shown in Supplementary Materials.
   width: 100%;
 }
 
-#jgtflanxsx .gt_spanner_row {
+#mpheqsyxhs .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jgtflanxsx .gt_group_heading {
+#mpheqsyxhs .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1863,7 +1870,7 @@ shown in Supplementary Materials.
   text-align: left;
 }
 
-#jgtflanxsx .gt_empty_group_heading {
+#mpheqsyxhs .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1878,15 +1885,15 @@ shown in Supplementary Materials.
   vertical-align: middle;
 }
 
-#jgtflanxsx .gt_from_md > :first-child {
+#mpheqsyxhs .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jgtflanxsx .gt_from_md > :last-child {
+#mpheqsyxhs .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jgtflanxsx .gt_row {
+#mpheqsyxhs .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1905,7 +1912,7 @@ shown in Supplementary Materials.
   overflow-x: hidden;
 }
 
-#jgtflanxsx .gt_stub {
+#mpheqsyxhs .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1918,7 +1925,7 @@ shown in Supplementary Materials.
   padding-right: 5px;
 }
 
-#jgtflanxsx .gt_stub_row_group {
+#mpheqsyxhs .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1932,15 +1939,15 @@ shown in Supplementary Materials.
   vertical-align: top;
 }
 
-#jgtflanxsx .gt_row_group_first td {
+#mpheqsyxhs .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jgtflanxsx .gt_row_group_first th {
+#mpheqsyxhs .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jgtflanxsx .gt_summary_row {
+#mpheqsyxhs .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1950,16 +1957,16 @@ shown in Supplementary Materials.
   padding-right: 5px;
 }
 
-#jgtflanxsx .gt_first_summary_row {
+#mpheqsyxhs .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_first_summary_row.thick {
+#mpheqsyxhs .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jgtflanxsx .gt_last_summary_row {
+#mpheqsyxhs .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1969,7 +1976,7 @@ shown in Supplementary Materials.
   border-bottom-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_grand_summary_row {
+#mpheqsyxhs .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1979,7 +1986,7 @@ shown in Supplementary Materials.
   padding-right: 5px;
 }
 
-#jgtflanxsx .gt_first_grand_summary_row {
+#mpheqsyxhs .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1989,7 +1996,7 @@ shown in Supplementary Materials.
   border-top-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_last_grand_summary_row_top {
+#mpheqsyxhs .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1999,11 +2006,11 @@ shown in Supplementary Materials.
   border-bottom-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_striped {
+#mpheqsyxhs .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jgtflanxsx .gt_table_body {
+#mpheqsyxhs .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2012,7 +2019,7 @@ shown in Supplementary Materials.
   border-bottom-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_footnotes {
+#mpheqsyxhs .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2026,7 +2033,7 @@ shown in Supplementary Materials.
   border-right-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_footnote {
+#mpheqsyxhs .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2035,7 +2042,7 @@ shown in Supplementary Materials.
   padding-right: 5px;
 }
 
-#jgtflanxsx .gt_sourcenotes {
+#mpheqsyxhs .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2049,7 +2056,7 @@ shown in Supplementary Materials.
   border-right-color: #D3D3D3;
 }
 
-#jgtflanxsx .gt_sourcenote {
+#mpheqsyxhs .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2057,72 +2064,72 @@ shown in Supplementary Materials.
   padding-right: 5px;
 }
 
-#jgtflanxsx .gt_left {
+#mpheqsyxhs .gt_left {
   text-align: left;
 }
 
-#jgtflanxsx .gt_center {
+#mpheqsyxhs .gt_center {
   text-align: center;
 }
 
-#jgtflanxsx .gt_right {
+#mpheqsyxhs .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jgtflanxsx .gt_font_normal {
+#mpheqsyxhs .gt_font_normal {
   font-weight: normal;
 }
 
-#jgtflanxsx .gt_font_bold {
+#mpheqsyxhs .gt_font_bold {
   font-weight: bold;
 }
 
-#jgtflanxsx .gt_font_italic {
+#mpheqsyxhs .gt_font_italic {
   font-style: italic;
 }
 
-#jgtflanxsx .gt_super {
+#mpheqsyxhs .gt_super {
   font-size: 65%;
 }
 
-#jgtflanxsx .gt_footnote_marks {
+#mpheqsyxhs .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jgtflanxsx .gt_asterisk {
+#mpheqsyxhs .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jgtflanxsx .gt_indent_1 {
+#mpheqsyxhs .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jgtflanxsx .gt_indent_2 {
+#mpheqsyxhs .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jgtflanxsx .gt_indent_3 {
+#mpheqsyxhs .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jgtflanxsx .gt_indent_4 {
+#mpheqsyxhs .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jgtflanxsx .gt_indent_5 {
+#mpheqsyxhs .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jgtflanxsx .katex-display {
+#mpheqsyxhs .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jgtflanxsx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mpheqsyxhs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2197,23 +2204,24 @@ standard care. Missing data were low for key variables, including the
 primary outcome and many secondary outcomes. Some variables, especially
 cause of death and complications (reported in Supplementary materials)
 had very high missing data rates and may not be feasible to include in a
-full-scale trial, or require different data collection methods.
-Similarly, the missing data was substantially higher when data was
-extracted from medical records instead of being directly observed, but
-the data
+full-scale trial, or require different data collection methods. The
+missing data was substantially higher when data was extracted from
+medical records instead of being directly observed, but the data were
+similarly distributed, indicating that data collected from medical
+records is reliable even if it is less complete.
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
 
 We found that the ATLS<sup>®</sup> and PTC arms had lower 30-day
-mortality compared to the PTC and standard care arms. These findings
-hints towards a potential effect of training physicians in trauma life
+mortality compared to the PTC and standard care arms. This finding could
+hint towards a potential effect of training physicians in trauma life
 support, but it is important to note that this pilot study was not
 powered to detect any differences in outcomes. The arms differed
 considerably in sample size, with the ATLS<sup>®</sup> arm having the
 smallest sample size. This difference most likely resulted from the
 randomisation process with a small number of heterogeneous clusters.
-This heterogeneity highlights the importance of taken different cluster
+This heterogeneity highlights the importance of taking varying cluster
 sizes into account in the design of the full scale trial.
 
 All-cause 30-day mortality was missing in 14% of patients. This may
@@ -2222,8 +2230,8 @@ trials, which report missing primary outcome in less than 0.01% of
 patients<sup>12,13</sup>. Like many other trauma trials, both CRASH-2
 and REACT-2 used in-hospital mortality as their primary outcome measure,
 whereas we attempted to follow up patients after discharge. Our missing
-data rate for in-hospital mortality was only 1%, comparable to previous
-trials.
+data rate for in-hospital mortality was only 1%, which is comparable to
+previous trials.
 
 <!-- Consider discussing non-inferiority vs superiority. -->
 
@@ -2235,15 +2243,16 @@ expected enrolment rates of some centres, centre specific management
 routines, and difficulties in collecting data on complications and cause
 of death.
 
-We minimised the impact of the lower than expected enrolment rates by
-including a seventh centre, but on-site observations of patient volumes
-are likely to be needed for the full-scale trial. We decided to be
-pragmatic in selecting which residents to train and how to structure the
-data collection depending on how and by whom patients were initially
-managed, but this flexibility will need to be built into the full-scale
-trial protocol. Finally, we found that data on complications and cause
-of death were hard to identify and therefore the full-scale trial will
-need to include longer training of research officers.
+We attempted to minimse the impact of the lower than expected enrolment
+rates by including a seventh centre, but careful assessments of patient
+volumes as part of the screening process will be needed for the
+full-scale trial. We decided to be pragmatic in selecting which
+residents to train and how to structure the data collection depending on
+how and by whom patients were initially managed, but this flexibility
+will need to be built into the full-scale trial protocol. Finally, we
+found that data on complications and cause of death were hard to
+identify and therefore the full-scale trial will need to include longer
+training of research officers if this data is to be collected.
 
 <!-- Consider discussing waiver of informed consent for initial 
 data collection -->
@@ -2258,8 +2267,13 @@ study from China that included 820 patients found a significant
 reduction in mortality, from 20 to 15%, after implementing
 ATLS<sup>®</sup><sup>18</sup>.
 
-We conclude that conducting a full-scale cluster randomised trial should
-be feasible after incorporating the lessons of this pilot.
+Considering the widespread use of trauma life support traning, several
+systematic reviews call for trials in settings where these programmes
+are not routinely implemented<sup>2–4</sup>. Our study represent the
+first published attempt at a controlled trial of the effect of trauma
+life support traning och patient outcomes, and we conclude that
+conducting a full-scale cluster randomised trial should be feasible
+after incorporating the lessons of this pilot.
 
 # Contributorship statement
 
