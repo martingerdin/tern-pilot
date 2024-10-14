@@ -6,11 +6,11 @@ title: "Effect of Trauma Life Support Training on Patient Outcomes: A Pilot Clus
 author: Trauma life support training Effectiveness Research Network (TERN) collaborators
 bibliography: bibliography.bib
 csl: nature.csl
-output:
-    bookdown::word_document2:
-      toc: false
-      number_sections: false
-      reference_docx: "reference.docx"
+format:
+  docx:
+    toc: false
+    number_sections: false
+    reference_docx: "reference.docx"
 #    md_document: default
 #    bookdown::pdf_document2:
 #      toc:false
@@ -304,7 +304,7 @@ We were granted research ethics approval from the institutional ethics committee
 
 We enrolled `r n.patients` trauma patients from `r number_to_text(n.centres)` participating centres between `r start.date` and `r end.date`. The standard care arm enrolled `r n.control` patients, the ATLS^®^ arm enrolled `r n.atls` patients, and the PTC arm enrolled `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
 
-The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital. The intracluster correlation coefficients was `r icc.m30d` for 30-day mortality and `r icc.inhosp` for in-hospital mortality.  
+The study flow diagram is shown in @flow-diagram and patient sample characteristics across trial arms are shown in Table @sample-characteristics. Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital. The intracluster correlation coefficients was `r icc.m30d` for 30-day mortality and `r icc.inhosp` for in-hospital mortality.  
 
 ```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care.", out.width="30%", out.height="30%"}
 knitr::include_graphics("consort-flow-diagram.png")
@@ -312,18 +312,18 @@ knitr::include_graphics("consort-flow-diagram.png")
 
 ```{r sample-characteristics, echo = FALSE, results = "asis", tab.cap = "Patient sample characteristics"}
 sample.characteristics.table |>
-  modify_caption("Patient sample characteristics")
+    modify_caption("Patient sample characteristics")
 ```
 
 ## Outcomes
 
-The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Materials. The variables with the maximum amount of missing data were cause of death and some complications, reported in Supplementary Materials. The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
+The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table @sample-characteristics and in Supplementary Materials. The variables with the maximum amount of missing data were cause of death and some complications, reported in Supplementary Materials. The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table @observed-vs-extracted. Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
 
 ```{r observed-vs-extracted, echo = FALSE, tab.cap = "Differences in distributions between directly observed data and data extracted from medical records, for selected variables that were collected through observation or interview."}
 observed.vs.extracted.comparison.table
 ```
 
-After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`% for the standard care, ATLS and PTC arms respectively, as shown in Table \@ref(tab:outcomes). Overall, both in-hospital and 30-day mortality were substantially lower in the ATLS^®^ and PTC arms compared to the standard care arm, but the absolute numbers of deaths in the ATLS and PTC arms were very small. The results for all other outcomes are shown in Supplementary Materials.
+After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`% for the standard care, ATLS and PTC arms respectively, as shown in @outcomes. Overall, both in-hospital and 30-day mortality were substantially lower in the ATLS^®^ and PTC arms compared to the standard care arm, but the absolute numbers of deaths in the ATLS and PTC arms were very small. The results for all other outcomes are shown in Supplementary Materials.
 
 ```{r outcomes, echo = FALSE, tab.cap = "Mortality after training by the trial arms standard care, Advanced Trauma Life Support (ATLS) and Primary Trauma Care (PTC)"}
 outcome.table.with.differences

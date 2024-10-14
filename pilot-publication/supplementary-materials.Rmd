@@ -1,0 +1,16 @@
+---
+title: Supplementary Materials
+subtitle: "Effect of Trauma Life Support Training on Patient Outcomes: A Pilot Cluster Randomised Trial"
+output:
+    bookdown::word_document2:
+      number_sections: false
+      reference_docx: "reference.docx"
+--- 
+
+```{r source, echo = FALSE, include = FALSE}
+source("main.R")
+attach(results)
+```
+
+```{r, child = "outcome-tables.Rmd"}
+```
