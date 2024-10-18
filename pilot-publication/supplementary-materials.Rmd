@@ -12,5 +12,54 @@ source("main.R")
 attach(results)
 ```
 
+# Table S1. Extended sample characteristics
+
+```{r overall-table, echo = FALSE}
+combined.sample.characteristics.table
+```
+
+
 ```{r, child = "outcome-tables.Rmd"}
 ```
+
+# S13 Protocol Deviations
+
+## Trial Registration
+
+We intended to also register our trial with Clinical Trials Registry - India and will do so with the full-scale trial.
+
+## Outcomes across subgroups
+
+Because of small numbers in the pre-specified subgroups men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly we decided to report only descriptive data on these subgroups.
+
+## Number of Participating Centres
+
+We recruited seven centres instead of six and therefore assigned two centres each to the intervention arms and three centres to the control arm.
+
+## Resident Participants
+
+We included emergency medicine residents in addition to surgical residents.
+
+## Periodic suverys to residents
+
+We did not distribute periodic surveys to the participating residents but discussed challenges and suggestions that they had regarding the scheduling or implementation of the training programs.
+
+## Follow up of residents
+
+We stated that resident participants would be followed up 30 days after training, but revised this to follow them up after the end of the study period.
+
+## Data collection from records
+
+We decided to extract data from medical records only for a subset of patients to reduce the research officers' workload.
+
+## Selection of units for training
+
+We planned to use simple random sampling to select units if there were more than two eligible units in a hospital but instead the hospital principal investigator decided which units to train.
+
+## Timing of resident consent
+
+We had initially planned to ask residents for consent before randomisation, but because of logistical issues the units were only finalised after the hospitals had been randomised. Residents were therefore approached for consent after randomisation but before training.
+
+## Analysis level of feasibility outcomes
+
+We had planned to analyse feasibility outcomes on both an overall and individual cluster level, but we only analysed them on an overall level, because the sample sizes in individual clusters were too small to generate meaningful results.

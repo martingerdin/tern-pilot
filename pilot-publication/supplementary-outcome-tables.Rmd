@@ -1,0 +1,135 @@
+\pagebreak
+
+# Results with 95% confidence level
+
+## Table S2 Outcomes in all patients during the entire study period, by treatment arm
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Outcomes in all patients during the entire study period, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S3 Outcomes in all patients before training, by treatment arm
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Outcomes in all patients before training, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S4 Outcomes in all patients after training, by treatment arm
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Outcomes in all patients after training, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S5 Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S6 Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S7 Absolute and relative differences in outcomes after training, comparing standard care with ATLS
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S8 Absolute and relative differences in outcomes after training, comparing standard care with PTC
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S9 Absolute and relative differences in outcomes after training, comparing ATLS with PTC
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S10 Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S11 Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Table S12 Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC"]]
+
+```
+
+\pagebreak
+
+

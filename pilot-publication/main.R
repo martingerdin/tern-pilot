@@ -39,8 +39,14 @@ table.variables <- c(
     "outcomes__alive_after_30_days",
     "arm"
 )
+table.variables.full <- unique(c(
+    table.variables,
+    binary_outcomes() |> names(),
+    categorical_outcomes() |> names(),
+    quantitative_outcomes() |> names()
+))
 table.data <- data %>%
-    select(all_of(table.variables)) %>%
+    select(all_of(table.variables.full)) %>%
     select(-arm)
 overall.sample.characteristics.table <- create_descriptive_table(table.data, show.all.levels = FALSE)
 
@@ -65,7 +71,7 @@ sample.characteristics.table <- create_descriptive_table(stratified.table.data,
 ## Create table of sample characteristics before training
 pre.training.table.data <- data %>%
     filter(!post.training) %>%
-    select(table.variables)
+    select(table.variables.full)
 pre.training.characteristics.table <- create_descriptive_table(
     pre.training.table.data,
     strata = "arm",
@@ -76,7 +82,7 @@ pre.training.characteristics.table <- create_descriptive_table(
 ## Create table of sample characteristics after training
 post.training.table.data <- data %>%
     filter(post.training) %>%
-    select(table.variables)
+    select(table.variables.full)
 post.training.characteristics.table <- create_descriptive_table(
     post.training.table.data,
     strata = "arm",
@@ -125,8 +131,11 @@ if (use.saved) {
 ## Create tables with outcome results
 outcome.results.tables <- create_outcome_results_tables(outcome.results)
 
-## Save outcome results tables to file
-save_tables_to_file(outcome.results.tables)
+## Save outcome results for supplementary material
+save_tables_to_file(outcome.results.tables, supplementary.material = TRUE, only.95.ci = TRUE)
+
+## Save all outcome results tables to file
+save_tables_to_file(outcome.results.tables, supplementary.material = FALSE, only.95.ci = FALSE)
 
 # Extract results from tables
 females <- inline_text(overall.sample.characteristics.table,
