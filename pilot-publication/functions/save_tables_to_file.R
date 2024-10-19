@@ -27,12 +27,12 @@ save_tables_to_file <- function(outcome.results.tables, supplementary.material =
             if (!only.95.ci || (only.95.ci && ci.level == "95%")) {
                 paste0(
                     "\\pagebreak\n\n",
-                    "# Results with ", ci.level, " confidence level\n\n",
+                    "# Results with ", ci.level, " confidence intervals (CI)\n\n",
                     lapply(seq_along(ci.level.tables), function(ci.level.table.index) {
                         ci.level.table.name <- names(ci.level.tables)[ci.level.table.index]
                         ci.level.table <- ci.level.tables[[ci.level.table.name]]
                         paste0(
-                            "## ", ifelse(supplementary.material, paste0("Table S", ci.level.table.index + 1, ". "), ""), ci.level.table.name, "\n\n",
+                            "## ", ifelse(supplementary.material, paste0("Table S", ci.level.table.index + 1, ". "), ""), ci.level.table.name, "(", ci.level, " CI)" "\n\n",
                             "\`\`\`{r, echo = FALSE} \n\n",
                             "outcome.results.tables[[\"", ci.level.tables.name, "\"]]",
                             "[[\"", ci.level.table.name, "\"]]", "\n\n",
