@@ -5,6 +5,7 @@ output:
     bookdown::word_document2:
       number_sections: false
       reference_docx: "reference.docx"
+      toc: true
 --- 
 
 ```{r source, echo = FALSE, include = FALSE}
@@ -19,7 +20,7 @@ combined.sample.characteristics.table
 ```
 
 
-```{r, child = "outcome-tables.Rmd"}
+```{r, child = "supplementary-outcome-tables.Rmd"}
 ```
 
 # S13 Protocol Deviations
