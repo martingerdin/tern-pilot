@@ -32,7 +32,7 @@ save_tables_to_file <- function(outcome.results.tables, supplementary.material =
                         ci.level.table.name <- names(ci.level.tables)[ci.level.table.index]
                         ci.level.table <- ci.level.tables[[ci.level.table.name]]
                         paste0(
-                            "## ", ifelse(supplementary.material, paste0("Table S", ci.level.table.index + 1, ". "), ""), ci.level.table.name, "(", ci.level, " CI)" "\n\n",
+                            "## ", ifelse(supplementary.material, paste0("Table S", ci.level.table.index + 1, ". "), ""), ci.level.table.name, "(", ci.level, " CI)", "\n\n",
                             "\`\`\`{r, echo = FALSE} \n\n",
                             "outcome.results.tables[[\"", ci.level.tables.name, "\"]]",
                             "[[\"", ci.level.table.name, "\"]]", "\n\n",
