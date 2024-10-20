@@ -27,6 +27,8 @@ prepare_data <- function(data, codebook = NULL) {
     prepared.data$id__reg_hospital_id <- as.factor(prepared.data$id__reg_hospital_id)
 
     ## Replace with missing
+    ### Consider adding NA treatment for icd columns here as well, instead of doing it in icd10.data, for example:
+    # prepared.data %>% mutate(across(.cols = contains("icd"), .fns = ~ replace(., . %in% c("0", "NAD"), NA)))
     prepared.data <- prepared.data %>%
         naniar::replace_with_na_if(
             .predicate = is.character,
@@ -91,6 +93,21 @@ prepare_data <- function(data, codebook = NULL) {
         "niss"
     )]
     prepared.data <- cbind(prepared.data, iss.data)
+    
+    ## Treat iss and niss as NA, if all icd columns are NA
+    prepared.data <- prepared.data %>%
+        # Replace 0 and NAD with NA for all columns containing "icd" but not ending with "_r"
+        mutate(across(
+            .cols = contains("icd") & !ends_with("_r"), 
+            .fns = ~ replace(., . %in% c("0", "NAD"), NA)
+        )) %>%
+        # Set riss and niss to NA if all 'icd' columns are NA
+        mutate(
+            all_icd_na = rowSums(!is.na(select(., contains("icd") & !ends_with("_r")))) == 0,
+            riss = ifelse(all_icd_na, NA, riss),
+            niss = ifelse(all_icd_na, NA, niss)
+        ) %>%
+        select(-all_icd_na)
 
     ## Classify mechanism of injury (incident__moi and incident__moi_001) as factors
     prepared.data$incident__moi <- as.factor(prepared.data$incident__moi)
