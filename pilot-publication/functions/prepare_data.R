@@ -93,12 +93,12 @@ prepare_data <- function(data, codebook = NULL) {
         "niss"
     )]
     prepared.data <- cbind(prepared.data, iss.data)
-    
+
     ## Treat iss and niss as NA, if all icd columns are NA
     prepared.data <- prepared.data %>%
         # Replace 0 and NAD with NA for all columns containing "icd" but not ending with "_r"
         mutate(across(
-            .cols = contains("icd") & !ends_with("_r"), 
+            .cols = contains("icd") & !ends_with("_r"),
             .fns = ~ replace(., . %in% c("0", "NAD"), NA)
         )) %>%
         # Set riss and niss to NA if all 'icd' columns are NA
@@ -187,7 +187,7 @@ prepare_data <- function(data, codebook = NULL) {
     labelled::var_label(prepared.data$incident__moi) <- "Mechanism of injury"
     labelled::var_label(prepared.data$blunt.multisystem.trauma) <- "Blunt multisystem trauma"
     labelled::var_label(prepared.data$penetrating.trauma) <- "Penetrating trauma"
-    labelled::var_label(prepared.data$shock) <- "Shock"
+    labelled::var_label(prepared.data$shock) <- "Shock (SBP ≤ 90 mmHg)"
     labelled::var_label(prepared.data$severe.tbi) <- "Severe traumatic brain injury"
     labelled::var_label(prepared.data$elderly) <- "Elderly (Age ≥ 65 years)"
     labelled::var_label(prepared.data$male) <- "Male"
