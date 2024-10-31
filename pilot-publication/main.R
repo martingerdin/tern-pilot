@@ -59,7 +59,7 @@ sample.characteristics.table <- create_descriptive_table(stratified.table.data,
 ) %>%
     gtsummary::modify_table_styling(
         column = label,
-        footnote_abbrev = "ATLS = Advanced Trauma Life Support; PTC = Prehospital Trauma Care"
+        footnote_abbrev = "ATLS = Advanced Trauma Life Support; PTC = Prehospital Trauma Care; SBP = systolic blood pressure"
     ) %>%
     add_stat_label(
         label = list(
