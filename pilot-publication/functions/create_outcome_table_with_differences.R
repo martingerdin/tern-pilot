@@ -1,3 +1,24 @@
+#' Create outcome table with differences between arms
+#'
+#' Creates a table comparing mortality outcomes between trial arms and calculates differences between arms.
+#' The table shows percentages for each arm and absolute differences between arms with confidence intervals.
+#'
+#' @param data A data frame containing the trial data with columns:
+#'   - outcomes__alive_after_30_days: 30-day mortality outcome ("Yes"/"No")
+#'   - outcomes__discharge_alive: In-hospital mortality outcome ("Yes"/"No")
+#'   - arm: Trial arm ("Standard care", "ATLS", or "PTC")
+#'
+#' @return A gtsummary table object containing:
+#'   - Percentages for each outcome by trial arm
+#'   - Absolute differences between Standard care vs ATLS
+#'   - Absolute differences between Standard care vs PTC
+#'   - Absolute differences between ATLS vs PTC
+#'
+#' @importFrom gtsummary tbl_summary tbl_merge modify_header modify_spanning_header modify_table_styling
+#' @importFrom labelled var_label
+#' @importFrom dplyr filter select mutate
+#'
+#' @export
 create_outcome_table_with_differences <- function(data) {
     # Filter and modify data
     table.data <- data |>

@@ -2,7 +2,7 @@
 ## compile with:
 ## Rscript -e "rmarkdown::render('manuscript.Rmd', output_format = 'all')"
 ## libreoffice --headless --convert-to pdf manuscript.docx
-title: "Effect of Trauma Life Support Training on Patient Outcomes: A Pilot Cluster Randomised Trial"
+title: "Assessing the Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study"
 author: Trauma life support training Effectiveness Research Network (TERN) collaborators
 bibliography: bibliography.bib
 csl: nature.csl
@@ -64,7 +64,7 @@ Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
 Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
 
 ##### Nobhojit Roy (NR)
-WHO Collaborating Center for Research on Surgical Care Delivery in LMICs, BARC Hospital, HBNI University, Mumbai, India.  
+Program for Global Surgery and Trauma, The George Institute of Global Health, New Delhi, India.
 
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
@@ -193,7 +193,7 @@ Trauma, defined as the clinical entity composed of physical injury and the body'
 
 The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alternative Primary Trauma Care (PTC) are two widely established trauma life support training programmes with over a million physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. Observational studies indicate that these programmes may improve patient outcomes [@Jin2021], but there is no high quality evidence from controlled trials to support this [@Mohammad2013; @Jayaraman2014; @Kadhum2020; @putra_impact_2023; @mciver_effect_2024]. 
 
-Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS^®^ is associated with improved provider skills [@Mohammad2013]. Observational evidence indicates that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then if these improved skills translate into improved patient outcomes. 
+Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS^®^ is associated with improved knowledge and skills among providers [@Mohammad2013]. Observational evidence indicates that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then if this improved knowledge and skills translate into measurably improved patient outcomes. 
 
 Systematic reviews call for trials in settings where these programmes are not routinely implemented [@Jayaraman2014; @Kadhum2020], but data needed to inform the planning of such a trial is missing. We aimed to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care, and to estimate probable effect sizes and the intracluster correlation coefficient needed for the sample size calculations of a full-scale trial.
 
@@ -205,7 +205,7 @@ Systematic reviews call for trials in settings where these programmes are not ro
 We piloted a three-armed cluster randomised controlled trial[@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS^®^ and PTC training. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). This design allowed us to assess outcomes both as final values and as change from baseline. 
 
 ## Study Setting
-We conducted this pilot study in seven Indian tertiary hospitals across metropolitan areas in India, where neither ATLS^®^, PTC, nor any other trauma life support training program is routinely taught. 
+We conducted this pilot study in seven Indian tertiary hospitals across metropolitan areas in India, where neither ATLS^®^, PTC, nor any other established trauma life support training program is routinely taught. 
 
 <!--
 The trauma system is still developing, with
@@ -222,7 +222,7 @@ within the hospitals.
 
 ## Standard Care
 
-Standard care varies across hospitals in India, but most surgical and emergency medicine departments in India organise their physicians in units. These units typically include three faculty members and three to twelve residents, who are assigned a specific day of the week when they are posted in the emergency department. In the emergency department, trauma patients are initially assessed by first- or second-year residents who also resuscitate patients, perform interventions and refer patients for imaging or other investigations. Compared with other settings where a trauma team approach is adopted, nurses and other healthcare professionals are only involved to a limited extent during the initial management. 
+Standard care varies across hospitals in India, but most surgical and emergency medicine departments in India organise their physicians in units. These units  include both faculty members and residents, who are assigned a specific day of the week when they are posted in the emergency department. In the emergency department, trauma patients are initially assessed by residents who also resuscitate patients, perform interventions and refer patients for imaging or other investigations. Compared with other settings where a trauma team approach is adopted, nurses and other healthcare professionals are only involved to a limited extent during the initial management. 
 
 ## Intervention
 
@@ -244,15 +244,15 @@ Resident doctors doing their speciality training in surgery or emergency medicin
 
 ### Patients
 
-All adults (15 years or older) who presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
+We included persons who were 15 years or older and presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
 
 ## Outcomes
 
 We measured a large number of outcomes to help plan and assess the feasibility of a full scale trial. A list of outcomes is available in Supplementary Table S1. Our main outcomes were: 
 
 - Consent rate of patients and residents. This was equal to the percentage of patients or residents who consented to be included, out of the total number of eligible patients or residents. 
-- Lost to follow up rate. This applied only to patients and was equal to the percentage of patients whom did not complete 30 day follow up, out of all enrolled patients.
-- Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents that passed the training programme, out of the total number of trained residents.
+- Lost to follow up rate. This applied only to patients and was equal to the percentage of patients who did not complete 30 day follow up, out of all enrolled patients.
+- Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents who passed the training programme, out of the total number of trained residents.
 - Missing data rate. This applied to each outcome and variable and was equal to the percentage of missing values.
 - Differences in distributions of observed and extracted data. This applied to each outcome and variable and compared the distributions of data collected by observations versus extracted from hospital records.
 - All cause and in-hospital mortality within 30 days from the time of arrival to the emergency department among patients, measured and compared across trial arms as both final values and as change from baseline.
@@ -279,11 +279,11 @@ We used simple randomisation implemented using sealed envelopes to allocate site
 
 ## Data Collection
 
-Data was collected over a four-month period. A research officer collected data on all patients who presented on the days and shifts when participating residents were assigned to trauma care. The research officers observed care and interviewed residents and patients, and also extracted data from the hospital records. We followed up admitted patients for their complications and other in-hospital outcome measures. Patients who were not admitted were followed up telephonically for mortality outcomes and quality of life outcomes. 
+Data was collected over a four-month period. A research officer collected data on all patients who presented on the days and shifts when participating residents were assigned to trauma care. The research officers observed care and interviewed residents and patients, and also extracted data from the hospital records. We followed up admitted patients for their complications and other in-hospital outcome measures. Patients who were not admitted or who were discharged before the end of the study were followed up telephonically for mortality outcomes and quality of life outcomes. 
 
 ## Variables
 
-The research officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, times to and management details including imaging and surgery, and details of any injury sustained. All injuries were coded according to the International Classification of Diseases version 10 (ICD-10). Based on these ICD-10 codes, we calculated the Injury Severity Score using the R package `icdpicr` [@icdpicr_2022]. For a subset of patients we also extracted data from medical records, to be able to compare the distribution of this data with the distribution of data collected through direct observations.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
+The research officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, times to and management details including imaging and surgery, and details of any injury sustained. All injuries were coded according to the International Classification of Diseases version 10 (ICD-10). Based on these ICD-10 codes, we calculated the Injury Severity Score using the R package `icdpicr` [@icdpicr_2022]. For a convenience sample of patients we also extracted data from medical records, to be able to compare the distribution of this data with the distribution of data collected through direct observations.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
 
 ## Patient and public involvement
 
@@ -310,7 +310,7 @@ In the interest of space, only the 95% confidence intervals are presented for al
 
 ## Ethics and Dissemination
 
-We were granted research ethics approval from the institutional ethics committees at each participating hospital. 
+We were granted research ethics approval from the institutional ethics committees at each participating hospital. For each participating hospital, the approvals were HBTMC/266/SURGERY for Dr R N  Cooper Municipal General Hospital in Mumbai, IEC(II)/OUT/134/2022 for Seth GS Medical College and KEM Hospital in Mumbai, ICC/214/22/20/05/2022 for Lokmanya Tilak Municipal Medical College and General Hospital, CREC/2022/FEB/1(ii) for MEDICA Superspeciality Hospital in Kolkata, XX for Medical College, Kolkata, NRSMC/IEC/93/2021 for Nilratan Sircar Medical College & Hospital in Kolkata, and finally IEC-03/2022-2332 for Postgraduate Institute of Medical Education and Research, Chandigarh.
 
 # Results
 
@@ -364,7 +364,7 @@ data collection -->
 
 Previous studies on the effect of in-hospital trauma life support training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008; @Wang2010]. Studies from Trinidad and Tobago, El Salvador, Rwanda, and Cambodia found no significant effect on patient mortality after implementing in-hospital trauma life support training [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008], whereas one study from China that included 820 patients found a significant reduction in mortality, from 20 to 15%, after implementing ATLS^®^ [@Wang2010]. 
 
-Considering the widespread use of trauma life support traning, several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. Our study represent the first published attempt at a controlled trial of the effect of trauma life support traning och patient outcomes, and we conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
+Considering the widespread use of trauma life support training, several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. Our study represents the first published attempt at a controlled trial of the effect of trauma life support training och patient outcomes, and we conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
  
 # Contributorship statement
 <!--

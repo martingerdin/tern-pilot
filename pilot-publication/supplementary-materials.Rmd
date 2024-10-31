@@ -1,6 +1,6 @@
 ---
 title: Supplementary Materials
-subtitle: "Effect of Trauma Life Support Training on Patient Outcomes: A Pilot Cluster Randomised Trial"
+subtitle: "Assessing the Feasibility of a Pilot Cluster Randomised Trial of the Effect of Trauma Life Support Training: A Pilot Study"
 output:
     bookdown::word_document2:
       number_sections: false
@@ -27,11 +27,11 @@ combined.sample.characteristics.table
 
 ## Trial Registration
 
-We intended to also register our trial with Clinical Trials Registry - India and will do so with the full-scale trial.
+We intended to register our trial with Clinical Trials Registry - India and will do so with the full-scale trial.
 
 ## Outcomes across subgroups
 
-Because of small numbers in the pre-specified subgroups men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury, and elderly we decided to report only descriptive data on these subgroups.
+Because of small numbers in the pre-specified subgroups men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury and elderly we decided to report only descriptive data on these subgroups.
 
 ## Number of Participating Centres
 
@@ -41,7 +41,7 @@ We recruited seven centres instead of six and therefore assigned two centres eac
 
 We included emergency medicine residents in addition to surgical residents.
 
-## Periodic suverys to residents
+## Periodic surveys of residents
 
 We did not distribute periodic surveys to the participating residents but discussed challenges and suggestions that they had regarding the scheduling or implementation of the training programs.
 
@@ -51,7 +51,7 @@ We stated that resident participants would be followed up 30 days after training
 
 ## Data collection from records
 
-We decided to extract data from medical records only for a subset of patients to reduce the research officers' workload.
+We decided to extract data from medical records only for a convenience sample of patients to reduce the research officers' workload.
 
 ## Selection of units for training
 

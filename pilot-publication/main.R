@@ -168,7 +168,7 @@ m30d.standard.care.n <- inline_text(post.training.characteristics.table,
 m30d.standard.care.p <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
     column = "Standard care",
-    pattern = "({p})%"
+    pattern = "({p}%)"
 )
 m30d.atls <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
@@ -182,7 +182,7 @@ m30d.atls.n <- inline_text(post.training.characteristics.table,
 m30d.atls.p <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
     column = "ATLS",
-    pattern = "({p})%"
+    pattern = "({p}%)"
 )
 m30d.ptc <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
@@ -196,7 +196,7 @@ m30d.ptc.n <- inline_text(post.training.characteristics.table,
 m30d.ptc.p <- inline_text(post.training.characteristics.table,
     variable = outcomes__alive_after_30_days,
     column = "PTC",
-    pattern = "({p})%"
+    pattern = "({p}%)"
 )
 
 # Crude in-hospital mortality
