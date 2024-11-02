@@ -157,7 +157,7 @@ The funding sources had no role in the design of this study nor during its execu
 
 **Importance** There is no high-quality evidence to show that trauma life support training programmes improve patient outcomes.
 
-**Objective** To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes.
+**Objective** To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes, and to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial.
 
 **Design** A pilot pragmatic three-armed parallel, cluster randomised, controlled trial between `r start.date` and `r end.date`. Patient follow up was 30 days.
 
@@ -171,7 +171,7 @@ The funding sources had no role in the design of this study nor during its execu
 
 **Results** Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. We included `r n.patients` patients and `r n.residents` residents. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data was overall low for key variables. Data collected through observations were similar to data extracted from medical records, but there was more missing data in the extracted data. `r number_to_text(m30d.standard.care.n, first = TRUE)` `r m30d.standard.care.p` patients died within 30 days in the standard care arm, `r number_to_text(m30d.atls.n)` `r m30d.atls.p` patient in the ATLS^®^ arm, and `r number_to_text(m30d.ptc.n)` `r m30d.ptc.p` patients in the PTC arm.
 
-**Conclusions and Relevance** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes will be feasible after incorporating key lessons from this pilot. 
+**Conclusions and Relevance** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes will be feasible, especially if such a trial would use data and outcomes available in medical records. 
 
 **Trial Registration** ClinicalTrials.gov (reg. no NCT05417243)
 
@@ -191,11 +191,13 @@ Strengths and limitations of this study:
 
 Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year [@injuries2020]. Several trauma life support training programs have been developed to improve the early management of patients as they arrive at hospital by providing a structured framework to assessment and treatment [@Mohammad2013; @Jayaraman2014; @Kadhum2020].
 
-The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alternative Primary Trauma Care (PTC) are two widely established trauma life support training programmes with over a million physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. Observational studies indicate that these programmes may improve patient outcomes [@Jin2021], but there is no high quality evidence from controlled trials to support this [@Mohammad2013; @Jayaraman2014; @Kadhum2020; @putra_impact_2023; @mciver_effect_2024]. 
+The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alternative Primary Trauma Care (PTC) are two widely established trauma life support training programmes with over a million physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. Observational studies indicate that these programmes may improve patient outcomes [@Ariyanayagam1992; @CioèPeña2016; @Petroze2014; @VanHeng2008; @Wang2010], but there is no high quality evidence from controlled trials to support this [@Mohammad2013; @Jayaraman2014; @Kadhum2020; @Jin2021; @putra_impact_2023; @mciver_effect_2024]. 
 
-Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS^®^ is associated with improved knowledge and skills among providers [@Mohammad2013]. Observational evidence indicates that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then if this improved knowledge and skills translate into measurably improved patient outcomes. 
+Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS^®^ is associated with improved knowledge and skills among providers [@Mohammad2013]. Observational evidence suggests that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then whether these improved knowledge and skills translate into measurably improved patient outcomes. 
 
-Systematic reviews call for trials in settings where these programmes are not routinely implemented [@Jayaraman2014; @Kadhum2020], but data needed to inform the planning of such a trial is missing. We aimed to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care, and to estimate probable effect sizes and the intracluster correlation coefficient needed for the sample size calculations of a full-scale trial.
+Systematic reviews call for controlled trials in settings where these programmes are not routinely implemented [@Jayaraman2014; @Kadhum2020], because conducting such effectiveness trials in settings where they are part of the standard of care would not be possible. Many settings without routinely implemented trauma life support training are in low- and middle income countries, where trial logistics can be challenging due to for example difficulties in patient follow up.
+
+We therefore aimed to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care, and to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial.
 
 <!-- add citation to scoping review of TQIP [@mciver_effect_2024]-->
 
@@ -310,7 +312,7 @@ In the interest of space, only the 95% confidence intervals are presented for al
 
 ## Ethics and Dissemination
 
-We were granted research ethics approval from the institutional ethics committees at each participating hospital. For each participating hospital, the approvals were HBTMC/266/SURGERY for Dr R N  Cooper Municipal General Hospital in Mumbai, IEC(II)/OUT/134/2022 for Seth GS Medical College and KEM Hospital in Mumbai, ICC/214/22/20/05/2022 for Lokmanya Tilak Municipal Medical College and General Hospital, CREC/2022/FEB/1(ii) for MEDICA Superspeciality Hospital in Kolkata, XX for Medical College, Kolkata, NRSMC/IEC/93/2021 for Nilratan Sircar Medical College & Hospital in Kolkata, and finally IEC-03/2022-2332 for Postgraduate Institute of Medical Education and Research, Chandigarh.
+We were granted research ethics approval from the institutional ethics committees at each participating hospital. For each participating hospital, the approvals were HBTMC/266/SURGERY for Dr R N  Cooper Municipal General Hospital in Mumbai, IEC(II)/OUT/134/2022 for Seth GS Medical College and KEM Hospital in Mumbai, ICC/214/22/20/05/2022 for Lokmanya Tilak Municipal Medical College and General Hospital, CREC/2022/FEB/1(ii) for MEDICA Superspeciality Hospital in Kolkata, MC/KOL/IEC/NON-SPON/1217/11/21 for Medical College, Kolkata, NRSMC/IEC/93/2021 for Nilratan Sircar Medical College & Hospital in Kolkata, and finally IEC-03/2022-2332 for Postgraduate Institute of Medical Education and Research, Chandigarh.
 
 # Results
 
@@ -329,7 +331,7 @@ sample.characteristics.table |>
 
 ## Outcomes
 
-The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S1. The variables with the maximum amount of missing data were complications, reported in Supplementary Tables S1-12. The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
+The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. Among patients, the lost to follow up rate was `r rate.lost.to.follow.up`%. Among residents, the pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S1. The variables with the maximum amount of missing data were complications, reported in Supplementary Tables S1-12. The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
 
 ```{r observed-vs-extracted, echo = FALSE, tab.cap = "Differences in distributions between directly observed data and data extracted from medical records, for selected variables that were collected through observation or interview."}
 observed.vs.extracted.comparison.table
