@@ -1,4 +1,6 @@
 ---
+## Rscript -e "rmarkdown::render('supplementary-materials.Rmd')"
+## libreoffice --headless --convert-to pdf supplementary-materials.docx
 title: Supplementary Materials
 subtitle: "Assessing the Feasibility of a Pilot Cluster Randomised Trial of the Effect of Trauma Life Support Training: A Pilot Study"
 output:

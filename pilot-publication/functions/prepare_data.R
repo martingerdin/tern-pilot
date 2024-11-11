@@ -187,11 +187,14 @@ prepare_data <- function(data, codebook = NULL) {
     labelled::var_label(prepared.data$incident__moi) <- "Mechanism of injury"
     labelled::var_label(prepared.data$blunt.multisystem.trauma) <- "Blunt multisystem trauma"
     labelled::var_label(prepared.data$penetrating.trauma) <- "Penetrating trauma"
-    labelled::var_label(prepared.data$shock) <- "Shock (SBP ≤ 90 mmHg)"
+    labelled::var_label(prepared.data$shock) <- "Shock (SBP &le; 90 mmHg)"
     labelled::var_label(prepared.data$severe.tbi) <- "Severe traumatic brain injury"
-    labelled::var_label(prepared.data$elderly) <- "Elderly (Age ≥ 65 years)"
+    labelled::var_label(prepared.data$elderly) <- "Elderly (Age &ge; 65 years)"
     labelled::var_label(prepared.data$male) <- "Male"
     labelled::var_label(prepared.data$female) <- "Female"
+
+    ## Add variable labels for outcomes
+    prepared.data <- label_outcome_variables(prepared.data)
 
     ## Return prepared data
     return(prepared.data)

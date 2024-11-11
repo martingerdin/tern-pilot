@@ -2,8 +2,9 @@
 #'
 #' Function to calculate basic results.
 #' @param data A data.frame with the trial data. No default.
+#' @param missing.variables A character vector of variable names to include in the missing data summary. Defaults to NULL, in which case all variables are included.
 #' @export
-get_basic_results <- function(data) {
+get_basic_results <- function(data, missing.variables = NULL) {
     results <- list()
 
     # Dates
@@ -82,7 +83,7 @@ get_basic_results <- function(data) {
     results$n.lost.to.follow.up <- with(data, sum(is.na(outcomes__alive_after_30_days)))
     results$rate.lost.to.follow.up <- round(results$n.lost.to.follow.up / nrow(data) * 100)
     results$p.missing.in.hospital.mortality <- with(data, round(sum(is.na(outcomes__discharge_alive)) / nrow(data) * 100))
-    missing.data.summary <- get_missing_data_summary(data)
+    missing.data.summary <- get_missing_data_summary(data, variable.names = missing.variables)
     results$min.missing.data <- min(missing.data.summary$p.missing)
     results$max.missing.data <- max(missing.data.summary$p.missing)
     return(results)

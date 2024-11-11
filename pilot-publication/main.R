@@ -19,13 +19,7 @@ codebook <- do.call(noacsr::kobo_get_project_codebook, codebook.arguments)
 ## Prepare data
 data <- prepare_data(data, codebook)
 
-## Define basic results
-results <- get_basic_results(data)
-
-## Create CONSORT diagram
-create_consort_diagram(results)
-
-## Create table of sample characteristics
+## Define variables for sample characteristics table
 table.variables <- c(
     "patinfo__pt_age", "elderly",
     "patinfo__pt_gender",
@@ -45,6 +39,14 @@ table.variables.full <- unique(c(
     categorical_outcomes() |> names(),
     quantitative_outcomes() |> names()
 ))
+
+## Define basic results
+results <- get_basic_results(data, missing.variables = table.variables.full)
+
+## Create CONSORT diagram
+create_consort_diagram(results)
+
+## Create table of sample characteristics
 table.data <- data %>%
     select(all_of(table.variables.full)) %>%
     select(-arm)

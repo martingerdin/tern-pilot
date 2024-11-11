@@ -27,7 +27,7 @@ attach(results)
 This pilot study was registered with ClinicalTrials.gov (reg. no NCT05417243). 
 
 ## Corresponding author
-Martin Gerdin Wärnberg (MGW) `r insert_orcid_link("0000-0001-6069-4794")`
+Martin Gerdin Wärnberg (MGW)`r insert_orcid_link("0000-0001-6069-4794")`
 
 Department of Global Public Health  
 Karolinska Institutet  
@@ -37,56 +37,56 @@ Sweden
 martin.gerdin@ki.se  
 +46 708 53 95 98 (mobile)
 
-## Authors
+## Authors (in alphabetical order by last name)
 
-##### Johanna Berg (JB) `r insert_orcid_link("0000-0001-7553-7337")`
+##### Debojit Basak`r insert_orcid_link("90000-0002-8378-9689")`
+Project Research Scientist, Institute of Post Graduate Medical Education and Research, Kolkata, India.
+
+##### Johanna Berg (JB)`r insert_orcid_link("0000-0001-7553-7337")`
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.  
 
 Emergency Medicine, Department of Internal and Emergency Medicine, Skåne University Hospital, Malmö, Sweden.
 
-##### Shamita Chatterjee (SC)
+##### Shamita Chatterjee (SC)`r insert_orcid_link("0000-0002-9460-108X")`
 Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Li Felländer-Tsai (LFT)
+##### Li Fell<U+00E4>nder-Tsai (LFT)`r insert_orcid_link("0000-0003-0693-6080")`
 Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
 
 Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
 
-##### Geeta Ghag (GG)
+##### Geeta Ghag (GG)`r insert_orcid_link("0000-0001-5561-362X")`
 Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
 
-##### Monty Khajanchi (MK)
+##### Monty Khajanchi (MK)`r insert_orcid_link("0000-0002-0898-6391")`
 WHO Collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.  
 
 Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
 
-##### Catherine Juillard (CJ)
+##### Tamal Khan 
+Senior Research fellow, All India Institute of Medical Sciences, New Delhi, India.
+
+##### Catherine Juillard (CJ)`r insert_orcid_link("0000-0003-0847-8933")`
 Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
 
-##### Nobhojit Roy (NR)
+##### Vipul Nandu`r insert_orcid_link("0000-0002-3366-5610")`
+Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
+
+##### Nobhojit Roy (NR)`r insert_orcid_link("0000-0003-2022-7416")`
 Program for Global Surgery and Trauma, The George Institute of Global Health, New Delhi, India.
 
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
-##### Rajdeep Singh (RS)
+##### Rajdeep Singh (RS)`r insert_orcid_link("0000-0001-6593-2624")`
 Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 
-##### Kapil Dev Soni (KDS)
+##### Kapil Dev Soni (KDS)`r insert_orcid_link("0000-0003-1214-4119")`
 Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medical Sciences, New Delhi, India.
 
-##### Lovisa Strömmer (LS) `r insert_orcid_link("0000-0001-5424-7111")`
+##### Lovisa Strömmer (LS)`r insert_orcid_link("0000-0001-5424-7111")`
 Division of Surgery, Department of Clinical Science, Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
 
 Department of Surgery, Capio St Göran Hospital, Stockholm, Sweden.
-
-##### Vipul Nandu
-Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
-
-##### Debojit Basak
-Project Research Scientist, Institute of Post Graduate Medical Education and Research, Kolkata, India.
-
-##### Tamal Khan 
-Senior Research fellow, All India Institute of Medical Sciences, New Delhi, India.
 
 ## Non-author contributors
 
@@ -189,13 +189,13 @@ Strengths and limitations of this study:
 
 # Introduction
 
-Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year [@injuries2020]. Several trauma life support training programs have been developed to improve the early management of patients as they arrive at hospital by providing a structured framework to assessment and treatment [@Mohammad2013; @Jayaraman2014; @Kadhum2020].
+Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year [@injuries2020]. Several trauma life support training programs have been developed to improve the early management of patients in hospital by providing a structured framework to assessment and treatment [@Mohammad2013; @Jayaraman2014; @Kadhum2020].
 
-The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alternative Primary Trauma Care (PTC) are two widely established trauma life support training programmes with over a million physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. Observational studies indicate that these programmes may improve patient outcomes [@vestrup_impact_1988, @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016], but there is no high quality evidence from controlled trials to support this [@Mohammad2013; @Jayaraman2014; @Kadhum2020; @Jin2021; @putra_impact_2023; @mciver_effect_2024]. 
+The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alternative Primary Trauma Care (PTC) are two widely established trauma life support training programmes with over a million physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. Observational studies indicate that these programmes may improve patient outcomes [@vestrup_impact_1988; @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016], but there is no high quality evidence from controlled trials to support this [@Mohammad2013; @Jayaraman2014; @Kadhum2020; @Jin2021; @putra_impact_2023; @mciver_effect_2024]. 
 
 Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS^®^ is associated with improved knowledge and skills among providers [@Mohammad2013]. Observational evidence suggests that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then whether these improved knowledge and skills translate into measurably improved patient outcomes. 
 
-Systematic reviews call for controlled trials in settings where these programmes are not routinely implemented [@Jayaraman2014; @Kadhum2020], because conducting such effectiveness trials in settings where they are part of the standard of care would not be possible. Many settings without routinely implemented trauma life support training are in low- and middle income countries, where trial logistics can be challenging due to for example difficulties in patient follow up.
+Systematic reviews call for controlled trials in settings where these programmes are not routinely implemented [@Jayaraman2014; @Kadhum2020], because conducting such effectiveness trials in settings where they are part of the standard of care is not possible. Many settings without routinely implemented trauma life support training are in low- and middle income countries, where trial logistics can be more challenging.
 
 We therefore aimed to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care, and to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial.
 
@@ -207,7 +207,7 @@ We therefore aimed to assess the feasibility of conducting a cluster randomised 
 We piloted a three-armed cluster randomised controlled trial[@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS^®^ and PTC training. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). This design allowed us to assess outcomes both as final values and as change from baseline. 
 
 ## Study Setting
-We conducted this pilot study in seven Indian tertiary hospitals across metropolitan areas in India, where neither ATLS^®^, PTC, nor any other established trauma life support training program is routinely taught. 
+We conducted this pilot study in seven tertiary hospitals across metropolitan areas in India, where neither ATLS^®^, PTC, nor any other established trauma life support training program is routinely taught. 
 
 <!--
 The trauma system is still developing, with
@@ -242,11 +242,11 @@ We defined a cluster as one or more units of physicians providing trauma care in
 
 ### Residents
 
-Resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year from the time of the training. Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. 
+We trained resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year from the time of the training. Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. 
 
 ### Patients
 
-We included persons who were 15 years or older and presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter XX of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
+We included persons who were 15 years or older and presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter 20 of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
 
 ## Outcomes
 
@@ -257,7 +257,7 @@ We measured a large number of outcomes to help plan and assess the feasibility o
 - Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents who passed the training programme, out of the total number of trained residents.
 - Missing data rate. This applied to each outcome and variable and was equal to the percentage of missing values.
 - Differences in distributions of observed and extracted data. This applied to each outcome and variable and compared the distributions of data collected by observations versus extracted from hospital records.
-- All cause and in-hospital mortality within 30 days from the time of arrival to the emergency department among patients, measured and compared across trial arms as both final values and as change from baseline.
+- All cause and in-hospital mortality within 30 days from the time of arrival to the emergency department among patients.
 
 <!--The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 1. We decided to include a large number of outcomes, including some more exploratory, so that we could test their feasibility and relevance. -->
 
@@ -277,7 +277,7 @@ We did not conduct a formal power calculation for this pilot study, as the purpo
 
 ## Allocation and blinding
 
-We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. We did not blind investigators, residents or patients to the interventions. 
+We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. We did not blind investigators, residents or patients to the intervention. 
 
 ## Data Collection
 
@@ -285,11 +285,11 @@ Data was collected over a four-month period. A research officer collected data o
 
 ## Variables
 
-The research officers collected data on demographics, time of injury to arrival at the participating hospital, time to recording vital signs, vital signs, times to and management details including imaging and surgery, and details of any injury sustained. All injuries were coded according to the International Classification of Diseases version 10 (ICD-10). Based on these ICD-10 codes, we calculated the Injury Severity Score using the R package `icdpicr` [@icdpicr_2022]. For a convenience sample of patients we also extracted data from medical records, to be able to compare the distribution of this data with the distribution of data collected through direct observations.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
+The research officers collected data on demographics, vital signs, management details including imaging and surgery, and details of any injury sustained. All injuries were coded according to the International Classification of Diseases version 10 (ICD-10). Based on these ICD-10 codes, we calculated the Injury Severity Score using the R package `icdpicr` [@icdpicr_2022]. For a convenience sample of patients we also extracted data from medical records, to be able to compare the distribution of this data with the distribution of data collected through direct observations.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
 
 ## Patient and public involvement
 
-We conducted community consultations to collect inputs from patients, their caregivers, patient groups, and resident doctors to be used in the selection of outcome measures and implementation of the full-scale trial. The results of these consultations will be published separately.
+We conducted community consultations to collect inputs from patients, their caregivers, patient groups, and resident doctors to be used in the selection of outcome measures and implementation of the full-scale trial. The results of these consultations are published separately [@david_patient-reported_2024].
 
 <!--
 ## Data management
@@ -306,13 +306,13 @@ We used the `r version$version.string` Statistical Software for all analyses [@R
 
 We compared patients outcomes in all possible combinations of trial arms. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
 
-Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock (systolic blood pressure ≤ 90 mmHg), severe traumatic brain injury, and elderly (≥65 years) [@hornor_quality_2018]. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively.  We calculated both absolute and relative differences for each comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals. 
+Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock (systolic blood pressure ≤ 90 mmHg), severe traumatic brain injury, and elderly (≥65 years) [@hornor_quality_2018]. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively. We calculated both absolute and relative differences for each comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals. 
 
 In the interest of space, only the 95% confidence intervals are presented for all comparisons in Supplementary Tables. The remaining results are available from the corresponding author on request.
 
 ## Ethics and Dissemination
 
-We were granted research ethics approval from the institutional ethics committees at each participating hospital. For each participating hospital, the approvals were HBTMC/266/SURGERY for Dr R N  Cooper Municipal General Hospital in Mumbai, IEC(II)/OUT/134/2022 for Seth GS Medical College and KEM Hospital in Mumbai, ICC/214/22/20/05/2022 for Lokmanya Tilak Municipal Medical College and General Hospital, CREC/2022/FEB/1(ii) for MEDICA Superspeciality Hospital in Kolkata, MC/KOL/IEC/NON-SPON/1217/11/21 for Medical College, Kolkata, NRSMC/IEC/93/2021 for Nilratan Sircar Medical College & Hospital in Kolkata, and finally IEC-03/2022-2332 for Postgraduate Institute of Medical Education and Research, Chandigarh.
+We were granted research ethics approval from the institutional ethics committees at each participating hospital. For each participating hospital, the approvals were HBTMC/266/SURGERY for Dr R N  Cooper Municipal General Hospital in Mumbai, IEC(II)/OUT/134/2022 for Seth GS Medical College and KEM Hospital in Mumbai, ICC/214/22/20/05/2022 for Lokmanya Tilak Municipal Medical College and General Hospital, CREC/2022/FEB/1(ii) for MEDICA Superspeciality Hospital in Kolkata, MC/KOL/IEC/NON-SPON/1217/11/21 for Medical College, Kolkata, NRSMC/IEC/93/2021 for Nilratan Sircar Medical College & Hospital in Kolkata, and finally IEC-03/2022-2332 for the Postgraduate Institute of Medical Education and Research, Chandigarh.
 
 # Results
 
@@ -331,7 +331,7 @@ sample.characteristics.table |>
 
 ## Outcomes
 
-The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. Among patients, the lost to follow up rate was `r rate.lost.to.follow.up`%. Among residents, the pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S1. The variables with the maximum amount of missing data were complications, reported in Supplementary Tables S1-12. The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in extracted data compared to observed data.
+The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. Among patients, the lost to follow up rate was `r rate.lost.to.follow.up`%. Among residents, the pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S1. The variables with the maximum amount of missing data were in the cost of treatment, reported in Supplementary Tables S1-12. The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in the extracted data compared to the observed data.
 
 ```{r observed-vs-extracted, echo = FALSE, tab.cap = "Differences in distributions between directly observed data and data extracted from medical records, for selected variables that were collected through observation or interview."}
 observed.vs.extracted.comparison.table
@@ -345,12 +345,12 @@ outcome.table.with.differences
 
 # Discussion
 
-We show that it is feasible to conduct and collect data for a cluster randomized controlled trial comparing ATLS^®^ with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables, especially complications (reported in Supplementary Table S1-12) had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. The missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data were similarly distributed, indicating that data collected from medical records is reliable even if it is less complete.
+We show that it is feasible to conduct and collect data for a cluster randomized controlled trial comparing ATLS^®^ with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables, especially the cost of treatment (reported in Supplementary Table S1-12) had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. The missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data were similarly distributed, indicating that data collected from medical records is reliable even if it is less complete.
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
 
-We found that the ATLS^®^ and PTC arms had lower 30-day mortality compared to the PTC and standard care arms. This finding could hint towards a potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS^®^ arm having the smallest sample size. This difference most likely resulted from the randomisation process with a small number of heterogeneous clusters. This heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.
+We found that the ATLS^®^ and PTC arms had lower 30-day mortality compared to the PTC and standard care arms. This finding could hint towards a potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS^®^ arm having the smallest sample size. This difference most likely resulted from the randomisation process with a small number of heterogeneous clusters, and this heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.
 
 All-cause 30-day mortality was missing in `r rate.lost.to.follow.up`% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01% of patients [@Roberts2013; @Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only `r p.missing.in.hospital.mortality`%, which is comparable to previous trials.
 
@@ -364,24 +364,22 @@ We attempted to minimse the impact of the lower than expected enrolment rates by
 <!-- Consider discussing waiver of informed consent for initial 
 data collection -->
 
-Previous studies on the effect of ATLS^®^ or PTC training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@vestrup_impact_1988, @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016]. Most studies have found that these programmes are associated with improved outcomes, although not all studies have found significant effects [@vestrup_impact_1988; @ali_trauma_1993; @van_olden_clinical_2004; @Wang2010; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016]. In contrast, some studies have found that these programmes are associated with increased mortality [@drimousis_advanced_2011; @CioèPeña2016]. 
+Previous studies on the effect of ATLS^®^ or PTC training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@vestrup_impact_1988, @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016]. Most studies have found that these programmes are associated with improved outcomes, although not all studies have found significant effects [@vestrup_impact_1988; @ali_trauma_1993; @van_olden_clinical_2004; @Wang2010; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016]. In contrast, some studies have found that these programmes may be associated with increased mortality [@drimousis_advanced_2011; @CioèPeña2016]. 
 
 Considering the widespread use of trauma life support training, several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. Our study represents the first published attempt at a controlled trial of the effect of trauma life support training och patient outcomes, and we conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
  
 # Contributorship statement
-<!--
-MGW conceived of the study. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH,
+
+MGW conceived of the study, performed the analysis and drafted and revised the manuscript. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH,
 MGW, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the
-study. DKV, KDS, MK, and MGW drafted the first version of the
+study. MGV, DKV, KDS, and MK drafted the first version of the
 protocol. AG, HS, and SD drafted the first version of the patient and
 public involvement activities. JB and PP drafted the first versions of
 the data management sections and wrote the data management plan. PB
 and PP drafted the first versions of the statistical analysis
 section. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MGW, MK, NR, PB,
 PP, RS, SC, SD, and VK contributed to the refinement of the
-protocol. AR, AC, C, DK, GG, MK, MT, and VK are representatives of
-prospective participating hospitals.
--->
+protocol. DB, JB, SC, LFT, GG, MK, TK, CJ, NR, RS, KDS, LS and VP interpreted the results and revised the manuscript. AR, AC, C, DK, GG, MK, MT, VK and VP are representatives of participating hospitals.
 
 # Competing Interests
 
@@ -393,7 +391,7 @@ Doctors for You through grants awarded to Karolinska Institutet by the Swedish R
 
 # Data Sharing Statement
 
-The final anonymized dataset and code for analysis are released publicly.
+The code for analysis is released publicly. The final anonymized dataset is available from the corresponding author on request.
 
 \pagebreak
 
