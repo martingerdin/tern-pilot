@@ -39,23 +39,23 @@ martin.gerdin@ki.se
 
 ## Authors (in alphabetical order by last name)
 
-##### Debojit Basak`r insert_orcid_link("90000-0002-8378-9689")`
+##### Debojit Basak `r insert_orcid_link("90000-0002-8378-9689")`
 Project Research Scientist, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Johanna Berg (JB)`r insert_orcid_link("0000-0001-7553-7337")`
+##### Johanna Berg (JB) `r insert_orcid_link("0000-0001-7553-7337")`
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.  
 
 Emergency Medicine, Department of Internal and Emergency Medicine, Skåne University Hospital, Malmö, Sweden.
 
-##### Shamita Chatterjee (SC)`r insert_orcid_link("0000-0002-9460-108X")`
+##### Shamita Chatterjee (SC) `r insert_orcid_link("0000-0002-9460-108X")`
 Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Li Fell<U+00E4>nder-Tsai (LFT)`r insert_orcid_link("0000-0003-0693-6080")`
+##### Li Felländer-Tsai (LFT) `r insert_orcid_link("0000-0003-0693-6080")`
 Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
 
 Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
 
-##### Geeta Ghag (GG)`r insert_orcid_link("0000-0001-5561-362X")`
+##### Geeta Ghag (GG) `r insert_orcid_link("0000-0001-5561-362X")`
 Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
 
 ##### Monty Khajanchi (MK)`r insert_orcid_link("0000-0002-0898-6391")`
@@ -66,27 +66,25 @@ Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
 ##### Tamal Khan 
 Senior Research fellow, All India Institute of Medical Sciences, New Delhi, India.
 
-##### Catherine Juillard (CJ)`r insert_orcid_link("0000-0003-0847-8933")`
+##### Catherine Juillard (CJ) `r insert_orcid_link("0000-0003-0847-8933")`
 Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
 
-##### Vipul Nandu`r insert_orcid_link("0000-0002-3366-5610")`
+##### Vipul Nandu `r insert_orcid_link("0000-0002-3366-5610")`
 Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
 
-##### Nobhojit Roy (NR)`r insert_orcid_link("0000-0003-2022-7416")`
+##### Nobhojit Roy (NR) `r insert_orcid_link("0000-0003-2022-7416")`
 Program for Global Surgery and Trauma, The George Institute of Global Health, New Delhi, India.
 
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
-##### Rajdeep Singh (RS)`r insert_orcid_link("0000-0001-6593-2624")`
+##### Rajdeep Singh (RS) `r insert_orcid_link("0000-0001-6593-2624")`
 Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 
-##### Kapil Dev Soni (KDS)`r insert_orcid_link("0000-0003-1214-4119")`
+##### Kapil Dev Soni (KDS) `r insert_orcid_link("0000-0003-1214-4119")`
 Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medical Sciences, New Delhi, India.
 
-##### Lovisa Strömmer (LS)`r insert_orcid_link("0000-0001-5424-7111")`
-Division of Surgery, Department of Clinical Science, Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
-
-Department of Surgery, Capio St Göran Hospital, Stockholm, Sweden.
+##### Lovisa Strömmer (LS) `r insert_orcid_link("0000-0001-5424-7111")`
+Division of Surgery and Oncology, Department of Clinical Science, Intervention and Technology (CLINTEC),  and Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
 ## Non-author contributors
 
