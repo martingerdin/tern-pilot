@@ -42,15 +42,15 @@ martin.gerdin@ki.se
 ##### Debojit Basak `r insert_orcid_link("90000-0002-8378-9689")`
 Project Research Scientist, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Johanna Berg (JB) `r insert_orcid_link("0000-0001-7553-7337")`
+##### Johanna Berg (JB) `r insert_orcid_link("0000-0001-7553-7337")` <!-- Accepted -->
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.  
 
 Emergency Medicine, Department of Internal and Emergency Medicine, Skåne University Hospital, Malmö, Sweden.
 
-##### Shamita Chatterjee (SC) `r insert_orcid_link("0000-0002-9460-108X")`
+##### Shamita Chatterjee (SC) `r insert_orcid_link("0000-0002-9460-108X")` <!-- Accepted -->
 Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Li Felländer-Tsai (LFT) `r insert_orcid_link("0000-0003-0693-6080")`
+##### Li Felländer-Tsai (LFT) `r insert_orcid_link("0000-0003-0693-6080")` <!-- Accepted -->
 Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
 
 Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
@@ -58,7 +58,7 @@ Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockh
 ##### Geeta Ghag (GG) `r insert_orcid_link("0000-0001-5561-362X")`
 Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
 
-##### Monty Khajanchi (MK)`r insert_orcid_link("0000-0002-0898-6391")`
+##### Monty Khajanchi (MK)`r insert_orcid_link("0000-0002-0898-6391")` <!-- Accepted -->
 WHO Collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.  
 
 Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
@@ -66,10 +66,10 @@ Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
 ##### Tamal Khan 
 Senior Research fellow, All India Institute of Medical Sciences, New Delhi, India.
 
-##### Catherine Juillard (CJ) `r insert_orcid_link("0000-0003-0847-8933")`
+##### Catherine Juillard (CJ) `r insert_orcid_link("0000-0003-0847-8933")` <!-- Accepted -->
 Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
 
-##### Vipul Nandu `r insert_orcid_link("0000-0002-3366-5610")`
+##### Vipul Nandu `r insert_orcid_link("0000-0002-3366-5610")` 
 Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
 
 ##### Nobhojit Roy (NR) `r insert_orcid_link("0000-0003-2022-7416")`
@@ -77,13 +77,13 @@ Program for Global Surgery and Trauma, The George Institute of Global Health, Ne
 
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
-##### Rajdeep Singh (RS) `r insert_orcid_link("0000-0001-6593-2624")`
+##### Rajdeep Singh (RS) `r insert_orcid_link("0000-0001-6593-2624")` <!-- Accepted -->
 Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 
-##### Kapil Dev Soni (KDS) `r insert_orcid_link("0000-0003-1214-4119")`
+##### Kapil Dev Soni (KDS) `r insert_orcid_link("0000-0003-1214-4119")` <!-- Accepted -->
 Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medical Sciences, New Delhi, India.
 
-##### Lovisa Strömmer (LS) `r insert_orcid_link("0000-0001-5424-7111")`
+##### Lovisa Strömmer (LS) `r insert_orcid_link("0000-0001-5424-7111")` <!-- Accepted -->
 Division of Surgery and Oncology, Department of Clinical Science, Intervention and Technology (CLINTEC),  and Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
 ## Non-author contributors
@@ -102,7 +102,7 @@ Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital,
 ##### Anita Gadgil (AG)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
 
-##### Marie Hasselberg (MH)
+##### Marie Hasselberg (MH) <!-- Accepted -->
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
 ##### Deepa Kizhakke Veetil (DKV)
@@ -111,7 +111,7 @@ Department of Surgery, Manipal Hospital, Dwarka, New Delhi.
 ##### Vineet Kumar (VK)
 Department of Surgery, Lokmanya Tilak Municipal Medical College and General Hospital, Mumbai, India.
 
-##### Debabrata Kundu (DK)
+##### Debabrata Kundu (DK) <!-- Accepted -->
 Department of Surgery, Medical College Kolkata, Kolkata, India. 
 
 ##### Anurag Mishra (AM)
@@ -120,7 +120,7 @@ Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 ##### Priti Patil (PP)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
 
-##### Arun Prasad (AP)
+##### Arun Prasad (AP) <!-- Accepted -->
 
 Department of Surgery, Indraprastha Apollo Hospitals, New Delhi
 
@@ -132,10 +132,10 @@ Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
 Doctors For You, Mumbai, India.
 
-##### Harris Solomon (HS)
+##### Harris Solomon (HS) <!-- Accepted -->
 Department of Cultural Anthropology and the Duke Global Health Institute, Duke University, Durham, USA.
 
-##### Megha Tandon (MT)
+##### Megha Tandon (MT) <!-- Accepted -->
 Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
 
 ## Keywords
@@ -364,7 +364,7 @@ data collection -->
 
 Previous studies on the effect of ATLS^®^ or PTC training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@vestrup_impact_1988, @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016]. Most studies have found that these programmes are associated with improved outcomes, although not all studies have found significant effects [@vestrup_impact_1988; @ali_trauma_1993; @van_olden_clinical_2004; @Wang2010; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016]. In contrast, some studies have found that these programmes may be associated with increased mortality [@drimousis_advanced_2011; @CioèPeña2016]. 
 
-Considering the widespread use of trauma life support training, several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. Our study represents the first published attempt at a controlled trial of the effect of trauma life support training och patient outcomes, and we conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
+Considering the widespread use of trauma life support training, several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020]. Our study represents the first published attempt at a controlled trial of the effect of trauma life support training on patient outcomes, and we conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot.
  
 # Contributorship statement
 
