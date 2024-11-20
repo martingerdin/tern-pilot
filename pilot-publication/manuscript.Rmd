@@ -2,7 +2,7 @@
 ## compile with:
 ## Rscript -e "rmarkdown::render('manuscript.Rmd', output_format = 'all')"
 ## libreoffice --headless --convert-to pdf manuscript.docx
-title: "Assessing the Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study"
+title: "Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study"
 author: Trauma life support training Effectiveness Research Network (TERN) collaborators
 bibliography: bibliography.bib
 csl: nature.csl
@@ -27,7 +27,8 @@ attach(results)
 This pilot study was registered with ClinicalTrials.gov (reg. no NCT05417243). 
 
 ## Corresponding author
-Martin Gerdin Wärnberg (MGW)`r insert_orcid_link("0000-0001-6069-4794")`
+
+##### Martin Gerdin Wärnberg, MD, PhD (MGW) `r insert_orcid_link("0000-0001-6069-4794")`
 
 Department of Global Public Health  
 Karolinska Institutet  
@@ -39,61 +40,61 @@ martin.gerdin@ki.se
 
 ## Authors (in alphabetical order by last name)
 
-##### Debojit Basak `r insert_orcid_link("90000-0002-8378-9689")`
+##### Debojit Basak, MS `r insert_orcid_link("90000-0002-8378-9689")` <!-- Accepted, debojit88@gmail.com -->
 Project Research Scientist, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Johanna Berg (JB) `r insert_orcid_link("0000-0001-7553-7337")` <!-- Accepted -->
+##### Johanna Berg, MD (JB) `r insert_orcid_link("0000-0001-7553-7337")` <!-- Accepted, johanna.berg@ki.se -->
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.  
 
 Emergency Medicine, Department of Internal and Emergency Medicine, Skåne University Hospital, Malmö, Sweden.
 
-##### Shamita Chatterjee (SC) `r insert_orcid_link("0000-0002-9460-108X")` <!-- Accepted -->
+##### Shamita Chatterjee, MBBS, MS (SC) `r insert_orcid_link("0000-0002-9460-108X")` <!-- Accepted, dr_shamita@yahoo.com -->
 Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Li Felländer-Tsai (LFT) `r insert_orcid_link("0000-0003-0693-6080")` <!-- Accepted -->
+##### Li Felländer-Tsai, MD, PhD (LFT) `r insert_orcid_link("0000-0003-0693-6080")` <!-- Accepted -->
 Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
 
 Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
 
-##### Geeta Ghag (GG) `r insert_orcid_link("0000-0001-5561-362X")`
+##### Geeta Ghag (GG), MBBS, MS `r insert_orcid_link("0000-0001-5561-362X")` <!-- Accepted, geetaghag@hotmail.com -->
 Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
 
-##### Monty Khajanchi (MK)`r insert_orcid_link("0000-0002-0898-6391")` <!-- Accepted -->
-WHO Collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.  
-
-Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
-
-##### Tamal Khan 
-Senior Research fellow, All India Institute of Medical Sciences, New Delhi, India.
-
-##### Catherine Juillard (CJ) `r insert_orcid_link("0000-0003-0847-8933")` <!-- Accepted -->
+##### Catherine Juillard, MD, MPH (CJ) `r insert_orcid_link("0000-0003-0847-8933")` <!-- Accepted, cjuillard@mednet.ucla.edu -->
 Division of General Surgery, Department of Surgery, David Geffen School of Medicine at UCLA, Los Angeles, California, United States of America.
 
-##### Vipul Nandu `r insert_orcid_link("0000-0002-3366-5610")` 
+##### Monty Khajanchi, MBBS, MS (MK) `r insert_orcid_link("0000-0002-0898-6391")` <!-- Accepted, monta32@gmail.com -->
+Seth G. S. Medical College and K.E.M. Hospital, Mumbai, India.
+
+##### Tamal Khan, MSc (TK) <!-- Accepted, tamal.khan440@gmail.com -->
+Senior Research fellow, All India Institute of Medical Sciences, New Delhi, India.
+
+##### Vipul Nandu, MBBS, MS (VN) `r insert_orcid_link("0000-0002-3366-5610")`  <!-- Accepted, dr.vipulnandu@gmail.com -->
 Department of Surgery, HBT Medical College And Dr. R N Cooper Municipal General Hospital, Mumbai, India.
 
-##### Nobhojit Roy (NR) `r insert_orcid_link("0000-0003-2022-7416")`
+##### Nobhojit Roy, MBBS, MS, PhD (NR) `r insert_orcid_link("0000-0003-2022-7416")` <!-- Accepted, nroy@georgeinstitute.org.in -->
 Program for Global Surgery and Trauma, The George Institute of Global Health, New Delhi, India.
 
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
-##### Rajdeep Singh (RS) `r insert_orcid_link("0000-0001-6593-2624")` <!-- Accepted -->
+##### Rajdeep Singh, MBBS, MS (RS) `r insert_orcid_link("0000-0001-6593-2624")` <!-- Accepted, rajdeep.mamc@gmail.com -->
 Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 
-##### Kapil Dev Soni (KDS) `r insert_orcid_link("0000-0003-1214-4119")` <!-- Accepted -->
+##### Kapil Dev Soni, MBBS, MD (KDS) `r insert_orcid_link("0000-0003-1214-4119")` <!-- Accepted, kdsoni111@gmail.com -->
 Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medical Sciences, New Delhi, India.
 
-##### Lovisa Strömmer (LS) `r insert_orcid_link("0000-0001-5424-7111")` <!-- Accepted -->
-Division of Surgery and Oncology, Department of Clinical Science, Intervention and Technology (CLINTEC),  and Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
+##### Lovisa Strömmer, MD, PhD (LS) `r insert_orcid_link("0000-0001-5424-7111")` <!-- Accepted, lisa.strommer@ki.se -->
+Division of Surgery and Oncology, Department of Clinical Science, Intervention and Technology (CLINTEC), and Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
 ## Non-author contributors
 
-Trauma life support Effectiveness Research Network (TERN) collaborators: 
+Trauma life support Effectiveness Research Network (TERN) collaborators. 
+
+<!--
 
 ##### Prashant Bhandarkar (PB)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
 
-##### Anirban Chatterjee (AC)
+##### Anirban Chatterjee (AC) <!-- Accepted -->
 Department of Orthopaedic Sciences, Medica Superspecialty Hospital, Kolkata, India.
 
 ##### Chintamani (C)
@@ -138,13 +139,13 @@ Department of Cultural Anthropology and the Duke Global Health Institute, Duke U
 ##### Megha Tandon (MT) <!-- Accepted -->
 Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
 
+-->
+
 ## Keywords
 Trauma management, Accident and emergency medicine, Education and training.
 
-<!--
 ## Word Count
-4494
- -->
+2836
 
 ## Role of study sponsor and funders
 The funding sources had no role in the design of this study nor during its execution, analyses, interpretation of the data, or decision to submit the results.
@@ -368,8 +369,7 @@ Considering the widespread use of trauma life support training, several systemat
  
 # Contributorship statement
 
-MGW conceived of the study, performed the analysis and drafted and revised the manuscript. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH,
-MGW, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the
+MGW conceived of the study, performed the analysis and drafted and revised the manuscript. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the
 study. MGV, DKV, KDS, and MK drafted the first version of the
 protocol. AG, HS, and SD drafted the first version of the patient and
 public involvement activities. JB and PP drafted the first versions of
