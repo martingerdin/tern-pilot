@@ -154,8 +154,6 @@ The funding sources had no role in the design of this study nor during its execu
 
 # Abstract
 
-**Importance** There is no high-quality evidence to show that trauma life support training programmes improve patient outcomes.
-
 **Objective** To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes, and to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial.
 
 **Design** A pilot pragmatic three-armed parallel, cluster randomised, controlled trial between `r start.date` and `r end.date`. Patient follow up was 30 days.
@@ -170,9 +168,16 @@ The funding sources had no role in the design of this study nor during its execu
 
 **Results** Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. We included `r n.patients` patients and `r n.residents` residents. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data was overall low for key variables. Data collected through observations were similar to data extracted from medical records, but there was more missing data in the extracted data. `r number_to_text(m30d.standard.care.n, first = TRUE)` `r m30d.standard.care.p` patients died within 30 days in the standard care arm, `r number_to_text(m30d.atls.n)` `r m30d.atls.p` patient in the ATLS^®^ arm, and `r number_to_text(m30d.ptc.n)` `r m30d.ptc.p` patients in the PTC arm.
 
-**Conclusions and Relevance** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes will be feasible, especially if such a trial would use data and outcomes available in medical records. 
+**Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes will be feasible, especially if such a trial would use data and outcomes available in medical records. 
 
 **Trial Registration** ClinicalTrials.gov (reg. no NCT05417243)
+
+# Strengths and limitations of this study
+
+- First attempt to conduct a cluster randomised controlled trial of the most widely used trauma life support training programmes.
+- Prospective data collection with direct observations by dedicated research officers.
+- Participating centers' heterogeneity may affect the study estimates and bias the results.
+- Broad patient eligibility criteria may have included patients with minor injuries, making it difficult to estimate robust effect sizes.
 
 \newpage
 
