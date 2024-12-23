@@ -7,9 +7,9 @@ format: pdf
 
 Dear Editor,
 
-I am submitting our manuscript, “Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study” for consideration for publication in JAMA Surgery.
+I am submitting our manuscript, “Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study” for consideration for publication in the British Journal of Surgery.
 
-This study evaluates the feasibility of conducting a full-scale trial to assess the impact of trauma life support training programs on patient outcomes. The findings include consent rates, data quality, and effect size estimates, which are essential for planning future research. We believe this work addresses an important gap in evidence for trauma care and will be of interest to your readers.
+This study evaluates the feasibility of conducting a full-scale trial to assess the impact of trauma life support training programs on patient outcomes. The findings include consent rates, data quality, and effect size estimates, which are essential for planning a future full-scale trial. We believe this work addresses an important gap in evidence for trauma care and will be of interest to your readers.
 
 This manuscript has not been published or submitted to any journal, but it has been posted on the pre-print server medRxiv: https://doi.org/10.1101/2024.03.13.24304236. No other related papers from this study have been published, posted, or submitted.
 
