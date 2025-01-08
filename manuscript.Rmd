@@ -51,7 +51,7 @@ Emergency Medicine, Department of Internal and Emergency Medicine, Skåne Univer
 ##### Shamita Chatterjee, MBBS, MS (SC) `r insert_orcid_link("0000-0002-9460-108X")` <!-- Accepted, dr_shamita@yahoo.com -->
 Department of Surgery, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
-##### Li Felländer-Tsai, MD, PhD (LFT) `r insert_orcid_link("0000-0003-0693-6080")` <!-- Accepted, li.tsai@ki.se -->
+##### Li Felländer-Tsai, MD, PhD (LFT) `r insert_orcid_link("0000-0003-0693-6080")` <!-- Accepted -->
 Division of Orthopaedics and Biotechnology, Department of Clinical Science Intervention and Technology (CLINTEC), Karolinska Institutet, Stockholm, Sweden.  
 
 Department of Reconstructive Orthopedics, Karolinska University Hospital, Stockholm, Sweden.
@@ -115,7 +115,7 @@ Department of Surgery, Lokmanya Tilak Municipal Medical College and General Hosp
 ##### Debabrata Kundu (DK) <!-- Accepted -->
 Department of Surgery, Medical College Kolkata, Kolkata, India. 
 
-##### Anurag Mishra (AM) <!-- Accepted -->
+##### Anurag Mishra (AM)
 Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 
 ##### Priti Patil (PP)
