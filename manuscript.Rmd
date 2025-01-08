@@ -87,51 +87,63 @@ Division of Surgery and Oncology, Department of Clinical Science, Intervention a
 
 ## Non-author contributors
 
-Trauma life support Effectiveness Research Network (TERN) collaborators. 
-
 <!--
-
 ##### Prashant Bhandarkar (PB)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
+-->
 
 ##### Anirban Chatterjee (AC) <!-- Accepted -->
 Department of Orthopaedic Sciences, Medica Superspecialty Hospital, Kolkata, India.
 
+<!--
 ##### Chintamani (C)
 Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
+-->
 
+<!--
 ##### Anita Gadgil (AG)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
+-->
 
 ##### Marie Hasselberg (MH) <!-- Accepted -->
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
+<!--
 ##### Deepa Kizhakke Veetil (DKV)
 Department of Surgery, Manipal Hospital, Dwarka, New Delhi.
+-->
 
+<!--
 ##### Vineet Kumar (VK)
 Department of Surgery, Lokmanya Tilak Municipal Medical College and General Hospital, Mumbai, India.
+-->
 
 ##### Debabrata Kundu (DK) <!-- Accepted -->
 Department of Surgery, Medical College Kolkata, Kolkata, India. 
 
-##### Anurag Mishra (AM)
+##### Anurag Mishra (AM) <!-- Accepted -->
 Department of Surgery, Maulana Azad Medical College, New Delhi, India.
 
+<!--
 ##### Priti Patil (PP)
 WHO collaboration Centre for Research in Surgical Care Delivery in LMIC, Mumbai, India.
+-->
 
 ##### Arun Prasad (AP) <!-- Accepted -->
 
 Department of Surgery, Indraprastha Apollo Hospitals, New Delhi
 
+<!--
 ##### Amit Roy (AR)
 Department of Surgery, Sir Nil Ratan Sircar Medical College & Hospital, Kolkata, India.
+-->
 
+<!--
 ##### Siddarth David (SD)
 Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.  
 
 Doctors For You, Mumbai, India.
+-->
 
 ##### Harris Solomon (HS) <!-- Accepted -->
 Department of Cultural Anthropology and the Duke Global Health Institute, Duke University, Durham, USA.
