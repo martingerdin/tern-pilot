@@ -2,7 +2,7 @@
 ## Rscript -e "rmarkdown::render('supplementary-materials.Rmd')"
 ## libreoffice --headless --convert-to pdf supplementary-materials.docx
 title: Supplementary Materials
-subtitle:"Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study"
+subtitle:"Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study in India"
 output:
     bookdown::word_document2:
       number_sections: false
@@ -15,25 +15,15 @@ source("main.R")
 attach(results)
 ```
 
-# Table S1. Extended sample characteristics
-
-```{r overall-table, echo = FALSE}
-combined.sample.characteristics.table
-```
-
-
-```{r, child = "supplementary-outcome-tables.Rmd"}
-```
-
-# S13 Protocol Deviations
+# Protocol Deviations
 
 ## Trial Registration
 
-We intended to register our trial with Clinical Trials Registry - India and will do so with the full-scale trial.
+We intended to register our trial with Clinical Trials Registry - India (CTRI), but because of a communication error in the management group this was only attempted after the trial has started including patients, and CTRI only accept prospective registrations. We intend to register the full scale trial with both ClinicalTrials.gov and CTRI.
 
-## Outcomes across subgroups
+## Reporting 
 
-Because of small numbers in the pre-specified subgroups men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury and elderly we decided to report only descriptive data on these subgroups.
+In the original protocol, we also aimed to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial, but we revised this aim in the light of current guidance on the conduct and reporting of pilot trials
 
 ## Number of Participating Centres
 
@@ -66,3 +56,41 @@ We had initially planned to ask residents for consent before randomisation, but 
 ## Analysis level of feasibility outcomes
 
 We had planned to analyse feasibility outcomes on both an overall and individual cluster level, but we only analysed them on an overall level, because the sample sizes in individual clusters were too small to generate meaningful results.
+
+## Patient outcomes across subgroups
+
+Because of small numbers in the pre-specified subgroups men, women, blunt multisystem trauma, penetrating trauma, shock, severe traumatic brain injury and elderly we decided to report only descriptive data on these subgroups.
+
+# Table S1. Cluster characteristics
+
+| Cluster                                                       | City       | Beds | Type    | Study period | 
++---------------------------------------------------------------+------------+------+---------+--------------+
+| Dr R N Cooper Municipal General Hospital                      | Mumbai     |      | Public  |              |
+| Seth GS Medical College and KEM Hospital                      | Mumbai     |      | Public  |              |
+| Lokmanya Tilak Municipal Medical College and General Hospital | Mumbai     |      | Public  |              |
+| MEDICA Superspeciality Hospital                               | Kolkata    |      | Private |              |
+| Medical College                                               | Kolkata    |      | Public  |              |
+| Nilratan Sircar Medical College & Hospital                    | Kolkata    |      | Public  |              |
+| Postgraduate Institute of Medical Education and Research      | Chandigarh |      | Public  |              |
++---------------------------------------------------------------+------------+------+---------+--------------+
+
+# Statistical methods for additional analyses according to the original protocol
+
+We used an empty generalised linear mixed model <!-- see [@Sommet2017] --> to estimate the intracluster correlation coefficient. We compared patients outcomes in all possible combinations of trial arms. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
+
+Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock (systolic blood pressure ≤ 90 mmHg), severe traumatic brain injury, and elderly (≥65 years) [@hornor_quality_2018]. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively. We calculated both absolute and relative differences for each comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals. In the interest of space, only the 95% confidence intervals are presented for all comparisons in Supplementary Tables. The remaining results are available from the corresponding author on request.
+
+# Estimated intracluster correlation coefficient
+
+The intracluster correlation coefficients was `r icc.m30d` for 30-day mortality and `r icc.inhosp` for in-hospital mortality.
+
+# Table S2. Extended sample characteristics
+
+```{r overall-table, echo = FALSE}
+combined.sample.characteristics.table
+```
+
+
+```{r, child = "supplementary-outcome-tables.Rmd"}
+```
+

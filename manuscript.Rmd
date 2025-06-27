@@ -24,7 +24,7 @@ attach(results)
 ```
 
 ## Trial registration
-This pilot study was registered with ClinicalTrials.gov (reg. no NCT05417243). 
+This pilot study was registered with ClinicalTrials.gov (reg. no NCT05417243). We intended to also register this pilot trial with Clinical Trials Registry - India, but this was not done because of a communication error in the management group.
 
 ## Corresponding author
 
@@ -164,7 +164,7 @@ The funding sources had no role in the design of this study nor during its execu
 
 # Abstract
 
-**Objective** To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes, and to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial.
+**Objective** To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes.
 
 **Design** A pilot pragmatic three-armed parallel, cluster randomised, controlled trial between `r start.date` and `r end.date`. Patient follow up was 30 days.
 
@@ -209,19 +209,20 @@ The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alt
 
 Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS^®^ is associated with improved knowledge and skills among providers [@Mohammad2013]. Observational evidence suggests that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then whether these improved knowledge and skills translate into measurably improved patient outcomes. 
 
-Systematic reviews call for controlled trials in settings where these programmes are not routinely implemented [@Jayaraman2014; @Kadhum2020], because conducting such effectiveness trials in settings where they are part of the standard of care is not possible. Many settings without routinely implemented trauma life support training are in low- and middle income countries, where trial logistics can be more challenging.
-
-We therefore aimed to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care, and to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial.
+Systematic reviews call for controlled trials in settings where these programmes are not routinely implemented [@Jayaraman2014; @Kadhum2020], because conducting such effectiveness trials in settings where they are part of the standard of care is not possible. Many settings without routinely implemented trauma life support training are in low- and middle income countries, where trial logistics can be more challenging. We therefore aimed to assess the feasibility of conducting a cluster randomised controlled trial comparing ATLS^®^ and PTC with standard care.
 
 <!-- add citation to scoping review of TQIP [@mciver_effect_2024]-->
 
 # Methods
 
+## Protocol Deviations
+Protocol deviations are mentioned where relevant in this manuscript, but a list of all deviations is also included as supplementary material for completeness.
+
 ## Trial Design
-We piloted a three-armed cluster randomised controlled trial[@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS^®^ and PTC training. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). This design allowed us to assess outcomes both as final values and as change from baseline. 
+We piloted a three-armed cluster randomised controlled trial [@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS^®^ and PTC training. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). Originally, we also aimed to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial [@GerdinWärnberg2022], but we revised this aim in the light of current guidance on the conduct and reporting of pilot trials [ADD CITATION].
 
 ## Study Setting
-We conducted this pilot study in seven tertiary hospitals across metropolitan areas in India, where neither ATLS^®^, PTC, nor any other established trauma life support training program is routinely taught. 
+We conducted this pilot study in seven tertiary hospitals across metropolitan areas in India, where neither ATLS^®^, PTC, nor any other established trauma life support training program is routinely taught. Details about each cluster is included as Supplementary Table S1. 
 
 <!--
 The trauma system is still developing, with
@@ -262,16 +263,15 @@ We trained resident doctors doing their speciality training in surgery or emerge
 
 We included persons who were 15 years or older and presented to the emergency department at participating hospitals with a history of trauma when a designated unit was on duty. History of trauma was defined as having any of the external causes of morbidity and mortality listed in block V01-Y36, chapter 20 of the International Classification of Disease version 10 (ICD-10) codebook as reason for presenting.
 
-## Outcomes
+## Feasibility outcomes
 
-We measured a large number of outcomes to help plan and assess the feasibility of a full scale trial. A list of outcomes is available in Supplementary Table S1. Our main outcomes were: 
+We measured a large number of outcomes to help plan and assess the feasibility of a full scale trial. A list of outcomes is available in Supplementary Table S1. Our main feasibility outcomes were: 
 
 - Consent rate of patients and residents. This was equal to the percentage of patients or residents who consented to be included, out of the total number of eligible patients or residents. 
 - Lost to follow up rate. This applied only to patients and was equal to the percentage of patients who did not complete 30 day follow up, out of all enrolled patients.
 - Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents who passed the training programme, out of the total number of trained residents.
 - Missing data rate. This applied to each outcome and variable and was equal to the percentage of missing values.
 - Differences in distributions of observed and extracted data. This applied to each outcome and variable and compared the distributions of data collected by observations versus extracted from hospital records.
-- All cause and in-hospital mortality within 30 days from the time of arrival to the emergency department among patients.
 
 <!--The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 1. We decided to include a large number of outcomes, including some more exploratory, so that we could test their feasibility and relevance. -->
 
@@ -279,7 +279,7 @@ We measured a large number of outcomes to help plan and assess the feasibility o
 
 ### Patients
 
-Arriving patients were screened for eligibility and consented, if conscious. Unconscious patients were consented by the patient’s representative. This proxy consent was reaffirmed by the patient, on regaining consciousness. We followed up patients at 24 hours after arrival at the emergency department, and up to 30 days after arrival at the emergency department.
+Arriving patients were screened for eligibility and consented, if conscious. Unconscious patients were consented by the patient’s representative. This proxy consent was reaffirmed by the patient, on regaining consciousness. Patients who did not regain consciousness were included based on their representative's consent. We followed up patients at 24 hours after arrival at the emergency department, and at 30 days after arrival at the emergency department.
 
 ### Residents
 
@@ -316,13 +316,7 @@ We conducted weekly online meetings to monitor the study and data collection. We
 
 ## Statistical Methods
 
-We used the `r version$version.string` Statistical Software for all analyses [@R_2024]. We analysed all data using descriptive statistics and did not perform any formal hypothesis tests [@Lee2014]. Quantitative variables are summarised as median and interquartile range. Qualitative variables are presented as absolute numbers and percentages. We used an empty generalised linear mixed model <!-- see [@Sommet2017] --> to estimate the intracluster correlation coefficient.
-
-We compared patients outcomes in all possible combinations of trial arms. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
-
-Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock (systolic blood pressure ≤ 90 mmHg), severe traumatic brain injury, and elderly (≥65 years) [@hornor_quality_2018]. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively. We calculated both absolute and relative differences for each comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals. 
-
-In the interest of space, only the 95% confidence intervals are presented for all comparisons in Supplementary Tables. The remaining results are available from the corresponding author on request.
+We used the `r version$version.string` Statistical Software for all analyses [@R_2024]. We analysed all data, including the feasibility outcomes, using descriptive statistics and did not perform any formal hypothesis tests [@Lee2014]. Quantitative variables are summarised as median and interquartile range. Qualitative variables are presented as absolute numbers and percentages. Additional analyses performed according to the original protocol are described in the Supplementary Materials and their results shown in Supplementary Tables S1-12..
 
 ## Ethics and Dissemination
 
@@ -332,7 +326,9 @@ We were granted research ethics approval from the institutional ethics committee
 
 We enrolled `r n.patients` trauma patients from `r number_to_text(n.centres)` participating centres between `r start.date` and `r end.date`. The standard care arm enrolled `r n.control` patients, the ATLS^®^ arm enrolled `r n.atls` patients, and the PTC arm enrolled `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
 
-The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital. The intracluster correlation coefficients was `r icc.m30d` for 30-day mortality and `r icc.inhosp` for in-hospital mortality.  
+The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital.
+
+After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`% for the standard care, ATLS^®^ and PTC arms respectively.
 
 ```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care.", out.width="30%", out.height="30%"}
 knitr::include_graphics("consort-flow-diagram.png")
@@ -345,16 +341,12 @@ sample.characteristics.table |>
 
 ## Outcomes
 
-The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. Among patients, the lost to follow up rate was `r rate.lost.to.follow.up`%. Among residents, the pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S1. The variables with the maximum amount of missing data were in the cost of treatment, reported in Supplementary Tables S1-12. The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in the extracted data compared to the observed data.
+The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. Among patients, the lost to follow up rate was `r rate.lost.to.follow.up`%. Among residents, the pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S1. The variables with the maximum amount of missing data were in the cost of treatment, reported in Supplementary Tables S1-12. 
+
+The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in the data extracted from medical records compared to the directly observed data. 
 
 ```{r observed-vs-extracted, echo = FALSE, tab.cap = "Differences in distributions between directly observed data and data extracted from medical records, for selected variables that were collected through observation or interview."}
 observed.vs.extracted.comparison.table
-```
-
-After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`% for the standard care, ATLS^®^ and PTC arms respectively, as shown in Table \@ref(tab:outcomes). Overall, both in-hospital and 30-day mortality were substantially lower in the ATLS^®^ and PTC arms compared to the standard care arm, but the absolute numbers of deaths in the ATLS^®^ and PTC arms were very small. The results for all other outcomes are shown in Supplementary Tables S1-12.
-
-```{r outcomes, echo = FALSE, tab.cap = "Mortality after training by the trial arms standard care, Advanced Trauma Life Support (ATLS) and Primary Trauma Care (PTC)"}
-outcome.table.with.differences
 ```
 
 # Discussion

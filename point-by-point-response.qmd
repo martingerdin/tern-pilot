@@ -31,11 +31,43 @@ We have revised the discussion to include the methodological limitations highlig
 
 > The above is the only concern I had when I chose "no" for "Are the discussion and conclusions justified by the results?"
 
-Thank you for pointing this out and we agree that the reporting of the mortality outcomes is problematic for a feasibility trial. We have decided to keep the information in the paper, given comments from other reviewers, but revised the discussion to focus on the missing data and avoid any conclusions about a potential effect of the training.
+Thank you for pointing this out and we agree that the reporting of the mortality outcomes is problematic for a feasibility trial. We have decided to report mortality outcomes descriptively in the paper, given comments from other reviewers, but revised the discussion to focus on the missing data and avoid any conclusions about a potential effect of the training.
 
 ## Response to Reviewer 2, Dr. Wietske H.W. Ham, University of Applied Sciences:
 
-> Thank you for submitting this relevant paper and the impressive work behind it. It was an honor to review the paper. Here are some suggestions and comments, which I hope will be helpful in further developing the paper. The aim of the study is to gain insight into the feasibility of a larger study. At the same time, more results are presented than necessary to answer this question. This is not clear to the reader. It is unclear to me whether patients who ultimately did not regain consciousness were also included in this study. This should be described more clearly. It also seems that, given the research period, the study sites were included sequentially; if so, the order and period should be described. It is not sufficiently clear to me how the statistical methods used contribute to answering the research question, namely the feasibility of an RCT and determining an effect size (and other measures, which are too vague). It seems that in the description of this manuscript, the pilot outcomes are mixed with the outcomes of the trial itself, which is confusing. This is likely due to the way it is written (it needs to be better explained and specified): the authors describe results, but also the outcomes. It is unclear in the current writing how the outcomes contribute to answering the research question. The flow diagram does not clearly show how many participants did not participate or were missed. The design of the study itself seems to have been conducted properly. In the discussion, deviations from the protocol are mentioned and referred to in the appendix, while these data are actually appropriate to discuss (and share) in the article itself, since it is a pilot. I find the number of appendices in the appendix very extensive, which makes it lose its purpose, and I also wonder to what extent it contributes to answering the research question. Parts of the protocol, which are now included in the appendix, should, in my opinion, be incorporated into the main paper.
+> Thank you for submitting this relevant paper and the impressive work behind it. It was an honor to review the paper. Here are some suggestions and comments, which I hope will be helpful in further developing the paper. 
+
+Thank you for your comments and we have revised the manuscript in the light of your comments.
+
+> The aim of the study is to gain insight into the feasibility of a larger study. At the same time, more results are presented than necessary to answer this question. This is not clear to the reader. 
+
+We agree that the manuscript, and the supplementary material, includes more results than necessary to fulfil the aim of the study. As you have noticed, we struggled to find a balance between staying true to the protocol and reporting the results that were most relevant in a transparent manner. We have now attempted to address this by clearly stating that we deviated from the original protocol in reporting the pilot, to focus on the feasibility of the full-scale trial. We have therefore limited the number of results that we present in the main text of the manuscript considerably.
+
+> It is unclear to me whether patients who ultimately did not regain consciousness were also included in this study. This should be described more clearly.
+
+We have clarified that patients who did not regain consciousness were included based on the consent by their representative.
+
+> It also seems that, given the research period, the study sites were included sequentially; if so, the order and period should be described. 
+
+That is correct, data collection started in each cluster as they received the necessary approvals. The information about the study period in each cluster has been added as supplementary material.
+
+> It is not sufficiently clear to me how the statistical methods used contribute to answering the research question, namely the feasibility of an RCT and determining an effect size (and other measures, which are too vague). 
+
+We have clarified how we used descriptive statistics to summarize patient characteristics and feasibility outcomes. We now describe the methods used for the additional analyses according to the original protocol in the supplementary materials.
+
+> It seems that in the description of this manuscript, the pilot outcomes are mixed with the outcomes of the trial itself, which is confusing. This is likely due to the way it is written (it needs to be better explained and specified): the authors describe results, but also the outcomes. It is unclear in the current writing how the outcomes contribute to answering the research question. 
+
+We agree that this was confusing and have therefore attempted to streamline the paper further by presenting mortality descriptively along with the other patient characteristics, and only report the feasibility outcomes in the outcomes section.
+
+> The flow diagram does not clearly show how many participants did not participate or were missed. The design of the study itself seems to have been conducted properly. 
+
+Thank you for pointing this out. We have added the number of patients who were lost to follow up in each arm to the flow diagram.
+
+> In the discussion, deviations from the protocol are mentioned and referred to in the appendix, while these data are actually appropriate to discuss (and share) in the article itself, since it is a pilot. 
+
+
+
+> I find the number of appendices in the appendix very extensive, which makes it lose its purpose, and I also wonder to what extent it contributes to answering the research question. Parts of the protocol, which are now included in the appendix, should, in my opinion, be incorporated into the main paper.
 
 ## Response to Reviewer 3, Dr. Sheila Sprague, McMaster University:
 

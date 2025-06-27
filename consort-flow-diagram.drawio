@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="9yEjIT2fWwNqlEwO_dcH" name="Page-1">
-        <mxGraphModel dx="778" dy="398" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="200" pageHeight="100" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="770" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="250" pageHeight="200" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -14,16 +14,34 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 10px;&quot;&gt;Hospitals randomised (n = 7)&lt;/font&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;align=center;fontSize=10;" parent="1" vertex="1">
-                    <mxGeometry x="330" y="40" width="140" height="30" as="geometry"/>
+                    <mxGeometry x="230" y="40" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;rounded=0;curved=0;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="6" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 10px;&quot;&gt;Standard care (n = 3)&lt;br style=&quot;font-size: 10px;&quot;&gt;- Patients (n = n.control)&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;align=left;fontSize=10;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="220" y="110" width="100" height="50" as="geometry"/>
+                    <mxGeometry x="100" y="110" width="100" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 10px;&quot;&gt;ATLS (n = 2)&lt;br style=&quot;font-size: 10px;&quot;&gt;- Residents (n = n.atls.residents)&lt;br style=&quot;font-size: 10px;&quot;&gt;- Patients (n = n.atls)&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;align=left;fontSize=10;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
-                    <mxGeometry x="350" y="110" width="100" height="50" as="geometry"/>
+                    <mxGeometry x="250" y="110" width="100" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 10px;&quot;&gt;PTC (n = 2)&lt;br style=&quot;font-size: 10px;&quot;&gt;- Residents (n = n.ptc.residents)&lt;br style=&quot;font-size: 10px;&quot;&gt;- Patients (n = n.ptc)&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;align=left;fontSize=10;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="480" y="110" width="100" height="50" as="geometry"/>
+                    <mxGeometry x="400" y="110" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 10px;&quot;&gt;Patients with complete&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- 30-day mortality (n = n.control.complete.m30d)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- In-hospital mortality (n = n.control.complete.hd)&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;align=left;fontSize=10;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="180" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 10px;&quot;&gt;Patients with complete&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- 30-day mortality (n = n.atls.complete.m30d)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- In-hospital mortality (n = n.atls.complete.hd)&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;align=left;fontSize=10;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="180" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;rounded=0;curved=0;endArrow=blockThin;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="23">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160" y="170" as="sourcePoint"/>
+                        <mxPoint x="160" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 10px;&quot;&gt;Patients with complete&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- 30-day mortality (n = n.ptc.complete.m30d)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- In-hospital mortality (n = n.ptc.complete.hd)&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;align=left;fontSize=10;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="180" width="140" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
