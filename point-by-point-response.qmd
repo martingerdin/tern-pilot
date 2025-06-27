@@ -1,0 +1,110 @@
+Dear Editor and Reviewers,
+
+Thank you for a very thorough review of our manuscript, your comments and suggestions have been very helpful in improving the manuscript. We have addressed all of the comments and provided a detailed response below.
+
+On behalf of all the authors,
+
+Martin Gerdin Wärnberg, MD, PhD
+Department of Global Public Health
+Karolinska Institutet
+Stockholm, Sweden
+
+## Response to Editor's Comments:
+
+> 1. Please revise the title of your manuscript to include the setting. This is the preferred format of the journal.
+
+We have revised the title to include the setting. The new title is "Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study in India".
+
+> 2. Please revise the ‘Strengths and limitations of this study’ section of your manuscript (after the abstract). This section should contain up to five short bullet points, no longer than one sentence each, that relate specifically to the methods. The novelty, aims, results or expected impact of the study should not be summarised here.
+
+The strengths and limitations section now focuses on the methods, and have been revised in the light of the comments from the reviewers.
+
+>3. Please ensure that you have fully discussed the methodological limitations of the study in the Discussion section of the main text.
+
+We have revised the discussion to include the methodological limitations highlighted by the reviewers.
+
+## Response to Reviewer 1, Dr.  Feroze  Sidhwa, San Joaquin General Hospital:
+
+> “We found that the ATLS ® and PTC arms had lower 30-day mortality compared to the PTC and standard care arms. This finding could hint towards a potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS ® arm having the smallest sample size. This difference most likely resulted from the randomisation process with a small number of heterogeneous clusters, and this heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.”
+
+> If this is the case then these outcomes simply should not be reported. Since this is a feasibility trial the major concern should be assessing missing data, which it seems to be, but this statement will be controversial and may distract from the otherwise important and better-supported conclusions. I would suggest removing discussion and reporting of mortality, and instead simply report on whether or not mortality data was missing, and if so was it differentially missing in the different arms of the study. If the study is not powered to detect a difference and no measures of statistical significance were calculated then this is not useful information to the reader.
+
+> The above is the only concern I had when I chose "no" for "Are the discussion and conclusions justified by the results?"
+
+Thank you for pointing this out and we agree that the reporting of the mortality outcomes is problematic for a feasibility trial. We have decided to keep the information in the paper, given comments from other reviewers, but revised the discussion to focus on the missing data and avoid any conclusions about a potential effect of the training.
+
+## Response to Reviewer 2, Dr. Wietske H.W. Ham, University of Applied Sciences:
+
+> Thank you for submitting this relevant paper and the impressive work behind it. It was an honor to review the paper. Here are some suggestions and comments, which I hope will be helpful in further developing the paper. The aim of the study is to gain insight into the feasibility of a larger study. At the same time, more results are presented than necessary to answer this question. This is not clear to the reader. It is unclear to me whether patients who ultimately did not regain consciousness were also included in this study. This should be described more clearly. It also seems that, given the research period, the study sites were included sequentially; if so, the order and period should be described. It is not sufficiently clear to me how the statistical methods used contribute to answering the research question, namely the feasibility of an RCT and determining an effect size (and other measures, which are too vague). It seems that in the description of this manuscript, the pilot outcomes are mixed with the outcomes of the trial itself, which is confusing. This is likely due to the way it is written (it needs to be better explained and specified): the authors describe results, but also the outcomes. It is unclear in the current writing how the outcomes contribute to answering the research question. The flow diagram does not clearly show how many participants did not participate or were missed. The design of the study itself seems to have been conducted properly. In the discussion, deviations from the protocol are mentioned and referred to in the appendix, while these data are actually appropriate to discuss (and share) in the article itself, since it is a pilot. I find the number of appendices in the appendix very extensive, which makes it lose its purpose, and I also wonder to what extent it contributes to answering the research question. Parts of the protocol, which are now included in the appendix, should, in my opinion, be incorporated into the main paper.
+
+## Response to Reviewer 3, Dr. Sheila Sprague, McMaster University:
+
+> Thank you for the opportunity to review the manuscript titled “Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study”.  This manuscript describes an important trial with the potential to save many lives at hospitals across India.  There are many sections in this manuscript which are unclear.  The overall structure of the manuscript also needs to be improved upon.  Detailed comments are below.
+
+> Introduction
+> - Provide clear objectives for the both the pilot phase and the definitive trial phase
+
+> Methods
+> - Describe what information is being collected on standard of care at each hospital as it varies.
+> - Provide additional details on ATLS and PTC training interventions.
+> - Include details on the cluster selection.
+> - The authors should comment on the sample size for a pilot study.  For example, why did they select seven clusters? They should also comment on the number of residents and patients required to allow for a meaningful analysis of the feasibility outcomes.
+> - The reason for the one-month lead in is unclear.  It is unclear how this data will be analyzed.
+> - Using sealed envelopes for randomization increases the risk of selection bias, tampering, and accidental loss, potentially compromising allocation concealment. Authors should have used the computer-generated randomization system at time of randomization for each site.
+> - For blinding, the authors should state that it was not possible to blind those involved.  It is unclear if those analyzing the data were blinded, as this is possible.
+> - The follow-up period for each participant is unclear. The methods state that data were collected for four months.  The methods also mention a 3-day mortality outcome.  
+> - Success criteria and threshold details for the feasibility outcomes should be clearly outlined in the methods.
+> - The outcomes for the definitive trial (clinical outcomes) need to be clearly listed and described.
+> - The statistical analysis section is unclear.  It should list the descriptive analyses plans and then the analyses used to assess the feasibility objectives. Feasibility pilot studies are not powered to detect meaningful differences between groups. Rather their goal is to determine whether a definitive trial is practical by assessing feasibility metrics. The clinical outcomes (the outcomes for the definitive trial) could be reported descriptively, but the use of comparative statistics (differences in final values, differences from baseline, confidence intervals, and subgroup analyses) to assess these outcomes is not appropriate during the pilot phase and potentially misleading, especially without a formal sample size calculation being conducted.
+> - The statistical analyses section also describes inconsistent times for outcome comparisons. The intervention arms measure change from baseline over one month pre-training vs. three months post-training, while the control arm measures change over a four-month period. For the definitive trial, the timing of assessment should be consistent across all arms to avoid biased comparisons.
+
+> Results
+> - Add a description of each cluster.
+> - Comment on why the number of residents and patients varied across the treatment groups.
+> - A few key prognostic factors differ across the treatment groups (age, ISS).
+> - Consider reporting overall enrollment rates (e.g. number of participants enrolled per month).  There is a paragraph in the discussion on low enrollment, but it is not listed in the results.
+> - The results of feasibility outcomes should be reported clearly in a table, with a column indicating whether the feasibility outcome was successfully achieved.
+> - Mortality should only be reported once in the results section.
+> - Report the resident outcomes and the participant outcomes separately.
+> - List the protocol deviations in the results section, not in the discussion.
+> - It is unclear the importance and relevance of the before training after training data (Table S1).
+> - The EQ-5D should be scored as opposed to showing the results for each question.
+> - Simplify the outcomes tables to focus on the key findings. Remove the yes/no and only list the yes.  
+> - The absolute difference versus relative difference does not add to the analyses and could be removed.
+> - As this a pilot study, outcome data should be reported descriptively in a clearer manner.
+> - There are too many outcomes.
+
+> Discussion
+> - Remove all results from the discussion and place them in the results section, then discuss the results in the discussion section.
+> - Discuss the implication of adding the seventh site in more detail.
+> - Discuss if there are methods to improve participant follow-up for the definitive trial.
+> - Discuss if there are methods to reduce missing data for the definitive phase.  
+> - Comment on the ethics of the full trial. Is it ethical to have sites continue with usual care after seeing the pilot study results?
+> - Consider a stepped wedge design where all clusters start with standard of care and then transition into an intervention.
+> - Use the CONSORT statement extension for pilot and feasibility trials (https://www.equator-network.org/reporting-guidelines/consort-2010-statement-extension-to-randomised-pilot-and-feasibility-trials/) and the CONSORT statement extension for cluster randomised trials (https://www.equator-network.org/reporting-guidelines/consort-cluster/).
+
+## Response to Reviewer 4, Dr. Kyle Dack, University of Bristol:
+
+> This is a well written paper, with transparent and thorough methodological reporting, and a reliable statistical approach. The purpose of the analysis was to inform a decision on the feasability of a full trial, and as such the results are interpreted with appropriate caution.
+>
+> I have only minor comments about certain study design aspects which I found unclear - particularly the observed/extracted data comparison.
+
+> Methods:
+> 1. Intervention – how long was the training programme, and who was it delivered by? Was the training performed in stages, e.g. to different cohorts of residents within the hospital, or all at once? The first paragraph stated that there is a 1 month observation phase followed by a 3 month intervention phase, but its not clear to me if this means the intervention continued over 3 months, or if the intervention was applied at the beginning of this phase, followed by ~3 months of patient follow-up. Further intervention in the study design and intervention sections could clarify this.
+
+> 2. Variables – more information on the injury severity score would be useful to readers, because I am unsure how this variable was planned to be used (it is not an outcome), and how precisely it was calculated. A reference is provided, but a high-level overview of the approach (including the range of potential scores) would help readers understand this measurement better.
+
+> 3. “Differences in distributions of observed and extracted data” – I am unsure how observed data differs from extracted data – these terms were not previously explained or defined. Does it mean the observation period vs the 3 month intervention period? “distributions” is also somewhat unclear, histogram distributions, or a specific tendency statistic?
+
+> 4. Statistical analysis: “We used an empty generalised linear mixed model to estimate the intracluster correlation coefficient” which outcomes does this apply to?
+
+> 5. The analysis involved comparing the 1st month and 2nd-4th months, but it is not described how outcomes will be summed – e.g. consent rate, I imagine this the total consent rate in month 1 vs months 2-4? It would be helpful to directly confirm this in the text.
+
+> Results
+> 6. Table 1. Missing counts are reported for some but not all measurements. Does the absence of a count indicate complete data? If so, a footnote stating this would help readers.
+
+> 7. Table 2. As mentioned in a prior comment it is unclear to me how these two groups are defined. Also, both have an N of 55, assuming these are patients it means there is a total N of 110, less than the total of 376. Why do the numbers differ?
+
+> 8. Table S1. Suggest clarifying that this is patient characteristics in the title.
+
+> 9. Table S5. Certain cells are blank – a footnote should explain what this means (no observations?)

@@ -2,7 +2,7 @@
 ## compile with:
 ## Rscript -e "rmarkdown::render('manuscript.Rmd', output_format = 'all')"
 ## libreoffice --headless --convert-to pdf manuscript.docx
-title: "Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study"
+title: "Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study in India"
 author: Trauma life support training Effectiveness Research Network (TERN) collaborators
 bibliography: bibliography.bib
 csl: nature.csl
@@ -151,8 +151,6 @@ Department of Cultural Anthropology and the Duke Global Health Institute, Duke U
 ##### Megha Tandon (MT) <!-- Accepted -->
 Department of Surgery, Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi, India.
 
--->
-
 ## Keywords
 Trauma management, Accident and emergency medicine, Education and training.
 
@@ -186,10 +184,10 @@ The funding sources had no role in the design of this study nor during its execu
 
 # Strengths and limitations of this study
 
-- First attempt to conduct a cluster randomised controlled trial of the most widely used trauma life support training programmes.
 - Prospective data collection with direct observations by dedicated research officers.
+- Lack of a priori defined success criteria and thresholds for the feasibility outcomes.
+- Use of sealed envelopes potentially compromised allocation concealment.
 - Participating centers' heterogeneity may affect the study estimates and bias the results.
-- Broad patient eligibility criteria may have included patients with minor injuries, making it difficult to estimate robust effect sizes.
 
 \newpage
 
@@ -366,9 +364,7 @@ We show that it is feasible to conduct and collect data for a cluster randomized
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
 
-We found that the ATLS^®^ and PTC arms had lower 30-day mortality compared to the PTC and standard care arms. This finding could hint towards a potential effect of training physicians in trauma life support, but it is important to note that this pilot study was not powered to detect any differences in outcomes. The arms differed considerably in sample size, with the ATLS^®^ arm having the smallest sample size. This difference most likely resulted from the randomisation process with a small number of heterogeneous clusters, and this heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.
-
-All-cause 30-day mortality was missing in `r rate.lost.to.follow.up`% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01% of patients [@Roberts2013; @Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only `r p.missing.in.hospital.mortality`%, which is comparable to previous trials.
+All-cause 30-day mortality was missing in `r rate.lost.to.follow.up`% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01% of patients [@Roberts2013; @Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only `r p.missing.in.hospital.mortality`%, which is comparable to previous trials. The difference in the number of patient deaths between the arms may have resulted from the randomisation process with a small number of heterogeneous clusters, and this heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.
 
 <!-- Consider discussing non-inferiority vs superiority. -->
 
