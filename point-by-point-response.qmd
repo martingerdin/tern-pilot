@@ -37,7 +37,7 @@ Thank you for pointing this out and we agree that the reporting of the mortality
 
 > Thank you for submitting this relevant paper and the impressive work behind it. It was an honor to review the paper. Here are some suggestions and comments, which I hope will be helpful in further developing the paper. 
 
-Thank you for your comments and we have revised the manuscript in the light of your comments.
+Thank you for your comments, they were very helpful. We have revised the manuscript in the light of your comments.
 
 > The aim of the study is to gain insight into the feasibility of a larger study. At the same time, more results are presented than necessary to answer this question. This is not clear to the reader. 
 
@@ -65,23 +65,44 @@ Thank you for pointing this out. We have added the number of patients who were l
 
 > In the discussion, deviations from the protocol are mentioned and referred to in the appendix, while these data are actually appropriate to discuss (and share) in the article itself, since it is a pilot. 
 
-
+We have revised the manuscript to describe the deviations where they are most relevant, and retained a list in the supplementary materials for completeness.
 
 > I find the number of appendices in the appendix very extensive, which makes it lose its purpose, and I also wonder to what extent it contributes to answering the research question. Parts of the protocol, which are now included in the appendix, should, in my opinion, be incorporated into the main paper.
+
+We agree that the supplementary materials are very extensive. We included these to transparently report the results of the analyses specified in the original protocol, and we have therefore decided to keep them in the manuscript. We have attempted to include parts of the supplementary materials in the main text where appropriate, in response to your earlier comments.
 
 ## Response to Reviewer 3, Dr. Sheila Sprague, McMaster University:
 
 > Thank you for the opportunity to review the manuscript titled “Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study”.  This manuscript describes an important trial with the potential to save many lives at hospitals across India.  There are many sections in this manuscript which are unclear.  The overall structure of the manuscript also needs to be improved upon.  Detailed comments are below.
 
+Thank you for your thorough review. We have made major revisions in response to your comments, and we hope that the manuscript is now clearer.
+
 > Introduction
 > - Provide clear objectives for the both the pilot phase and the definitive trial phase
 
+We have revised the objective of the pilot study to also include the aim of the full scale trial. The revised objective is "to assess the feasibility of a cluster randomised controlled trial comparing the effect of ATLS^®^ and PTC with standard care on outcomes in adult trauma patients.".
+
 > Methods
 > - Describe what information is being collected on standard of care at each hospital as it varies.
+
+We did not collect in-depth data on the standard care at each hospital, and we have added a note in the methods section to clarify this. We have also added this as a limitation of this pilot study, and suggested that the full scale trial should include a more detailed assessment of the standard care at each hospital.
+
 > - Provide additional details on ATLS and PTC training interventions.
+
+We have added more details on the ATLS and PTC training interventions to the methods section.
+
 > - Include details on the cluster selection.
+
+We have revised the methods section to clarify that the seven hospitals were a convenience sample of hospitals in India that fulfilled the inclusion criteria, and with existing connections to the research team.
+
 > - The authors should comment on the sample size for a pilot study.  For example, why did they select seven clusters? They should also comment on the number of residents and patients required to allow for a meaningful analysis of the feasibility outcomes.
+
+We have added the rationale for the number of clusters and the number of units per cluster to the methods section. We did not conduct a formal power calculation, but deemed that the anticipated sample sizes would be sufficient to evaluate the feasibility outcomes.
+
 > - The reason for the one-month lead in is unclear.  It is unclear how this data will be analyzed.
+
+
+
 > - Using sealed envelopes for randomization increases the risk of selection bias, tampering, and accidental loss, potentially compromising allocation concealment. Authors should have used the computer-generated randomization system at time of randomization for each site.
 > - For blinding, the authors should state that it was not possible to blind those involved.  It is unclear if those analyzing the data were blinded, as this is possible.
 > - The follow-up period for each participant is unclear. The methods state that data were collected for four months.  The methods also mention a 3-day mortality outcome.  
