@@ -223,7 +223,7 @@ Protocol deviations are mentioned where relevant in this manuscript, but a list 
 
 ## Trial Design
 
-We piloted a three-armed cluster randomised controlled trial [@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS^®^ and PTC training. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). In the published protocol, we also aimed to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial [@GerdinWärnberg2022], but we revised this aim in the light of current guidance on the conduct and reporting of pilot trials [ADD CITATION].
+We piloted a three-armed cluster randomised controlled trial [@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS^®^ and PTC training. We collected data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). We included the one month lead to be able to evaluate the feasibility of comparing patient outcomes both as absolute differences between the intervention phases, and as differences in change from baseline. In the published protocol, we also aimed to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial [@GerdinWärnberg2022], but we revised this aim in the light of current guidance on the conduct and reporting of pilot trials [ADD CITATION].
 
 ## Study Setting
 
@@ -275,12 +275,10 @@ We included persons who were 15 years or older and presented to the emergency de
 Our feasibility outcomes were: 
 
 - Consent rate of patients and residents. This was equal to the percentage of patients or residents who consented to be included, out of the total number of eligible patients or residents. 
-- Lost to follow up rate. This applied only to patients and was equal to the percentage of patients who did not complete 30 day follow up, out of all enrolled patients.
-- Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents who passed the training programme, out of the total number of trained residents.
+- Lost to follow up rate. This applied only to patients and was equal to the percentage of patients who did not complete 30 day follow up, out of all included patients.
 - Missing data rate. This applied to each outcome and variable and was equal to the percentage of missing values.
 - Differences in distributions between directly observed data and data extracted from medical records. This applied to all variables that could be reasonably expected to be present in the medical records, but we only extracted this data from a convenience sample of patients to reduce the workload of the project officers collecting data.
-
-We did not specify success criteria for these outcomes.
+- Pass rate. This applied only to residents in the intervention arms and was equal the percentage of residents who passed the training programme, out of the total number of trained residents.
 
 <!--The primary outcome and most secondary outcome were assessed and compared both as final values and as change from baseline. All outcomes that pertain to the individual participant level are detailed in Supplemental Material 1. We decided to include a large number of outcomes, including some more exploratory, so that we could test their feasibility and relevance. -->
 
@@ -288,19 +286,19 @@ We did not specify success criteria for these outcomes.
 
 ### Patients
 
-Arriving patients were screened for eligibility and consented, if conscious. Unconscious patients were consented by the patient’s representative. This proxy consent was reaffirmed by the patient, on regaining consciousness. Patients who did not regain consciousness were included based on their representative's consent. We followed up patients at 24 hours after arrival at the emergency department, and at 30 days after arrival at the emergency department.
+Arriving patients were screened for eligibility and consented, if conscious. Unconscious patients were consented by the patient’s representative. This proxy consent was reaffirmed by the patient, on regaining consciousness. Patients who did not regain consciousness were included based on their representative's consent. We followed up patients at 24 hours after arrival at the emergency department, and at 30 days after arrival at the emergency department. The follow up period for each patient was therefore one month.
 
 ### Residents
 
-Participating units were screened for eligibility once hospitals confirmed their participation. All residents in these units were approached to consent to training if their hospital was randomised to either of the intervention arms. The protocol stated that residents would be approached for consent before the hospitals were randomised, but this proved not to be feasible, and we therefore asked residents for consent after the hospitals were randomised but before training. The training was conducted approximately one month after the study started in that hospital. Initially, we planned to use simple random sampling to select the units to be trained in each intervention hospital, but for pragmatic reasons we decided to leave the decision on which units to train to the site principal investigator.  
+Participating units were screened for eligibility once hospitals confirmed their participation. All residents in these units were approached to consent to training if their hospital was randomised to either of the intervention arms. The protocol stated that residents would be approached for consent before the hospitals were randomised, but this proved not to be feasible, and we therefore asked residents for consent after the hospitals were randomised but before training. The training was conducted approximately one month after the study started in that hospital. Initially, we planned to use simple random sampling to select the units to be trained in each intervention hospital, but for pragmatic reasons we decided to leave the decision on which units to train to the site principal investigator. The number of residents trained in each intervention cluster varied because the size of the units varied.
 
 ## Sample size
 
-We wanted to include at least two clusters per arm to avoid drawing conclusions based on single centers, and we wanted to train at least two units per intervention cluster to be able to evaluate the logistics of sending residents for training. We did not conduct a formal power calculation for this pilot study, as the purpose was to assess the feasibility of the trial logistics and research methods. <!--The time period was dictated by budget and time constraints.-->
+We wanted to include at least two clusters per arm to avoid drawing conclusions based on single centers, and we wanted to train at least two units per intervention cluster to be able to evaluate the logistics of sending residents for training. We did not conduct a formal power calculation for this pilot study, as the purpose was to assess the feasibility of the trial logistics and research methods. We anticipated that the numbers of patients included per cluster were anticipated would vary between clusters depending on the volume of patients at each hospital.<!--The time period was dictated by budget and time constraints.-->
 
 ## Allocation and blinding
 
-We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. We did not blind investigators, residents or patients to the intervention. 
+We used simple randomisation implemented using sealed envelopes to allocate sites to trial arms. It was not possible to blind investigators, residents or patients to the intervention. We did not blind the data analysts.
 
 ## Data Collection
 
@@ -308,7 +306,7 @@ Data was collected over a four-month period. A research officer collected data o
 
 ## Variables
 
-The research officers collected data on demographics, vital signs, management details including imaging and surgery, and details of any injury sustained. All injuries were coded according to the International Classification of Diseases version 10 (ICD-10). Based on these ICD-10 codes, we calculated the Injury Severity Score using the R package `icdpicr` [@icdpicr_2022]. We also collected data on potential outcomes for the full-scale trial, including mortality within 30-days and in-hospital, complications and cause of death. A list of variables is available in Supplementary Table S2.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
+The research officers collected data on demographics, vital signs, management details including imaging and surgery, and details of any injury sustained. All injuries were coded according to the International Classification of Diseases version 10 (ICD-10). Based on these ICD-10 codes, we calculated the Injury Severity Score using the R package `icdpicr` [@icdpicr_2022]. We also collected data on potential outcomes for the full-scale trial, including mortality within 30-days and in-hospital, complications and health related quality of life (using the EQ-5D-3L). We did not calculate an EQ-5D-3L index score, because there is currently no Indian value set available for the EQ-5D-3L [@jyani_development_2022]. We also attempted to collect data on cause of death. A list of variables is available in Supplementary Table S2.<!--Supplemental Material 2 contains a full variable list, with definitions.-->
 
 ## Patient and public involvement
 
@@ -333,9 +331,14 @@ We were granted research ethics approval from the institutional ethics committee
 
 # Results
 
-We enrolled `r n.patients` trauma patients from `r number_to_text(n.centres)` participating centres between `r start.date` and `r end.date`. The standard care arm enrolled `r n.control` patients, the ATLS^®^ arm enrolled `r n.atls` patients, and the PTC arm enrolled `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
+We included `r n.patients` trauma patients from `r number_to_text(n.centres)` clusters between `r start.date` and `r end.date`. The period of data collection and the number of patients included per month per cluster is shown in Table \@ref(tab:patients-per-month). The standard care arm included `r n.control` patients, the ATLS^®^ arm included `r n.atls` patients, and the PTC arm included `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
 
-The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital.
+```{r patients-per-month, echo = FALSE, results = "asis", tab.cap = "Number of patients included per month per cluster."}
+patients.per.month.table |>
+  modify_caption("Number of patients included per month per cluster.")
+```
+
+The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. These prognostic factors differed between the trial arms. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital. 
 
 After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`% for the standard care, ATLS^®^ and PTC arms respectively.
 
@@ -350,9 +353,13 @@ sample.characteristics.table |>
 
 ## Outcomes
 
-The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. Among patients, the lost to follow up rate was `r rate.lost.to.follow.up`%. Among residents, the pass rate was `r pass.rate`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S2. The variables with the maximum amount of missing data were in the cost of treatment, reported in Supplementary Tables S1-12. 
+The percentage of patients who consented to follow up was `r p.consent`% and the lost to follow up rate was `r rate.lost.to.follow.up`%. The missing data rate ranged from `r min.missing.data` to `r max.missing.data`%, with details for selected variables shown in Table \@ref(tab:sample-characteristics) and in Supplementary Table S2. The variables with the maximum amount of missing data were in the cost of treatment, reported in Supplementary Tables S1-12. 
 
-The differences in distributions between observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in the data extracted from medical records compared to the directly observed data. 
+The differences in distributions between directly observed data and data extracted from medical records, for selected variables that were collected through observation or interview, are shown in Table \@ref(tab:observed-vs-extracted). Overall, the data were similarly distributed, but there were considerably more missing values in the data extracted from medical records compared to the directly observed data. 
+
+The percentage of residents who consented to training was `r recruitment.rate.residents`% and the pass rate was `r pass.rate`%. 
+
+
 
 ```{r observed-vs-extracted, echo = FALSE, tab.cap = "Differences in distributions between directly observed data and data extracted from medical records, for selected variables that were collected through observation or interview."}
 observed.vs.extracted.comparison.table
@@ -360,19 +367,19 @@ observed.vs.extracted.comparison.table
 
 # Discussion
 
-We show that it is feasible to conduct and collect data for a cluster randomized controlled trial comparing ATLS^®^ with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables, especially the cost of treatment (reported in Supplementary Table S2-13) had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. The missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data were similarly distributed, indicating that data collected from medical records is reliable even if it is less complete.
+We show that it is feasible to conduct and collect data for a cluster randomized controlled trial comparing ATLS^®^ with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables, especially the cost of treatment (reported in Supplementary Table S2-13) had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. The missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data were similarly distributed, indicating that data collected from medical records is reliable even if it is less complete. To improve completeness of data extracted from the medical records, a full scale trial should limit the number of variables extracted from the medical records and the importance of having these registered should be emphasised to the participating hospitals.
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
 
-All-cause 30-day mortality was missing in `r rate.lost.to.follow.up`% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01% of patients [@Roberts2013; @Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only `r p.missing.in.hospital.mortality`%, which is comparable to previous trials. The difference in the number of patient deaths between the arms may have resulted from the randomisation process with a small number of heterogeneous clusters, and this heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.
+All-cause 30-day mortality was missing in `r rate.lost.to.follow.up`% of patients. This may appear high, especially compared to for example the CRASH-2 and REACT-2 trials, which report missing primary outcome in less than 0.01% of patients [@Roberts2013; @Sierink2016]. Like many other trauma trials, both CRASH-2 and REACT-2 used in-hospital mortality as their primary outcome measure, whereas we attempted to follow up patients after discharge. Our missing data rate for in-hospital mortality was only `r p.missing.in.hospital.mortality`%, which is comparable to previous trials. Following up patients after discharge is notoriously challenging in the setting of this study, and the full scale trial might need to focus on in-hospital mortality as the primary outcome. The difference in the number of patient deaths between the arms may have resulted from the randomisation process with a small number of heterogeneous clusters, and this heterogeneity highlights the importance of taking varying cluster sizes into account in the design of the full scale trial.
 
 <!-- Consider discussing non-inferiority vs superiority. -->
 
 During the course of this pilot study we deviated from the protocol in several ways. We have reported these deviations were appropriate in the methods section, and provide a detailed list as Supplementary
 material S1. The most important deviation was the revision of the aim of this pilot study, because we initially planned to estimate potential effect sizes and other measures to help sample size calculations for a full scale trial, in addition to the feasibility outcomes. However, current guidance advice against using pilot studies to estimate effect sizes, as the usefulness of these estimates is questionable [INSERT REF]. We therefore decided to only report patient outcomes descriptively. Another important deviation from the protocol was the training of emergency medicine residents. We initially planned to train only surgical residents, but trauma management routines varied between participating hospitals, and we decided to adapt to local routines. The full scale study will need to accommodate this variation as part of the protocol. 
 
-There are some important limitations of this pilot study and therefore lessons to be learned and factored into the design of the full-scale trial. First, the volumes of patients included at some of the participating hospitals were lower than expected. A careful assessment of patient volumes as part of the screening process will be needed for the full-scale trial. Second, data on complications and cause of death were almost universally missing. To collect data on these variables will require other methods, as these were not explicitly described in the medical records and autopsy reports are not readily available. Third, we did not collect in-depth data on the standard care at each hospital. This data should be collected as part of the screening process for the full-scale trial.
+There are some important limitations of this pilot study and therefore lessons to be learned and factored into the design of the full-scale trial. First, the volumes of patients included at some of the participating hospitals were lower than expected. A careful assessment of patient volumes as part of the screening process will be needed for the full-scale trial. Second, data on complications and cause of death were almost universally missing. To collect data on these variables will require other methods, as these were not explicitly described in the medical records and autopsy reports are not readily available. Third, we did not collect in-depth data on the standard care at each hospital. This data should be collected as part of the screening process for the full-scale trial. Fourth, we used sealed envelopes for randomisation, which increases the risk of bias and errors. The full scale trial should use a computer-generated randomisation system. Fifth, we did not blind the data analysts, but recommend doing so in the full scale trial. Finally, we assessed a very large number of potential outcomes, and the full scale trial should focus on the most relevant outcomes.
 
 <!-- Consider discussing waiver of informed consent for initial 
 data collection -->
