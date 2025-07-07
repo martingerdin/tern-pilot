@@ -65,13 +65,13 @@ Because of small numbers in the pre-specified subgroups men, women, blunt multis
 
 | Cluster                                                       | City       | Beds | Type    | Study period | 
 +---------------------------------------------------------------+------------+------+---------+--------------+
-| Dr R N Cooper Municipal General Hospital                      | Mumbai     |      | Public  |              |
-| Seth GS Medical College and KEM Hospital                      | Mumbai     |      | Public  |              |
-| Lokmanya Tilak Municipal Medical College and General Hospital | Mumbai     |      | Public  |              |
-| MEDICA Superspeciality Hospital                               | Kolkata    |      | Private |              |
-| Medical College                                               | Kolkata    |      | Public  |              |
-| Nilratan Sircar Medical College & Hospital                    | Kolkata    |      | Public  |              |
-| Postgraduate Institute of Medical Education and Research      | Chandigarh |      | Public  |              |
+| Dr R N Cooper Municipal General Hospital                      | Mumbai     | 600  | Public  |              |
+| Seth GS Medical College and KEM Hospital                      | Mumbai     | 1800 | Public  |              |
+| Lokmanya Tilak Municipal Medical College and General Hospital | Mumbai     | 1850 | Public  |              |
+| MEDICA Superspeciality Hospital                               | Kolkata    | 300  | Private |              |
+| Medical College                                               | Kolkata    | ??   | Public  |              |
+| Nilratan Sircar Medical College & Hospital                    | Kolkata    | 1910 | Public  |              |
+| Postgraduate Institute of Medical Education and Research      | Chandigarh | 1400 | Public  |              |
 +---------------------------------------------------------------+------------+------+---------+--------------+
 
 # S2 Statistical methods for additional analyses according to the original protocol
