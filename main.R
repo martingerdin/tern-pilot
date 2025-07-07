@@ -59,9 +59,11 @@ stratified.table.data <- data %>%
 sample.characteristics.table <- create_descriptive_table(stratified.table.data,
     strata = "arm", show.all.levels = FALSE, include.overall = TRUE
 ) %>%
-    gtsummary::modify_table_styling(
-        column = label,
-        footnote_abbrev = "ATLS = Advanced Trauma Life Support; PTC = Prehospital Trauma Care; SBP = systolic blood pressure"
+    gtsummary::modify_abbreviation(
+        "ATLS = Advanced Trauma Life Support; PTC = Prehospital Trauma Care; SBP = systolic blood pressure"
+    ) %>%
+    gtsummary::modify_source_note(
+        "Missing data counts are only shown for variables with missing values. The absence of a count indicates complete data."
     ) %>%
     add_stat_label(
         label = list(

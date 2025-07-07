@@ -207,10 +207,15 @@ We have added a suggestion to the discussion to improve the completeness of the 
 
 > - Comment on the ethics of the full trial. Is it ethical to have sites continue with usual care after seeing the pilot study results?
 
-
+We have added a sentence on the ethics of the full trial.
 
 > - Consider a stepped wedge design where all clusters start with standard of care and then transition into an intervention.
+
+Thank you for this suggestion and we agree that a stepped wedge design would be a good approach for the full scale trial.
+
 > - Use the CONSORT statement extension for pilot and feasibility trials (https://www.equator-network.org/reporting-guidelines/consort-2010-statement-extension-to-randomised-pilot-and-feasibility-trials/) and the CONSORT statement extension for cluster randomised trials (https://www.equator-network.org/reporting-guidelines/consort-cluster/).
+
+We have attempted to align our reporting with these guidelines.
 
 ## Response to Reviewer 4, Dr. Kyle Dack, University of Bristol:
 
@@ -218,22 +223,42 @@ We have added a suggestion to the discussion to improve the completeness of the 
 >
 > I have only minor comments about certain study design aspects which I found unclear - particularly the observed/extracted data comparison.
 
+Thank you for reviewing the manuscript! 
+
 > Methods:
 > 1. Intervention – how long was the training programme, and who was it delivered by? Was the training performed in stages, e.g. to different cohorts of residents within the hospital, or all at once? The first paragraph stated that there is a 1 month observation phase followed by a 3 month intervention phase, but its not clear to me if this means the intervention continued over 3 months, or if the intervention was applied at the beginning of this phase, followed by ~3 months of patient follow-up. Further intervention in the study design and intervention sections could clarify this.
 
+We have clarified that the training was conducted at the beginning of the three month intervention phase.
+
 > 2. Variables – more information on the injury severity score would be useful to readers, because I am unsure how this variable was planned to be used (it is not an outcome), and how precisely it was calculated. A reference is provided, but a high-level overview of the approach (including the range of potential scores) would help readers understand this measurement better.
+
+We have added a description of the ISS to the methods section.
 
 > 3. “Differences in distributions of observed and extracted data” – I am unsure how observed data differs from extracted data – these terms were not previously explained or defined. Does it mean the observation period vs the 3 month intervention period? “distributions” is also somewhat unclear, histogram distributions, or a specific tendency statistic?
 
+We have attempted to clarify what we mean by distributions (summary statistics) and directly observed data, in the section where we describe the feasibility outcomes.
+
 > 4. Statistical analysis: “We used an empty generalised linear mixed model to estimate the intracluster correlation coefficient” which outcomes does this apply to?
 
+We have moved the description of this analysis to the supplementary materials, and clarified that it applies to all cause 30-day and in-hospital mortality.
+
 > 5. The analysis involved comparing the 1st month and 2nd-4th months, but it is not described how outcomes will be summed – e.g. consent rate, I imagine this the total consent rate in month 1 vs months 2-4? It would be helpful to directly confirm this in the text.
+
+We have attempted to clarify that feasibility outcomes were not assessed as differences between the observation and intervention phases, but summarised across the entire period.
 
 > Results
 > 6. Table 1. Missing counts are reported for some but not all measurements. Does the absence of a count indicate complete data? If so, a footnote stating this would help readers.
 
+We have added a footnote to Table 1 to clarify that the absence of a count indicates complete data.
+
 > 7. Table 2. As mentioned in a prior comment it is unclear to me how these two groups are defined. Also, both have an N of 55, assuming these are patients it means there is a total N of 110, less than the total of 376. Why do the numbers differ?
+
+We only extracted data from a convenience sample of patients to reduce the workload of the project officers collecting data. We have attempted to clarify this in the methods section and in the table caption.
 
 > 8. Table S1. Suggest clarifying that this is patient characteristics in the title.
 
+We have added "patient" to the title. 
+
 > 9. Table S5. Certain cells are blank – a footnote should explain what this means (no observations?)
+
+Yes, that is correct. Empty cells indicate that there were no observations. We have added a note to clarify this.
