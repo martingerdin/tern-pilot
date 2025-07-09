@@ -23,6 +23,7 @@ prepare_data <- function(data, codebook = NULL) {
 
     ## Prepare data
     prepared.data <- data
+    prepared.data[["...1"]] <- NULL
     prepared.data$patinfo__pt_age <- as.numeric(prepared.data$patinfo__pt_age)
     prepared.data$id__reg_hospital_id <- as.factor(prepared.data$id__reg_hospital_id)
 
@@ -161,8 +162,9 @@ prepare_data <- function(data, codebook = NULL) {
 
     ## Label variables
     prepared.data[] <- lapply(names(prepared.data), function(column.name) {
-        column.data <- prepared.data %>%
-            pull(.data[[column.name]]) %>%
+        print(column.name)
+        column.data <- prepared.data |>
+            dplyr::pull(.data[[column.name]]) |>
             label_variable(name = column.name, codebook = codebook)
         return(column.data)
     })
@@ -200,11 +202,22 @@ prepare_data <- function(data, codebook = NULL) {
     return(prepared.data)
 }
 
+variable.data <- prepared.data[["_version"]]
+name <- "_version"
+codebook <- codebook
+
+#' Label a variable
+#'
+#' This function labels a variable based on the codebook.
+#' @param variable.data A vector. The variable to be labelled. No default.
+#' @param name A string. The name of the variable. No default.
+#' @param codebook A list. A list describing the columns of data or
+#'     NULL. Defaults to NULL.
 label_variable <- function(variable.data, name, codebook) {
     relabelled.data <- variable.data
     name.components <- strsplit(name, "__", fixed = TRUE)
-    variable.name <- name.components[[1]][2]
-    variable.label <- codebook$survey$label[variable.name]
+    variable.name <- ifelse(length(name.components[[1]]) == 1, name, name.components[[1]][2])
+    variable.label <- ifelse(is.na(codebook$survey$label[variable.name]), variable.name, codebook$survey$label[variable.name])
     type <- codebook$survey$type[variable.name]
     if (!is.null(type) && grepl("select_one", type)) {
         type.index <- grep(gsub("select_one ", "", type), codebook$choices$list_name)
@@ -219,6 +232,5 @@ label_variable <- function(variable.data, name, codebook) {
     if (!is.null(type)) {
         labelled::var_label(relabelled.data) <- variable.label
     }
-
     return(relabelled.data)
 }
