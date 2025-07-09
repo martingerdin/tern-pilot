@@ -6,6 +6,12 @@ create_consort_diagram <- function(results) {
   n.atls.residents <- results$n.atls.residents |> as.character()
   n.ptc <- results$n.ptc |> as.character()
   n.ptc.residents <- results$n.ptc.residents |> as.character()
+  n.control.complete.m30d <- results$n.control.complete.m30d |> as.character()
+  n.control.complete.hd <- results$n.control.complete.hd |> as.character()
+  n.atls.complete.m30d <- results$n.atls.complete.m30d |> as.character()
+  n.atls.complete.hd <- results$n.atls.complete.hd |> as.character()
+  n.ptc.complete.m30d <- results$n.ptc.complete.m30d |> as.character()
+  n.ptc.complete.hd <- results$n.ptc.complete.hd |> as.character()
   consort.svg <- readLines("consort-flow-diagram.svg") |>
     str_replace(coll("n.control"), n.control) |>
     str_replace(coll("n.atls.residents"), n.atls.residents) |>
