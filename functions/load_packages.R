@@ -1,7 +1,7 @@
 library(pbapply)
 library(openssl)
 library(dotenv)
-library(DataExplorer)
+# library(DataExplorer)
 
 load_packages <- function(packages = c(
                               "dotenv",
@@ -14,7 +14,8 @@ load_packages <- function(packages = c(
                               "boot",
                               "pbapply",
                               "openssl",
-                              "DataExplorer"
+                              "lme4"
+                              # "DataExplorer"
                           )) {
     for (package in packages) library(package, character.only = TRUE)
 }
