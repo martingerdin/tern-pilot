@@ -1,10 +1,10 @@
-create_patients_per_month_figure <- function(prepared.data) {
+create_patients_per_month_figure <- function(data) {
   library(ggplot2)
 
   # Create a data frame with the number of patients per month per cluster
-  prepared.data$arrival.year.month <- prepared.data$incident__date_of_arrival %>%
+  data$arrival.year.month <- data$incident__date_of_arrival %>%
     format("%Y-%m")
-  patients.per.month <- prepared.data %>%
+  patients.per.month <- data %>%
     group_by(id__reg_hospital_id, arrival.year.month) %>%
     summarise(n = n()) %>%
     ungroup()
@@ -13,25 +13,30 @@ create_patients_per_month_figure <- function(prepared.data) {
   patients.per.month <- patients.per.month %>%
     rename(cluster = id__reg_hospital_id)
 
+  # Give each cluster a random id from 1 to the number of clusters
+  patients.per.month$cluster <- patients.per.month$cluster %>%
+    as.factor() %>%
+    as.numeric() %>%
+    paste0("Cluster ", .)
+
   # Format arrival.year.month as a date column
   patients.per.month$arrival.year.month.label <- patients.per.month$arrival.year.month
   patients.per.month$arrival.year.month <- patients.per.month$arrival.year.month %>%
     paste0("-01") %>%
-    as.Date() %>%
-    factor(levels = as.numeric(patients.per.month$arrival.year.month), labels = patients.per.month$arrival.year.month.label)
+    as.Date()
 
+  patients.per.month$arrival.year.month <- factor(patients.per.month$arrival.year.month)
 
   # Create a barchart with the number of patients per month per cluster
-  ggplot(patients.per.month, aes(x = arrival.year.month, y = n)) +
-    geom_bar(stat = "identity", width = 3) +
+  ggplot(patients.per.month, aes(x = arrival.year.month, y = n, fill = cluster)) +
+    geom_bar(stat = "identity", color = "black", width = 0.7) +
     labs(x = "Year-month", y = "Number of patients", fill = "Cluster") +
+    ggsci::scale_fill_bmj() +
+    ggsci::scale_color_bmj() +
     facet_grid(cluster ~ .) +
-    theme_minimal()
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none")
 
   # Save the figure
-  ggsave("patients_per_month.png", width = 10, height = 6)
+  ggsave("patients-per-month.pdf", width = 85, height = 150, units = "mm")
 }
-
-prepared.data |>
-  filter(id__reg_hospital_id == "95846") |>
-  select(incident__date_of_arrival)

@@ -202,10 +202,6 @@ prepare_data <- function(data, codebook = NULL) {
     return(prepared.data)
 }
 
-variable.data <- prepared.data[["_version"]]
-name <- "_version"
-codebook <- codebook
-
 #' Label a variable
 #'
 #' This function labels a variable based on the codebook.
