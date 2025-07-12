@@ -46,6 +46,9 @@ results <- get_basic_results(data, missing.variables = table.variables.full)
 ## Create CONSORT diagram
 create_consort_diagram(results)
 
+## Create figure of patients per month
+create_patients_per_month_figure(data)
+
 ## Create table of sample characteristics
 table.data <- data %>%
     select(all_of(table.variables.full)) %>%
