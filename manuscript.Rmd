@@ -335,9 +335,8 @@ We were granted research ethics approval from the institutional ethics committee
 
 We included `r n.patients` trauma patients from `r number_to_text(n.centres)` clusters between `r start.date` and `r end.date`. The period of data collection and the number of patients included per month per cluster is shown in Table \@ref(tab:patients-per-month). The standard care arm included `r n.control` patients, the ATLS^®^ arm included `r n.atls` patients, and the PTC arm included `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
 
-```{r patients-per-month, echo = FALSE, results = "asis", tab.cap = "Number of patients included per month per cluster."}
-patients.per.month.table |>
-  modify_caption("Number of patients included per month per cluster.")
+```{r patients-per-month-figure, echo = FALSE, results = "asis", fig.cap = "Number of patients included per cluster per month."}
+knitr::include_graphics("patients-per-month.png")
 ```
 
 The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. These prognostic factors differed between the trial arms. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital. 

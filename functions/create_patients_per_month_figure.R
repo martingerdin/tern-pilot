@@ -25,7 +25,7 @@ create_patients_per_month_figure <- function(data) {
     paste0("-01") %>%
     as.Date()
 
-  patients.per.month$arrival.year.month <- factor(patients.per.month$arrival.year.month)
+  patients.per.month$arrival.year.month <- factor(patients.per.month$arrival.year.month, labels = unique(patients.per.month$arrival.year.month.label))
 
   # Create a barchart with the number of patients per month per cluster
   patients.per.month.figure <- ggplot(patients.per.month, aes(x = arrival.year.month, y = n, fill = cluster)) +
@@ -38,5 +38,5 @@ create_patients_per_month_figure <- function(data) {
     scale_y_continuous(breaks = c(0, 15, 30))
 
   # Save the figure
-  ggsave(patients.per.month.figure, filename = "patients-per-month.pdf", width = 85, height = 130, units = "mm")
+  ggsave(patients.per.month.figure, filename = "patients-per-month.png", width = 85, height = 130, units = "mm")
 }
