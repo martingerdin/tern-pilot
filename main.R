@@ -57,8 +57,7 @@ overall.sample.characteristics.table <- create_descriptive_table(table.data, sho
 
 ## Create table of sample characteristics stratified by arm
 stratified.table.data <- data %>%
-    select(all_of(table.variables)) %>%
-    select(-outcomes__discharge_alive, -outcomes__alive_after_30_days)
+    select(all_of(table.variables))
 sample.characteristics.table <- create_descriptive_table(stratified.table.data,
     strata = "arm", show.all.levels = FALSE, include.overall = TRUE
 ) %>%
@@ -139,10 +138,7 @@ if (use.saved) {
 outcome.results.tables <- create_outcome_results_tables(outcome.results)
 
 ## Save outcome results for supplementary material
-save_tables_to_file(outcome.results.tables, supplementary.material = TRUE, only.95.ci = TRUE)
-
-## Save all outcome results tables to file
-save_tables_to_file(outcome.results.tables, supplementary.material = FALSE, only.95.ci = FALSE)
+save_tables_to_file(outcome.results.tables, supplementary.material = TRUE, only.95.ci = FALSE)
 
 # Extract results from tables
 females <- inline_text(overall.sample.characteristics.table,
