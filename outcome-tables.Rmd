@@ -2,7 +2,9 @@
 
 # Results with 75% confidence intervals (CI)
 
-## Outcomes in all patients during the entire study period, by treatment arm(75% CI)
+## Outcomes in all patients during the entire study period, by treatment arm (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -14,7 +16,9 @@ outcome.results.tables[["ci.level.0.75"]][["Outcomes in all patients during the 
 
 
 
-## Outcomes in all patients before training, by treatment arm(75% CI)
+## Outcomes in all patients before training, by treatment arm (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -26,7 +30,9 @@ outcome.results.tables[["ci.level.0.75"]][["Outcomes in all patients before trai
 
 
 
-## Outcomes in all patients after training, by treatment arm(75% CI)
+## Outcomes in all patients after training, by treatment arm (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -38,7 +44,9 @@ outcome.results.tables[["ci.level.0.75"]][["Outcomes in all patients after train
 
 
 
-## Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms(75% CI)
+## Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -50,7 +58,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute change from baseline for al
 
 
 
-## Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms(75% CI)
+## Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -62,7 +72,9 @@ outcome.results.tables[["ci.level.0.75"]][["Relative change from baseline for al
 
 
 
-## Absolute and relative differences in outcomes after training, comparing standard care with ATLS(75% CI)
+## Absolute and relative differences in outcomes after training, comparing standard care with ATLS (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -74,7 +86,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in outcomes after training, comparing standard care with PTC(75% CI)
+## Absolute and relative differences in outcomes after training, comparing standard care with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -86,7 +100,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in outcomes after training, comparing ATLS with PTC(75% CI)
+## Absolute and relative differences in outcomes after training, comparing ATLS with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -98,7 +114,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS(75% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -110,7 +128,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC(75% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -122,7 +142,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC(75% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -138,7 +160,9 @@ outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in
 
 # Results with 85% confidence intervals (CI)
 
-## Outcomes in all patients during the entire study period, by treatment arm(85% CI)
+## Outcomes in all patients during the entire study period, by treatment arm (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -150,7 +174,9 @@ outcome.results.tables[["ci.level.0.85"]][["Outcomes in all patients during the 
 
 
 
-## Outcomes in all patients before training, by treatment arm(85% CI)
+## Outcomes in all patients before training, by treatment arm (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -162,7 +188,9 @@ outcome.results.tables[["ci.level.0.85"]][["Outcomes in all patients before trai
 
 
 
-## Outcomes in all patients after training, by treatment arm(85% CI)
+## Outcomes in all patients after training, by treatment arm (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -174,7 +202,9 @@ outcome.results.tables[["ci.level.0.85"]][["Outcomes in all patients after train
 
 
 
-## Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms(85% CI)
+## Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -186,7 +216,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute change from baseline for al
 
 
 
-## Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms(85% CI)
+## Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -198,7 +230,9 @@ outcome.results.tables[["ci.level.0.85"]][["Relative change from baseline for al
 
 
 
-## Absolute and relative differences in outcomes after training, comparing standard care with ATLS(85% CI)
+## Absolute and relative differences in outcomes after training, comparing standard care with ATLS (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -210,7 +244,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in outcomes after training, comparing standard care with PTC(85% CI)
+## Absolute and relative differences in outcomes after training, comparing standard care with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -222,7 +258,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in outcomes after training, comparing ATLS with PTC(85% CI)
+## Absolute and relative differences in outcomes after training, comparing ATLS with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -234,7 +272,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS(85% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -246,7 +286,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC(85% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -258,7 +300,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC(85% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -274,7 +318,9 @@ outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in
 
 # Results with 95% confidence intervals (CI)
 
-## Outcomes in all patients during the entire study period, by treatment arm(95% CI)
+## Outcomes in all patients during the entire study period, by treatment arm (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -286,7 +332,9 @@ outcome.results.tables[["ci.level.0.95"]][["Outcomes in all patients during the 
 
 
 
-## Outcomes in all patients before training, by treatment arm(95% CI)
+## Outcomes in all patients before training, by treatment arm (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -298,7 +346,9 @@ outcome.results.tables[["ci.level.0.95"]][["Outcomes in all patients before trai
 
 
 
-## Outcomes in all patients after training, by treatment arm(95% CI)
+## Outcomes in all patients after training, by treatment arm (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -310,7 +360,9 @@ outcome.results.tables[["ci.level.0.95"]][["Outcomes in all patients after train
 
 
 
-## Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms(95% CI)
+## Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -322,7 +374,9 @@ outcome.results.tables[["ci.level.0.95"]][["Absolute change from baseline for al
 
 
 
-## Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms(95% CI)
+## Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -334,7 +388,9 @@ outcome.results.tables[["ci.level.0.95"]][["Relative change from baseline for al
 
 
 
-## Absolute and relative differences in outcomes after training, comparing standard care with ATLS(95% CI)
+## Absolute and relative differences in outcomes after training, comparing standard care with ATLS (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -346,7 +402,9 @@ outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in outcomes after training, comparing standard care with PTC(95% CI)
+## Absolute and relative differences in outcomes after training, comparing standard care with PTC (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -358,7 +416,9 @@ outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in outcomes after training, comparing ATLS with PTC(95% CI)
+## Absolute and relative differences in outcomes after training, comparing ATLS with PTC (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -370,7 +430,9 @@ outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS(95% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -382,7 +444,9 @@ outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC(95% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 
@@ -394,7 +458,9 @@ outcome.results.tables[["ci.level.0.95"]][["Absolute and relative differences in
 
 
 
-## Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC(95% CI)
+## Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC (95% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
 
 ```{r, echo = FALSE} 
 

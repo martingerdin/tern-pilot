@@ -1,7 +1,7 @@
 ---
 ## Rscript -e "rmarkdown::render('supplementary-materials.Rmd')"
 ## libreoffice --headless --convert-to pdf supplementary-materials.docx
-title: Supplementary Materials
+title: Supplementary Material
 subtitle:"Feasibility of a Cluster Randomised Trial on the Effect of Trauma Life Support Training: A Pilot Study in India"
 output:
     bookdown::word_document2:
@@ -74,16 +74,6 @@ Because of small numbers in the pre-specified subgroups men, women, blunt multis
 | Postgraduate Institute of Medical Education and Research      | Chandigarh | 1400 | Public  |              |
 +---------------------------------------------------------------+------------+------+---------+--------------+
 
-# S2 Statistical methods for additional analyses according to the original protocol
-
-We used an empty generalised linear mixed model <!-- see [@Sommet2017] --> to estimate the intracluster correlation coefficient for all cause 30-day and in-hospital mortality. We compared patients outcomes in all possible combinations of trial arms. In each combination we compared both differences in final values and differences in change from baseline. For the intervention arms the change from baseline was calculated as the difference between the one month period of data collection before the training was undertaken and the three month period after the training. For the control arm the data collection period was four months and the difference from baseline was calculated as the difference between the first one month and the following three months.
-
-Within each combination of trial arms we had planned to conduct subgroup analyses of men, women, blunt multisystem trauma, penetrating trauma, shock (systolic blood pressure ≤ 90 mmHg), severe traumatic brain injury, and elderly (≥65 years) [@hornor_quality_2018]. These subgroups were however too small to allow for meaningful analyses, and are therefore reported descriptively. We calculated both absolute and relative differences for each comparison, along with 75, 85, and 95% confidence intervals. We used an empirical bootstrap procedure with 1000 draws to estimate these confidence intervals. In the interest of space, only the 95% confidence intervals are presented for all comparisons in Supplementary Tables. The remaining results are available from the corresponding author on request.
-
-# S3 Estimated intracluster correlation coefficient
-
-The intracluster correlation coefficients was `r icc.m30d` for 30-day mortality and `r icc.inhosp` for in-hospital mortality.
-
 # Table S2. Extended patient sample characteristics
 
 ```{r overall-table, echo = FALSE}
@@ -91,6 +81,5 @@ combined.sample.characteristics.table
 ```
 
 
-```{r, child = "supplementary-outcome-tables.Rmd"}
-```
+
 
