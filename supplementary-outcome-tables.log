@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  22 JUL 2025 05:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  23 JUL 2025 06:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,13 +562,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write3
 \openout3 = `supplementary-outcome-tables.toc'.
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
 LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7.5> on input line 96.
@@ -579,69 +579,166 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 210.
 
-[2]
+[3]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 338.
 
-[3]
+[4]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 466.
 
-[4]
-Overfull \hbox (9.7091pt too wide) in alignment at lines 481--594
+[5]
+Overfull \hbox (0.855pt too wide) in alignment at lines 481--594
 [] [] [] [] 
  []
 
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 595.
 
-[5]
+[6]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 724.
 
-[6]
+[7]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 852.
 
-[7]
+[8]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 980.
 
-[8]
+[9]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 1108.
 
-[9]
+[10]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 1237.
 
-[10]
+[11]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 1366.
 
-[11]
+[12]
 
 LaTeX Warning: Float too large for page by 341.41293pt on input line 1495.
 
-[12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] (./supplementary-ou
-tcome-tables.aux) ) 
+[13]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 1629.
+
+[14]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 1757.
+
+[15]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 1885.
+
+[16]
+Overfull \hbox (0.855pt too wide) in alignment at lines 1900--2013
+[] [] [] [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2014.
+
+[17]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2143.
+
+[18]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2271.
+
+[19]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2399.
+
+[20]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2527.
+
+[21]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2656.
+
+[22]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2785.
+
+[23]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 2914.
+
+[24]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3048.
+
+[25]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3176.
+
+[26]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3304.
+
+[27]
+Overfull \hbox (9.7091pt too wide) in alignment at lines 3319--3432
+[] [] [] [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3433.
+
+[28]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3562.
+
+[29]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3690.
+
+[30]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3818.
+
+[31]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 3946.
+
+[32]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 4075.
+
+[33]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 4204.
+
+[34]
+
+LaTeX Warning: Float too large for page by 341.41293pt on input line 4333.
+
+[35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50]
+[51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]
+[67] [68] (./supplementary-outcome-tables.aux) ) 
 Here is how much of TeX's memory you used:
- 15021 strings out of 478051
- 246109 string characters out of 5840943
- 2161330 words of memory out of 5000000
- 34791 multiletter control sequences out of 15000+600000
+ 15184 strings out of 478051
+ 252992 string characters out of 5840943
+ 2735330 words of memory out of 5000000
+ 34839 multiletter control sequences out of 15000+600000
  563382 words of font info for 105 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 77i,9n,81p,2014b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/t
-exmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
->
-Output written on supplementary-outcome-tables.pdf (23 pages, 192507 bytes).
+ 77i,9n,81p,2016b,501s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr8.pfb>
+Output written on supplementary-outcome-tables.pdf (68 pages, 275945 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 28769 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 553 compressed objects within 6 object streams
+ 175 named destinations out of 1000 (max. 500000)
+ 28961 words of extra memory for PDF output out of 29859 (max. 10000000)
 

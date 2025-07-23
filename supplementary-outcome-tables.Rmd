@@ -1,5 +1,321 @@
 \pagebreak
 
+# Results with 75% confidence intervals (CI)
+
+## Additional Online Table 1. Outcomes in all patients during the entire study period, by treatment arm (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Outcomes in all patients during the entire study period, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 2. Outcomes in all patients before training, by treatment arm (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Outcomes in all patients before training, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 3. Outcomes in all patients after training, by treatment arm (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Outcomes in all patients after training, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 4. Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 5. Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 6. Absolute and relative differences in outcomes after training, comparing standard care with ATLS (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 7. Absolute and relative differences in outcomes after training, comparing standard care with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 8. Absolute and relative differences in outcomes after training, comparing ATLS with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 9. Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 10. Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 11. Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC (75% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.75"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+\pagebreak
+
+# Results with 85% confidence intervals (CI)
+
+## Additional Online Table 1. Outcomes in all patients during the entire study period, by treatment arm (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Outcomes in all patients during the entire study period, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 2. Outcomes in all patients before training, by treatment arm (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Outcomes in all patients before training, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 3. Outcomes in all patients after training, by treatment arm (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Outcomes in all patients after training, by treatment arm"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 4. Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Absolute change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 5. Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Relative change from baseline for all outcomes, comparing the period after training with the period before training, by treatment arms"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 6. Absolute and relative differences in outcomes after training, comparing standard care with ATLS (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in outcomes after training, comparing standard care with ATLS"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 7. Absolute and relative differences in outcomes after training, comparing standard care with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in outcomes after training, comparing standard care with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 8. Absolute and relative differences in outcomes after training, comparing ATLS with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in outcomes after training, comparing ATLS with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 9. Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with ATLS"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 10. Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing standard care with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+## Additional Online Table 11. Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC (85% CI)
+
+Empty cells indicate that there were no observations to calculate the statistic.
+
+```{r, echo = FALSE} 
+
+outcome.results.tables[["ci.level.0.85"]][["Absolute and relative differences in changes from baseline for all outcomes, comparing ATLS with PTC"]]
+
+```
+
+\pagebreak
+
+
+
+\pagebreak
+
 # Results with 95% confidence intervals (CI)
 
 ## Additional Online Table 1. Outcomes in all patients during the entire study period, by treatment arm (95% CI)

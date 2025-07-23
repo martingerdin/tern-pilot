@@ -31,7 +31,7 @@ We have revised the discussion to include the methodological limitations highlig
 
 > The above is the only concern I had when I chose "no" for "Are the discussion and conclusions justified by the results?"
 
-Thank you for pointing this out and we agree that the reporting of the mortality outcomes is problematic for a feasibility trial. We have decided to report mortality outcomes descriptively in the paper, given comments from other reviewers, but revised the discussion to focus on the missing data and avoid any conclusions about a potential effect of the training.
+Thank you for pointing this out and we agree that the reporting of the mortality outcomes is problematic for a feasibility trial. We have decided to report mortality outcomes descriptively in the paper, given comments from other reviewers, but revised the discussion to focus on the missing data and to avoid any conclusions about a potential effect of the training.
 
 ## Response to Reviewer 2, Dr. Wietske H.W. Ham, University of Applied Sciences:
 
@@ -41,7 +41,7 @@ Thank you for your comments, they were very helpful. We have revised the manuscr
 
 > The aim of the study is to gain insight into the feasibility of a larger study. At the same time, more results are presented than necessary to answer this question. This is not clear to the reader. 
 
-We agree that the manuscript, and the supplementary material, includes more results than necessary to fulfil the aim of the study. As you have noticed, we struggled to find a balance between staying true to the protocol and reporting the results that were most relevant in a transparent manner. We have now attempted to address this by clearly stating that we deviated from the original protocol in reporting the pilot, to focus on the feasibility of the full-scale trial. We have therefore limited the number of results that we present in the main text of the manuscript considerably.
+We agree that the manuscript, and the supplementary material, includes more results than necessary to fulfil the aim of the study. As you have noticed, we struggled to find a balance between adhering to the protocol and reporting the results that were most relevant in a transparent manner. We have now attempted to address this by clearly stating that we deviated from the original protocol in reporting the pilot, to focus on the feasibility of the full-scale trial. We have therefore limited the number of results that we present in the main text of the manuscript considerably.
 
 > It is unclear to me whether patients who ultimately did not regain consciousness were also included in this study. This should be described more clearly.
 
@@ -69,7 +69,7 @@ We have revised the manuscript to describe the deviations where they are most re
 
 > I find the number of appendices in the appendix very extensive, which makes it lose its purpose, and I also wonder to what extent it contributes to answering the research question. Parts of the protocol, which are now included in the appendix, should, in my opinion, be incorporated into the main paper.
 
-We agree that the supplementary materials are very extensive. We included these to transparently report the results of the analyses specified in the original protocol, and we have therefore decided to keep them in the manuscript. We have attempted to include parts of the supplementary materials in the main text where appropriate, in response to your earlier comments.
+We agree that the supplementary materials are very extensive. We included these to transparently report the results of the analyses specified in the original protocol, but in response to your comment we have now published the majority of the supplementary materials as online additional files, and cite these in the manuscript. We have attempted to include parts of the supplementary materials in the main text where appropriate, in response to your earlier comments.
 
 ## Response to Reviewer 3, Dr. Sheila Sprague, McMaster University:
 
@@ -113,7 +113,7 @@ We have added that we did not blind the data analysts in this pilot study, but r
 
 > - The follow-up period for each participant is unclear. The methods state that data were collected for four months.  The methods also mention a 3-day mortality outcome.  
 
-The data collection period in each hospital was four months, but patients were followed up for one month. We have clarified this in the methods section.
+The data collection period in each hospital was intended to be four months, and then patients were followed up for one month. However, the actual data collected periods varied slightly between clusters, and we have clarified this in the methods section.
 
 > - Success criteria and threshold details for the feasibility outcomes should be clearly outlined in the methods.
 
@@ -146,7 +146,7 @@ Thank you for pointing this out and we now highlight this in the results section
 
 > - Consider reporting overall enrollment rates (e.g. number of participants enrolled per month).  There is a paragraph in the discussion on low enrollment, but it is not listed in the results.
 
-We have added a table to the results section to report the number of patients included per month.
+We have added a figure to the result's section, reporting the number of patients included per month per cluster. Notably, the process of preparing this figure allowed us to identify a data collection error in two clusters, and we have added this to the methods section. We have also included this in the discussion as a limitation of this pilot study and an important lesson for the full scale trial.
 
 > - The results of feasibility outcomes should be reported clearly in a table, with a column indicating whether the feasibility outcome was successfully achieved.
 
@@ -174,11 +174,11 @@ Currently, there is no Indian value set available for the EQ-5D-3L, and we have 
 
 > - Simplify the outcomes tables to focus on the key findings. Remove the yes/no and only list the yes.  
 
-We now only report the yes in the outcomes tables.
+We have removed the majority of the outcome tables from the supplementary materials and published them as online additional files, referenced in the manuscript.
 
 > - The absolute difference versus relative difference does not add to the analyses and could be removed.
 
-We have removed the absolute difference versus relative difference from the main results section, but kept it in the supplementary materials as it was part of the original protocol.
+We have removed the absolute difference versus relative difference from the main results section, but report them in the additional online files as this analysis was part of the original protocol.
 
 > - As this a pilot study, outcome data should be reported descriptively in a clearer manner.
 
@@ -211,7 +211,7 @@ We have added a sentence on the ethics of the full trial.
 
 > - Consider a stepped wedge design where all clusters start with standard of care and then transition into an intervention.
 
-Thank you for this suggestion and we agree that a stepped wedge design would be a good approach for the full scale trial.
+Thank you for this suggestion and we agree that a stepped wedge design would be a good approach for the full scale trial. We now include this as a suggestion for the full scale trial in the discussion.
 
 > - Use the CONSORT statement extension for pilot and feasibility trials (https://www.equator-network.org/reporting-guidelines/consort-2010-statement-extension-to-randomised-pilot-and-feasibility-trials/) and the CONSORT statement extension for cluster randomised trials (https://www.equator-network.org/reporting-guidelines/consort-cluster/).
 
@@ -261,4 +261,4 @@ We have added "patient" to the title.
 
 > 9. Table S5. Certain cells are blank – a footnote should explain what this means (no observations?)
 
-Yes, that is correct. Empty cells indicate that there were no observations. We have added a note to clarify this.
+Yes, that is correct. Empty cells indicate that there were no observations. We have now moved the majority of the tables from the supplementary materials and instead published them as online additional files, referenced in the manuscript. These files include a  note to clarify that empty cells indicate that there were no observations.
