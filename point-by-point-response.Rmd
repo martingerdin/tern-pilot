@@ -1,5 +1,5 @@
 ---
-format: docx
+output: word_document
 ---
 
 Dear Editor and Reviewers,
