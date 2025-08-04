@@ -117,7 +117,7 @@ We have added that we did not blind the data analysts in this pilot study, but r
 
 > - The follow-up period for each participant is unclear. The methods state that data were collected for four months.  The methods also mention a 3-day mortality outcome.  
 
-The data collection period in each hospital was intended to be four months, and then patients were followed up for one month. However, the actual data collected periods varied slightly between clusters, and we have clarified this in the methods section.
+The data collection period in each hospital was intended to be four months, and then patients were followed up for one month. However, the actual data collected periods varied slightly between clusters, and we have clarified this in the methods section. The 3-day mortality outcome was a typo, and we have corrected this.
 
 > - Success criteria and threshold details for the feasibility outcomes should be clearly outlined in the methods.
 
