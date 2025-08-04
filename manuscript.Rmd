@@ -85,7 +85,7 @@ Critical and Intensive Care, JPN Apex Trauma Center, All India Institute of Medi
 ##### Lovisa Strömmer, MD, PhD (LS) `r insert_orcid_link("0000-0001-5424-7111")` <!-- Accepted, lisa.strommer@ki.se -->
 Division of Surgery and Oncology, Department of Clinical Science, Intervention and Technology (CLINTEC), and Department of Global Public Health, Karolinska Institutet, Stockholm, Sweden.
 
-## Non-author contributors
+## Nonauthor contributors
 
 <!--
 ##### Prashant Bhandarkar (PB)
@@ -164,7 +164,7 @@ The funding sources had no role in the design of this study nor during its execu
 
 # Abstract
 
-**Objective** To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support^®^ (ATLS^®^) and Primary Trauma Care (PTC) with standard care on patient outcomes.
+**Objective** To assess the feasibility of conducting a cluster randomised controlled trial comparing the effect of Advanced Trauma Life Support (ATLS) and Primary Trauma Care (PTC) with standard care on patient outcomes.
 
 **Design** A pilot pragmatic three-armed parallel, cluster randomised, controlled trial between `r start.date` and `r end.date`. Patient follow up was 30 days.
 
@@ -172,13 +172,13 @@ The funding sources had no role in the design of this study nor during its execu
 
 **Participants** Adult trauma patients and residents managing these patients.
 
-**Interventions** ATLS^®^ or PTC training for residents in the intervention arms.
+**Interventions** ATLS or PTC training for residents in the intervention arms.
 
 **Main Outcomes and Measures** The outcomes were consent rate, lost to follow up rate, missing data rates, differences in distribution between observed and data extracted from medical records, and resident pass rate.
 
-**Results** Two hospitals were randomised to ATLS^®^, two to PTC, and three to standard care. We included `r n.patients` patients and `r n.residents` residents. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data was overall low for key variables. Data collected through observations were similar to data extracted from medical records, but there was more missing data in the extracted data. 
+**Results** Two hospitals were randomised to ATLS, two to PTC, and three to standard care. We included `r n.patients` patients and `r n.residents` residents. The percentage of patients who consented to follow up was `r p.consent`% and the percentage of residents who consented to training was `r recruitment.rate.residents`%. The lost to follow up rate was `r rate.lost.to.follow.up`%. The pass rate was `r pass.rate`%. The missing data was overall low for key variables. Data collected through observations were similar to data extracted from medical records, but there was more missing data in the extracted data. 
 
-**Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS^®^, PTC, and standard care on patient outcomes will be feasible, especially if such a trial would use data and outcomes available in medical records. 
+**Conclusions** Conducting a full-scale cluster randomised controlled trial comparing the effects of ATLS, PTC, and standard care on patient outcomes will be feasible, especially if such a trial would use data and outcomes available in medical records. 
 
 **Trial Registration** ClinicalTrials.gov (reg. no NCT05417243)
 
@@ -196,7 +196,7 @@ The funding sources had no role in the design of this study nor during its execu
 
 Strengths and limitations of this study:
 
-- Cluster randomised controlled trial comparing the effect of ATLS^®^, PTC and standard care on patient and provider outcomes.
+- Cluster randomised controlled trial comparing the effect of ATLS, PTC and standard care on patient and provider outcomes.
 - Prospective data collection with direct observations by dedicated research officers.
 - Participating centers' heterogeneity may affect the study estimates and bias the results.
 -->
@@ -205,13 +205,13 @@ Strengths and limitations of this study:
 
 Trauma, defined as the clinical entity composed of physical injury and the body's associated response, causes 4.3 millions deaths every year [@injuries2020]. Several trauma life support training programs have been developed to improve the early management of patients in hospital by providing a structured framework to assessment and treatment [@Mohammad2013; @Jayaraman2014; @Kadhum2020].
 
-The proprietary Advanced Trauma Life Support^®^ (ATLS^®^) and the low-cost alternative Primary Trauma Care (PTC) are two widely established trauma life support training programmes with over a million physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. Observational studies indicate that these programmes may improve patient outcomes [@vestrup_impact_1988; @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016; @kamau_impact_2024; @kumar_evaluating_2025], but there is no high quality evidence from controlled trials to support this [@Mohammad2013; @Jayaraman2014; @Kadhum2020; @Jin2021; @putra_impact_2023; @mciver_effect_2024]. 
+The proprietary Advanced Trauma Life Support (ATLS) and the low-cost alternative Primary Trauma Care (PTC) are two widely established trauma life support training programmes with over a million physicians trained in over 80 countries [@acsAtls2018; @ptcfPtc2018]. Observational studies indicate that these programmes may improve patient outcomes [@vestrup_impact_1988; @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016; @kamau_impact_2024; @kumar_evaluating_2025], but there is no high quality evidence from controlled trials to support this [@Mohammad2013; @Jayaraman2014; @Kadhum2020; @Jin2021; @putra_impact_2023; @mciver_effect_2024]. 
 
-Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS^®^ is associated with improved knowledge and skills among providers [@Mohammad2013]. Observational evidence suggests that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then whether these improved knowledge and skills translate into measurably improved patient outcomes. 
+Several studies, including at least two randomised studies [@Ali1996; @Ali1999], show that ATLS is associated with improved knowledge and skills among providers [@Mohammad2013]. Observational evidence suggests that PTC also leads to improved provider skills [@Kadhum2020]. The missing link is then whether these improved knowledge and skills translate into measurably improved patient outcomes. 
 
 Systematic reviews call for controlled trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020], because conducting such effectiveness trials in settings where they are part of the standard of care is not possible. Many settings without routinely implemented trauma life support training are in low- and middle income countries, where trial logistics can be more challenging. 
 
-We therefore conducted a pilot study to assess the feasibility of a cluster randomised controlled trial comparing the effect of ATLS^®^ and PTC with standard care on outcomes in adult trauma patients. 
+We therefore conducted a pilot study to assess the feasibility of a cluster randomised controlled trial comparing the effect of ATLS and PTC with standard care on outcomes in adult trauma patients. 
 
 <!-- add citation to scoping review of TQIP [@mciver_effect_2024]-->
 
@@ -223,11 +223,11 @@ Protocol deviations are mentioned where relevant in this manuscript, but a list 
 
 ## Trial Design
 
-We piloted a three-armed cluster randomised controlled trial [@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS^®^ and PTC training. We planned to collect data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). The actual data collection period varied across clusters depending on the timing of the training, to ensure a minimum of three months of data collection after the training in the intervention clusters. We included the one month lead to be able to evaluate the feasibility of comparing patient outcomes both as absolute differences between the intervention phases, and as differences in change from baseline. In the published protocol, we also aimed to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial [@GerdinWärnberg2022], but we revised this aim in the light of current guidance on the conduct and reporting of pilot trials [@teresi_guidelines_2022].
+We piloted a three-armed cluster randomised controlled trial [@GerdinWärnberg2022]. There were a standard care arm and two intervention arms, ATLS and PTC training. We planned to collect data for four months in all three arms, first during a one month observation phase and then during a three month intervention phase (or continued observation in the standard care arm). The actual data collection period varied across clusters depending on the timing of the training, to ensure a minimum of three months of data collection after the training in the intervention clusters. We included the one month lead to be able to evaluate the feasibility of comparing patient outcomes both as absolute differences between the intervention phases, and as differences in change from baseline. In the published protocol, we also aimed to estimate probable effect sizes and other measures needed for the sample size calculations of a full-scale trial [@GerdinWärnberg2022], but we revised this aim in the light of current guidance on the conduct and reporting of pilot trials [@teresi_guidelines_2022].
 
 ## Study Setting
 
-We conducted this pilot study in seven tertiary hospitals across metropolitan areas in India, where neither ATLS^®^, PTC, nor any other established trauma life support training program is routinely taught. Details about each cluster is included as Supplementary Table S1. Originally, we intented to include six hospitals as clusters, but decided to include a seventh when they expressed interest and as we had the budget to accommodate this. These seven hospitals were a convenience sample of hospitals in India that fulfilled the inclusion criteria, and with existing connections to the research team.
+We conducted this pilot study in seven tertiary hospitals across metropolitan areas in India, where neither ATLS, PTC, nor any other established trauma life support training program is routinely taught. Details about each cluster is included as Supplementary Table S1. Originally, we intented to include six hospitals as clusters, but decided to include a seventh when they expressed interest and as we had the budget to accommodate this. These seven hospitals were a convenience sample of hospitals in India that fulfilled the inclusion criteria, and with existing connections to the research team.
 
 <!--
 The trauma system is still developing, with
@@ -246,11 +246,11 @@ within the hospitals.
 
 ### Clusters
 
-We defined a cluster as a tertiary care hospitals in metropolitan areas in India that admitted more than 400 adult patients with trauma each year, and that had operation theatres, X-ray, CT, and ultrasound facilities, and blood bank available around the clock. In each cluster, we trained one or more units of physicians providing trauma care in the emergency department. To be eligible, units could have no more than 25% of their physicians trained in either ATLS^®^, PTC, or similar training programmes before the start of the pilot study. Those residents who had received training in the last five years were considered as trained. The figure of 25% was decided through consensus in the research team, to balance feasibility and contamination of results. The principal investigator at each hospital selected the units for training. We randomised on the hospital level to avoid contamination between intervention arms and the standard care arms. 
+We defined a cluster as a tertiary care hospitals in metropolitan areas in India that admitted more than 400 adult patients with trauma each year, and that had operation theatres, X-ray, CT, and ultrasound facilities, and blood bank available around the clock. In each cluster, we trained one or more units of physicians providing trauma care in the emergency department. To be eligible, units could have no more than 25% of their physicians trained in either ATLS, PTC, or similar training programmes before the start of the pilot study. Those residents who had received training in the last five years were considered as trained. The figure of 25% was decided through consensus in the research team, to balance feasibility and contamination of results. The principal investigator at each hospital selected the units for training. We randomised on the hospital level to avoid contamination between intervention arms and the standard care arms. 
 
 ### Residents
 
-We trained resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year from the time of the training. Consent was sought from the residents in each of the intervention groups before they underwent the ATLS^®^ or PTC training. In the published protocol, we stated that only surgical residents would be trained. However, in some of the participating hospitals, emergency medicine residents performed the initial resuscitation and management of trauma patients, and we therefore decided to train them instead.
+We trained resident doctors doing their speciality training in surgery or emergency medicine managing trauma patients in the emergency department and who were expected to remain in the participating hospitals for at least one year from the time of the training. Consent was sought from the residents in each of the intervention groups before they underwent the ATLS or PTC training. In the published protocol, we stated that only surgical residents would be trained. However, in some of the participating hospitals, emergency medicine residents performed the initial resuscitation and management of trauma patients, and we therefore decided to train them instead.
 
 ### Patients
 
@@ -262,9 +262,9 @@ Standard care varies across hospitals in India, but most surgical and emergency 
 
 ## Intervention
 
-In each intervention arm the residents in one or two units were trained in either ATLS^®^ or PTC at the beginning of the three month intervention phase. For the purpose of this pilot study, our target was to train a minimum of 75% of residents in each unit. We did not train the units' faculty, because they are typically not directly involved in the initial management of trauma patients. The ATLS^®^ training was conducted in an ATLS^®^ certified training centre in Mumbai and the PTC training was conducted in New Delhi. Both trainings were conducted according to their respective standard curriculum [@acsAtls2018; @ptcfPtc2018], and we did not modify or adapt the delivery or content of these programmes during this pilot study. 
+In each intervention arm the residents in one or two units were trained in either ATLS or PTC at the beginning of the three month intervention phase. For the purpose of this pilot study, our target was to train a minimum of 75% of residents in each unit. We did not train the units' faculty, because they are typically not directly involved in the initial management of trauma patients. The ATLS training was conducted in an ATLS certified training centre in Mumbai and the PTC training was conducted in New Delhi. Both trainings were conducted according to their respective standard curriculum [@acsAtls2018; @ptcfPtc2018], and we did not modify or adapt the delivery or content of these programmes during this pilot study. 
 
-The provider courses of both programmes are two days, and they teach how to assess, resuscitate and stabilize trauma patients and how to adapt to needs of different patient populations. The teaching is based on case discussions and skill stations. There are some important differences between the two programmes. The ATLS course include more on the inter-hospital transfer of patients and includes a greater emphasis on the trauma team [@acsAtls2018]. The PTC course on the other hand focuses on trauma care in the low resource setting [@ptcfPtc2018]. The ATLS^®^ programme is run by the American College of Surgeons and participants pay a fee to take a course, whereas the PTC programme is run by the UK based charity the PTC Foundation and is free of charge.
+The provider courses of both programmes are two days, and they teach how to assess, resuscitate and stabilize trauma patients and how to adapt to needs of different patient populations. The teaching is based on case discussions and skill stations. There are some important differences between the two programmes. The ATLS course include more on the inter-hospital transfer of patients and includes a greater emphasis on the trauma team [@acsAtls2018]. The PTC course on the other hand focuses on trauma care in the low resource setting [@ptcfPtc2018]. The ATLS programme is run by the American College of Surgeons and participants pay a fee to take a course, whereas the PTC programme is run by the UK based charity the PTC Foundation and is free of charge.
 
 ## Feasibility outcomes
 
@@ -329,7 +329,7 @@ We were granted research ethics approval from the institutional ethics committee
 
 # Results
 
-We included `r n.patients` trauma patients from `r number_to_text(n.centres)` clusters between `r start.date` and `r end.date`. The period of data collection and the number of patients included per month per cluster is shown in Figure \@ref(fig:patients-per-month-figure). Due to an error in the data uploading process, data was only available for one and three months for two clusters respectively. The standard care arm included `r n.control` patients, the ATLS^®^ arm included `r n.atls` patients, and the PTC arm included `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS^®^, and  `r number_to_text(n.ptc.residents)` in PTC. 
+We included `r n.patients` trauma patients from `r number_to_text(n.centres)` clusters between `r start.date` and `r end.date`. The period of data collection and the number of patients included per month per cluster is shown in Figure \@ref(fig:patients-per-month-figure). Due to an error in the data uploading process, data was only available for one and three months for two clusters respectively. The standard care arm included `r n.control` patients, the ATLS arm included `r n.atls` patients, and the PTC arm included `r n.ptc` patients. We trained a total of  `r number_to_text(n.residents)` residents, `r number_to_text(n.atls.residents)` in ATLS, and  `r number_to_text(n.ptc.residents)` in PTC. 
 
 ```{r patients-per-month-figure, echo = FALSE, results = "asis", fig.cap = "Number of patients included per cluster per month. Due to an error in the data uploading process, data was only available for one and three months for two clusters respectively."}
 knitr::include_graphics("patients-per-month.png")
@@ -337,7 +337,7 @@ knitr::include_graphics("patients-per-month.png")
 
 The study flow diagram is shown in Figure \@ref(fig:flow-diagram) and patient sample characteristics across trial arms are shown in Table \@ref(tab:sample-characteristics). Extended patient sample characteristics are shown in Supplementary Table S2. Overall, the number of females were `r females`, the median (IQR) age was `r median.age` years, and the median ISS (IQR) was `r median.iss`. These prognostic factors differed between the trial arms. A total of `r m30d` patients died within 30 days after arrival to the emergency department, and `r inhosp` patients died in hospital. 
 
-After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS^®^ arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`% for the standard care, ATLS^®^ and PTC arms respectively. 
+After training, a total of `r m30d.standard.care` patients in the standard care arm died within 30 days, compared to `r m30d.atls` patients in the ATLS arm and `r m30d.ptc` patients in the PTC arm. The corresponding figures for in-hospital mortality were `r inhosp.standard.care`%, `r inhosp.atls`%, and `r inhosp.ptc`% for the standard care, ATLS and PTC arms respectively. 
 
 ```{r flow-diagram, echo = FALSE, fig.cap="Study flow diagram. Abbreviations: ATLS, Advanced Trauma Life Support; PTC, Primary Trauma Care.", out.width="30%", out.height="30%"}
 knitr::include_graphics("consort-flow-diagram.png")
@@ -362,7 +362,7 @@ observed.vs.extracted.comparison.table
 
 # Discussion
 
-We show that it is feasible to conduct and collect data for a cluster randomised controlled trial comparing ATLS^®^ with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. The missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data were similarly distributed, indicating that data collected from medical records is reliable even if it is less complete. To improve completeness of data extracted from the medical records, a full scale trial should limit the number of variables extracted from the medical records and the importance of having these registered should be emphasised to the participating hospitals.
+We show that it is feasible to conduct and collect data for a cluster randomised controlled trial comparing ATLS with PTC and standard care. Missing data were low for key variables, including the primary outcome and many secondary outcomes. Some variables had very high missing data rates and may not be feasible to include in a full-scale trial, or require different data collection methods. The missing data was substantially higher when data was extracted from medical records instead of being directly observed, but the data were similarly distributed, indicating that data collected from medical records is reliable even if it is less complete. To improve completeness of data extracted from the medical records, a full scale trial should limit the number of variables extracted from the medical records and the importance of having these registered should be emphasised to the participating hospitals.
 
 <!-- Should we include dependency at discharge, for example using the
 Modified Oxford Handicap Scale used in @Roberts2013?-->
@@ -378,9 +378,9 @@ There are some important limitations of this pilot study and therefore additiona
 <!-- Consider discussing waiver of informed consent for initial 
 data collection -->
 
-Previous studies on the effect of ATLS^®^ or PTC training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@vestrup_impact_1988, @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016]. Most studies have found that these programmes are associated with improved outcomes, although not all studies have found significant effects [@vestrup_impact_1988; @ali_trauma_1993; @van_olden_clinical_2004; @Wang2010; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @kamau_impact_2024; @kumar_evaluating_2025]. In contrast, some studies have found that these programmes may be associated with increased mortality [@drimousis_advanced_2011; @CioèPeña2016]. We found fewer deaths in the intervention arms compared to the standard arm. This difference may have resulted from the randomisation process with a small number of heterogeneous clusters, highlighting the importance of taking varying cluster sizes into account when designing the full scale trial.
+Previous studies on the effect of ATLS or PTC training on patient outcomes are observational or quasi-experimental without a control group, with heterogeneous results [@vestrup_impact_1988, @Ariyanayagam1992; @ali_trauma_1993; @van_olden_clinical_2004; @VanHeng2008; @Wang2010; @drimousis_advanced_2011; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @CioèPeña2016]. Most studies have found that these programmes are associated with improved outcomes, although not all studies have found significant effects [@vestrup_impact_1988; @ali_trauma_1993; @van_olden_clinical_2004; @Wang2010; @noordin_evolution_2011; @hashmi_hospital-based_2013; @Petroze2014; @magnone_impact_2015; @bellanova_mountain_2016; @kamau_impact_2024; @kumar_evaluating_2025]. In contrast, some studies have found that these programmes may be associated with increased mortality [@drimousis_advanced_2011; @CioèPeña2016]. We found fewer deaths in the intervention arms compared to the standard arm. This difference may have resulted from the randomisation process with a small number of heterogeneous clusters, highlighting the importance of taking varying cluster sizes into account when designing the full scale trial.
 
-A full scale trial remains ethical after this pilot study, considering that it was never powered to detect meaningful differences in clinical outcomes. In addition, educating physicians in trauma life support through programmes like ATLS^®^ and PTC is considered standard care in many settings, but this approach has been criticised for being costly and for propogating outdated practices [@wiles_atls_2015]. Several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020], and in recognition of their wide use and high face validity, a stepped-wedge design in which all clusters receive the intervention but at randomised time points may be the best option.
+A full scale trial remains ethical after this pilot study, considering that it was never powered to detect meaningful differences in clinical outcomes. In addition, educating physicians in trauma life support through programmes like ATLS and PTC is considered standard care in many settings, but this approach has been criticised for being costly and for propogating outdated practices [@wiles_atls_2015]. Several systematic reviews call for trials in settings where these programmes are not routinely implemented [@Mohammad2013; @Jayaraman2014; @Kadhum2020], and in recognition of their wide use and high face validity, a stepped-wedge design in which all clusters receive the intervention but at randomised time points may be the best option.
 
 Our study represents the first published attempt to pilot a controlled trial of the effect of trauma life support training on patient outcomes, and we conclude that conducting a full-scale cluster randomised trial should be feasible after incorporating the lessons of this pilot study. 
  
@@ -398,7 +398,7 @@ protocol. DB, JB, SC, LFT, GG, MK, TK, CJ, NR, RS, KDS, LS and VP interpreted th
 
 # Competing Interests
 
-Several authors are ATLS^®^ and/or PTC instructors.
+Several authors are ATLS and/or PTC instructors.
 
 # Funding
 
