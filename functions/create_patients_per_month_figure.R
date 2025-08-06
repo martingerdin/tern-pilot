@@ -38,5 +38,11 @@ create_patients_per_month_figure <- function(data) {
     scale_y_continuous(breaks = c(0, 15, 30))
 
   # Save the figure
-  ggsave(patients.per.month.figure, filename = "patients-per-month.png", width = 85, height = 130, units = "mm")
+  ggsave(patients.per.month.figure,
+    filename = "patients-per-month.png",
+    width = 85, height = 130,
+    units = "mm",
+    bg = "white",
+    dpi = 300
+  )
 }

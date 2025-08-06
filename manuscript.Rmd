@@ -386,15 +386,7 @@ Our study represents the first published attempt to pilot a controlled trial eva
  
 # Contributorship statement
 
-MGW conceived the study, performed the analysis and drafted and revised the manuscript. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the
-study. MGV, DKV, KDS, and MK drafted the first version of the
-protocol. AG, HS, and SD drafted the first version of the patient and
-public involvement activities. JB and PP drafted the first versions of
-the data management sections and wrote the data management plan. PB
-and PP drafted the first versions of the statistical analysis
-section. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MGW, MK, NR, PB,
-PP, RS, SC, SD, and VK contributed to the refinement of the
-protocol. DB, JB, SC, LFT, GG, MK, TK, CJ, NR, RS, KDS, LS and VP interpreted the results and revised the manuscript. AR, AC, C, DK, GG, MK, MT, VK and VP are representatives of the participating hospitals.
+MGW conceived the study, performed the analysis and drafted and revised the manuscript. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MK, NR, PB, PP, RS, SD, and VK contributed to the design of the study. MGV, DKV, KDS, and MK drafted the first version of the protocol. AG, HS, and SD drafted the first version of the patient and public involvement activities. JB and PP drafted the first versions of the data management sections and wrote the data management plan. PB and PP drafted the first versions of the statistical analysis section. AG, AM, CJ, DKV, HS, JB, KDS, LFT, LS, MH, MGW, MK, NR, PB, PP, RS, SC, SD, and VK contributed to the refinement of the protocol. DB, JB, SC, LFT, GG, MK, TK, CJ, NR, RS, KDS, LS and VP interpreted the results and revised the manuscript. AR, AC, C, DK, GG, MK, MT, VK and VP are representatives of the participating hospitals. MGW is the guarantor.
 
 # Competing Interests
 
