@@ -54,7 +54,7 @@
       </if>
       <else-if type="report webpage post post-weblog" match="any">
         <group delimiter=" ">
-          <text variable="URL"/>
+          <text variable="url"/>
           <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
         </group>
       </else-if>
