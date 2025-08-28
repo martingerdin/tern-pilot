@@ -1,0 +1,45 @@
+---
+output: word_document
+---
+
+Dear Editor and Reviewers,
+
+Thank you for your second review of our manuscript and for allowing us to submit a minor revision. We have addressed all of the comments and provided a detailed response below.
+
+On behalf of all the authors,
+
+Martin Gerdin Wärnberg, MD, PhD
+Department of Global Public Health
+Karolinska Institutet
+Stockholm, Sweden
+
+
+### Response to Reviewer 1, Dr.  Feroze  Sidhwa, San Joaquin General Hospital:
+
+Q1 Improvements in patient outcomes could take much longer than a few months to manifest, and may also be dependent on a certain level of training being achieved in the unit. These limitations should be addressed.
+
+> R1 We agree, especially some outcomes may take substantially longer than the follow up of one month. We have added a note to the discussion section to address this. 
+
+Q2 “The principal investigator at each hospital selected the units for training.” How? Was this based on who conducts the trauma resuscitation?
+
+> R2 Only units involved in the trauma resuscitation were eligible for training. The principal investigator selected the units based on their own mandate to involve the units in the study.
+
+Q3 How do you know the accuracy of ICD-10 coding at these hospitals?
+
+> R3 The project officers conducting the ICD-10 coding have been trained using the WHO module on ICD-10 coding and their coding reviewed by the research team in previous projects.
+
+Q4 Faculty not being included in the study because they are not typically directly involved in the initial management of trauma patients will be a major factor limiting generalizability of the findings. This cannot be helped and not every trial can be generalizable to the entire universe, but this should be noted in future conclusions and limitations.
+
+> R4 Good point. We have a highlighted this in the appropriate section in the discussion.
+
+Q5 “We initially planned to use simple random sampling to select the units to be trained, but for pragmatic reasons this decision was left to the site principal investigator.” Does this mean that the site principal investigator decided what kind of sampling to use, or that they decided on what units to be trained instead of using any kind of randomization?
+
+> R5 The principal investigator at each site decided what units to be trained instead of randomising these units. We have clarified this in the manuscript.
+
+Q6 An “error in the data uploading process” that led to 1/10th of the data being collected in two out of seven clusters is very alarming. Isn’t it possible this data uploading process error wasn’t a source of random error? For example maybe it drastically reduced the data available from the two most incompetent clusters, regardless of training status? Unless this issue is addressed it would be a major source of potential error in a larger trial. This was mentioned briefly in the conclusion but I would encourage the authors to make clear that they understand that this is an issue of grave concern for the accuracy of the study.
+
+> R6 We agree that this is a major concern that cannot be allowed to happen in a full-scale trial. We have strengthened the language in the discussions section accordingly.
+
+Q7 Overall this is a very useful pilot study and I hope the larger study will shed light on some important questions in the trauma world.
+
+> R7 Thank you very much and we agree.
