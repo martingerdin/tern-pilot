@@ -4,7 +4,7 @@ output: word_document
 
 Dear Editor and Reviewers,
 
-Thank you for your second review of our manuscript and for allowing us to submit a minor revision. We have addressed all of the comments and provided a detailed response below.
+Thank you for your second review of our manuscript and for allowing us to submit a minor revision. We have addressed all of the comments and provided a detailed response below. In addition, we have revised the introduction to account for recent publications on trauma life support training.
 
 On behalf of all the authors,
 
