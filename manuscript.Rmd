@@ -40,7 +40,7 @@ martin.gerdin@ki.se
 
 ## Authors (in alphabetical order by last name)
 
-##### Debojit Basak, MS `r insert_orcid_link("0000-0002-8378-9689")` <!-- Accepted, debojit88@gmail.com -->
+##### Debojit Basak, MParm (DB) `r insert_orcid_link("0000-0002-8378-9689")` <!-- Accepted, debojit88@gmail.com -->
 Project Research Scientist, Institute of Post Graduate Medical Education and Research, Kolkata, India.
 
 ##### Johanna Berg, MD (JB) `r insert_orcid_link("0000-0001-7553-7337")` <!-- Accepted, johanna.berg@ki.se -->
